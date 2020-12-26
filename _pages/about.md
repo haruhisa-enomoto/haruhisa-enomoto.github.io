@@ -15,11 +15,11 @@ I am a postdoc at
 E-mail:
 m16009t [at] math.nagoya-u.ac.jp
 
-## Research areas
+## Research Areas
 - Representation theory of algebras (artin algebras, noetherian algebras)
 - Homological algebra
 
-## Research interests
+## Research Interests
 - Auslander-Reiten theory (via functor categories)
 - Quillen's exact categories, extriangulated categories
 - Subcategories of module categories (classifications and their properties as exact categories)
