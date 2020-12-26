@@ -34,7 +34,7 @@ redirect_from:
 * Doctor of Philosophy (Mathematical Science)
   * Graduate School of Mathematics, Nagoya University, September 2020.
   * Supervisor: [Osamu Iyama](https://www.math.nagoya-u.ac.jp/~iyama/)
-  * Thesis: [Categorical Properties and Classifications of Several Subcategories of Module Categories](files/phd_thesis.pdf)
+  * Thesis: [Categorical Properties and Classifications of Several Subcategories of Module Categories](/files/phd_thesis.pdf)
 
 * Master of Mathematical Science
   * Graduate School of Mathematics, Nagoya University, March 2018.
