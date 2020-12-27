@@ -3,8 +3,8 @@ title: "Relations for Grothendieck groups and representation-finiteness"
 collection: publications
 permalink: /publication/relations
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2019-12
-venue: 'J. Algebra'
+date: 2019-12-01
+venue: 'Journal 1'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 citation: 'H. Enomoto, Relations for Grothendieck groups and representation-finiteness, J. Algebra 539 (2019), 152-176.'
 ---
