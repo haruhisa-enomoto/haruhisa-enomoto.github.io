@@ -7,7 +7,7 @@ date: 2019-12-01
 venue: 'J. Algebra'
 paperurl: 'https://doi.org/10.1016/j.jalgebra.2019.07.032'
 arxiv: '1806.07650'
-citation: 'H. Enomoto, Relations for Grothendieck groups and representation-finiteness, J. Algebra 539 (2019), 152-176.'
+citation: 'H. Enomoto, Relations for Grothendieck groups and representation-finiteness, J. Algebra 539 (2019), 152--176.'
 ---
 
 ## Abstract
