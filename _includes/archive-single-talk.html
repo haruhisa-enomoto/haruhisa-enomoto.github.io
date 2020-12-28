@@ -28,7 +28,7 @@
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-        <a href="{{ post.link }}"><i class="fa fa-external-link" aria-hidden="true" title="externallink"></i><span class="sr-only">External link</span></a>
+        <a href="{{ post.link }}"><i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="sr-only">External link</span></a>
       {% else %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
