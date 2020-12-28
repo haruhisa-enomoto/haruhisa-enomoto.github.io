@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-# Education
+## Education
 
 * 2018 -- Sep. 2020: Doctoral course at [Graduate School of Mathematics](http://www.math.nagoya-u.ac.jp/en/index.html),
 [Nagoya University](http://en.nagoya-u.ac.jp/).
@@ -19,7 +19,7 @@ redirect_from:
 
 * 2012 -- 2016: Undergraduate course at [School of Science](https://www.sci.nagoya-u.ac.jp/en/),[Nagoya University](http://en.nagoya-u.ac.jp/).
 
-# Professional Position
+## Professional Position
 
 * Oct. 2020 -- Mar. 2021: JSPS Research Fellow (PD)
   * Institution: [Graduate School of Mathematics](http://www.math.nagoya-u.ac.jp/en/index.html), [Nagoya University](http://en.nagoya-u.ac.jp/)
@@ -29,7 +29,7 @@ redirect_from:
   * Institution: [Graduate School of Mathematics](http://www.math.nagoya-u.ac.jp/en/index.html), [Nagoya University](http://en.nagoya-u.ac.jp/)
   * Host Researcher: [Osamu Iyama](https://www.math.nagoya-u.ac.jp/~iyama/)
 
-# Degree
+## Degree
 
 * Doctor of Philosophy (Mathematical Science)
   * Graduate School of Mathematics, Nagoya University, September 2020.
@@ -46,14 +46,14 @@ redirect_from:
   * Supervisor: [Osamu Iyama](https://www.math.nagoya-u.ac.jp/~iyama/)
   * Thesis: *[On categories of modules over locular categories (in Japanese)](/files/sotsuron.pdf)*
 
-Publications
-======
+## Publications
+
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-Talks
-======
+## Talks
+
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
