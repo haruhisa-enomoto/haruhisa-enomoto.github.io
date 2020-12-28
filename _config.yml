@@ -189,7 +189,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   preprints:
-    output: false
+    output: true
     permalink: /:collection/:path/
 
 
