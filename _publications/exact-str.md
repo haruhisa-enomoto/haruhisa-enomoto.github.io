@@ -10,7 +10,7 @@ arxiv: '1705.02163'
 citation: 'H. Enomoto, Classifications of exact structures and Cohen-Macaulay-finite algebras, Adv. Math. 335 (2018), 838--877.'
 ---
 
-# Comment
+## Comment
 
 I wanted an analogue of Auslander correspondence for exact categories, especially a kind of *CM Auslander correspondence for Iwanaga-Gorenstein algebras*.
 
