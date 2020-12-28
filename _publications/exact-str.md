@@ -10,10 +10,14 @@ arxiv: '1705.02163'
 citation: 'H. Enomoto, Classifications of exact structures and Cohen-Macaulay-finite algebras, Adv. Math. 335 (2018), 838--877.'
 ---
 
-I wanted an *analogue of Auslander correspondence for exact categories*, especially a kind of *CM Auslander correspondence for Iwanaga-Gorenstein algebras*.
+# Comment
+
+I wanted an analogue of Auslander correspondence for exact categories, especially a kind of *CM Auslander correspondence for Iwanaga-Gorenstein algebras*.
 
 Since non-Morita equivalent algebras may give equivalent CM categories (as additive categories), to classify CM-finite Iwanaga-Gorenstein algebras, one needs some extra info together with its CM category. That is (my favorite) *exact structure*, the structure of Quillen's exact category.
 Then the original Iwanaga-Gorenstein algebra can be recovered by taking the endomorphism ring of *progenerator* in this exact category.
 
 To do this, For a given category, I classify possible exact structures by using functor category.
 Also Auslander-Reiten theory for exact categories are studied.
+
+For more details, please see [this report](/files/Kanron2017.pdf) and [slides](/filed/Kanron2017slide.pdf), which are from my talk in the The 50st Symposium on Ring Theory and Representation Theory.
