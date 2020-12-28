@@ -1,7 +1,7 @@
 ---
 title: "The Jordan-H&ouml;lder property and Grothendieck monoids of exact categories"
 collection: preprints
-permalink: /publication/JHP
+permalink: /preprint/JHP
 excerpt: 'I consider when an exact category satisfies the Jordan-H&ouml;lder property, (JHP)'
 date: 2019-08-15
 arxiv: '1908.05446'
