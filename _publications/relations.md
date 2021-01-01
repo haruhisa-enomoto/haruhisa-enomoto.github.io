@@ -1,7 +1,6 @@
 ---
 title: "Relations for Grothendieck groups and representation-finiteness"
 collection: publications
-permalink: /paper/relations
 excerpt: 'Rep-fin v.s. "AR seq generate relations for K_0" in exact categories'
 date: 2019-12-01
 venue: 'J. Algebra'

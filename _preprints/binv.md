@@ -1,7 +1,6 @@
 ---
 title: "Bruhat inversions in Weyl groups and torsion-free classes over preprojective algebras"
 collection: preprints
-permalink: /paper/binv
 excerpt: 'For torsion-free classes over preprojective algebras and path algebras of Dynkin type, I classify simple objects using the root system.'
 date: 2020-02-21
 arxiv: '2002.09205'

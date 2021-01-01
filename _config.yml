@@ -181,14 +181,14 @@ collections:
     permalink: /:collection/:path/
   publications:
     output: true
-    permalink: /:collection/:path/
+    permalink: /papers/:path/
+  preprints:
+    output: true
+    permalink: /papers/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
   talks:
-    output: true
-    permalink: /:collection/:path/
-  preprints:
     output: true
     permalink: /:collection/:path/
 

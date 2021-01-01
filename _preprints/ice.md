@@ -1,7 +1,6 @@
 ---
 title: "ICE-closed subcategories and wide &tau;-tilting modules"
 collection: preprints
-permalink: /paper/et-str
 excerpt: 'Study Image-Cokernel-Extension closed subcategories of module categories using the poset of torsion classes and &tau;-tilting theory.'
 date: 2020-10-12
 arxiv: '2010.05433'

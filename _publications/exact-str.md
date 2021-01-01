@@ -1,7 +1,6 @@
 ---
 title: "Classifications of exact structures and Cohen-Macaulay-finite algebras"
 collection: publications
-permalink: /paper/exact-str
 excerpt: 'I classify possible exact structures on a given additive category by using functor category, and give applications to CM-finite Iwanaga-Gorenstein algebras.'
 date: 2018-09-07
 venue: 'Adv. Math.'
