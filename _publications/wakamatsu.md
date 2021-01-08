@@ -13,3 +13,7 @@ citation: 'H. Enomoto, Classifying exact categories via Wakamatsu tilting, J. Al
 
 This paper studies the Morita type theorem for exact categories. The Ext-perpendicular category of cotilting modules are precisely exact category with progen & inj cogen & higher kernels.
 Essentially I considered Auslander-Reiten's famous paper Applications of contravariantly finite subcategories in the context of exact categories.
+
+## Presentation material
+
+- [Slides](/files/wakate2017slide.pdf), [Report (in Japanese)](/files/wakate2017houkoku.pdf) from [this talk](/talks/2017-03-06/)

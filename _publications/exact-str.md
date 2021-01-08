@@ -19,4 +19,7 @@ Then the original Iwanaga-Gorenstein algebra can be recovered by taking the endo
 To do this, For a given category, I classify possible exact structures by using functor category.
 Also Auslander-Reiten theory for exact categories are studied.
 
-For more details, please see [this report](/files/Kanron2017.pdf) and [slides](/filed/Kanron2017slide.pdf), which are from my talk in the The 50st Symposium on Ring Theory and Representation Theory.
+## Presentation material
+
+- [Slide](/files/Kanron2017slide.pdf), [Report](/files/Kanron2017.pdf) from [this talk](/talks/2017-10-09/)
+- [Slide](\files\ICRA2018.pdf) from [ICRA 2018](/talks/2018-08-15/)
