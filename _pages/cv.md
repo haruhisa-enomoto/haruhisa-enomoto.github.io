@@ -46,6 +46,11 @@ redirect_from:
   * Supervisor: [Osamu Iyama](https://www.math.nagoya-u.ac.jp/~iyama/)
   * Thesis: *[On categories of modules over locular categories (in Japanese)](/files/sotsuron.pdf)*
 
+## Awards
+- Nagoya University Outstanding Graduate Student Award ([学術奨励賞 (Japanese)](http://www.nagoya-u.ac.jp/academics/scholarship/nu-incentive/index.html)), October 2020.
+- Master's Thesis Award, Graduate School of Mathematics, Nagoya University, March 2018.
+
+
 ## Publications
 
   <ul>{% for post in site.publications %}
