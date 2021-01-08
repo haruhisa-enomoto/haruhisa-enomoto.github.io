@@ -6,6 +6,11 @@ date: 2020-05-27
 arxiv: '2005.13381'
 citation: 'H. Enomoto, Classifying substructures of extriangulated categories via Serre subcategories, arXiv:2005.13381.'
 ---
-This paper is about the number 2. The number 3 is left for future work.
 
 ## Comment
+
+In the [previous exact-structure paper](/papers/exact-str/), I gave a classification of exact structures of a given additive category using defects in functor category. In this paper, we give analogous results for **extriagulated categories** introduced by Nakaoka-Palu.
+
+However, since we cannot recover triangulated structures from the category of defects (they always coincide with the category of finitely presented functors), we cannot expect a full classification of any (ex)triangulated structures. Instead, I investigate *substructures* of a given extriangulated structure.
+
+For a given extriangulated category, I classify all possible substructures on it. More precisely, substructures are in bijection with Serre subcategories of the category of defects. As an application to exact categories, I proved that the lattice of exact structures on a given additive category is isomorphic to the lattice of Serre subcategories of some abelian category.
