@@ -9,6 +9,8 @@ You can also find my papers (preprints) on [my arXiv page](https://arxiv.org/a/e
 
 {% include base_path %}
 
+# Publications
+
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}
