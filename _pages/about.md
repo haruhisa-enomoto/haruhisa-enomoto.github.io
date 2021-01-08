@@ -17,6 +17,8 @@ I am a postdoc at
 E-mail:
 m16009t [at] math.nagoya-u.ac.jp
 
+For more details, see [CV](/cv/).
+
 ## Research Areas
 - Representation theory of algebras (artin algebras, noetherian algebras)
 - Homological algebra
@@ -29,4 +31,4 @@ m16009t [at] math.nagoya-u.ac.jp
 - Combinatorial & computational aspects
 
 ## Position
-JSPS PD Fellow (changed from DC1 by obtaining doctoral degree).
+[JSPS](http://www.jsps.go.jp/english/index.html) PD Fellow (changed from DC1 by obtaining doctoral degree).
