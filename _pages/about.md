@@ -8,8 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-***This website is under construction!!***
-
 I am a postdoc at
 [Graduate School of Mathematics](http://www.math.nagoya-u.ac.jp/en/index.html),
 [Nagoya University](http://en.nagoya-u.ac.jp/) in Japan.
@@ -31,4 +29,4 @@ For more details, see [CV](/cv/).
 - Combinatorial & computational aspects
 
 ## Position
-[JSPS](http://www.jsps.go.jp/english/index.html) PD Fellow (changed from DC1 by obtaining doctoral degree).
+[JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) (changed from DC1 by obtaining doctoral degree) at Nagoya University. My host researcher is Hiroyuki Nakaoka.
