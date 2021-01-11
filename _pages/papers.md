@@ -20,3 +20,10 @@ You can also find my papers (preprints) on [my arXiv page](https://arxiv.org/a/e
 {% for post in site.preprints reversed %}
   {% include archive-single.html %}
 {% endfor %}
+
+# Published proceedings
+- H. Enomoto, **The Jordan-H&ouml;lder property, Grothendieck monoids and Bruhat inversions**, Ring Theory 2019, Proceedings of the Eighth China–Japan–Korea International Symposium on Ring Theory (2021), 103–-112.
+
+Link: [journal](/https://doi.org/10.1142/9789811230295_0006)
+
+This is a survey article of [this JHP paper](/papers/JHP/).
