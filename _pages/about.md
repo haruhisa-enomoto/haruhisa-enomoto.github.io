@@ -15,7 +15,7 @@ I am a postdoc at
 E-mail:
 m16009t [at] math.nagoya-u.ac.jp
 
-For more details, see [CV](/cv/). [Old website](http://www.math.nagoya-u.ac.jp/~m16009t/), which will *not* be updated.
+For more details, see [CV](/cv/). Here is [my old website](http://www.math.nagoya-u.ac.jp/~m16009t/), which will *not* be updated.
 
 ## Research Areas
 - Representation theory of algebras (artin algebras, noetherian algebras)
