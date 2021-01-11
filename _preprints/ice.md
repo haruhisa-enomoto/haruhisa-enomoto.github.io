@@ -15,6 +15,6 @@ To achieve this, we study ICE-closed subcategories via the hearts of intervals i
 Using this, we show that *ICE-closed subcategories are precisely torsion classes of some wide subcategories*. This enables us to use tau-tilting theory to classify ICE-closed subcategories. Moreover, we discuss how to compute wide tau-tilting modules from the support tau-tilting poset for the tau-tilting finite case.
 
 ## Presentation materials
-- [Slide (without handwriting)](/files/ICR2020.pdf),
+- [Slide (without handwriting)](/files/ICRA2020.pdf),
 [Slide (with handwriting)](/files/ICRA2020-new.pdf),
 [Talk Video (recording)](https://youtu.be/rRise7HzqS8) from [ICRA 2020 online](/talks/2020-11-23/)

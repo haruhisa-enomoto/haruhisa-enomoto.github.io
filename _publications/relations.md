@@ -15,4 +15,4 @@ My attempt to unify results on the relation between representation-finiteness an
 ## Presentation material
 
 - [Report (Japanese)](/files/Kanron2018.pdf), [Slide](/files/Kanron2018slide.pdf) from [this talk](/talks/2018-09-20/)
-- [Report (Japanese)](\files\wakate2018.pdf) from [this talk](/talks/2018-03-07/)
+- [Report (Japanese)](/files/wakate2018.pdf) from [this talk](/talks/2018-03-07/)

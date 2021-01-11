@@ -16,4 +16,4 @@ I consider when an exact category satisfies the Jordan-H&ouml;lder property, (JH
 - [Short talk Video in VR (Japanese)](https://www.youtube.com/watch?v=j5d-yfNYWbg) from [this talk](/talks/2019-09-17/)
 - [Proceeding (Japanese)](/files/rims2019.pdf) from [this talk](/talks/2019-10-28/)
 - [Talk Video in VR (Japanese)](https://www.youtube.com/watch?v=FpIfGVr5OcA),
-[Report (Japanese)](\files\mathsci2020report.pdf) from [this talk](/talks/2020-03-10/), intended to talk to non-specialized young students.
+[Report (Japanese)](/files/mathsci2020report.pdf) from [this talk](/talks/2020-03-10/), intended to talk to non-specialized young students.

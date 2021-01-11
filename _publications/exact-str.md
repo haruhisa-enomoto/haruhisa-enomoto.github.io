@@ -22,4 +22,4 @@ Also Auslander-Reiten theory for exact categories are studied.
 ## Presentation material
 
 - [Slide](/files/Kanron2017slide.pdf), [Report](/files/Kanron2017.pdf) from [this talk](/talks/2017-10-09/)
-- [Slide](\files\ICRA2018.pdf) from [ICRA 2018](/talks/2018-08-15/)
+- [Slide](/files/ICRA2018.pdf) from [ICRA 2018](/talks/2018-08-15/)
