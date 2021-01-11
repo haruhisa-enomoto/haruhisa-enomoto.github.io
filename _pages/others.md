@@ -42,7 +42,7 @@ I do NOT guarantee the rigorousness of the following notes.
   可換環上の加群やそれ上のネーター代数について、自分なりに整理してまとめようとしたメモ（書きかけ）です。可換環の次元についてやら、Bass数についてやら、可換環上のCM整環やらについて。中途半端に終っています。
 
 ## Programs
-I'm a beginner in Python and Sage.
+I'm a beginner in Python and Sage. Some programs will be available in the near future...
 
 ### Nakayama algebras
 I'm now developing a Python code which focus on the representation theory of **Nakayama algebras** such that we can deal with
@@ -51,4 +51,4 @@ I'm now developing a Python code which focus on the representation theory of **N
 - Categorical invariants of subcategories (simple, projective, injective objects and so on)
 - Particular modules (tau-tilting modules, wide tau-tilting modules) and their mutations.
 
-This will be available on this page in the near future.
+This will be available on this page and [github](https://github.com/haruhisa-enomoto) in the near future.
