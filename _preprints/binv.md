@@ -13,4 +13,4 @@ As a generalization of the study of torsion-free classes over type A quiver in [
 ## Presentation materials
 - [Talk notes (7.5MB)](/files/mods2020eno.pdf),
 [Talk Video (Japanese, Rehearsal)](https://www.youtube.com/watch?v=7yYvRPlmuB4) from [this talk](/talks/2020-05-08/)
-- [Talk slide](/files/2016-06-18.pdf) from [FD seminar](/talks/2020-06-18/)
+- [Talk slide](/files/2020-06-18.pdf) from [FD seminar](/talks/2020-06-18/)
