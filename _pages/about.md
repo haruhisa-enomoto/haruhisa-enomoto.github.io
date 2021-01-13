@@ -25,7 +25,7 @@ For more details, see [CV](/cv/). Here is [my old website](http://www.math.nagoy
 - Auslander-Reiten theory (via functor categories)
 - Quillen's exact categories, extriangulated categories
 - Subcategories of module categories (classifications and their properties as exact categories)
-- tau-tilting theory
+- $\tau$-tilting theory
 - Combinatorial & computational aspects
 
 ## Position
