@@ -18,3 +18,5 @@ Using this, we show that *ICE-closed subcategories are precisely torsion classes
 - [Slide (without handwriting)](/files/ICRA2020.pdf),
 [Slide (with handwriting)](/files/ICRA2020-new.pdf),
 [Talk Video (recording)](https://youtu.be/rRise7HzqS8) from [ICRA 2020 online](/talks/2020-11-23/)
+- [Talk note (4.4MB)](/files/2021-01-14.pdf),
+[Talk Video (Rehearsal)](https://www.youtube.com/watch?v=Hvr4Yjj_HMM) from [this talk](/talks/2021-01-14/)
