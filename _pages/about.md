@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a postdoc at
+I am Haruhisa Enomoto (榎本 悠久 in Japanese), a postdoc at
 [Graduate School of Mathematics](http://www.math.nagoya-u.ac.jp/en/index.html),
 [Nagoya University](http://en.nagoya-u.ac.jp/) in Japan.
 
