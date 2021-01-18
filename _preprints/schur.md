@@ -1,6 +1,5 @@
 ---
 title: 'Schur''s lemma for exact categories implies abelian'
-collection: preprints
 excerpt: 'I proved the title.'
 date: 2020-02-21
 arxiv: '2002.09241'

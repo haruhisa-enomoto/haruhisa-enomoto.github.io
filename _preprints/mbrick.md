@@ -1,6 +1,5 @@
 ---
 title: "Monobrick, a uniform approach to torsion-free classes and wide subcategories"
-collection: preprints
 excerpt: 'Motivated by the study of simple objects of exact categories, I proposed the notion of monobricks, which enables us to study wide subcategories and torsion-free classes simultaneously.'
 date: 2020-05-04
 arxiv: '2005.01626'

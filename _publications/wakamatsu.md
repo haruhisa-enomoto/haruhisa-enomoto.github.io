@@ -1,6 +1,5 @@
 ---
 title: "Classifying exact categories via Wakamatsu tilting"
-collection: publications
 excerpt: 'Study the Morita type theorem for exact categories. The Ext-perpendicular category of cotilting modules are precisely exact category with progen & inj cogen & higher kernels.'
 date: 2017-09-01
 venue: 'J. Algebra'
