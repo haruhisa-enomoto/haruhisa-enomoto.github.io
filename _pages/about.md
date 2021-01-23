@@ -30,3 +30,7 @@ For more details, see [CV](/cv/). Here is [my old website](http://www.math.nagoy
 
 ## Position
 [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) (changed from DC1 by obtaining doctoral degree) at Nagoya University. My host researcher is Hiroyuki Nakaoka.
+
+## Update history
+- 2021-01-23: Make [SageMath codes](/code/) page, and add [kappa-map-for-lattices](https://github.com/haruhisa-enomoto/kappa-map-for-lattices) repository there.
+- 2021-01-17: [Bruhat inversion paper](/papers/binv/) was published (online).

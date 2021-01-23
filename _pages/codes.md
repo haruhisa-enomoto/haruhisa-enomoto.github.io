@@ -7,7 +7,9 @@ author_profile: true
 
 {% include base_path %}
 
-# Kappa-maps-for-lattices
+I'm a beginner of Python and SageMath...
+
+## Kappa-maps-for-lattices
 This adds methods to
 a Sage class [`FiniteLatticePoset`](https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/posets/lattices.html#sage.combinat.posets.lattices.FiniteLatticePoset)
 which compute the (extended) kappa (dual) map.
