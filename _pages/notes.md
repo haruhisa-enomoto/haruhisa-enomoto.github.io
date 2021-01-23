@@ -1,15 +1,13 @@
 ---
 layout: archive
-title: "Notes and programs"
-permalink: /others/
+title: "Notes"
+permalink: /notes/
 author_profile: true
 ---
 
 {% include base_path %}
 
-## Notes
-
-### Theses
+## Theses
 - Bachelor thesis: [On categories of modules over locular categories (in Japanese)](/files/sotsuron.pdf).
 
   Contents:
@@ -30,8 +28,8 @@ author_profile: true
   - [Monobrick, a uniform approach to torsion-free classes and wide subcategories](/papers/mbrick/)
   - [Rigid modules and ICE-closed subcategories in quiver representations](/papers/rigidICE/)
 
-## Notes (in Japanese)
-I do NOT guarantee the rigorousness of the following notes.
+## Notes (mainly in Japanese)
+I do **NOT** guarantee the rigorousness of the following notes.
 
 - [Grothendieckアーベル圏の基礎事項(未完), (Basics on Grothendieck abelian categories)](/files/GrothendieckAbelian0205.pdf), last modified: 2019-02-05.
 
@@ -40,17 +38,3 @@ I do NOT guarantee the rigorousness of the following notes.
 - [可換環上の（非可換）代数上の加群のメモ（未完）, (Notes on modules over non-commutative algebras over a commutative ring)](/files/comm-order1205.pdf), last modified: 2019-12-05.
 
   可換環上の加群やそれ上のネーター代数について、自分なりに整理してまとめようとしたメモ（書きかけ）です。可換環の次元についてやら、Bass数についてやら、可換環上のCM整環やらについて。中途半端に終っています。
-
-## Programs
-I'm a beginner in Python and Sage math. Some programs will be available in the near future...
-
-### In preparation
-
-#### Nakayama algebras
-A Python code which focuses on the representation theory of **Nakayama algebras** such that we can deal with various subcategories and their properties.
-
-#### Preprojective algebras of Dynkin type
-A Sage math code which can deal with torsion classes, torsion-free classes, bricks and brick labeling, and simple objects of torsion(-free) classes, the validity of (JHP), and so on.
-
-#### From torsion class to ICE-closed subcategories
-A Sage math code which can compute the number of ICE-closed subcategories over a $\tau$-tilting finite algebra when the poset of torsion classes are given. Maybe I expect that we can also determine the poset structure.
