@@ -18,7 +18,7 @@ This module makes a data which we can use to construct and study the lattice of 
 
 
 
-## Kappa-maps-for-lattices
+## Kappa maps for lattices
 This adds methods to
 a Sage class [`FiniteLatticePoset`](https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/posets/lattices.html#sage.combinat.posets.lattices.FiniteLatticePoset)
 which compute the (extended) kappa (dual) map.
