@@ -35,9 +35,9 @@ I do **NOT** guarantee the rigorousness of the following notes.
 
   Grothendieckアーベル圏やアーベル圏一般論についての自分用の昔に書いたまとめ（書きかけ）です。アーベル圏の局所化やAb条件や、関連する束論（モジュラー束とか）についてフランクに書いてます。気が向いたらせめてGabriel-Popescuくらいまではやりたいですが気力がないので誰か続きを書いてください。
 
-- [可換環上の（非可換）代数上の加群のメモ（未完）, (Notes on modules over non-commutative algebras over a commutative ring)](/files/comm-order1205.pdf), last modified: 2019-12-05.
+- [可換環上の（非可換）代数上の加群のメモ（未完）, (Notes on modules over non-commutative algebras over a commutative ring)](/files/comm-order0218.pdf), last modified: 2021-02-18.
 
-  可換環上の加群やそれ上のネーター代数について、自分なりに整理してまとめようとしたメモ（書きかけ）です。可換環の次元についてやら、Bass数についてやら、可換環上のCM整環やらについて。中途半端に終っています。
+  可換環上の加群やそれ上のネーター代数について、自分なりに整理してまとめようとしたメモ（書きかけ）です。可換環の次元についてやら、Bass数についてやら、可換環上のCM整環やらについて。2021-02-18に正準加群とCM圏の正準双対について加筆しました(14節)。
 
 -[Mathlogの記事](https://mathlog.info/users/902/articles)
   多元環の表現論のfolkloreっぽいことや小ネタや小技やネタ記事などを投稿していたりします。
