@@ -4,6 +4,7 @@ excerpt: 'Unify bijections of the form "Interval poset of torsion pairs is isomo
 date: 2021-03-18
 arxiv: '2103.09549'
 citation: 'T. Adachi, H. Enomoto, M. Tsukamoto, Intervals of $s$-torsion pairs in extriangulated categories with negative first extensions, arXiv:2103.09549.'
+joint: 'T. Adachi and M. Tsukamoto'
 ---
 
 ## Comment

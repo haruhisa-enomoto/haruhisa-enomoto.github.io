@@ -4,6 +4,7 @@ excerpt: 'Study Image-Cokernel-Extension closed subcategories of module categori
 date: 2020-10-12
 arxiv: '2010.05433'
 citation: 'H. Enomoto, A. Sakai, ICE-closed subcategories and wide &tau;-tilting modules, arXiv:2005.13381.'
+joint: 'A. Sakai'
 ---
 
 ## Comment
