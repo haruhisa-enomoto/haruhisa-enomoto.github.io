@@ -10,7 +10,7 @@ redirect_from:
 
 I am Haruhisa Enomoto (榎本 悠久 in Japanese), a postdoc at
 [Graduate School of Science](https://www.osakafu-u.ac.jp/en/academics/graduate/g_science/),
-[Osaka Prefecture University](http://en.nagoya-u.ac.jp/) in Japan.
+[Osaka Prefecture University](https://www.osakafu-u.ac.jp/en/) in Japan.
 
 **I moved from Nagoya to Osaka Pref. Univ. since April 2021.**
 
