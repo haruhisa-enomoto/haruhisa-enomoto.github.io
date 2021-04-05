@@ -16,8 +16,7 @@ I am Haruhisa Enomoto (榎本 悠久 in Japanese), a postdoc at
 
 E-mail:
 m16009t [at] math.nagoya-u.ac.jp
-
-*I can use this Nagoya e-mail address, but later I'll change a new e-mail address when I will get it.*
+*(I can still use this Nagoya e-mail address, but later I'll change a new e-mail address when I will get it.)*
 
 For more details, see [CV](/cv/). Here is [my old website](http://www.math.nagoya-u.ac.jp/~m16009t/), which will *not* be updated.
 
@@ -38,7 +37,7 @@ For more details, see [CV](/cv/). Here is [my old website](http://www.math.nagoy
 ## Update history
 - 2021-04-05:
   - Update my affiliation
-  - [Bruhat inversion paper](/papers/binv/) was published (online)
+  - [Extriangulated structure paper](/papers/et-str/) was published (online)
 - 2021-03-18: Add new preprint [Intervals of s-torsion pairs in extriangulated categories with negative first extensions](/papers/stors/) (jt with T. Adachi and M. Tsukamoto).
 - 2021-02-18: Update [Notes on Cohen-Macaualy orders](/files/comm-order0218.pdf) (Japanese).
 - 2021-01-24: Add "StrinsApplet to SageMath converter" to [SageMath codes](/codes/) page.
