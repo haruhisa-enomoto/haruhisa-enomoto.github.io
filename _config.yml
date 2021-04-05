@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Haruhisa Enomoto"
 title_separator          : "-"
 name                     : &name "Haruhisa Enomoto"
-description              : &description "Postdoc at Nagoya Univ."
+description              : &description "Postdoc at Osaka Pref. Univ."
 url                      : https://haruhisa-enomoto.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "haruhisa-enomoto/haruhisa-enomoto.github.io"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Haruhisa Enomoto"
   avatar           : "profile.jpg"
-  bio              : "Postdoc at Nagoya Univ."
-  location         : "Nagoya, Japan"
+  bio              : "Postdoc at Osaka Pref. Univ."
+  location         : "Osaka, Japan"
   employer         : "JSPS Fellow (PD)"
   pubmed           :
   googlescholar    :
