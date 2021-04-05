@@ -5,7 +5,7 @@ date: 2021-01-17
 venue: 'Comm. Algebra'
 paperurl: 'https://doi.org/10.1080/00927872.2020.1866592'
 arxiv: '2002.09205'
-citation: 'H. Enomoto, Bruhat inversions in Weyl groups and torsion-free classes over preprojective algebras, to appear in Comm. Algebra.'
+citation: 'H. Enomoto, Bruhat inversions in Weyl groups and torsion-free classes over preprojective algebras, Comm. Algebra 49 (2021), no. 5, 2156--2189.'
 ---
 
 ## Comment
