@@ -32,6 +32,7 @@ For more details, see [CV](/cv/). Here is [my old website](http://www.math.nagoy
 [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) (changed from DC1 by obtaining doctoral degree) at Nagoya University. My host researcher is Hiroyuki Nakaoka.
 
 ## Update history
+- 2021-03-18: Add new preprint [Intervals of s-torsion pairs in extriangulated categories with negative first extensions](/papers/stors/) (jt with T. Adachi and M. Tsukamoto).
 - 2021-02-18: Update [Notes on Cohen-Macaualy orders](/files/comm-order0218.pdf) (Japanese).
 - 2021-01-24: Add "StrinsApplet to SageMath converter" to [SageMath codes](/codes/) page.
 - 2021-01-23: Make [SageMath codes](/codes/) page, and add [kappa-map-for-lattices](https://github.com/haruhisa-enomoto/kappa-map-for-lattices) repository there.
