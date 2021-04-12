@@ -14,11 +14,14 @@ I am Haruhisa Enomoto (榎本 悠久 in Japanese), a postdoc at
 
 **I moved from Nagoya to Osaka Pref. Univ. since April 2021.**
 
-E-mail:
-m16009t [at] math.nagoya-u.ac.jp
-*(I can still use this Nagoya e-mail address, but later I'll change a new e-mail address when I will get it.)*
+** New ** E-mail:
+the35883 [at] osakafu-u.ac.jp
 
-For more details, see [CV](/cv/). Here is [my old website](http://www.math.nagoya-u.ac.jp/~m16009t/), which will *not* be updated.
+(Old: m16009t [at] math.nagoya-u.ac.jp,
+*I can still use and check this Nagoya e-mail address,
+  but it will probably be unusable in the near future.)*
+
+For more details, see [CV](/cv/).
 
 ## Research Areas
 - Representation theory of algebras (artin algebras, noetherian algebras)
@@ -35,6 +38,7 @@ For more details, see [CV](/cv/). Here is [my old website](http://www.math.nagoy
 [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) at Osaka Prefecture University. My host researcher is [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en).
 
 ## Update history
+- 2021-04-12: **Update E-mail**
 - 2021-04-05:
   - Update my affiliation
   - [Extriangulated structure paper](/papers/et-str/) was published (online)
