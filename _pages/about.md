@@ -14,7 +14,7 @@ I am Haruhisa Enomoto (榎本 悠久 in Japanese), a postdoc at
 
 **I moved from Nagoya to Osaka Pref. Univ. since April 2021.**
 
-** New ** E-mail:
+**New E-mail**:
 the35883 [at] osakafu-u.ac.jp
 
 (Old: m16009t [at] math.nagoya-u.ac.jp,
