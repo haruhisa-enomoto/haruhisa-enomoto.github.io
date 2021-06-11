@@ -38,6 +38,7 @@ For more details, see [CV](/cv/).
 [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) at Osaka Prefecture University. My host researcher is [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en).
 
 ## Update history
+- 2021-06-11: [Schur implies abelian](/papers/schur/) has been published.
 - 2021-04-12: **Update E-mail**
 - 2021-04-05:
   - Update my affiliation
