@@ -38,7 +38,8 @@ For more details, see [CV](/cv/).
 [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) at Osaka Prefecture University. My host researcher is [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en).
 
 ## Update history
-- 2021-06-11: [Schur implies abelian](/papers/schur/) has been published.
+- 2021-06-24: [ICE-closed subcats and wide $\tau$-tilting paper](/papers/ice/) (jt with A. Sakai) was published in Math. Z.
+- 2021-06-11: [Schur implies abelian](/papers/schur/) was published in J. Algebra.
 - 2021-04-12: **Update E-mail**
 - 2021-04-05:
   - Update my affiliation
@@ -47,4 +48,4 @@ For more details, see [CV](/cv/).
 - 2021-02-18: Update [Notes on Cohen-Macaualy orders](/files/comm-order0218.pdf) (Japanese).
 - 2021-01-24: Add "StrinsApplet to SageMath converter" to [SageMath codes](/codes/) page.
 - 2021-01-23: Make [SageMath codes](/codes/) page, and add [kappa-map-for-lattices](https://github.com/haruhisa-enomoto/kappa-map-for-lattices) repository there.
-- 2021-01-17: [Bruhat inversion paper](/papers/binv/) was published.
+- 2021-01-17: [Bruhat inversion paper](/papers/binv/) was published in Comm. Algebra.

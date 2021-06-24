@@ -1,9 +1,11 @@
 ---
 title: "ICE-closed subcategories and wide &tau;-tilting modules"
 excerpt: 'Study Image-Cokernel-Extension closed subcategories of module categories using the poset of torsion classes and &tau;-tilting theory.'
-date: 2020-10-12
+date: 2021-06-23
+venue: 'Math. Z.'
 arxiv: '2010.05433'
-citation: 'H. Enomoto, A. Sakai, ICE-closed subcategories and wide &tau;-tilting modules, arXiv:2005.13381.'
+paperurl: 'https://doi.org/10.1007/s00209-021-02796-6'
+citation: 'H. Enomoto, A. Sakai, ICE-closed subcategories and wide &tau;-tilting modules, to appear in Math. Z.'
 joint: 'A. Sakai'
 ---
 
