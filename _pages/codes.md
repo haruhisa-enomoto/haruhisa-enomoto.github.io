@@ -10,7 +10,7 @@ author_profile: true
 I'm a beginner of Python and [SageMath](https://www.sagemath.org/)...
 
 ## StringApplet to SageMath converter
-This enables us to import the **lattice of torsion classes** in SageMath from **[String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/)**. [String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/) can compute the Hasse quiver of torsion classes for a inputted algebra (which should be representation-finite special biserial).
+This enables us to import the **lattice of torsion classes** in SageMath from **[String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/)**. [String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/) can compute the Hasse quiver of torsion classes for an inputted algebra (which should be representation-finite special biserial).
 This module makes a data which we can use to construct and study the lattice of torsion classes in SageMath (e.g. the kappa map below), from the tex file exported by String Applet.
 
 - [GitHub Repository](https://github.com/haruhisa-enomoto/StringApplet-to-SageMath-converter)
