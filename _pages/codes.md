@@ -7,7 +7,18 @@ author_profile: true
 
 {% include base_path %}
 
-I'm a beginner of Python and [SageMath](https://www.sagemath.org/)...
+I'm interested in realizing and expressing various objects in the representation theory of algebra using computer, especially using [SageMath](https://www.sagemath.org/).
+
+## The lattice of torsion classes in SageMath
+This enables us to compute and construct various objects from the lattice of torsion classes of a &tau;-tilting finite algebra in SageMath. Internally, this defines a class `FiniteTorsLattice`, which is a subclass of a SageMath class for finite lattices: [`FiniteLatticePoset`](https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/posets/lattices.html#sage.combinat.posets.lattices.FiniteLatticePoset).
+
+Once you input the lattice of torsion classes (e.g. using my [StringApplet-to-SageMath-converter](https://github.com/haruhisa-enomoto/StringApplet-to-SageMath-converter) below), this program can compute (or construct) various objects which naturally arise in the representation theory of algebras in SageMath, such as the lattice of wide subcategories, the lattice of ICE-closed subcategories, the simplicial complex of support &tau;-tilting modules, and the number of indecomposable Ext-projectives of each torsion class or a heart of each interval, and so on.
+
+- [GitHub Repository](https://github.com/haruhisa-enomoto/tors-lattice)
+- [Manual](https://nbviewer.jupyter.org/github/haruhisa-enomoto/tors-lattice/blob/main/Manual.ipynb)
+
+*(TO DO: write a user's guide for representation-theorists)*
+
 
 ## StringApplet to SageMath converter
 This enables us to import the **lattice of torsion classes** in SageMath from **[String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/)**. [String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/) can compute the Hasse quiver of torsion classes for an inputted algebra (which should be representation-finite special biserial).
@@ -15,7 +26,6 @@ This module makes a data which we can use to construct and study the lattice of 
 
 - [GitHub Repository](https://github.com/haruhisa-enomoto/StringApplet-to-SageMath-converter)
 - [Manual](https://nbviewer.jupyter.org/github/haruhisa-enomoto/StringApplet-to-SageMath-converter/blob/main/Manual.ipynb)
-
 
 
 ## Kappa maps for lattices
