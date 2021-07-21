@@ -14,8 +14,9 @@ This enables us to compute and construct various objects from the lattice of tor
 
 Once you input the lattice of torsion classes (e.g. using my [StringApplet-to-SageMath-converter](https://github.com/haruhisa-enomoto/StringApplet-to-SageMath-converter) below), this program can compute (or construct) various objects which naturally arise in the representation theory of algebras in SageMath, such as the lattice of wide subcategories, the lattice of ICE-closed subcategories, the simplicial complex of support &tau;-tilting modules, and the number of indecomposable Ext-projectives of each torsion class or a heart of each interval, and so on.
 
-- [GitHub Repository](https://github.com/haruhisa-enomoto/tors-lattice)
+- [tors_lattice.py](/files/tors_lattice.py)
 - [Manual](https://nbviewer.jupyter.org/github/haruhisa-enomoto/tors-lattice/blob/main/Manual.ipynb)
+- [GitHub Repository](https://github.com/haruhisa-enomoto/tors-lattice)
 
 *(TO DO: write a user's guide for representation-theorists)*
 
