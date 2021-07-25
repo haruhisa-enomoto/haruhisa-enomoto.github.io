@@ -1,3 +1,11 @@
+"""
+This program enables us to import the lattice of torsion classes in SageMath from
+Jan Geuenich's String Applet:
+https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/
+"""
+# GitHub Repository:
+# https://github.com/haruhisa-enomoto/StringApplet-to-SageMath-converter
+
 import re
 
 def SAtoSage(tex_path):
@@ -61,6 +69,9 @@ def SAtoSage(tex_path):
 def export(tex_path, output_path):
     r"""
     Write data to a new file.
+
+    The content of the created file is ``data = ...``,
+    where ``...`` is a data from which we can construct a poset.
 
     INPUT:
 
