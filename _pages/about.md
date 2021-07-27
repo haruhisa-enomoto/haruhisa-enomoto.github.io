@@ -38,15 +38,15 @@ For more details, see [CV](/cv/).
 [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) at Osaka Prefecture University. My host researcher is [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en).
 
 ## Update history
+
+- 2021-07-26: I gave a talk [Computing various objects of an algebra from the poset of torsion classes](/talks/2021-07-26/).
 - 2021-07-20: Add "The lattice of torsion classes in SageMath" to [SageMath codes](/codes/) page.
-- 2021-06-24: [ICE-closed subcats and wide $\tau$-tilting paper](/papers/ice/) (jt with A. Sakai) was published in Math. Z.
-- 2021-06-11: [Schur implies abelian](/papers/schur/) was published in J. Algebra.
+- 2021-06-24: [ICE-closed subcats and wide $\tau$-tilting paper](/papers/ice/) (jt with A. Sakai) was published.
+- 2021-06-11: [Schur implies abelian](/papers/schur/) was published
 - 2021-04-12: **Update E-mail**
-- 2021-04-05:
-  - Update my affiliation
-  - [Extriangulated structure paper](/papers/et-str/) was published (online)
+- 2021-04-05: Update my affiliation and [Extriangulated structure paper](/papers/et-str/) was published.
 - 2021-03-18: Add new preprint [Intervals of s-torsion pairs in extriangulated categories with negative first extensions](/papers/stors/) (jt with T. Adachi and M. Tsukamoto).
 - 2021-02-18: Update [Notes on Cohen-Macaualy orders](/files/comm-order0218.pdf) (Japanese).
 - 2021-01-24: Add "StrinsApplet to SageMath converter" to [SageMath codes](/codes/) page.
-- 2021-01-23: Make [SageMath codes](/codes/) page, and add [kappa-map-for-lattices](https://github.com/haruhisa-enomoto/kappa-map-for-lattices) repository there.
-- 2021-01-17: [Bruhat inversion paper](/papers/binv/) was published in Comm. Algebra.
+- 2021-01-23: Make [SageMath codes](/codes/) page, and add "kappa map in Sage".
+- 2021-01-17: [Bruhat inversion paper](/papers/binv/) was published.
