@@ -17,8 +17,8 @@ Once you input the lattice of torsion classes (e.g. using my [StringApplet-to-Sa
 - [tors_lattice.py](/files/tors_lattice.py)
 - [Manual](https://nbviewer.jupyter.org/github/haruhisa-enomoto/tors-lattice/blob/main/Manual.ipynb)
 - [GitHub Repository](https://github.com/haruhisa-enomoto/tors-lattice)
-
-*(TO DO: write a user's guide for representation-theorists)*
+- [An introduction video](https://www.youtube.com/watch?v=2-y1a-_zEEA) based on the second part of [my talk](/talks/2021-07/26/)
+- [A Demo Notebook](https://nbviewer.jupyter.org/urls/haruhisa-enomoto.github.io/files/OCAMI_Demo.ipynb) used in the above video, and its [ipynb file](/files/OCAMI_Demo.ipynb)
 
 
 ## StringApplet to SageMath converter
