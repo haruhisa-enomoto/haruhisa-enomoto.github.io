@@ -17,9 +17,9 @@ Once you input the lattice of torsion classes (e.g. using my [StringApplet-to-Sa
 - [tors_lattice.py](/files/tors_lattice.py)
 - [Manual](https://nbviewer.jupyter.org/github/haruhisa-enomoto/tors-lattice/blob/main/Manual.ipynb)
 - [GitHub Repository](https://github.com/haruhisa-enomoto/tors-lattice)
-- [An introduction video](https://www.youtube.com/watch?v=2-y1a-_zEEA) based on the second part of [my talk](/talks/2021-07/26/)
+- [An introduction video](https://www.youtube.com/watch?v=2-y1a-_zEEA) based on the second part of [my talk](/talks/2021-07-26/)
+- [Slides](/files/OCAMI0726.pdf) used in the above video
 - [A Demo Notebook](https://nbviewer.jupyter.org/urls/haruhisa-enomoto.github.io/files/OCAMI_Demo.ipynb) used in the above video, and its [ipynb file](/files/OCAMI_Demo.ipynb)
-
 
 ## StringApplet to SageMath converter
 This enables us to import the **lattice of torsion classes** in SageMath from **[String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/)**. [String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/) can compute the Hasse quiver of torsion classes for an inputted algebra (which should be representation-finite special biserial).
