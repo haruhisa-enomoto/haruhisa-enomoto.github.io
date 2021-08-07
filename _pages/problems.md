@@ -45,3 +45,13 @@ In this page, I raise some problems in the representation theory of algebras, wh
 
 - Characterize the number of Hasse arrows starting at an ICE-closed subcategory in the poset of ICE-closed subcategories, or characterize a Hasse arrow (minimal inclusion of ICE-closed subcategories). In the poset of torsion classes, the number of arrows starting at a torsion class is equal to the number of indecomposable split projective objects (for $\tau$-tilting finite case). I and Sakai conjectured that the number of Hasse arrows is equal to the number of indecomposable projective objects in the case of ICE-closed subcategories, which are true for Dynkin path algebras (by [our paper](/papers/ice/)) and Nakayama algebras (in preparation), but the computer experiment shows that this conjecture is not true in general. Thus
   - Is there any class of algebras such that this conjecture is true?
+
+# Lean Theorem Prover
+**Teaching Auslander-Reiten theory to computer** using [Lean](https://leanprover.github.io/), see also [Lean community](https://leanprover-community.github.io/), and a very good introductory material [Formalising Mathematics](https://github.com/ImperialCollegeLondon/formalising-mathematics)
+
+# SageMath
+- Create a system which can deal with the Auslander-Reiten quivers as translation quivers. In particular, compute the dimension of Hom spaces using AR quiver.
+- Create or modify programs which enables us to deal with string and band modules over special biserial (or string) algebras.
+- More concretely, develop a SageMath version of [String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/)!
+
+I know that [QPA](https://folk.ntnu.no/oyvinso/QPA/) are useful, but I think there's no special functions which can applied to special biserial, string, gentle algebras. Since SageMath can deal with other materials including posets, polytopes, lattices, root system, and so on (and since it's written in Python), I hope that special computational experiments on e.g. string algebras can be done inside SageMath.
