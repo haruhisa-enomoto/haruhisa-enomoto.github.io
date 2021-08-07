@@ -14,9 +14,9 @@ In this page, I raise some problems in the representation theory of algebras, wh
 ## On the Grothendieck monoid
 
 
-- Compute the Grothendieck monoids of a special class of exact categories, for example, torsion(-free) classes over path algebras of Dynkin, or even type A. In particular, are these monoids reduced?
+- Compute the Grothendieck monoids of a special class of exact categories, for example, torsion(-free) classes over path algebras of Dynkin type, or even type A. In particular, are these monoids reduced?
 
-- We can define the Grothendieck monoids of extriangualted categories. It seems that triangulated categories behave in contrast with respect to the Grothendieck monoid, e.g. the Grothendieck monoid of exact categories is always reduced (invertible element is only 0), but every element is invertible in the Grothendieck monoid of triangulated category. Therefore,
+- We can define the Grothendieck monoids of extriangualted categories. It seems that triangulated categories behave in contrast to exact categories with respect to the Grothendieck monoid, e.g. the Grothendieck monoid of exact categories is always reduced (invertible element is only 0), but every element is invertible in the Grothendieck monoid of triangulated category. Therefore,
   - Is there any way to compute the Grothendieck monoids of extriangulated categories (at least those embedded in some triangulated categories)?
   - Is there any characterization of objects whose images in the Grothendieck monoid are invertible?
   - Since the Grothendieck monoid is a commutative monoid, it is a direct sum of an abelian group and a reduced group in a unique way. It would be very nice if such a factorization can be realized categorically (e.g. describe an extriangulated category as a some kind of semi-direct product of a trignaulted category and an exact category).
