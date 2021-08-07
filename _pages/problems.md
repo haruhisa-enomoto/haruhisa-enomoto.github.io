@@ -35,21 +35,21 @@ In this page, I raise some problems in the representation theory of algebras, wh
   - To what extent can we generalize many papers on the poset of torsion classes over artin algebras?
   - It is interesting to investigate torsion classes in the category of modules with finite length over non-artinian ring (e.g. commutative Cohen-Macaulay ring, etc).
 
-# On the lattice of wide subcategories
+## On the lattice of wide subcategories
 
 - By computer computation, I conjecture that for $\tau$-tilting fintie case, the lattice of wide subcategory is strongly Sperner, see [my talk](/talks/2021-07-26/). Since the non-crossing partition lattice and the shard intersection lattice are realized as lattices of wide subcategories, this will unify several known results by combinatorialists.
 - Or are there more properties such that the lattice of wide subcategory has? Especially, what can be said if we consider $\tau$-tilting infinite case, or we only consider left finite wide subcategories?
 - For the hereditary case, there is a self-duality on the lattice of wide subcategories. For a general algebra $\Lambda$, is there any algebra $\Gamma$ such that the lattices of wide subcategories over $\Lambda$ and $\Gamma$ are dual to each other? This will make things easier to deal with.
 
-# On ICE-closed subcategories
+## On ICE-closed subcategories
 
 - Characterize the number of Hasse arrows starting at an ICE-closed subcategory in the poset of ICE-closed subcategories, or characterize a Hasse arrow (minimal inclusion of ICE-closed subcategories). In the poset of torsion classes, the number of arrows starting at a torsion class is equal to the number of indecomposable split projective objects (for $\tau$-tilting finite case). I and Sakai conjectured that the number of Hasse arrows is equal to the number of indecomposable projective objects in the case of ICE-closed subcategories, which are true for Dynkin path algebras (by [our paper](/papers/ice/)) and Nakayama algebras (in preparation), but the computer experiment shows that this conjecture is not true in general. Thus
   - Is there any class of algebras such that this conjecture is true?
 
-# Lean Theorem Prover
+## Lean Theorem Prover
 **Teaching Auslander-Reiten theory to computer** using [Lean](https://leanprover.github.io/), see also [Lean community](https://leanprover-community.github.io/), and a very good introductory material [Formalising Mathematics](https://github.com/ImperialCollegeLondon/formalising-mathematics)
 
-# SageMath
+## SageMath
 - Create a system which can deal with the Auslander-Reiten quivers as translation quivers. In particular, compute the dimension of Hom spaces using AR quiver.
 - Create or modify programs which enables us to deal with string and band modules over special biserial (or string) algebras.
 - More concretely, develop a SageMath version of [String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/)!
