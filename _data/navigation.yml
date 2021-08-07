@@ -21,6 +21,9 @@ main:
   - title: "SageMath codes"
     url: /codes/
 
+  - title: "Problems"
+    url: /problems/
+
   - title: "CV"
     url: /cv/
 
