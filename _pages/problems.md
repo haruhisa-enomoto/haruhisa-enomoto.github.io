@@ -11,7 +11,7 @@ In this page, I raise some problems in the representation theory of algebras, wh
 
 **I DO NOT claim the originality of the problems below**, hence you're free to solve and write papers about them. But I'm happy if you contact me if you have some ideas to approach these problems.
 
-## On the Grothendieck monoid
+## Grothendieck monoid
 
 
 - Compute the Grothendieck monoids of a special class of exact categories, for example, torsion(-free) classes over path algebras of Dynkin type, or even type A. In particular, are these monoids reduced?
@@ -21,7 +21,10 @@ In this page, I raise some problems in the representation theory of algebras, wh
   - Is there any characterization of objects whose images in the Grothendieck monoid are invertible?
   - Since the Grothendieck monoid is a commutative monoid, it is a direct sum of an abelian group and a reduced group in a unique way. It would be very nice if such a factorization can be realized categorically (e.g. describe an extriangulated category as a some kind of semi-direct product of a trignaulted category and an exact category).
 
-## On the lattice of torsion classes
+## Torsion classes
+
+- Is there an analogue of $\tau$-tilting theory for exact categories?
+More precisely, can we classify torsion classes of exact categories using projective objects?
 
 - Is there a purely poset-theoretical characterization of torsion classes in the poset of torsion classes which are
   - functorially finite?
@@ -35,16 +38,24 @@ In this page, I raise some problems in the representation theory of algebras, wh
   - To what extent can we generalize many papers on the poset of torsion classes over artin algebras?
   - It is interesting to investigate torsion classes in the category of modules with finite length over non-artinian ring (e.g. commutative Cohen-Macaulay ring, etc).
 
-## On the lattice of wide subcategories
+## Wide subcategories
 
 - By computer computation, I conjecture that for $\tau$-tilting fintie case, the lattice of wide subcategory is strongly Sperner, see [my talk](/talks/2021-07-26/). Since the non-crossing partition lattice and the shard intersection lattice are realized as lattices of wide subcategories, this will unify several known results by combinatorialists.
 - Or are there more properties such that the lattice of wide subcategory has? Especially, what can be said if we consider $\tau$-tilting infinite case, or we only consider left finite wide subcategories?
 - For the hereditary case, there is a self-duality on the lattice of wide subcategories. For a general algebra $\Lambda$, is there any algebra $\Gamma$ such that the lattices of wide subcategories over $\Lambda$ and $\Gamma$ are dual to each other? This will make things easier to deal with.
+- Is there a combinatorial (or surface) model for the lattice of wide subcategories over gentle algebras?
 
-## On ICE-closed subcategories
+## ICE-closed subcategories
 
 - Characterize the number of Hasse arrows starting at an ICE-closed subcategory in the poset of ICE-closed subcategories, or characterize a Hasse arrow (minimal inclusion of ICE-closed subcategories). In the poset of torsion classes, the number of arrows starting at a torsion class is equal to the number of indecomposable split projective objects (for $\tau$-tilting finite case). I and Sakai conjectured that the number of Hasse arrows is equal to the number of indecomposable projective objects in the case of ICE-closed subcategories, which are true for Dynkin path algebras (by [our paper](/papers/ice/)) and Nakayama algebras (in preparation), but the computer experiment shows that this conjecture is not true in general. Thus
   - Is there any class of algebras such that this conjecture is true?
+
+- Is there a combinatorial (or surface) model for the lattice of wide subcategories over gentle algebras?
+- How many ICE-closed subcategories the preprojective algebras of Dynkin type have? Is there any Lie-theoretic interpretation of ICE-closed subcategories?
+
+## Extension-closed subcategories
+
+Is there any classes of subcategories which we can classify?
 
 ## Lean Theorem Prover
 **Teaching Auslander-Reiten theory to computer** using [Lean](https://leanprover.github.io/), see also [Lean community](https://leanprover-community.github.io/), and a very good introductory material [Formalising Mathematics](https://github.com/ImperialCollegeLondon/formalising-mathematics)
