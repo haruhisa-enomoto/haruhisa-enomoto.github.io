@@ -29,7 +29,7 @@ def SAtoSage(tex_path):
 
     """
 
-    with open(tex_path, "r") as f:
+    with open(tex_path, "r", encoding="utf-8") as f:
         lines_lst = f.readlines()
 
     # Cut out the needed part
@@ -83,5 +83,5 @@ def export(tex_path, output_path):
     """
 
     data = SAtoSage(tex_path)
-    with open(output_path, "x") as f:
+    with open(output_path, "x", encoding="utf-8") as f:
         f.write('data = ' + str(data))
