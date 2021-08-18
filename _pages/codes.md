@@ -23,7 +23,7 @@ Once you input the lattice of torsion classes (e.g. using my [StringApplet-to-Sa
 
 ## StringApplet to SageMath converter
 This enables us to import the **lattice of torsion classes** in SageMath from **[String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/)**. [String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/) can compute the Hasse quiver of torsion classes for an inputted algebra (which should be representation-finite special biserial).
-This module makes a data which we can use to construct and study the lattice of torsion classes in SageMath (e.g. the kappa map below), from the tex file exported by String Applet.
+This module makes a data which we can use to construct and study the lattice of torsion classes in SageMath (e.g. the kappa map below), from the TeX file exported by String Applet.
 
 - [converter.py](/files/converter.py)
 - [Manual](https://nbviewer.jupyter.org/github/haruhisa-enomoto/StringApplet-to-SageMath-converter/blob/main/Manual.ipynb)

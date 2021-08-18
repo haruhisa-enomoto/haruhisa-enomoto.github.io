@@ -33,7 +33,7 @@ redirect_from:
 * 2016 -- 2018: Master's course at [Graduate School of Mathematics](http://www.math.nagoya-u.ac.jp/en/index.html),
 [Nagoya University](http://en.nagoya-u.ac.jp/).
 
-* 2012 -- 2016: Undergraduate course at [School of Science](https://www.sci.nagoya-u.ac.jp/en/),[Nagoya University](http://en.nagoya-u.ac.jp/).
+* 2012 -- 2016: Undergraduate course at [School of Science](https://www.sci.nagoya-u.ac.jp/en/), [Nagoya University](http://en.nagoya-u.ac.jp/).
 
 ## Degree
 

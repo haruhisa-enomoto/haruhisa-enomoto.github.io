@@ -11,7 +11,7 @@ author_profile: true
 - Bachelor thesis: [On categories of modules over locular categories (in Japanese)](/files/sotsuron.pdf).
 
   Contents:
-  - Most of contents are probaly folklore. I considered the correspondence between semiperfect ring, Krull-Schmidt categories and their indecomposable parts in a functorial way, and studied a  **perfect** additive category, a category such that every module over it has a projective cover.
+  - Most of the contents are probably folklore. I considered the correspondence between semiperfect ring, Krull-Schmidt categories and their indecomposable parts in a functorial way, and studied a **perfect** additive category, a category such that every module over it has a projective cover.
 
 - Master thesis: [Relative Auslander correspondence via exact categories](/files/master_thesis.pdf), [Talk video in VR](https://youtu.be/ENQNdLAF_NE), [Talk slide](/files/mt0130.pdf).
 
@@ -39,5 +39,5 @@ I do **NOT** guarantee the rigorousness of the following notes.
 
   可換環上の加群やそれ上のネーター代数について、自分なりに整理してまとめようとしたメモ（書きかけ）です。可換環の次元についてやら、Bass数についてやら、可換環上のCM整環やらについて。2021-02-18に正準加群とCM圏の正準双対について加筆しました(14節)。
 
--[Mathlogの記事](https://mathlog.info/users/902/articles)
+- [Mathlogの記事](https://mathlog.info/users/902/articles)
   多元環の表現論のfolkloreっぽいことや小ネタや小技やネタ記事などを投稿していたりします。

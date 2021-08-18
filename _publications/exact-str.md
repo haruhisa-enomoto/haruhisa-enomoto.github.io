@@ -16,7 +16,7 @@ Since non-Morita equivalent algebras may give equivalent CM categories (as addit
 Then the original Iwanaga-Gorenstein algebra can be recovered by taking the endomorphism ring of *progenerator* in this exact category.
 
 To do this, For a given category, I classify possible exact structures by using functor category.
-Also Auslander-Reiten theory for exact categories are studied.
+Also, Auslander-Reiten theory for exact categories are studied.
 
 ## Presentation material
 

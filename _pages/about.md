@@ -48,6 +48,6 @@ For more details, see [CV](/cv/).
 - 2021-04-05: Update my affiliation and [Extriangulated structure paper](/papers/et-str/) was published.
 - 2021-03-18: Add new preprint [Intervals of s-torsion pairs in extriangulated categories with negative first extensions](/papers/stors/) (jt with T. Adachi and M. Tsukamoto).
 - 2021-02-18: Update [Notes on Cohen-Macaualy orders](/files/comm-order0218.pdf) (Japanese).
-- 2021-01-24: Add "StrinsApplet to SageMath converter" to [SageMath codes](/codes/) page.
+- 2021-01-24: Add "StringApplet to SageMath converter" to [SageMath codes](/codes/) page.
 - 2021-01-23: Make [SageMath codes](/codes/) page, and add "kappa map in Sage".
 - 2021-01-17: [Bruhat inversion paper](/papers/binv/) was published.

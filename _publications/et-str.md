@@ -10,7 +10,7 @@ citation: 'H. Enomoto, Classifying substructures of extriangulated categories vi
 
 ## Comment
 
-In the [previous exact-structure paper](/papers/exact-str/), I gave a classification of exact structures of a given additive category using defects in functor category. In this paper, we give analogous results for **extriagulated categories** introduced by Nakaoka-Palu.
+In the [previous exact-structure paper](/papers/exact-str/), I gave a classification of exact structures of a given additive category using defects in functor category. In this paper, we give analogous results for **extriangulated categories** introduced by Nakaoka-Palu.
 
 However, since we cannot recover triangulated structures from the category of defects (they always coincide with the category of finitely presented functors), we cannot expect a full classification of any (ex)triangulated structures. Instead, I investigate *substructures* of a given extriangulated structure.
 

@@ -8,9 +8,9 @@ joint: 'T. Adachi and M. Tsukamoto'
 ---
 
 ## Comment
-In triangualted categories, for a fixed $t$-structure, the **HRS-tilt** gives a poset isomorphism between  the posets of (i) "intermediate" $t$-structures w.r.t. that $t$-structure and (ii) torsion pairs in the heart of that $t$-structure.
+In triangulated categories, for a fixed $t$-structure, the **HRS-tilt** gives a poset isomorphism between  the posets of (i) "intermediate" $t$-structures w.r.t. that $t$-structure and (ii) torsion pairs in the heart of that $t$-structure.
 
-In abelian categories, **Asai-Pfeifer** and **Tattar** establish a poset isomorphism between the posets of (i) interval of a fixed torsion pair $[\mathcal{U},\mathcal{T}]$ (that is, the poset of torsion classes $\mathcal{T}'$ satisfying $\mathcal{U} \subseteq \mathcal{T}' \subseteq \mathcal{T}$ and (ii) "torsion pairs" in the subcategory $\mathcal{T} \cap \mathcal{U}^\perp$ (this category can be regarded as an exact category, and *torsion pair* is defined using this exact structure in a similar way to abelian categories).
+In abelian categories, **Asai-Pfeifer** and **Tattar** establish a poset isomorphism between the posets of (i) interval of a fixed torsion pair $[\mathcal{U},\mathcal{T}]$ (that is, the poset of torsion classes $\mathcal{T}'$ satisfying $\mathcal{U} \subseteq \mathcal{T}' \subseteq \mathcal{T}$) and (ii) "torsion pairs" in the subcategory $\mathcal{T} \cap \mathcal{U}^\perp$ (this category can be regarded as an exact category, and *torsion pair* is defined using this exact structure in a similar way to abelian categories).
 
 In this paper, we show that these two bijections in triangulated categories and abelian categories are just special cases of a general bijection in extriangulated category. To treat these two examples, we need to introduce the *negative first extension structure* $\mathbf{E}^{-1}(X,Y)$ on extriangulated categories, which is an analogue of $\mathrm{Hom}(X,\Sigma^{-1} Y)$ in triangulated categories. The typical example of extriangulated categories with negative first extensions is an extension-closed subcategory of triangulated categories.
 
