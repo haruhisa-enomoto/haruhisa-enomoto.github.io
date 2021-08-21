@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "SageMath codes"
+title: "Programs"
 permalink: /codes/
 author_profile: true
 ---
@@ -8,6 +8,23 @@ author_profile: true
 {% include base_path %}
 
 I'm interested in realizing and expressing various objects in the representation theory of algebra using computer, especially using [SageMath](https://www.sagemath.org/).
+
+## AR quiver calculator
+A tool to deal with the Auslander-Reiten quiver of a category.
+You can input your translation quiver by your mouse and keyboard, save and load your translation quiver, and import the AR quiver from [String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/).
+
+So far (in ver 0.1.0), you can compute the dimension of Hom between two indecomposables, and compute the composition series of Hom functors Hom(-,Y) and Hom(X,-).
+In the near(?) future, I'll add functions computing torsion classes, tilting modules, and so on.
+
+### Example
+This is the AR quiver of mod kQ for a quiver Q of type D5.
+![image](https://media.discordapp.net/attachments/524877289213788171/878482371068981299/unknown.png?width=975&height=631)
+
+Then you can compute the Hom(8,13) as follows:
+![Hom](https://media.discordapp.net/attachments/524877289213788171/878488400628432937/unknown.png)
+
+- [exe file (9.7 MB) for Windows](https://github.com/haruhisa-enomoto/ARquiver/releases/download/v0.1.0/AR_quiver_calculator.exe)
+- [GitHub Repository](https://github.com/haruhisa-enomoto/ARquiver)
 
 ## The lattice of torsion classes in SageMath
 `tors_lattice.py` below enables us to compute and construct various objects from the lattice of torsion classes of a &tau;-tilting finite algebra in SageMath. Internally, this defines a class `FiniteTorsLattice`, which is a subclass of a SageMath class for finite lattices: [`FiniteLatticePoset`](https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/posets/lattices.html#sage.combinat.posets.lattices.FiniteLatticePoset).
