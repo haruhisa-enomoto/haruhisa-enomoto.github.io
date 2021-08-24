@@ -38,6 +38,7 @@ For more details, see [CV](/cv/).
 [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) at Osaka Prefecture University. My host researcher is [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en).
 
 ## Update history
+- 2021-08-24: Updated [AR quiver calculator](/codes/) to ver 0.2.0 (computations for triangulated categories added).
 - 2021-08-21: I add a program [AR quiver calculator](/codes/), which computes the dimension of Hom from the inputted Auslander-Reiten quiver.
 - 2021-08-07: I added [Problem](/problems/) page, where I raise some questions which I'm interested in but which I can't solve.
 - 2021-07-28: I uploaded videos of [the talk below](/talks/2021-07-26/), including [an introductory video](https://www.youtube.com/watch?v=2-y1a-_zEEA) to my program *tors_lattice*.

@@ -13,17 +13,29 @@ I'm interested in realizing and expressing various objects in the representation
 A tool to deal with the Auslander-Reiten quiver of a category.
 You can input your translation quiver by your mouse and keyboard, save and load your translation quiver, and import the AR quiver from [String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/).
 
-So far (in ver 0.1.0), you can compute the dimension of Hom between two indecomposables, and compute the composition series of Hom functors Hom(-,Y) and Hom(X,-).
-In the near(?) future, I'll add functions computing torsion classes, tilting modules, and so on.
+So far (in ver 0.2.0), you can
+- Compute the dimension of Hom between two indecomposables and composition series of Hom functors Hom(-,Y) and Hom(X,-).
+- (in the case of triangulated categories) Compute shifts, and list all objects which are self Ext^n-orthogonal for given values n.
+
+In the near(?) future, I'll add functions computing torsion classes, (tau)-tilting modules, cluster-tilting objects, and so on.
 
 ### Example
-This is the AR quiver of mod kQ for a quiver Q of type D5.
-![image](https://media.discordapp.net/attachments/524877289213788171/878482371068981299/unknown.png?width=975&height=631)
 
-Then you can compute the Hom(8,13) as follows:
-![Hom](https://media.discordapp.net/attachments/524877289213788171/878488400628432937/unknown.png)
+- The AR quiver of the cluster category of type A3.
 
-- [exe file (9.7 MB) for Windows](https://github.com/haruhisa-enomoto/ARquiver/releases/download/v0.1.0/AR_quiver_calculator.exe)
+![image](https://media.discordapp.net/attachments/524877289213788171/879642217411657738/unknown.png?width=890&height=630)
+
+- Computation of Hom (for the above category)
+
+![Hom](https://media.discordapp.net/attachments/524877289213788171/879642561017425960/unknown.png)
+
+- Computation of shifts, and maximal Ext-orthogonals.
+
+![Shift](https://media.discordapp.net/attachments/524877289213788171/879642504033599528/unknown.png)
+![Ortho](https://media.discordapp.net/attachments/524877289213788171/879642680630595594/unknown.png?width=941&height=630)
+
+### Files
+- [exe file (9.7 MB) for Windows](https://github.com/haruhisa-enomoto/ARquiver/releases/download/v0.2.0/ARquiver_calculator.exe)
 - [GitHub Repository](https://github.com/haruhisa-enomoto/ARquiver)
 
 ## The lattice of torsion classes in SageMath
