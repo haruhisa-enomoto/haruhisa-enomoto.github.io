@@ -13,7 +13,7 @@ I'm interested in realizing and expressing various objects in the representation
 A tool to deal with the Auslander-Reiten quiver of a category.
 You can input your translation quiver by your mouse and keyboard, save and load your translation quiver, and import the AR quiver from [String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/).
 
-So far (in ver 0.2.0), you can
+So far (in ver 0.2.1), you can
 - Compute the dimension of Hom between two indecomposables and composition series of Hom functors Hom(-,Y) and Hom(X,-).
 - (in the case of triangulated categories) Compute shifts, and list all objects which are self Ext^n-orthogonal for given values n.
 
@@ -36,6 +36,7 @@ In the near(?) future, I'll add functions computing torsion classes, (tau)-tilti
 
 ### Files
 - [exe file (9.7 MB) for Windows](https://github.com/haruhisa-enomoto/ARquiver/releases/download/v0.2.0/ARquiver_calculator.exe)
+- [(zipped) app file for Mac (9.1 MB)](https://github.com/haruhisa-enomoto/ARquiver/releases/download/v0.2.1/ARquiver_calculator.app.zip)
 - [GitHub Repository](https://github.com/haruhisa-enomoto/ARquiver)
 
 ## The lattice of torsion classes in SageMath
