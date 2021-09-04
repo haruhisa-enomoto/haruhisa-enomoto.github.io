@@ -11,16 +11,6 @@ In this page, I raise some problems in the representation theory of algebras, wh
 
 **I DO NOT claim the originality of the problems below**, hence you're free to solve and write papers about them. But I'm happy if you contact me if you have some ideas to approach these problems.
 
-## Grothendieck monoid
-
-
-- Compute the Grothendieck monoids of a special class of exact categories, for example, torsion(-free) classes over path algebras of Dynkin type, or even type A. In particular, are these monoids reduced?
-
-- We can define the Grothendieck monoids of extriangulated categories. It seems that triangulated categories behave in contrast to exact categories with respect to the Grothendieck monoid, e.g. the Grothendieck monoid of exact categories is always reduced (invertible element is only 0), but every element is invertible in the Grothendieck monoid of triangulated category. Therefore,
-  - Is there any way to compute the Grothendieck monoids of extriangulated categories (at least those embedded in some triangulated categories)?
-  - Is there any characterization of objects whose images in the Grothendieck monoid are invertible?
-  - Since the Grothendieck monoid is a commutative monoid, it is a direct sum of an abelian group and a reduced group uniquely. It would be very nice if such a factorization can be realized categorically (e.g. describe an extriangulated category as a some kind of semi-direct product of a triangulated category and an exact category).
-
 ## Torsion classes
 
 - Is there an analogue of $\tau$-tilting theory for exact categories?
@@ -56,6 +46,19 @@ More precisely, can we classify torsion classes of exact categories using projec
 ## Extension-closed subcategories
 
 Are there any classes of subcategories which we can classify?
+
+## Higher homological algebra
+Can we classify all the possible structure of $n$-exact categories on a given additive category like [my paper on exact structures](/papers/exact-str/)?
+In particular, does the unique maximum $n$-exact structure always exists?
+
+## Grothendieck monoid
+
+- Compute the Grothendieck monoids of a special class of exact categories, for example, torsion(-free) classes over path algebras of Dynkin type, or even type A. In particular, are these monoids reduced?
+
+- We can define the Grothendieck monoids of extriangulated categories. It seems that triangulated categories behave in contrast to exact categories with respect to the Grothendieck monoid, e.g. the Grothendieck monoid of exact categories is always reduced (invertible element is only 0), but every element is invertible in the Grothendieck monoid of triangulated category. Therefore,
+  - Is there any way to compute the Grothendieck monoids of extriangulated categories (at least those embedded in some triangulated categories)?
+  - Is there any characterization of objects whose images in the Grothendieck monoid are invertible?
+  - Since the Grothendieck monoid is a commutative monoid, it is a direct sum of an abelian group and a reduced group uniquely. It would be very nice if such a factorization can be realized categorically (e.g. describe an extriangulated category as a some kind of semi-direct product of a triangulated category and an exact category).
 
 ## Lean Theorem Prover
 **Teaching Auslander-Reiten theory to computer** using [Lean](https://leanprover.github.io/), see also [Lean community](https://leanprover-community.github.io/), and a very good introductory material [Formalising Mathematics](https://github.com/ImperialCollegeLondon/formalising-mathematics)
