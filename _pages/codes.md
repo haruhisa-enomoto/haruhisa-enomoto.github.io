@@ -35,7 +35,7 @@ In the near(?) future, I'll add functions computing torsion classes, (tau)-tilti
 ![Ortho](https://media.discordapp.net/attachments/524877289213788171/879642680630595594/unknown.png?width=941&height=630)
 
 ### Files
-- [exe file (9.7 MB) for Windows](https://github.com/haruhisa-enomoto/ARquiver/releases/download/v0.2.0/ARquiver_calculator.exe)
+- [exe file (9.7 MB) for Windows](https://github.com/haruhisa-enomoto/ARquiver/releases/download/v0.2.1/ARquiver_calculator.exe)
 - [(zipped) app file for Mac (9.1 MB)](https://github.com/haruhisa-enomoto/ARquiver/releases/download/v0.2.1/ARquiver_calculator.app.zip)
 - [GitHub Repository](https://github.com/haruhisa-enomoto/ARquiver)
 
