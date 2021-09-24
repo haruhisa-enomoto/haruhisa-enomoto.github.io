@@ -30,6 +30,10 @@ More precisely, can we classify torsion classes of exact categories using projec
 
 ## Wide subcategories
 
+- Is there any wide subcategory $\mathcal{W}$ in the module category of an artin algebra such that $\mathcal{W}$ has enough projectives and there are **infinitely many indecomposable projective objects** in $\mathcal{W}$?
+
+- Suppose that there is a common upper bound on the cardinality of semibricks. Then is this algebra necessarily $\tau$-tilting finite? (The converse of course holds by the result of e.g. Asai.)
+
 - By computer computation, I conjecture that for $\tau$-tilting finite case, the lattice of wide subcategory is strongly Sperner, see [my talk](/talks/2021-07-26/). Since the non-crossing partition lattice and the shard intersection lattice are realized as lattices of wide subcategories, this will unify several known results by combinatorialists.
 - Or are there more properties such that the lattice of wide subcategory has? Especially, what can be said if we consider $\tau$-tilting infinite case, or we only consider left finite wide subcategories?
 - For the hereditary case, there is a self-duality on the lattice of wide subcategories. For a general algebra $\Lambda$, is there any algebra $\Gamma$ such that the lattices of wide subcategories over $\Lambda$ and $\Gamma$ are dual to each other? This will make things easier to deal with.
@@ -45,7 +49,13 @@ More precisely, can we classify torsion classes of exact categories using projec
 
 ## Extension-closed subcategories
 
-Are there any classes of subcategories which we can classify?
+- Is there any extension-closed subcategory (closed under summands) $\mathcal{E}$ in the module category of an artin algebra such that $\mathcal{E}$ has enough projectives and there are **infinitely many indecomposable projective objects** in $\mathcal{E}$?
+
+- Let $\mathcal{E}$ be a functorially finite extension-closed subcategory of the module category of an artin algebra. Then it's known that $\mathcal{E}$ has both enough projectives and enough injectives. Are the numbers of indecompoasble projectives and injectives finite in this case? And do the numbers coincide?
+
+- Are there any classes of subcategories which we can classify?
+
+- Suppose that we are given the Auslander-Reiten quiver of the module category. Can we compute all subcategories which are closed under extensions and direct summands only using the combinatorial data?
 
 ## Higher homological algebra
 Can we classify all the possible structure of $n$-exact categories on a given additive category like [my paper on exact structures](/papers/exact-str/)?
