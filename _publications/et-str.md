@@ -5,7 +5,7 @@ date: 2021-04-04
 venue: 'Appl. Categ. Structures'
 arxiv: '2005.13381'
 paperurl: 'https://doi.org/10.1007/s10485-021-09642-0'
-citation: 'H. Enomoto, Classifying substructures of extriangulated categories via Serre subcategories, to appear in Appl. Categ. Structures.'
+citation: 'H. Enomoto, Classifying substructures of extriangulated categories via Serre subcategories, Appl. Categ. Structures 29 (2021), no. 6, 1005--1018.'
 ---
 
 ## Comment
