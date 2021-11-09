@@ -1,7 +1,7 @@
 ---
 title: "Classifying substructures of extriangulated categories via Serre subcategories"
 excerpt: 'Classified a possible extriangulated substructures on a given extriangulated category using functor category'
-date: 2021-04-04
+date: 2021-12-01
 venue: 'Appl. Categ. Structures'
 arxiv: '2005.13381'
 paperurl: 'https://doi.org/10.1007/s10485-021-09642-0'
