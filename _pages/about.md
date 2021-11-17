@@ -38,6 +38,7 @@ For more details, see [CV](/cv/).
 [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) at Osaka Prefecture University. My host researcher is [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en).
 
 ## Update history
+- 2021-11-17: My [Monobrick paper](/papers/mbrick/) was accepted and published.
 - 2021-09-24: Updated [Problem](/problems/) page (this page will be updated occasionally).
 - 2021-09-08: I gave a talk [Some classes of subcategories of module categories: classifications and the relation between them](/talks/2021-09-08/).
 - 2021-08-24: Updated [AR quiver calculator](/codes/) to ver 0.2.0 (computations for triangulated categories added).
