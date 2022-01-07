@@ -3,6 +3,7 @@ layout: archive
 title: "Problems"
 permalink: /problems/
 author_profile: true
+toc: true
 ---
 
 {% include base_path %}
