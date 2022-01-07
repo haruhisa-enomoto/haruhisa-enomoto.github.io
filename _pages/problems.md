@@ -4,7 +4,6 @@ title: "Problems"
 permalink: /problems/
 author_profile: true
 toc: true
-toc_label: "My Table of Contents"
 ---
 
 {% include base_path %}
