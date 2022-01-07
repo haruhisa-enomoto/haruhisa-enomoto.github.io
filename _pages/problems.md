@@ -9,6 +9,8 @@ toc_label: "My Table of Contents"
 
 {% include base_path %}
 
+test
+
 In this page, I raise some problems in the representation theory of algebras, which are interesting to me, but which seem so difficult that I can't answer by myself. I hope someone will solve (or at least consider) them.
 
 **I DO NOT claim the originality of the problems below**, hence you're free to solve and write papers about them. But I'm happy if you contact me if you have some ideas to approach these problems.
