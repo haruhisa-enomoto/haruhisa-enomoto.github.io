@@ -4,6 +4,7 @@ title: "Problems"
 permalink: /problems/
 author_profile: true
 toc: true
+toc_label: "Table of Contents"
 ---
 
 {% include base_path %}
@@ -52,7 +53,7 @@ More precisely, can we classify torsion classes of exact categories using projec
 
 - Is there any extension-closed subcategory (closed under summands) $\mathcal{E}$ in the module category of an artin algebra such that $\mathcal{E}$ has enough projectives and there are **infinitely many indecomposable projective objects** in $\mathcal{E}$?
 
-- Let $\mathcal{E}$ be a functorially finite extension-closed subcategory of the module category of an artin algebra. Then it's known that $\mathcal{E}$ has both enough projectives and enough injectives. Are the numbers of indecompoasble projectives and injectives finite in this case? And do the numbers coincide?
+- Let $\mathcal{E}$ be a functorially finite extension-closed subcategory of the module category of an artin algebra. Then it's known that $\mathcal{E}$ has both enough projectives and enough injectives. Are the numbers of indecomposable projectives and injectives finite in this case? And do the numbers coincide?
 
 - Are there any classes of subcategories which we can classify?
 
