@@ -1,7 +1,7 @@
 ---
 title: "Rigid modules and ICE-closed subcategories in quiver representations"
 excerpt: 'Established a bijection between Image-Cokernel-Extension-closed (ICE-closed) subcats in mod kQ and rigid kQ-modules'
-date: 2021-12-14
+date: 2022-03-15
 arxiv: '2005.05536'
 venue: 'J. Algebra'
 paperurl: 'https://doi.org/10.1016/j.jalgebra.2021.12.008'
