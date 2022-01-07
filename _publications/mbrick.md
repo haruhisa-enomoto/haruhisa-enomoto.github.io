@@ -5,10 +5,8 @@ date: 2021-12-24
 arxiv: '2005.01626'
 paperurl: 'https://doi.org/10.1016/j.aim.2021.108113'
 venue: 'Adv. Math.'
-citation: 'H. Enomoto, Monobrick, a uniform approach to torsion-free classes and wide subcategories, to appear in Adv. Math. 393 (2021).'
+citation: 'H. Enomoto, Monobrick, a uniform approach to torsion-free classes and wide subcategories, Adv. Math. 393 (2021), Paper No. 108113, 41 pp.'
 ---
-
-[Free access to journal version](https://authors.elsevier.com/a/1e5KJRELdnZH)
 
 ## Comment
 It is well known that semibricks are in bijection with wide (=extension-closed exact abelian) subcategory in a length abelian category, by considering simple objects in wide subcats. I continue studying simples in torsion-free classes, and find that similar classification can be achieved by weakening *semibrick* to **monobrick**, a set of bricks in which every non-zero morphism is an injection. By this, I can prove that *torsion-free classes are in bijection with *cofinally closed monobrick,* a monobrick satisfying some poset theoretical condition, without any assumption on functorially finiteness, without using tau-tilting theory. This enables us to consider wide subcats and torsion-free classes simultaneously, and several results like a bijection between wide and torf, a finiteness of torf and bricks etc., can be proved poset theoretically or combinatorially.

@@ -1,10 +1,14 @@
 ---
 title: "The Jordan-H&ouml;lder property and Grothendieck monoids of exact categories"
 excerpt: 'I consider when an exact category satisfies the Jordan-H&ouml;lder property, (JHP).'
-date: 2019-08-15
+date: 2022-02-12
+venue: 'Adv. Math.'
+paperurl: 'https://doi.org/10.1016/j.aim.2021.108167'
 arxiv: '1908.05446'
-citation: 'H. Enomoto, The Jordan-H&ouml;lder property and Grothendieck monoids of exact categories, arXiv:1908.05446.'
+citation: 'H. Enomoto, The Jordan-H&ouml;lder property and Grothendieck monoids of exact categories, Adv. Math. 396 (2022), Paper No. 108167.'
 ---
+
+[Free access to journal ver](https://authors.elsevier.com/a/1eK5I_2kEzaz~)
 
 ## Comment
 

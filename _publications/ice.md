@@ -5,7 +5,7 @@ date: 2021-06-23
 venue: 'Math. Z.'
 arxiv: '2010.05433'
 paperurl: 'https://doi.org/10.1007/s00209-021-02796-6'
-citation: 'H. Enomoto, A. Sakai, ICE-closed subcategories and wide &tau;-tilting modules, to appear in Math. Z.'
+citation: 'H. Enomoto, A. Sakai, ICE-closed subcategories and wide &tau;-tilting modules, Math. Z. 300 (2022), no. 1, 541--577.'
 joint: 'A. Sakai'
 ---
 
