@@ -55,6 +55,8 @@ Since the non-crossing partition lattice and the shard intersection lattice are 
 ## Extension-closed subcategories
 
 - Is there any extension-closed subcategory (closed under summands) $\mathcal{E}$ in the module category of an artin algebra such that $\mathcal{E}$ has enough projectives and there are **infinitely many indecomposable projective objects** in $\mathcal{E}$?
+  - **YES** in general. Consider the subcategory of n-preprojective modules in any n-representation infinite algebra with n>1. Then this category is extension-closed and every object is both projective and injective. In particular, it trivially has enough projectives and there are infinitely many indecomposable projectives. See Question 1.2 and Corollary 4.11 on [Herschend, Iyama, Oppermann, $n$-representation infinite algebras](https://doi.org/10.1016/j.aim.2013.09.023).
+  I thank Sondre Kvamme for letting me know this example.
 
 - Let $\mathcal{E}$ be a functorially finite extension-closed subcategory of the module category of an artin algebra. Then it's known that $\mathcal{E}$ has both enough projectives and enough injectives. Are the numbers of indecomposable projectives and injectives finite in this case? And do the numbers coincide?
 
