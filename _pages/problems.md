@@ -15,6 +15,8 @@ In this page, I raise some problems in the representation theory of algebras, wh
 
 ## Torsion classes
 
+- In the lattice of torsion classes of artin algebras, *completely* join-irreducibles are in bijection with finitely generated bricks. Is there a similar characterization of **not necesarily completely** join-irreducibles? Maybe one can use **infinitely generated bricks**, see [F. Sentieri, A brick version of a theorem of Auslander](https://arxiv.org/abs/2011.09253). It will be very nice if there's bijection between not necesarily finitely generated (good? e.g. pure-injective?) bricks and join-irreducible elements.
+
 - Is there an analogue of $\tau$-tilting theory for exact categories?
 More precisely, can we classify torsion classes of exact categories using projective objects?
 
