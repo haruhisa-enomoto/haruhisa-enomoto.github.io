@@ -38,8 +38,9 @@ For more details, see [CV](/cv/).
 [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) at Osaka Prefecture University. My host researcher is [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en).
 
 ## Update history
+- 2022-01-22: I gave a talk [Exact-categorical properties of subcategories of abelian categories](/talks/2022-01-18).
 - 2022-01-07:
-  - [Rigid ICE in quiver paper](/papers/rigid-ice/), [JHP in exact cat paper](/papers/JHP/) were accepted, and update some bibliography.
+  - [Rigid ICE in quiver paper](/papers/rigidICE/), [JHP in exact cat paper](/papers/JHP/) were accepted, and update some bibliography.
   - *New preprint* on arXiv! [From the lattice of torsion classes to the posets of wide subcategories and ICE-closed subcategories](/papers/from-tors/)
   - I gave a [flash talk](/talks/2022-01-04/) on the above paper.
 - 2021-11-17: My [Monobrick paper](/papers/mbrick/) was accepted and published.
