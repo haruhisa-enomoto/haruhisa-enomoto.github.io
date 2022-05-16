@@ -9,17 +9,20 @@ redirect_from:
 ---
 
 I am Haruhisa Enomoto (榎本 悠久 in Japanese), a postdoc at
-[Graduate School of Science](https://www.osakafu-u.ac.jp/en/academics/graduate/g_science/),
-[Osaka Prefecture University](https://www.osakafu-u.ac.jp/en/) in Japan.
+[Graduate School of Science](https://www.omu.ac.jp/sci/en/),
+[Osaka Metropolitan University](https://www.omu.ac.jp/en/) in Japan.
 
-**I moved from Nagoya to Osaka Pref. Univ. since April 2021.**
+
+**My e-mail address and affiliation has changed since the name of my university has changed.**
 
 **New E-mail**:
-the35883 [at] osakafu-u.ac.jp
+henomoto [at] omu.ac.jp
 
-(Old: m16009t [at] math.nagoya-u.ac.jp,
-*I can still use and check this Nagoya e-mail address,
-  but it will probably be unusable in the near future.)*
+(Old1: the35883@osakafu-u.ac.jp,
+*I will not be able to use this address in the near future*)
+
+(Old2 : m16009t [at] math.nagoya-u.ac.jp,
+I can still use and check this Nagoya e-mail address)
 
 For more details, see [CV](/cv/).
 
@@ -38,6 +41,7 @@ For more details, see [CV](/cv/).
 [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) at Osaka Prefecture University. My host researcher is [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en).
 
 ## Update history
+- 2022-05-16: **My e-mail and affilation has changed!** since the name of my university has changed.
 - 2022-01-22: I gave a talk [Exact-categorical properties of subcategories of abelian categories](/talks/2022-01-18).
 - 2022-01-07:
   - [Rigid ICE in quiver paper](/papers/rigidICE/), [JHP in exact cat paper](/papers/JHP/) were accepted, and update some bibliography.
