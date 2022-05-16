@@ -13,7 +13,7 @@ I am Haruhisa Enomoto (榎本 悠久 in Japanese), a postdoc at
 [Osaka Metropolitan University](https://www.omu.ac.jp/en/) in Japan.
 
 
-**My e-mail address and affiliation has changed since the name of my university has changed.**
+**Since April 2022, My e-mail address and affiliation has changed since the name of my university has changed.**
 
 **New E-mail**:
 henomoto [at] omu.ac.jp
