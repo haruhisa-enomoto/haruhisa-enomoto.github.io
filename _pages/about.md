@@ -42,6 +42,7 @@ For more details, see [CV](/cv/).
 
 ## Update history
 - 2022-05-16: **My e-mail and affilation has changed!** since the name of my university has changed.
+- 2022-03-20: I gave a talk [The lattice of wide subcategories](/talks/2022-03-20/).
 - 2022-01-22: I gave a talk [Exact-categorical properties of subcategories of abelian categories](/talks/2022-01-18).
 - 2022-01-07:
   - [Rigid ICE in quiver paper](/papers/rigidICE/), [JHP in exact cat paper](/papers/JHP/) were accepted, and update some bibliography.
