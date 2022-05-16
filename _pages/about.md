@@ -41,7 +41,7 @@ For more details, see [CV](/cv/).
 [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) at Osaka Prefecture University. My host researcher is [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en).
 
 ## Update history
-- 2022-05-16: **My e-mail and affilation has changed!** since the name of my university has changed.
+- 2022-05-16: **My e-mail and affiliation has changed!** since the name of my university has changed.
 - 2022-03-20: I gave a talk [The lattice of wide subcategories](/talks/2022-03-20/).
 - 2022-01-22: I gave a talk [Exact-categorical properties of subcategories of abelian categories](/talks/2022-01-18).
 - 2022-01-07:
