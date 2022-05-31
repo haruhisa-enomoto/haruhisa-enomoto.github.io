@@ -19,7 +19,7 @@ I am Haruhisa Enomoto (榎本 悠久 in Japanese), a postdoc at
 henomoto [at] omu.ac.jp
 
 (Old1: the35883@osakafu-u.ac.jp,
-*I will not be able to use this address in the near future*)
+*I cannot use this address!!!!*)
 
 (Old2 : m16009t [at] math.nagoya-u.ac.jp,
 I can still use and check this Nagoya e-mail address)
