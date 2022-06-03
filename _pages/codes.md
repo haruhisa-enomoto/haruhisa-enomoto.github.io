@@ -17,7 +17,7 @@ What I have done so far in [lean-noncommutative-ring](https://github.com/haruhis
 - The left right symmetry of Jacobson radical of a ring (intersection of maximal left ideals coincides that of maximal right ideals), and a well-known characterization of elements in the Jacobson radical
 - The left right symmetry of local ring (ring has a unique maximal left ideal iff it has a unique maximal right ideal), and a well-known characterization of local rings.
 
-Obviously there're lots of things to play with Auslander-Reiten theory in Lean, so if you are interested in these game project, please contact me.
+Obviously there are lots of things to play with Auslander-Reiten theory in Lean, so if you are interested in this game project, please contact me.
 
 See also:
 - [Natural number game](https://www.ma.imperial.ac.uk/~buzzard/xena/natural_number_game/) and [its mirror](https://cbirkbeck.github.io/natural_number_game/). A very funny game for proving basic statements (associativity, commutativity, etc) from Peano's axioms. Very gentle and instructive, so no prerequisite knowledge is needed.
