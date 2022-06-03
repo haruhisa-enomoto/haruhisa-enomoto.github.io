@@ -7,7 +7,22 @@ author_profile: true
 
 {% include base_path %}
 
-I'm interested in realizing and expressing various objects in the representation theory of algebra using computer, especially using [SageMath](https://www.sagemath.org/).
+I'm interested in realizing and expressing various objects in the representation theory of algebra using computer, especially using [SageMath](https://www.sagemath.org/) and Theorem prover [Lean](https://leanprover.github.io/).
+
+## Representation theory of algebra in Lean
+I'm trying to formalize representation theory of algebra (especially Auslander-Reiten theory) using a proof assistant [Lean](https://leanprover.github.io/). For those who don't know a proof assistant, it's like a **computer game for proving theorems**, so write a programming code which states and proves theorems.
+
+What I have done so far in [lean-noncommutative-ring](https://github.com/haruhisa-enomoto/lean-noncommutative-ring) is
+
+- The left right symmetry of Jacobson radical of a ring (intersection of maximal left ideals coincides that of maximal right ideals), and a well-known characterization of elements in the Jacobson radical
+- The left right symmetry of local ring (ring has a unique maximal left ideal iff it has a unique maximal right ideal), and a well-known characterization of local rings.
+
+Obviously there're lots of things to play with Auslander-Reiten theory in Lean, so if you are interested in these game project, please contact me.
+
+See also:
+- [Natural number game](https://www.ma.imperial.ac.uk/~buzzard/xena/natural_number_game/) and [its mirror](https://cbirkbeck.github.io/natural_number_game/). A very funny game for proving basic statements (associativity, commutativity, etc) from Peano's axioms. Very gentle and instructive, so no prerequisite knowledge is needed.
+- [Formalising Mathematics](https://github.com/ImperialCollegeLondon/formalising-mathematics), which explains basics of Lean from undergraduate materials like set theory and group theory
+- [Lean community](https://leanprover-community.github.io/)
 
 ## AR quiver calculator
 A tool to deal with the Auslander-Reiten quiver of a category.
