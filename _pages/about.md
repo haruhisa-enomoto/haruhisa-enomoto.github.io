@@ -38,7 +38,7 @@ For more details, see [CV](/cv/).
 - Combinatorial & computational aspects
 
 ## Position
-[JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) at Osaka Prefecture University. My host researcher is [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en).
+[JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) at Osaka Metropolitan University. My host researcher is [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en).
 
 ## Update history
 - 2022-06-03: Add **Representation theory of algebra in Lean** to [program](/codes/).
