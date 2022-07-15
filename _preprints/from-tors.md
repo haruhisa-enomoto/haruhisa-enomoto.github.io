@@ -12,5 +12,5 @@ In this paper, we compute the posets of wide subcategories and ICE-closed subcat
 ## Presentation materials
 
 - [Flash Talk slide](/files/flash-talk-enomoto.pdf) from [this talk](/talks/2022-01-04/)
-- [Slides](/files/2022-03-20.pdf) and [YouTube talk video (Japanese)](https://www.youtube.com/watch?v=-bUrKGLZr6o) from [this talk](/talks/2022-03-10/)
+- [Slides](/files/2022-03-20.pdf) and [YouTube talk video (Japanese)](https://www.youtube.com/watch?v=-bUrKGLZr6o) from [this talk](/talks/2022-03-20/)
 - [Notes](/files/2022-07-01.pdf) from [this talk](/talks/2022-07-01/)
