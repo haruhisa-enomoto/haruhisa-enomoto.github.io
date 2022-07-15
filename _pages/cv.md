@@ -13,7 +13,7 @@ redirect_from:
 ## Professional Position
 
 - Apr. 2021 -- : [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/)
-  * Institution: [Graduate School of Science](https://www.osakafu-u.ac.jp/en/academics/graduate/g_science/), [Osaka Prefecture University](http://en.nagoya-u.ac.jp/).
+  * Institution: [Graduate School of Science](https://www.omu.ac.jp/sci/en/), [Osaka Metropolitan University](https://www.omu.ac.jp/en/).
   * Host Researcher: [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en)
 
 * Oct. 2020 -- Mar. 2021: [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/)
