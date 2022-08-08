@@ -42,6 +42,7 @@ For more details, see [CV](/cv/).
 
 ## Update history
 - 2022-08-08: New preprint [Grothendieck monoids of extriangulated categories](/papers/et-monoid/) (with S. Saito)!
+- 2022-07-01: I gave a talk [From the lattice of torsion classes to wide and ICE-closed subcategories](/talks/2022-07-01/) 
 - 2022-06-03: Add **Representation theory of algebra in Lean** to [program](/codes/).
 - 2022-05-16: **My e-mail and affiliation has changed!** since the name of my university has changed.
 - 2022-03-20: I gave a talk [The lattice of wide subcategories](/talks/2022-03-20/).
