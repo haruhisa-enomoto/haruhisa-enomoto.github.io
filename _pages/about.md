@@ -41,6 +41,7 @@ For more details, see [CV](/cv/).
 [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) at Osaka Metropolitan University. My host researcher is [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en).
 
 ## Update history
+- 2022-08-08: New preprint [Grothendieck monoids of extriangulated categories](/papers/et-monoid/) (with S. Saito)!
 - 2022-06-03: Add **Representation theory of algebra in Lean** to [program](/codes/).
 - 2022-05-16: **My e-mail and affiliation has changed!** since the name of my university has changed.
 - 2022-03-20: I gave a talk [The lattice of wide subcategories](/talks/2022-03-20/).
@@ -58,12 +59,3 @@ For more details, see [CV](/cv/).
 - 2021-07-28: I uploaded videos of [the talk below](/talks/2021-07-26/), including [an introductory video](https://www.youtube.com/watch?v=2-y1a-_zEEA) to my program *tors_lattice*.
 - 2021-07-26: I gave a talk [Computing various objects of an algebra from the poset of torsion classes](/talks/2021-07-26/).
 - 2021-07-20: Add "The lattice of torsion classes in SageMath" to [SageMath codes](/codes/) page.
-- 2021-06-24: [ICE-closed subcats and wide $\tau$-tilting paper](/papers/ice/) (jt with A. Sakai) was published.
-- 2021-06-11: [Schur implies abelian](/papers/schur/) was published
-- 2021-04-12: **Update E-mail**
-- 2021-04-05: Update my affiliation and [Extriangulated structure paper](/papers/et-str/) was published.
-- 2021-03-18: Add new preprint [Intervals of s-torsion pairs in extriangulated categories with negative first extensions](/papers/stors/) (jt with T. Adachi and M. Tsukamoto).
-- 2021-02-18: Update [Notes on Cohen-Macaualy orders](/files/comm-order0218.pdf) (Japanese).
-- 2021-01-24: Add "StringApplet to SageMath converter" to [SageMath codes](/codes/) page.
-- 2021-01-23: Make [SageMath codes](/codes/) page, and add "kappa map in Sage".
-- 2021-01-17: [Bruhat inversion paper](/papers/binv/) was published.
