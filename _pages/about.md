@@ -41,7 +41,7 @@ For more details, see [CV](/cv/).
 [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) at Osaka Metropolitan University. My host researcher is [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en).
 
 ## Update history
-- 2022-08-13: Major update on [AR quiver calculator](/codes/)!. Now this can compute various subcats (torsion classes, wide subcats, ICE-closed,...) and their Ext-projectives from your AR quiver visually!
+- 2022-08-13: **Major update on [AR quiver calculator](/codes/)!**. Now this can compute various subcats (torsion classes, wide subcats, ICE-closed,...) and their Ext-projectives from your AR quiver visually!
 - 2022-08-08: New preprint [Grothendieck monoids of extriangulated categories](/papers/et-monoid/) (with S. Saito)!
 - 2022-07-01: I gave a talk [From the lattice of torsion classes to wide and ICE-closed subcategories](/talks/2022-07-01/) 
 - 2022-06-03: Add **Representation theory of algebra in Lean** to [program](/codes/).
