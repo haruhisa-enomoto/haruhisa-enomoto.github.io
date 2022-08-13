@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: single
 title: "Programs"
 permalink: /codes/
 author_profile: true
@@ -13,10 +13,12 @@ I'm interested in realizing, computing and expressing various objects in the rep
 
 ## AR quiver calculator
 
+A tool to deal with the Auslander-Reiten quiver of a module category or a triangualted category.
+
 <img src="https://cdn.discordapp.com/attachments/524877289213788171/1007891731703943168/unknown.png" width="50%">
+
 (The Auslander-Reiten quiver of mod k(D5), a torsion class of it, and Ext-projectives of it)
 
-A tool to deal with the Auslander-Reiten quiver of a category.
 You can input your translation quiver by your mouse and keyboard, save and load your translation quiver, and import the AR quiver from [String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/).
 
 Then this computes various things.
@@ -30,7 +32,7 @@ Then this computes various things.
 
 <img src="https://cdn.discordapp.com/attachments/524877289213788171/1007900187106234368/unknown.png" width="50%">
 
-- For a triangualted category, this computes a shift functor, and list all maximal Ext-orthogonal objects: there're 182 maximal Ext^1-orthogonal objects in the cluster category of type D5.
+- For a triangulated category, this computes a shift functor, and list all maximal Ext-orthogonal objects: there are 182 maximal Ext^1-orthogonal objects in the cluster category of type D5.
 
 <img src="https://cdn.discordapp.com/attachments/524877289213788171/1007903351888949278/unknown.png" width="50%">
 
