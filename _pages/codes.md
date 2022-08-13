@@ -15,7 +15,7 @@ I'm interested in realizing, computing and expressing various objects in the rep
 
 A tool to deal with the Auslander-Reiten quiver of a module category or a triangualted category.
 
-<img src="https://cdn.discordapp.com/attachments/524877289213788171/1007891731703943168/unknown.png" width="50%">
+![](https://cdn.discordapp.com/attachments/524877289213788171/1007891731703943168/unknown.png)
 
 (The Auslander-Reiten quiver of mod k(D5), a torsion class of it, and Ext-projectives of it)
 
