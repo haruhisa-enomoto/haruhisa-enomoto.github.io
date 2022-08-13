@@ -3,11 +3,41 @@ layout: archive
 title: "Programs"
 permalink: /codes/
 author_profile: true
+toc: true
 ---
 
 {% include base_path %}
 
-I'm interested in realizing and expressing various objects in the representation theory of algebra using computer, especially using [SageMath](https://www.sagemath.org/) and Theorem prover [Lean](https://leanprover.github.io/).
+I'm interested in realizing, computing and expressing various objects in the representation theory of algebra using computer, especially using [SageMath](https://www.sagemath.org/) and Theorem prover [Lean](https://leanprover.github.io/).
+
+
+## AR quiver calculator
+
+<img src="https://cdn.discordapp.com/attachments/524877289213788171/1007891731703943168/unknown.png" width="50%">
+(The Auslander-Reiten quiver of mod k(D5), a torsion class of it, and Ext-projectives of it)
+
+A tool to deal with the Auslander-Reiten quiver of a category.
+You can input your translation quiver by your mouse and keyboard, save and load your translation quiver, and import the AR quiver from [String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/).
+
+Then this computes various things.
+
+- Compute Hom and Ext^1 
+
+<img src="https://cdn.discordapp.com/attachments/524877289213788171/1007896233454612571/unknown.png" width="50%">
+
+- For a module category, this computes all torsion(-free) classes, wide subcategories, ICE-closed subcategories, IE-closed subcategories, etc,
+- and its Ext-projective (injective) objects! (below: a torsion class in A_5 quiver and its Ext-projectives = support tau-tilting modules)
+
+<img src="https://cdn.discordapp.com/attachments/524877289213788171/1007900187106234368/unknown.png" width="50%">
+
+- For a triangualted category, this computes a shift functor, and list all maximal Ext-orthogonal objects: there're 182 maximal Ext^1-orthogonal objects in the cluster category of type D5.
+
+<img src="https://cdn.discordapp.com/attachments/524877289213788171/1007903351888949278/unknown.png" width="50%">
+
+### Files
+- [exe file (9.4 MB) for Windows](https://github.com/haruhisa-enomoto/ARquiver/releases/download/v0.3.0/ARquiver_calculator.exe)
+- no Mac ver for now, sorry...
+- [GitHub Repository](https://github.com/haruhisa-enomoto/ARquiver)
 
 ## Representation theory of algebra in Lean
 I'm trying to formalize representation theory of algebra (especially Auslander-Reiten theory) using a proof assistant [Lean](https://leanprover.github.io/). For those who don't know a proof assistant, it's like a **computer game for proving theorems**, so write a programming code which states and proves theorems.
@@ -23,36 +53,6 @@ See also:
 - [Natural number game](https://www.ma.imperial.ac.uk/~buzzard/xena/natural_number_game/) and [its mirror](https://cbirkbeck.github.io/natural_number_game/). A very funny game for proving basic statements (associativity, commutativity, etc) from Peano's axioms. Very gentle and instructive, so no prerequisite knowledge is needed.
 - [Formalising Mathematics](https://github.com/ImperialCollegeLondon/formalising-mathematics), which explains basics of Lean from undergraduate materials like set theory and group theory
 - [Lean community](https://leanprover-community.github.io/)
-
-## AR quiver calculator
-A tool to deal with the Auslander-Reiten quiver of a category.
-You can input your translation quiver by your mouse and keyboard, save and load your translation quiver, and import the AR quiver from [String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/).
-
-So far (in ver 0.2.1), you can
-- Compute the dimension of Hom between two indecomposables and composition series of Hom functors Hom(-,Y) and Hom(X,-).
-- (in the case of triangulated categories) Compute shifts, and list all objects which are self Ext^n-orthogonal for given values n.
-
-In the near(?) future, I'll add functions computing torsion classes, (tau)-tilting modules, cluster-tilting objects, and so on.
-
-### Example
-
-- The AR quiver of the cluster category of type A3.
-
-![image](https://media.discordapp.net/attachments/524877289213788171/879642217411657738/unknown.png?width=890&height=630)
-
-- Computation of Hom (for the above category)
-
-![Hom](https://media.discordapp.net/attachments/524877289213788171/879642561017425960/unknown.png)
-
-- Computation of shifts, and maximal Ext-orthogonals.
-
-![Shift](https://media.discordapp.net/attachments/524877289213788171/879642504033599528/unknown.png)
-![Ortho](https://media.discordapp.net/attachments/524877289213788171/879642680630595594/unknown.png?width=941&height=630)
-
-### Files
-- [exe file (9.7 MB) for Windows](https://github.com/haruhisa-enomoto/ARquiver/releases/download/v0.2.1/ARquiver_calculator.exe)
-- [(zipped) app file for Mac (9.1 MB)](https://github.com/haruhisa-enomoto/ARquiver/releases/download/v0.2.1/ARquiver_calculator.app.zip)
-- [GitHub Repository](https://github.com/haruhisa-enomoto/ARquiver)
 
 ## The lattice of torsion classes in SageMath
 `tors_lattice.py` below enables us to compute and construct various objects from the lattice of torsion classes of a &tau;-tilting finite algebra in SageMath. Internally, this defines a class `FiniteTorsLattice`, which is a subclass of a SageMath class for finite lattices: [`FiniteLatticePoset`](https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/posets/lattices.html#sage.combinat.posets.lattices.FiniteLatticePoset).
