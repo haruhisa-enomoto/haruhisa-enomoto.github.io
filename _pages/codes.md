@@ -23,18 +23,12 @@ You can input your translation quiver by your mouse and keyboard, save and load 
 
 Then this computes various things.
 
-- Compute Hom and Ext^1 
+- Compute Hom and Ext^1
+- For a module category, this computes all torsion(-free) classes, wide subcategories, ICE-closed subcategories (closed under Image, Cokernel, Extensions), IE-closed subcategories (closed under Images, Extensions), etc,
+- and its Ext-projective (injective) objects.
+- For a triangulated category, this computes a shift functor, and list all maximal Ext-orthogonal objects.
 
-<img src="https://cdn.discordapp.com/attachments/524877289213788171/1007896233454612571/unknown.png" width="50%">
-
-- For a module category, this computes all torsion(-free) classes, wide subcategories, ICE-closed subcategories, IE-closed subcategories, etc,
-- and its Ext-projective (injective) objects! (below: a torsion class in A_5 quiver and its Ext-projectives = support tau-tilting modules)
-
-<img src="https://cdn.discordapp.com/attachments/524877289213788171/1007900187106234368/unknown.png" width="50%">
-
-- For a triangulated category, this computes a shift functor, and list all maximal Ext-orthogonal objects: there are 182 maximal Ext^1-orthogonal objects in the cluster category of type D5.
-
-<img src="https://cdn.discordapp.com/attachments/524877289213788171/1007903351888949278/unknown.png" width="50%">
+See [GitHub Readme](https://github.com/haruhisa-enomoto/ARquiver#readme) for details and examples.
 
 ### Files
 - [exe file (9.4 MB) for Windows](https://github.com/haruhisa-enomoto/ARquiver/releases/download/v0.3.0/ARquiver_calculator.exe)
