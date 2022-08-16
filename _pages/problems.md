@@ -12,6 +12,16 @@ In this page, I raise some problems in the representation theory of algebras, wh
 
 **I DO NOT claim the originality of the problems below**, hence you're free to solve and write papers about them. But I'm happy if you contact me if you have some ideas to approach these problems.
 
+## Combinatorics of Auslander-Reiten quivers
+
+Suppose that the Auslander-Reiten quiver of the module category is given. Then can we compute the following only from the AR quiver?
+
+- Extension-closed subcategories closed under direct summands
+- Syzygy for a given indecomposable module
+- Projective dimension and injective dimension, global dimension
+- Fac M and Sub M for a given M
+- Kernel of add M-approximation of an indecomposable X
+
 ## Torsion classes
 
 - In the lattice of torsion classes of artin algebras, *completely* join-irreducibles are in bijection with finitely generated bricks. Is there a similar characterization of **not necessarily completely** join-irreducibles? Maybe one can use **infinitely generated bricks**, see [F. Sentieri, A brick version of a theorem of Auslander](https://arxiv.org/abs/2011.09253). It will be very nice if there's bijection between not necessarily finitely generated (good? e.g. pure-injective?) bricks and join-irreducible elements.
@@ -76,7 +86,7 @@ In particular, does the unique maximum $n$-exact structure always exists?
 - We can define the Grothendieck monoids of extriangulated categories. It seems that triangulated categories behave in contrast to exact categories with respect to the Grothendieck monoid, e.g. the Grothendieck monoid of exact categories is always reduced (invertible element is only 0), but every element is invertible in the Grothendieck monoid of triangulated category. Therefore,
   - Is there any way to compute the Grothendieck monoids of extriangulated categories (at least those embedded in some triangulated categories)?
   - Is there any characterization of objects whose images in the Grothendieck monoid are invertible?
-  - Since the Grothendieck monoid is a commutative monoid, it is a direct sum of an abelian group and a reduced group uniquely. It would be very nice if such a factorization can be realized categorically (e.g. describe an extriangulated category as a some kind of semi-direct product of a triangulated category and an exact category).
+  - Since the Grothendieck monoid is a commutative monoid, there is a unique abelian subgroup s.t. the quotient monoid is reduced. It would be very nice if such a factorization can be realized categorically (e.g. describe an extriangulated category as a some kind of semi-direct product of a triangulated category and an exact category).
 
 ## Lean Theorem Prover
 **Teaching Auslander-Reiten theory to computer** using [Lean](https://leanprover.github.io/), see also [Lean community](https://leanprover-community.github.io/), and a very good introductory material [Formalising Mathematics](https://github.com/ImperialCollegeLondon/formalising-mathematics)
