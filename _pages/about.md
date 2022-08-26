@@ -18,7 +18,7 @@ I am Haruhisa Enomoto (榎本 悠久 in Japanese), a postdoc at
 **New E-mail**:
 henomoto [at] omu.ac.jp
 
-(Old1: the35883@osakafu-u.ac.jp,
+(Old1: the35883 [at] osakafu-u.ac.jp,
 *I cannot use this address!!!!*)
 
 (Old2 : m16009t [at] math.nagoya-u.ac.jp,
@@ -33,7 +33,7 @@ For more details, see [CV](/cv/).
 ## Research Interests
 - Auslander-Reiten theory (via functor categories)
 - Quillen's exact categories, extriangulated categories
-- Subcategories of module categories (classifications and their properties as exact categories)
+- Subcategories of module categories (classifications, their properties as exact categories, and combinatorics of the poset of subcategories)
 - $\tau$-tilting theory
 - Combinatorial & computational aspects
 
