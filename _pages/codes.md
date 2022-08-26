@@ -31,7 +31,7 @@ Then this computes various things.
 See [GitHub Readme](https://github.com/haruhisa-enomoto/ARquiver#readme) for details and examples.
 
 ### Files
-- [exe file (9.4 MB) for Windows](https://github.com/haruhisa-enomoto/ARquiver/releases/download/v0.3.0/ARquiver_calculator.exe)
+- [exe file (9.4 MB) for Windows](https://github.com/haruhisa-enomoto/ARquiver/releases/download/v0.3.1/ARquiver_calculator.exe)
 - no Mac ver for now, sorry...
 - [GitHub Repository](https://github.com/haruhisa-enomoto/ARquiver)
 
