@@ -73,8 +73,6 @@ Since the non-crossing partition lattice and the shard intersection lattice are 
 
 - Are there any classes of subcategories which we can classify?
 
-- Suppose that we are given the Auslander-Reiten quiver of the module category. Can we compute all subcategories which are closed under extensions and direct summands only using the combinatorial data?
-
 ## Higher homological algebra
 Can we classify all the possible structure of $n$-exact categories on a given additive category like [my paper on exact structures](/papers/exact-str/)?
 In particular, does the unique maximum $n$-exact structure always exists?
@@ -87,6 +85,8 @@ In particular, does the unique maximum $n$-exact structure always exists?
   - Is there any way to compute the Grothendieck monoids of extriangulated categories (at least those embedded in some triangulated categories)?
   - Is there any characterization of objects whose images in the Grothendieck monoid are invertible?
   - Since the Grothendieck monoid is a commutative monoid, there is a unique abelian subgroup s.t. the quotient monoid is reduced. It would be very nice if such a factorization can be realized categorically (e.g. describe an extriangulated category as a some kind of semi-direct product of a triangulated category and an exact category).
+ 
+*Some of the above questions are addressed in [our recent paper](/papers/et-monoid/) with S. Saito*, but not fully answered (see Section 6: Questions).
 
 ## Lean Theorem Prover
 **Teaching Auslander-Reiten theory to computer** using [Lean](https://leanprover.github.io/), see also [Lean community](https://leanprover-community.github.io/), and a very good introductory material [Formalising Mathematics](https://github.com/ImperialCollegeLondon/formalising-mathematics)
