@@ -24,6 +24,11 @@ Suppose that the Auslander-Reiten quiver of the module category is given. Then c
 
 ## Torsion classes
 
+- Characterize the lattice of torsion classes of a tau-tilting finite artin algebra. For example, it is known that such a lattice satisfies the following two conditions.
+Conversely, if $L$ satisfies the above two, then is there exists some artin alg $A$ such that tors $A$ is isomorphic to $L$?
+  - L is semidistributive (or more strongly, congruence-uniform).
+  - L is Hasse-regular.
+
 - In the lattice of torsion classes of artin algebras, *completely* join-irreducibles are in bijection with finitely generated bricks. Is there a similar characterization of **not necessarily completely** join-irreducibles? Maybe one can use **infinitely generated bricks**, see [F. Sentieri, A brick version of a theorem of Auslander](https://arxiv.org/abs/2011.09253). It will be very nice if there's bijection between not necessarily finitely generated (good? e.g. pure-injective?) bricks and join-irreducible elements.
 
 - Is there an analogue of $\tau$-tilting theory for exact categories?
