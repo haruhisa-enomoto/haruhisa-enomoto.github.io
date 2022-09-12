@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Haruhisa Enomoto"
   avatar           : "profile.jpg"
-  bio              : "Postdoc at Osaka Pref. Univ."
+  bio              : "Postdoc at Osaka Metro. Univ."
   location         : "Osaka, Japan"
   employer         : "JSPS Fellow (PD)"
   pubmed           :
-  googlescholar    :
-  email            : "the35883@osakafu-u.ac.jp"
+  googlescholar    : "https://scholar.google.co.jp/citations?user=a6qWKNEAAAAJ"
+  email            : "henomoto@omu.ac.jp"
   researchgate     :  "https://www.researchgate.net/profile/Haruhisa_Enomoto"
   uri              :
   bitbucket        :
