@@ -41,6 +41,7 @@ For more details, see [CV](/cv/).
 [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) at Osaka Metropolitan University. My host researcher is [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en).
 
 ## Update history
+- 2022-09-08: I gave a talk [The Grothendieck monoid of an extriangulated category](/talks/2022-09-08/)
 - 2022-09-10: [AR quiver calculator](/codes/) is now (probably) supported on Mac!
 - 2022-09-02: I gave a talk [Combinatorics of lattices of subcategories of a module category](/talks/2022-09-02/)
 - 2022-08-31: New preprint [Image-extension-closed subcategories of module categories of hereditary algebras](/papers/ie-closed/) (with A. Sakai)!
@@ -61,6 +62,3 @@ For more details, see [CV](/cv/).
 - 2021-08-24: Updated [AR quiver calculator](/codes/) to ver 0.2.0 (computations for triangulated categories added).
 - 2021-08-21: I add a program [AR quiver calculator](/codes/), which computes the dimension of Hom from the inputted Auslander-Reiten quiver.
 - 2021-08-07: I added [Problem](/problems/) page, where I raise some questions which I'm interested in but which I can't solve.
-- 2021-07-28: I uploaded videos of [the talk below](/talks/2021-07-26/), including [an introductory video](https://www.youtube.com/watch?v=2-y1a-_zEEA) to my program *tors_lattice*.
-- 2021-07-26: I gave a talk [Computing various objects of an algebra from the poset of torsion classes](/talks/2021-07-26/).
-- 2021-07-20: Add "The lattice of torsion classes in SageMath" to [SageMath codes](/codes/) page.
