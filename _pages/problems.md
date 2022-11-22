@@ -29,6 +29,12 @@ Conversely, if $L$ satisfies the above two, then is there exists some artin alg 
   - L is semidistributive (or more strongly, congruence-uniform).
   - L is Hasse-regular.
 
+**NO**. Consider the following lattice.
+
+![](https://cdn.discordapp.com/attachments/524877289213788171/1044442174802100314/image.png)
+
+Then this is congruence-uniform (since this can be constructed by iteratind interval doublings) and Hasse-regular, but cannot be isomorphic to the lattice of torsion classes in an abelian length category, because (for example) its core-label order is not a lattice, which should be isomorphic to the lattice of wide subcategories of $A$ (see [this paper](/papers/from-tors/)).
+
 - In the lattice of torsion classes of artin algebras, *completely* join-irreducibles are in bijection with finitely generated bricks. Is there a similar characterization of **not necessarily completely** join-irreducibles? Maybe one can use **infinitely generated bricks**, see [F. Sentieri, A brick version of a theorem of Auslander](https://arxiv.org/abs/2011.09253). It will be very nice if there's bijection between not necessarily finitely generated (good? e.g. pure-injective?) bricks and join-irreducible elements.
 
 - Is there an analogue of $\tau$-tilting theory for exact categories?
