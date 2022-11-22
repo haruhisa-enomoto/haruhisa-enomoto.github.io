@@ -41,6 +41,7 @@ For more details, see [CV](/cv/).
 [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) at Osaka Metropolitan University. My host researcher is [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en).
 
 ## Update history
+- 2022-11-22: I added a **counter-example** of a [Problem](/problems/) about the lattice-theoretical characterization of the lattice of torsion classes, and add a small [Program](/codes/) used to find it.
 - 2022-09-08: I gave a talk [The Grothendieck monoid of an extriangulated category](/talks/2022-09-08/)
 - 2022-09-10: [AR quiver calculator](/codes/) is now (probably) supported on Mac!
 - 2022-09-02: I gave a talk [Combinatorics of lattices of subcategories of a module category](/talks/2022-09-02/)
