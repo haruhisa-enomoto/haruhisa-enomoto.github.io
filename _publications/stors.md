@@ -1,9 +1,10 @@
 ---
 title: "Intervals of s-torsion pairs in extriangulated categories with negative first extensions"
 excerpt: 'Unify bijections of the form "Interval poset of torsion pairs is isomorphic to the poset of torsion pairs in another subcategory" in the framework of extriangulated categories.'
-date: 2021-03-18
+date: 2022-09-05
 arxiv: '2103.09549'
 citation: 'T. Adachi, H. Enomoto, M. Tsukamoto, Intervals of $s$-torsion pairs in extriangulated categories with negative first extensions, arXiv:2103.09549.'
+paperurl: 'https://doi.org/10.1017/S0305004122000354'
 joint: 'T. Adachi and M. Tsukamoto'
 ---
 
