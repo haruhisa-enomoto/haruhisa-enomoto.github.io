@@ -10,6 +10,11 @@ toc: true
 
 I'm interested in realizing, computing and expressing various objects in the representation theory of algebra using computer, especially using [SageMath](https://www.sagemath.org/) and Theorem prover [Lean](https://leanprover.github.io/).
 
+## Generator of finite congruence-uniform lattices in SageMath
+Generate all finite congruence-uniform lattices (with a limitation of the number of join-irreducibles if necessary) in SageMath, by iterating Day's interval doubling construction.
+<https://gist.github.com/haruhisa-enomoto/8a16c926c66e0ea5a4f7f9f4744d7c21>
+
+(I used this to find a counterexample of congruence-uniform lattices which are not isomorphic to the lattice of torsion classes.)
 
 ## AR quiver calculator
 
