@@ -46,9 +46,7 @@ For more details, see [CV](/cv/).
 
 - 2023-02-03: New preprint [Maximal self-orthogonal modules and a new generalization of tilting modules](/papers/mso/)!!
 - 2022-11-22: I added a **counter-example** of a [Problem](/problems/) about the lattice-theoretical characterization of the lattice of torsion classes, and add a small [Program](/codes/) used to find it.
-- 2022-09-08: I gave a talk [The Grothendieck monoid of an extriangulated category](/talks/2022-09-08/)
 - 2022-09-10: [AR quiver calculator](/codes/) is now (probably) supported on Mac!
-- 2022-09-02: I gave a talk [Combinatorics of lattices of subcategories of a module category](/talks/2022-09-02/)
 - 2022-08-31: New preprint [Image-extension-closed subcategories of module categories of hereditary algebras](/papers/ie-closed/) (with A. Sakai)!
 - 2022-08-13: **Major update on [AR quiver calculator](/codes/)!**. Now this can compute various subcats (torsion classes, wide subcats, ICE-closed,...) and their Ext-projectives from your AR quiver visually!
 - 2022-08-08: New preprint [Grothendieck monoids of extriangulated categories](/papers/et-monoid/) (with S. Saito)!
