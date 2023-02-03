@@ -27,8 +27,8 @@ My interest is mainly in the representation-finite case, and I show that the fol
 Also, this has applications in Gorenstein homological algebra (e.g. this immediately deduces the fact that the category of Gorenstein-projective modules coincide with $^\perp \Lambda$ if $^\perp\Lambda$ has only finitely many indecomposables).
 
 I also study a binary relation on the set of Wakamatsu-projective modules, defined by the vanishing of Ext, so generalizing the poset of tilting modules.
-Unfortunately, **this is not poset even if the algebra is rep-fin**, and I gave such example.
-Using this relation, I prove that any self-orthogonal module over an Iwanaga-Gorenstein algebra $\Lambda$ has finite projective dimension if $\Lambda$ is representation-finite (I think there may be some direct proof, but I cannot find it).
+Unfortunately, **this is not a poset even if the algebra is rep-fin**, and I gave such an example.
+Using this relation, I prove that any self-orthogonal module over an Iwanaga-Gorenstein algebra $\Lambda$ has finite projective dimension if $\Lambda$ is representation-finite (I think there may be a direct proof, but I cannot find it).
 
 Some conjectures related on self-orthogonal modules are discussed in detail.
 
