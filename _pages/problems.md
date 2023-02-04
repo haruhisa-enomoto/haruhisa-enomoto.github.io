@@ -12,6 +12,31 @@ In this page, I raise some problems in the representation theory of algebras, wh
 
 **I DO NOT claim the originality of the problems below**, hence you're free to solve and write papers about them. But I'm happy if you contact me if you have some ideas to approach these problems.
 
+## Homological conjectures on self-orthogonal modules
+
+I list some conjectures and questions raised in my new paper, [MSO](/papers/mso/), below. For additional details, please refer to the paper.
+
+A $\Lambda$-module $T$ is _self-orthogonal_ if $\operatorname{Ext}^{>0}(T, T) = 0$. $T$ is _maximal self-orthogonal_ if $T$ is self-orthogonal, and if $T \oplus M$ is self-orthogonal, then $M \in \mathsf{add} \, T$.
+
+- **Boundedness conjecture** (BC): If $T$ is self-orthogonal, then $\|T\| = \|\Lambda\|$.
+- **Proj=Inj conjecture** (PIC): If $T$ is Wakamatsu tilting, then $\|T\| = \|\Lambda\|$. Equivalently, if $\mathcal{C}$ is a subcategory of $\mathsf{mod}\,\Lambda$ closed under extensions and summands which has an Ext-progenerator $P$ and an Ext-injective cogenerator $I$, then $\|P\| = \|I\|$.
+- **Maximal self-orthogonal conjecture** (MSOC): If $T$ is Wakamatsu tilting, then $T$ is maximal self-orthogonal.
+
+It is shown that (BC) implies (PIC) and (MSOC), which in turn imply the famous Auslander-Reiten Conjcture and the Generalized Nakayama conjecture (so they should be very difficult...)
+
+I also interested in the following variant of (PIC) (which is essentially same as the one raised by Auslander and Smalo's paper):
+
+- Let $\mathcal{C}$ is a subcategory of $\mathsf{mod}\,\Lambda$ closed under extensions and summands. Suppose that $\mathcal{C}$ has an Ext-progenerator $P$ and has enough Ext-injectives. By assuming some conditions (like the functorial finiteness), is it true that $\mathcal{C}$ has an Ext-injective cogenerator $I$ (that is, are there only fintely many Ext-injectives)? If so, does $\|P\| = \|I\|$ hold?
+
+The following question on Iwanaga-Gorenstein algebras should be much more tractable.
+
+- If $\Lambda$ is Iwanaga-Gorenstein, then does every self-orthogonal $\Lambda$-module have finite projective dimension?
+- If $\Lambda$ is IWanaga-Gorenstein, then is every Wakamatsu tilting module tilting?
+
+One more technical question:
+
+- Suppose that $T$ is an Ext-progenerator of $T^\perp$. Then is $T^\perp$ covariantly finite? Here $T^\perp$ consists of $X$ such that $\operatorname{Ext}^{>0}(T, X) = 0$.
+
 ## Combinatorics of Auslander-Reiten quivers
 
 Suppose that the Auslander-Reiten quiver of the module category is given. Then can we compute the following only from the AR quiver?
@@ -25,7 +50,7 @@ Suppose that the Auslander-Reiten quiver of the module category is given. Then c
 ## Torsion classes
 
 - Characterize the lattice of torsion classes of a tau-tilting finite artin algebra. For example, it is known that such a lattice satisfies the following two conditions.
-Conversely, if $L$ satisfies the above two, then is there exists some artin alg $A$ such that tors $A$ is isomorphic to $L$?
+  Conversely, if $L$ satisfies the above two, then is there exists some artin alg $A$ such that tors $A$ is isomorphic to $L$?
   - L is semidistributive (or more strongly, congruence-uniform).
   - L is Hasse-regular.
 
@@ -35,12 +60,13 @@ Conversely, if $L$ satisfies the above two, then is there exists some artin alg 
 
 Then this is congruence-uniform (since this can be constructed by iteratind interval doublings) and Hasse-regular, but cannot be isomorphic to the lattice of torsion classes in an abelian length category, because (for example) its core-label order is not a lattice, which should be isomorphic to the lattice of wide subcategories of $A$ (see [this paper](/papers/from-tors/)).
 
-- In the lattice of torsion classes of artin algebras, *completely* join-irreducibles are in bijection with finitely generated bricks. Is there a similar characterization of **not necessarily completely** join-irreducibles? Maybe one can use **infinitely generated bricks**, see [F. Sentieri, A brick version of a theorem of Auslander](https://arxiv.org/abs/2011.09253). It will be very nice if there's bijection between not necessarily finitely generated (good? e.g. pure-injective?) bricks and join-irreducible elements.
+- In the lattice of torsion classes of artin algebras, _completely_ join-irreducibles are in bijection with finitely generated bricks. Is there a similar characterization of **not necessarily completely** join-irreducibles? Maybe one can use **infinitely generated bricks**, see [F. Sentieri, A brick version of a theorem of Auslander](https://arxiv.org/abs/2011.09253). It will be very nice if there's bijection between not necessarily finitely generated (good? e.g. pure-injective?) bricks and join-irreducible elements.
 
 - Is there an analogue of $\tau$-tilting theory for exact categories?
-More precisely, can we classify torsion classes of exact categories using projective objects?
+  More precisely, can we classify torsion classes of exact categories using projective objects?
 
 - Is there a purely poset-theoretical characterization of torsion classes in the poset of torsion classes which are
+
   - functorially finite?
   - faithful?
   - functorially finite and faithful (thus corresponds to a tilting module)? In particular, can we construct the simplicial complex of tilting modules only using the poset structure?
@@ -61,7 +87,7 @@ More precisely, can we classify torsion classes of exact categories using projec
 - By computer computation, I conjecture that for $\tau$-tilting finite case, the lattice of wide subcategory
   - is strongly Sperner, or more strongly,
   - has a symmetric Boolean decomposition
-Since the non-crossing partition lattice and the shard intersection lattice are realized as lattices of wide subcategories, this will unify several known results by combinatorialists.
+    Since the non-crossing partition lattice and the shard intersection lattice are realized as lattices of wide subcategories, this will unify several known results by combinatorialists.
 - Or are there more properties such that the lattice of wide subcategory has? Especially, what can be said if we consider $\tau$-tilting infinite case, or we only consider left finite wide subcategories?
 - For the hereditary case, there is a self-duality on the lattice of wide subcategories. For a general algebra $\Lambda$, is there any algebra $\Gamma$ such that the lattices of wide subcategories over $\Lambda$ and $\Gamma$ are dual to each other? This will make things easier to deal with.
 - Is there a combinatorial (or surface) model for the lattice of wide subcategories over gentle algebras?
@@ -69,6 +95,7 @@ Since the non-crossing partition lattice and the shard intersection lattice are 
 ## ICE-closed subcategories
 
 - Characterize the number of Hasse arrows starting at an ICE-closed subcategory in the poset of ICE-closed subcategories, or characterize a Hasse arrow (minimal inclusion of ICE-closed subcategories). In the poset of torsion classes, the number of arrows starting at a torsion class is equal to the number of indecomposable split projective objects (for $\tau$-tilting finite case). I and Sakai conjectured that the number of Hasse arrows is equal to the number of indecomposable projective objects in the case of ICE-closed subcategories, which are true for Dynkin path algebras (by [our paper](/papers/ice/)) and Nakayama algebras (in preparation), but the computer experiment shows that this conjecture is not true in general. Thus
+
   - Is there any class of algebras such that this conjecture is true?
 
 - Is there a combinatorial (or surface) model for the lattice of wide subcategories over gentle algebras?
@@ -77,14 +104,16 @@ Since the non-crossing partition lattice and the shard intersection lattice are 
 ## Extension-closed subcategories
 
 - Is there any extension-closed subcategory (closed under summands) $\mathcal{E}$ in the module category of an artin algebra such that $\mathcal{E}$ has enough projectives and there are **infinitely many indecomposable projective objects** in $\mathcal{E}$?
+
   - **YES** in general. Consider the subcategory of n-preprojective modules in any n-representation infinite algebra with n>1. Then this category is extension-closed and every object is both projective and injective. In particular, it trivially has enough projectives and there are infinitely many indecomposable projectives. See Question 1.2 and Corollary 4.11 on [Herschend, Iyama, Oppermann, n-representation infinite algebras](https://doi.org/10.1016/j.aim.2013.09.023).
-  I thank Sondre Kvamme for letting me know this example.
+    I thank Sondre Kvamme for letting me know this example.
 
 - Let $\mathcal{E}$ be a functorially finite extension-closed subcategory of the module category of an artin algebra. Then it's known that $\mathcal{E}$ has both enough projectives and enough injectives. Are the numbers of indecomposable projectives and injectives finite in this case? And do the numbers coincide?
 
 - Are there any classes of subcategories which we can classify?
 
 ## Higher homological algebra
+
 Can we classify all the possible structure of $n$-exact categories on a given additive category like [my paper on exact structures](/papers/exact-str/)?
 In particular, does the unique maximum $n$-exact structure always exists?
 
@@ -96,13 +125,15 @@ In particular, does the unique maximum $n$-exact structure always exists?
   - Is there any way to compute the Grothendieck monoids of extriangulated categories (at least those embedded in some triangulated categories)?
   - Is there any characterization of objects whose images in the Grothendieck monoid are invertible?
   - Since the Grothendieck monoid is a commutative monoid, there is a unique abelian subgroup s.t. the quotient monoid is reduced. It would be very nice if such a factorization can be realized categorically (e.g. describe an extriangulated category as a some kind of semi-direct product of a triangulated category and an exact category).
- 
-*Some of the above questions are addressed in [our recent paper](/papers/et-monoid/) with S. Saito*, but not fully answered (see Section 6: Questions).
+
+_Some of the above questions are addressed in [our recent paper](/papers/et-monoid/) with S. Saito_, but not fully answered (see Section 6: Questions).
 
 ## Lean Theorem Prover
+
 **Teaching Auslander-Reiten theory to computer** using [Lean](https://leanprover.github.io/), see also [Lean community](https://leanprover-community.github.io/), and a very good introductory material [Formalising Mathematics](https://github.com/ImperialCollegeLondon/formalising-mathematics)
 
 ## SageMath
+
 - Create a system which can deal with the Auslander-Reiten quivers as translation quivers. In particular, compute the dimension of Hom spaces using AR quiver.
 - Create or modify programs which enables us to deal with string and band modules over special biserial (or string) algebras.
 - More concretely, develop a SageMath version of [String Applet](https://www.math.uni-bielefeld.de/~jgeuenich/string-applet/)!
