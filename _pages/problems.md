@@ -18,7 +18,7 @@ I list some conjectures and questions raised in my new paper, [MSO](/papers/mso/
 
 A $\Lambda$-module $T$ is _self-orthogonal_ if $\operatorname{Ext}^{>0}(T, T) = 0$. $T$ is _maximal self-orthogonal_ if $T$ is self-orthogonal, and if $T \oplus M$ is self-orthogonal, then $M \in \mathsf{add} \, T$.
 
-- **Boundedness conjecture** (BC): If $T$ is self-orthogonal, then $\|T\| = \|\Lambda\|$.
+- **Boundedness conjecture** (BC): If $T$ is self-orthogonal, then $\|T\| \leq \|\Lambda\|$.
 - **Proj=Inj conjecture** (PIC): If $T$ is Wakamatsu tilting, then $\|T\| = \|\Lambda\|$. Equivalently, if $\mathcal{C}$ is a subcategory of $\mathsf{mod}\,\Lambda$ closed under extensions and summands which has an Ext-progenerator $P$ and an Ext-injective cogenerator $I$, then $\|P\| = \|I\|$.
 - **Maximal self-orthogonal conjecture** (MSOC): If $T$ is Wakamatsu tilting, then $T$ is maximal self-orthogonal.
 
@@ -31,7 +31,7 @@ I also interested in the following variant of (PIC) (which is essentially same a
 The following question on Iwanaga-Gorenstein algebras should be much more tractable.
 
 - If $\Lambda$ is Iwanaga-Gorenstein, then does every self-orthogonal $\Lambda$-module have finite projective dimension?
-- If $\Lambda$ is IWanaga-Gorenstein, then is every Wakamatsu tilting module tilting?
+- If $\Lambda$ is Iwanaga-Gorenstein, then is every Wakamatsu tilting module tilting?
 
 One more technical question:
 
