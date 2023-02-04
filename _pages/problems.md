@@ -19,7 +19,7 @@ I list some conjectures and questions raised in [my new paper](/papers/mso/), be
 A $\Lambda$-module $T$ is _self-orthogonal_ if $\operatorname{Ext}^{>0}(T, T) = 0$. $T$ is _maximal self-orthogonal_ if $T$ is self-orthogonal, and if $T \oplus M$ is self-orthogonal, then $M \in \mathsf{add} \, T$. As usual, $\|T\|$ denotes the number of non-isomorphic indecomposable direct summands of $T$.
 
 - **Boundedness conjecture** (BC): If $T$ is self-orthogonal, then $\|T\| \leq \|\Lambda\|$.
-- **Proj=Inj conjecture** (PIC): Let $\mathcal{C}$ is a subcategory of $\mathsf{mod}\,\Lambda$ closed under extensions and summands which has an Ext-progenerator $P$ and an Ext-injective cogenerator $I$. Then does $\|P\| = \|I\|$ hold? Equivalently, if $T$ is Wakamatsu tilting, then does $\|T\| = \|\Lambda\|$ hold?
+- **Proj=Inj conjecture** (PIC): Let $\mathcal{C}$ is a subcategory of $\mathsf{mod}\,\Lambda$ closed under extensions and summands which has an Ext-progenerator $P$ and an Ext-injective cogenerator $I$. Then $\|P\| = \|I\|$ holds. Equivalently, if $T$ is Wakamatsu tilting, then $\|T\| = \|\Lambda\|$ holds.
 - **Maximal self-orthogonal conjecture** (MSOC): If $T$ is Wakamatsu tilting, then $T$ is maximal self-orthogonal.
 
 It is shown that (BC) implies (PIC) and (MSOC), which in turn imply the famous _Auslander-Reiten Conjcture_ and the _Generalized Nakayama conjecture_ (so they should be very difficult...)
@@ -37,7 +37,7 @@ One more technical question:
 
 - Suppose that $T$ is an Ext-progenerator of $T^\perp$. Then is $T^\perp$ covariantly finite? Here $T^\perp$ consists of $X$ such that $\operatorname{Ext}^{>0}(T, X) = 0$.
 
-It is shown that the set of Wakamatsu tilting modules with the partial order $T_1 \geq T_2$ by $\operatorname{Ext}^{>0}(T_1, T_2)$ is not poset in general (not transitive, even for the rep-fin case). So the following questions.
+It is shown that the set of Wakamatsu tilting modules with the binary relation $T_1 \geq T_2$ by $\operatorname{Ext}^{>0}(T_1, T_2)$ is not a poset in general (not transitive, even for the rep-fin case). This is in contrast to tilting modules with finite projective dimension. So the following questions.
 
 - When does the set of Wakamatsu tilting modules become a poset? (some combinatorial criterion for Nakayama algebras may be interesting)
 
