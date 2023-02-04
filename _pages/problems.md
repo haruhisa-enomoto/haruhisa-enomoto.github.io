@@ -10,9 +10,9 @@ toc: true
 
 In this page, I raise some problems in the representation theory of algebras, which are interesting to me, but which seem so difficult that I can't answer by myself. I hope someone will solve (or at least consider) them.
 
-**I DO NOT claim the originality of the problems below**, hence you're free to solve and write papers about them. But I'm happy if you contact me if you have some ideas to approach these problems.
+**I DO NOT claim the originality of the problems below**, hence you're free to solve and write papers about them.
 
-## Homological conjectures on self-orthogonal modules
+## Self-orthogonal modules and Wakamatsu tilting modules
 
 I list some conjectures and questions raised in my new paper, [MSO](/papers/mso/), below. For additional details, please refer to the paper.
 
@@ -36,6 +36,12 @@ The following question on Iwanaga-Gorenstein algebras should be much more tracta
 One more technical question:
 
 - Suppose that $T$ is an Ext-progenerator of $T^\perp$. Then is $T^\perp$ covariantly finite? Here $T^\perp$ consists of $X$ such that $\operatorname{Ext}^{>0}(T, X) = 0$.
+
+It is shown that the set of Wakamatsu tilting modules with the partial order $T_1 \geq T_2$ by $\operatorname{Ext}^{>0}(T_1, T_2)$ is not poset in general (not transitive, even for the rep-fin case). So the following questions.
+
+- When does the set of Wakamatsu tilting modules become a poset? (some combinatorial criterion for Nakayama algebras may be interesting)
+
+- Is there a theory of _mutation_ of Wakamatsu tilting modules, which enables us to compute all Wakamatsu tilting modules by starting from a ring itself? I observed that two summands may differ at the Hasse arrow.
 
 ## Combinatorics of Auslander-Reiten quivers
 
