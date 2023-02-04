@@ -14,21 +14,21 @@ In this page, I raise some problems in the representation theory of algebras, wh
 
 ## Self-orthogonal modules and Wakamatsu tilting modules
 
-I list some conjectures and questions raised in my new paper, [MSO](/papers/mso/), below. For additional details, please refer to the paper.
+I list some conjectures and questions raised in [my new paper](/papers/mso/), below. For additional details, please refer to the paper.
 
-A $\Lambda$-module $T$ is _self-orthogonal_ if $\operatorname{Ext}^{>0}(T, T) = 0$. $T$ is _maximal self-orthogonal_ if $T$ is self-orthogonal, and if $T \oplus M$ is self-orthogonal, then $M \in \mathsf{add} \, T$.
+A $\Lambda$-module $T$ is _self-orthogonal_ if $\operatorname{Ext}^{>0}(T, T) = 0$. $T$ is _maximal self-orthogonal_ if $T$ is self-orthogonal, and if $T \oplus M$ is self-orthogonal, then $M \in \mathsf{add} \, T$. As usual, $\|T\|$ denotes the number of non-isomorphic indecomposable direct summands of $T$.
 
 - **Boundedness conjecture** (BC): If $T$ is self-orthogonal, then $\|T\| \leq \|\Lambda\|$.
-- **Proj=Inj conjecture** (PIC): If $T$ is Wakamatsu tilting, then $\|T\| = \|\Lambda\|$. Equivalently, if $\mathcal{C}$ is a subcategory of $\mathsf{mod}\,\Lambda$ closed under extensions and summands which has an Ext-progenerator $P$ and an Ext-injective cogenerator $I$, then $\|P\| = \|I\|$.
+- **Proj=Inj conjecture** (PIC): Let $\mathcal{C}$ is a subcategory of $\mathsf{mod}\,\Lambda$ closed under extensions and summands which has an Ext-progenerator $P$ and an Ext-injective cogenerator $I$. Then does $\|P\| = \|I\|$ hold? Equivalently, if $T$ is Wakamatsu tilting, then does $\|T\| = \|\Lambda\|$ hold?
 - **Maximal self-orthogonal conjecture** (MSOC): If $T$ is Wakamatsu tilting, then $T$ is maximal self-orthogonal.
 
-It is shown that (BC) implies (PIC) and (MSOC), which in turn imply the famous Auslander-Reiten Conjcture and the Generalized Nakayama conjecture (so they should be very difficult...)
+It is shown that (BC) implies (PIC) and (MSOC), which in turn imply the famous _Auslander-Reiten Conjcture_ and the _Generalized Nakayama conjecture_ (so they should be very difficult...)
 
 I also interested in the following variant of (PIC) (which is essentially same as the one raised by Auslander and Smalo's paper):
 
-- Let $\mathcal{C}$ is a subcategory of $\mathsf{mod}\,\Lambda$ closed under extensions and summands. Suppose that $\mathcal{C}$ has an Ext-progenerator $P$ and has enough Ext-injectives. By assuming some conditions (like the functorial finiteness), is it true that $\mathcal{C}$ has an Ext-injective cogenerator $I$ (that is, are there only fintely many Ext-injectives)? If so, does $\|P\| = \|I\|$ hold?
+- Let $\mathcal{C}$ is a subcategory of $\mathsf{mod}\,\Lambda$ closed under extensions and summands. Suppose that $\mathcal{C}$ has an Ext-progenerator $P$ and has enough Ext-injectives. Is it true that $\mathcal{C}$ has an Ext-injective cogenerator $I$ (that is, there are only fintely many Ext-injectives), at least under some assumptions like functorial finiteness? If so, does $\|P\| = \|I\|$ hold?
 
-The following question on Iwanaga-Gorenstein algebras should be much more tractable.
+The following question on Iwanaga-Gorenstein algebras should be much more tractable. $\Lambda$ is _Iwanaga-Gorenstein_ if the injective dimension of $\Lambda$ as $\Lambda$-module (both as left and right) is finite.
 
 - If $\Lambda$ is Iwanaga-Gorenstein, then does every self-orthogonal $\Lambda$-module have finite projective dimension?
 - If $\Lambda$ is Iwanaga-Gorenstein, then is every Wakamatsu tilting module tilting?
