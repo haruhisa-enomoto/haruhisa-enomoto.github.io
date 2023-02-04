@@ -91,8 +91,8 @@ Then this is congruence-uniform (since this can be constructed by iteratind inte
 - Suppose that there is a common upper bound on the cardinality of semibricks. Then is this algebra necessarily $\tau$-tilting finite? (The converse of course holds by the result of e.g. Asai.)
 
 - By computer computation, I conjecture that for $\tau$-tilting finite case, the lattice of wide subcategory
-  - is strongly Sperner, or more strongly,
-  - has a symmetric Boolean decomposition
+  - is strongly Sperner (so becomes a **Peck poset** known in combinatorics), or more strongly,
+  - has a symmetric Boolean decomposition.
     Since the non-crossing partition lattice and the shard intersection lattice are realized as lattices of wide subcategories, this will unify several known results by combinatorialists.
 - Or are there more properties such that the lattice of wide subcategory has? Especially, what can be said if we consider $\tau$-tilting infinite case, or we only consider left finite wide subcategories?
 - For the hereditary case, there is a self-duality on the lattice of wide subcategories. For a general algebra $\Lambda$, is there any algebra $\Gamma$ such that the lattices of wide subcategories over $\Lambda$ and $\Gamma$ are dual to each other? This will make things easier to deal with.
@@ -116,7 +116,7 @@ Then this is congruence-uniform (since this can be constructed by iteratind inte
 
 - Let $\mathcal{E}$ be a functorially finite extension-closed subcategory of the module category of an artin algebra. Then it's known that $\mathcal{E}$ has both enough projectives and enough injectives. Are the numbers of indecomposable projectives and injectives finite in this case? And do the numbers coincide?
 
-- Are there any classes of subcategories which we can classify?
+- Are there any classes of subcategories which we can classify? How about subcategories closed under images and extensions (see [our paper](/papers/ie-closed/)) for the non-hereditary case?
 
 ## Higher homological algebra
 
