@@ -52,6 +52,6 @@ I do **NOT** guarantee the rigorousness of the following notes.
 DC1 と PD の申請書（書類採用）です。
 ご自由にお使いください。
 
-- [DC1](/files/dc1.pdf)
+- [DC1 (2017 年提出)](/files/dc1.pdf)
 
-- [PD](/files/pd.pdf)
+- [PD (2020 年提出)](/files/pd.pdf)
