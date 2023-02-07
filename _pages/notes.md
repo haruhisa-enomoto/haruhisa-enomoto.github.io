@@ -47,10 +47,11 @@ I do **NOT** guarantee the rigorousness of the following notes.
 - [Mathlog の記事](https://mathlog.info/users/902/articles)
   多元環の表現論の folklore っぽいことや小ネタや小技やネタ記事などを投稿していたりします。
 
-- 学振申請書
-  DC1 と PD の申請書（書類採用）です。
-  ご自由にお使いください。
+## 学振申請書
 
-  - [DC1](/files/dc1.pdf)
+DC1 と PD の申請書（書類採用）です。
+ご自由にお使いください。
 
-  - [PD](/files/pd.pdf)
+- [DC1](/files/dc1.pdf)
+
+- [PD](/files/pd.pdf)
