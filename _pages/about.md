@@ -44,7 +44,8 @@ For more details, see [CV](/cv/).
 
 ## Update history
 
-- 2023-02-03: New preprint [Maximal self-orthogonal modules and a new generalization of tilting modules](/papers/mso/)!!
+- 2023-02-27: I gave a [talk](/talks/2023-02-27/) at Paris Algebra Seminar.
+- 2023-02-03: New preprint [Maximal self-orthogonal modules and a new generalization of tilting modules](/papers/mso/), and add some related problems to [Problem](/problems/).
 - 2022-11-22: I added a **counter-example** of a [Problem](/problems/) about the lattice-theoretical characterization of the lattice of torsion classes, and add a small [Program](/codes/) used to find it.
 - 2022-09-10: [AR quiver calculator](/codes/) is now (probably) supported on Mac!
 - 2022-08-31: New preprint [Image-extension-closed subcategories of module categories of hereditary algebras](/papers/ie-closed/) (with A. Sakai)!
