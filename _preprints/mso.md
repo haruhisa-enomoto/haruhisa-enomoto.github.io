@@ -33,3 +33,7 @@ Using this relation, I prove that any self-orthogonal module over an Iwanaga-Gor
 Some conjectures related on self-orthogonal modules are discussed in detail.
 
 ## Presentation materials
+
+- [Notes](/files/2023-03-23.pdf) and [talk video](https://youtu.be/_E9nPEs-WV4) from [this talk](/talks/2023-03-23/)
+
+- [Notes](/files/2023-02-27.pdf) from [this talk](/talks/2023-02-27/)
