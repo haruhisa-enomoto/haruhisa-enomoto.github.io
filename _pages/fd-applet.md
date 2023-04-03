@@ -8,7 +8,7 @@ author_profile: false
 
 {% include base_path %}
 
-[(日本語版)](/fd-applet-jp/)
+[(日本語版)](/fd-applet-ja/)
 
 # About FD Applet
 
