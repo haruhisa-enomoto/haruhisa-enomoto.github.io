@@ -24,8 +24,8 @@ TODO
 
 1. **システムに適した zip ファイルをダウンロードしてください:**
 
-   - Windows: [Windows 用 zip をダウンロード](https://example.com/windows_download)
-   - Mac: [Mac 用 zip をダウンロード](https://example.com/mac_download)
+   - Windows: [Windows 用 zip をダウンロード](/files/fd-applet-win.zip)
+   - Mac: [Mac 用 zip をダウンロード](/files/fd-applet-mac.zip)
    - 他 OS (や詳しい人向け): [zip をダウンロード](/files/fd-applet-others.zip)
    - Fat Jar のみ: [fd-applet-fat.jar](/files/fd-applet-fat.jar)
 
@@ -49,13 +49,13 @@ TODO
 
 ### Mac ユーザー
 
-1. 初回のみ、`initial-setup.scpt`を開いてスクリプトエディタの実行ボタンをクリックし、`fd-applet.command`に実行権限を付与します。
+1. 初回のみ、`initial-setup.scpt`を開いてスクリプトエディタの実行ボタン（三角のアイコン）をクリックし、`fd-applet.command`に実行権限を付与します。
 2. `fd-applet.command`をダブルクリックしてアプリを起動します。
    (このファイルは、アップデートを確認し、`fd-applet-fat.jar`を実行して、ブラウザで<https://localhost:8080>を開く処理を自動的に行います。)
 
-3. 初回起動時には、以下の手順でアプリを実行できるようにする必要があります：
+3. 初回起動時には、おそらく以下の手順でアプリを実行できるようにする必要があります：
    - システム環境設定 > セキュリティとプライバシーに移動します。
-   - 確認されていない開発者からのアプリに関するメッセージの横にある「とにかく開く」ボタ
+   - 「開発元を確認できないため」のようなメッセージの横にある「このまま開く」ボタンをクリック
 
 ### Linux やその他の OS のユーザー、または詳しい方へ
 
