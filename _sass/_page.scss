@@ -399,3 +399,33 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+/*
+   Wide Pages
+   ========================================================================== */
+
+.wide {
+  .page {
+    @include breakpoint($large) {
+      float: none; // disable from .page
+      margin: 0 auto; // center
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      float: none; // disable from .page
+      margin: 0 auto; // center
+      padding-right: 0;
+    }
+  }
+
+  .page__related {
+    @include breakpoint($large) {
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-right: 0;
+    }
+  }
+}
