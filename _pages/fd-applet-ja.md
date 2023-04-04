@@ -68,13 +68,13 @@ Kotlin を用いたサーバー・バックエンドと、React を用いたフ�
 #### Windows ユーザー
 
 1. `fd-applet.bat`をダブルクリックしてアプリを起動します。
-   (このファイルは、アップデートを確認し、`fd-applet-fat.jar`を実行して、ブラウザで<http://localhost:8080>を開く処理を自動的に行います。)
+   （このファイルは、アップデートを確認し、`fd-applet-fat.jar`を実行して、ブラウザで<http://localhost:8080>を開く処理を自動的に行います。）
 
 #### Mac ユーザー
 
 1. 初回のみ、`initial-setup.scpt`を開いてスクリプトエディタの実行ボタン（三角のアイコン）をクリックして実行します（これは`fd-applet.command`に実行権限を付与します）。
 2. `fd-applet.command`をダブルクリックしてアプリを起動します。
-   (このファイルは、アップデートを確認し、`fd-applet-fat.jar`を実行して、ブラウザで<http://localhost:8080>を開く処理を自動的に行います。)
+   （このファイルは、アップデートを確認し、`fd-applet-fat.jar`を実行して、ブラウザで<http://localhost:8080>を開く処理を自動的に行います。）
 
 3. 初回起動時には、おそらく以下の手順でアプリを実行できるようにする必要があります：
    - システム環境設定 > セキュリティとプライバシーに移動します。
@@ -82,13 +82,13 @@ Kotlin を用いたサーバー・バックエンドと、React を用いたフ�
 
 #### Linux 等その他の OS や詳しいユーザー
 
-1. `lib/fd-applet-fat.jar`が FD Applet の本体です。Java 環境をインストールした後、`java -jar fd-applet-fat.jar`というコマンドを(`lib` 内から)実行することで、サーバーが立ち上がります。
+1. `lib/fd-applet-fat.jar`が FD Applet の本体です。Java 環境をインストールした後、`java -jar fd-applet-fat.jar`というコマンドを（`lib` 内から）実行することで、サーバーが立ち上がります。
 2. サーバーが立ち上がった後、ブラウザで<http://localhost:8080>にアクセスすると、FD Applet が利用できます。
 3. この場合、アップデートは自動で行われませんので、画面に最新版が利用可能というメッセージが表示されたら、手動で[fd-applet-fat.jar](/files/fd-applet-fat.jar)をダウンロードし、`lib`フォルダ内のものと置き換えてください。
 
 ### アプリの終了
 
-アプリを終了するには、ターミナルウィンドウ(Windows の場合はコマンドプロンプト、Mac の場合はターミナル)とブラウザを閉じてください。
+アプリを終了するには、ターミナルウィンドウ（Windows の場合はコマンドプロンプト、Mac の場合はターミナル）とブラウザを閉じてください。
 
 ## 使用方法
 
@@ -113,10 +113,10 @@ Kotlin を用いたサーバー・バックエンドと、React を用いたフ�
 
 #### Relation
 
-*単項および可換関係のみ*に対応しています。
+*単項および可換関係式のみ*に対応しています。
 
-- 単項関係：path `-a-> -b->`は、`ab`、`a b`、または`a*b`のように書きます。
-- 可換関係：`ab-cd`や`a * b - c * d`のように書きます。
+- 単項関係式：path `-a-> -b->`は、`ab`、`a b`、または`a*b`のように書きます。
+- 可換関係式：`ab-cd`や`a * b - c * d`のように書きます。
 
 #### Update
 
@@ -134,30 +134,32 @@ Update ボタンをクリックして完了します。"File"メニューから�
 
 #### Basic Info
 
-_ほとんどの機能は有限次元 special biserial algebra が必要_。
 各種ホモロジー次元、射影/移入加群など、多元環の基本情報を表示します。
+
+（ほとんどの機能は有限次元 special biserial algebra でのみ動きます。）
 
 #### Calculator
 
-_ほとんどの機能は有限次元 special biserial algebra が必要_。
-入力に基づいて次元や射影分解などを計算します（例：`dim Ext^2(a*b + c*d*e, f*g)`）。
+入力に基づいて Hom や Ext の次元や射影分解などを計算します（例：`dim Ext^2(a*b + c*d*e, f*g)`）。
+
+（ほとんどの機能は有限次元 special biserial algebra でのみ動きます。）
 
 #### Enumerator
-
-_有限表現型 special biserial algebra が必要_。
 
 - 加群/部分圏を数え上げて列挙します（例：各種 tilting や semibrick など）。"Show Distribution"ボタンで直既約の個数ごとの分布を表示します。
 - AR quiver を表示すると、加群/部分圏を選択すると、頂点が色付けされます。部分圏を選んだ場合は Ext-projective/injective をハイライト表示できます。
 
-#### Quivers
+（有限表現型 special biserial algebra でのみ動きます。）
 
-_有限表現型 special biserial algebra が必要_。
+#### Quivers
 
 多元環に関連する quiver を表示します（例：τ-tilting quiver、部分圏の Hasse quiver など）。
 
+（有限表現型 special biserial algebra でのみ動きます。）
+
 ## サポート
 
-質問や問題や機能追加の要望等がある場合は、メニューの Files → "Send Feedback or report issues"を使用するか、
+質問や問題や機能追加の要望（こんな計算をする機能をつけて欲しい・これは計算できるのか）等がある場合は、メニューの Files → "Send Feedback or report issues"を使用するか、
 `henomoto [at] omu.ac.jp` にメールを送ってください。
 
 ## 更新履歴

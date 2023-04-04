@@ -131,32 +131,34 @@ Input algebra, press "Get Data" button to use each tab.
 
 Indecomposable module notation:
 
-- `1`, `2`: simple modules at `1` and `2`.
-- `a*b*!c`: string module `1 -a-> 2 -b-> 3 <-c- 4`.
-- `a*b=d*e`: biserial module with commutative square `-a->-b-> = -d->-e->`.
+- `1`, `2`: the simple modules at `1` and `2`.
+- `a*b*!c`: the string module `1 -a-> 2 -b-> 3 <-c- 4`.
+- `a*b=d*e`: the biserial module with commutative square `-a->-b-> = -d->-e->`.
 
 #### Basic Info
 
-_Requires a finite-dimensional special biserial algebra_.
 Displays basic info: homological dimensions, projective/injective modules, etc.
+
+_Most features work only for finite-dimensional special biserial algebras_.
 
 #### Calculator
 
-_Requires a finite-dimensional special biserial algebra_.
-Calculates somethings like dimensions and projective resolutions based on input (e.g. `dim Ext^2(a*b + c*d*e, f*g)`).
+Calculates things like dimensions of Hom or Ext and projective resolutions based on input (e.g. `dim Ext^2(a*b + c*d*e, f*g)`).
+
+_Most features work only for finite-dimensional special biserial algebras_.
 
 #### Enumerator
-
-_Requires a representation-finite special biserial algebra_.
 
 - Enumerates modules/subcategories (e.g. tilting modules, semibricks). Show distribution with "Show Distribution" button.
 - Show AR quiver; if a module/subcategory is selected, it is colored. Highlight Ext-projectives/injectives in the chosen subcategory.
 
+_Works only for representation-finite special biserial algebras_.
+
 #### Quivers
 
-_Requires a representation-finite special biserial algebra_.
-
 Displays quivers related to algebra (e.g. τ-tilting quiver, Hasse quivers of subcategories).
+
+_Works only for representation-finite special biserial algebras_.
 
 ## Support
 
