@@ -10,7 +10,15 @@ toc_sticky: true
 
 [(日本語版)](/fd-applet-ja/)
 
+## About FD Applet
+
+FD Applet is a PC application that, from your inputted algebra, performs various calculations related to modules, enumerates specific modules and subcategories of module categories, and generates the AR quiver and various Hasse quivers and so on.
+
 This guide covers the installation and usage instructions for FD Applet on Windows, Mac, and other systems.
+
+### Implementation
+
+The implementation consists of a server backend using Kotlin, a frontend using React, and scripts for update verification, automatic updating, and startup assistance. The source code will be published in the future. The development of the app and the creation of this documentation have greatly benefited from the support of ChatGPT.
 
 ## Installation
 
@@ -135,3 +143,7 @@ Displays quivers related to algebra (e.g. τ-tilting quiver, Hasse quivers of su
 ## Support
 
 If you have any questions or issues, please use the menu's FILES > Send Feedback or report issues option or send an email to henomoto [at] omu.ac.jp.
+
+## Changelog
+
+- 2023-04-04: Released the initial version 0.1.0.

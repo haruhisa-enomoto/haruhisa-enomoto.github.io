@@ -10,13 +10,20 @@ toc_sticky: true
 
 [(English version)](/fd-applet/)
 
+## FD Applet について
+
+FD Applet は、多元環を入力すると、その加群に関する様々な計算や、特定の加群や加群圏の部分圏を列挙し、AR quiver や 各種 Hasse quiver などが計算できる PC アプリケーションです。
 このガイドでは、Windows、Mac、Linux などの他のシステムでの FD Applet のインストール方法と使用方法について説明します。
+
+### 実装について
+
+Kotlin を用いたサーバー・バックエンドと、React を用いたフロントエンド、およびアップデート確認・自動更新や起動補助のためのスクリプトで構成されています。ソースコードは今後公開予定です。アプリの開発やドキュメント作成において、ChatGPT のサポートを受けています。
 
 ## インストール
 
 ### システム要件
 
-- JDK 17: まず Java 環境（JDK 17）をインストールしていることを確認してください。わからない場合は、<https://adoptium.net/> から「Latest LTS Release」をダウンロードしてインストールしてください。
+- JDK 17: まず Java 環境（JDK 17）をインストールしてください。こだわりがなければ、<https://adoptium.net/> から「Latest LTS Release」をダウンロードしてインストールするのが簡単です。
 
 ### ダウンロード・解凍
 
@@ -134,3 +141,7 @@ _有限表現型 special biserial algebra が必要_。
 
 質問や問題がある場合は、メニューの Files → "Send Feedback or report issues"を使用するか、
 henomoto [at] omu.ac.jp にメールを送ってください。
+
+## 更新履歴
+
+- 2023-04-04: 2023-04-04: 初期バージョン 0.1.0 をリリースしました。
