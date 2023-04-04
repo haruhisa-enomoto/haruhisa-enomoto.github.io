@@ -1,26 +1,24 @@
 ---
 layout: single
-classes: wide
+classes: wide-no-author
 title: "FD Applet - Installation and Usage Guide"
 permalink: /fd-applet/
 author_profile: false
+toc: true
+toc_sticky: true
 ---
-
-{% include base_path %}
 
 [(日本語版)](/fd-applet-ja/)
 
 This guide covers the installation and usage instructions for FD Applet on Windows, Mac, and other systems.
 
-## Usage
-
-TODO
-
-## System Requirements
-
-- JDK 17: Install the latest Java environment (JDK 17). If unsure, download and install the "Latest LTS Release" from <https://adoptium.net/>.
-
 ## Installation
+
+### System Requirements
+
+- JDK 17: Install the Java environment (JDK 17). If unsure, download and install the "Latest LTS Release" from <https://adoptium.net/>.
+
+### Download and extract
 
 1. **Download the appropriate zip file for your system:**
 
@@ -31,7 +29,7 @@ TODO
 
 2. **Extract the downloaded zip file.**
 
-## Directory Structure
+### Directory Structure
 
 The extracted directory contains the following files and folders:
 
@@ -40,32 +38,99 @@ The extracted directory contains the following files and folders:
 - Windows: `fd-applet.bat`
 - Mac: `fd-applet.command`, `initial-setup.scpt`
 
-## Running FD Applet
+### Running FD Applet
 
-### Windows Users
+#### Windows Users
 
 1. Double-click `fd-applet.bat` to launch the app.
-   (This file automatically checks for updates, runs `fd-applet-fat.jar`, and opens <https://localhost:8080> in your browser.)
+   (This file automatically checks for updates, runs `fd-applet-fat.jar`, and opens <http://localhost:8080> in your browser.)
 
-### Mac Users
+#### Mac Users
 
 1. For the first time only, open `initial-setup.scpt` and click the Run button (the triangle icon) in the Script Editor to grant `fd-applet.command` execute permissions.
 2. Double-click `fd-applet.command` to launch the app.
-   (This file automatically checks for updates, runs `fd-applet-fat.jar`, and opens <https://localhost:8080> in your browser.)
+   (This file automatically checks for updates, runs `fd-applet-fat.jar`, and opens <http://localhost:8080> in your browser.)
 
 3. On the first launch, you may need to allow the app to run by following these steps:
    - Go to System Preferences > Security & Privacy.
    - Click the "Open Anyway" button next to the message about the app being from an unidentified developer.
 
-### For Linux and Other OS Users or Advanced Users
+#### For Linux and Other OS Users or Advanced Users
 
 1. `lib/fd-applet-fat.jar` is the main body of FD Applet. After installing the Java environment, execute the command `java -jar fd-applet-fat.jar` (from `lib` directory) to start the server.
-2. Once the server is up and running, access <https://localhost:8080> in your browser to use FD Applet.
+2. Once the server is up and running, access <http://localhost:8080> in your browser to use FD Applet.
 3. Note that in this case, the app will not be updated automatically. If a message appears on the screen indicating that a newer version is available, manually download [fd-applet-fat.jar](/files/fd-applet-fat.jar) and replace the one in the `lib` folder.
 
-## Closing FD Applet
+### Closing FD Applet
 
 To close the app, close the terminal window (Command Prompt on Windows, Terminal on Mac) and the browser.
+
+## Usage
+
+([日本語版](/fd-applet-ja/#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95))
+
+TL;DR:
+
+1. Input your algebra (quiver, monomial/commutative relations) in left input area.
+2. Click Update button, then use right tabs (Basic Info, Calculator, Enumerator, Quivers).
+3. Most features require a finite-dimensional special biserial algebra (e.g. a gentle or string algebra); In addition, Enumerator and Quiver tabs need a representation-finite algebra.
+
+### Input Your Algebra
+
+Enter your algebra in the left input area.
+Input Nakayama algebra from Kupisch series via "File" menu if needed.
+
+#### Quiver
+
+- Add vertices: click canvas.
+- Add arrows: click source vertex, then target vertex (or empty space for a new target vertex).
+- Delete vertices/arrows: use Delete or Backspace key, or middle "Delete selected item" button.
+- Fit canvas: left "Fit" button.
+- Clear all: right "Clear all" button.
+
+#### Relation
+
+_Supported: monomial and commutative relations only._
+
+- Monomial relation: write `ab`, `a b`, or `a*b` for the path `-a-> -b->`.
+- Commutative relation: write expressions like `ab-cd` or `a * b - c * d`.
+
+#### Update
+
+Click Update button to finish. Save or open via "File" menu.
+
+### Right Tabs
+
+Input algebra, press "Get Data" button to use each tab.
+
+Indecomposable module notation:
+
+- `1`, `2`: simple modules at `1` and `2`.
+- `a*b*!c`: string module `1 -a-> 2 -b-> 3 <-c- 4`.
+- `a*b=d*e`: biserial module with commutative square `-a->-b-> = -d->-e->`.
+
+#### Basic Info
+
+_Requires a finite-dimensional special biserial algebra_.
+Displays basic info: homological dimensions, projective/injective modules, etc.
+
+#### Calculator
+
+_Requires a finite-dimensional special biserial algebra_.
+Calculates somethings like dimensions and projective resolutions based on input (e.g. `dim Ext^2(a*b + c*d*e, f*g)`).
+
+#### Enumerator
+
+_Requires a representation-finite special biserial algebra_.
+
+- Enumerates modules/subcategories (e.g. tilting modules, semibricks). Show distribution with "Show Distribution" button.
+- Show AR quiver; if a module/subcategory is selected, it is colored. Highlight Ext-projectives/injectives in the chosen subcategory.
+
+#### Quivers
+
+_Requires a representation-finite special biserial algebra_.
+
+Displays quivers related to algebra (e.g. τ-tilting quiver, Hasse quivers of subcategories).
 
 ## Support
 

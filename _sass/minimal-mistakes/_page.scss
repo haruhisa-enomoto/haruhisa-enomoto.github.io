@@ -576,3 +576,33 @@ body {
     }
   }
 }
+
+.wide-no-author {
+  .page {
+    @include breakpoint($large) {
+      float: none; // disable from .page
+      margin: 0 auto; // center
+      width: calc(100% - #{$right-sidebar-width-narrow});
+      padding-right: $right-sidebar-width-narrow;
+    }
+
+    @include breakpoint($x-large) {
+      float: none; // disable from .page
+      margin: 0 auto; // center
+    }
+  }
+
+  .page__related {
+    @include breakpoint($large) {
+      float: none; // disable from .page
+      margin: 0 auto; // center
+      width: calc(100% - #{$right-sidebar-width-narrow});
+      padding-right: $right-sidebar-width-narrow;
+    }
+
+    @include breakpoint($x-large) {
+      float: none; // disable from .page
+      margin: 0 auto; // center
+    }
+  }
+}

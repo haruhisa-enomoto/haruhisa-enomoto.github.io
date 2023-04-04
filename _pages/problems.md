@@ -2,11 +2,10 @@
 layout: single
 title: "Problems"
 permalink: /problems/
-author_profile: true
+classes: []
 toc: true
+toc_sticky: true
 ---
-
-{% include base_path %}
 
 In this page, I raise some problems in the representation theory of algebras, which are interesting to me, but which seem so difficult that I can't answer by myself. I hope someone will solve (or at least consider) them.
 

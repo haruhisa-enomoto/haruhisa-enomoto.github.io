@@ -1,5 +1,3 @@
-{% include base_path %}
-
 {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
 {% else %}
@@ -37,10 +35,9 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
     {% if post.date %}<p class="page__meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
-    {% if post.venue and post.link %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, <a href="{{ post.link }}">{{ post.venue }}</a>,  {{post.location}}
+    {% if post.venue and post.link %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, <a href="{{ post.link }}">{{ post.venue }}</a>,  {{post.location}}</p>
     {% elsif post.venue %}
-    <p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}}
+    <p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}}</p>
     {% endif %}
-    <!-- {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %} -->
   </article>
 </div>

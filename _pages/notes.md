@@ -5,8 +5,6 @@ permalink: /notes/
 author_profile: true
 ---
 
-{% include base_path %}
-
 ## Theses
 
 - Bachelor thesis: [On categories of modules over locular categories (in Japanese)](/files/sotsuron.pdf).
