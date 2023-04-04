@@ -42,7 +42,7 @@ The implementation consists of a server backend using Kotlin, a frontend using R
 
 ### System Requirements
 
-- JDK 17: Install the Java environment (JDK 17). If unsure, download and install the "Latest LTS Release" from <https://adoptium.net/>.
+- JDK 17: First, please install the Java environment (JDK 17). If you have no preference, it's easy to download and install the "Latest LTS Release" from <https://adoptium.net/>. (Then you can install it with the default settings without changing anything during the installation process.)
 
 ### Download and extract
 
