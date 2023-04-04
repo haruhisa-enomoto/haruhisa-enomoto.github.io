@@ -13,9 +13,11 @@ I am Haruhisa Enomoto (榎本 悠久 in Japanese), a postdoc at
 [Graduate School of Science](https://www.omu.ac.jp/sci/en/),
 [Osaka Metropolitan University](https://www.omu.ac.jp/en/) in Japan.
 
-**Since April 2022, My e-mail address and affiliation has changed since the name of my university has changed.**
+**[FD Applet](/fd-applet/) - an applet for Finite-Dimentional algebras has been released!**
 
-**New E-mail**:
+Since April 2022, My e-mail address and affiliation has changed since the name of my university has changed.
+
+_New E-mail_:
 `henomoto [at] omu.ac.jp`
 
 (Old1: `the35883 [at] osakafu-u.ac.jp`,
@@ -45,6 +47,7 @@ For more details, see [CV](/cv/).
 
 ## Update History
 
+- 2023-04-04: Add [FD Applet](/fd-applet/)!
 - 2023-04-04: Add [talk](/talks/2023-03-23/) and [talk](/talks/2023-03-30/). Also New theme!
 - 2023-02-27: I gave a [talk](/talks/2023-02-27/) at Paris Algebra Seminar.
 - 2023-02-03: New preprint [Maximal self-orthogonal modules and a new generalization of tilting modules](/papers/mso/), and add some related problems to [Problem](/problems/).
