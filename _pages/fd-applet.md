@@ -10,6 +10,24 @@ toc_sticky: true
 
 [(日本語版)](/fd-applet-ja/)
 
+## FD Applet Usage Examples
+
+![FD Applet 1](/assets/images/fd-applet/fd-applet1.jpg)
+
+There are 255,364 τ-rigid modules!
+
+![FD Applet 2](/assets/images/fd-applet/fd-applet2.jpg)
+
+The Hasse quiver of resolving subcategories
+
+![FD Applet 3](/assets/images/fd-applet/fd-applet3.jpg)
+
+One of cotorsion pairs
+
+![FD Applet 4](/assets/images/fd-applet/fd-applet4.jpg)
+
+Ext-injectives of some IE-closed subcategories
+
 ## About FD Applet
 
 FD Applet is a PC application that, from your inputted algebra, performs various calculations related to modules, enumerates specific modules and subcategories of module categories, and generates the AR quiver and various Hasse quivers and so on.

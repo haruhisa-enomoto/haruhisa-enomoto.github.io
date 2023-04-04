@@ -10,6 +10,24 @@ toc_sticky: true
 
 [(English version)](/fd-applet/)
 
+## FD Applet 使用例
+
+![FD Applet 1](/assets/images/fd-applet/fd-applet1.jpg)
+
+255,364 個の τ-rigid modules たち
+
+![FD Applet 2](/assets/images/fd-applet/fd-applet2.jpg)
+
+Rresolving subcategories の Hasse 図
+
+![FD Applet 3](/assets/images/fd-applet/fd-applet3.jpg)
+
+ある cotorsion pair
+
+![FD Applet 4](/assets/images/fd-applet/fd-applet4.jpg)
+
+ある IE-closed subcategories の Ext-injectives
+
 ## FD Applet について
 
 FD Applet は、多元環を入力すると、その加群に関する様々な計算や、特定の加群や加群圏の部分圏を列挙し、AR quiver や 各種 Hasse quiver などが計算できる PC アプリケーションです。

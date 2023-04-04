@@ -43,9 +43,9 @@ For more details, see [CV](/cv/).
 
 [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/) at Osaka Metropolitan University. My host researcher is [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en).
 
-## Update history
+## Update History
 
-- 2023-04-04: Add [talk](/talks/2023-03-23/) and [talk](/talks/2023-03-30/).
+- 2023-04-04: Add [talk](/talks/2023-03-23/) and [talk](/talks/2023-03-30/). Also New theme!
 - 2023-02-27: I gave a [talk](/talks/2023-02-27/) at Paris Algebra Seminar.
 - 2023-02-03: New preprint [Maximal self-orthogonal modules and a new generalization of tilting modules](/papers/mso/), and add some related problems to [Problem](/problems/).
 - 2022-11-22: I added a **counter-example** of a [Problem](/problems/) about the lattice-theoretical characterization of the lattice of torsion classes, and add a small [Program](/codes/) used to find it.
