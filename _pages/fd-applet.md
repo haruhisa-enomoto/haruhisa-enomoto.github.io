@@ -139,30 +139,30 @@ Indecomposable module notation:
 
 Displays basic info: homological dimensions, projective/injective modules, etc.
 
-_Most features work only for finite-dimensional special biserial algebras_.
+(Most features work only for finite-dimensional special biserial algebras.)
 
 #### Calculator
 
 Calculates things like dimensions of Hom or Ext and projective resolutions based on input (e.g. `dim Ext^2(a*b + c*d*e, f*g)`).
 
-_Most features work only for finite-dimensional special biserial algebras_.
+(Most features work only for finite-dimensional special biserial algebras.)
 
 #### Enumerator
 
 - Enumerates modules/subcategories (e.g. tilting modules, semibricks). Show distribution with "Show Distribution" button.
 - Show AR quiver; if a module/subcategory is selected, it is colored. Highlight Ext-projectives/injectives in the chosen subcategory.
 
-_Works only for representation-finite special biserial algebras_.
+(Works only for representation-finite special biserial algebras.)
 
 #### Quivers
 
 Displays quivers related to algebra (e.g. τ-tilting quiver, Hasse quivers of subcategories).
 
-_Works only for representation-finite special biserial algebras_.
+(Works only for representation-finite special biserial algebras.)
 
 ## Support
 
-If you have any questions or issues or feature requests, please use the menu's FILES > Send Feedback or report issues option or send an email to `henomoto [at] omu.ac.jp`.
+If you have any questions or issues or feature requests (e.g., a function to perform a specific calculation or a question about whether a certain calculation is possible), please use the menu's Files > Send Feedback or report issues option or send an email to `henomoto [at] omu.ac.jp`.
 
 ## Changelog
 
