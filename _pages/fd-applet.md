@@ -160,7 +160,7 @@ Displays quivers related to algebra (e.g. τ-tilting quiver, Hasse quivers of su
 
 ## Support
 
-If you have any questions or issues, please use the menu's FILES > Send Feedback or report issues option or send an email to `henomoto [at] omu.ac.jp`.
+If you have any questions or issues or feature requests, please use the menu's FILES > Send Feedback or report issues option or send an email to `henomoto [at] omu.ac.jp`.
 
 ## Changelog
 

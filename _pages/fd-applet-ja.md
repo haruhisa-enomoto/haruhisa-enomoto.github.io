@@ -157,7 +157,7 @@ _有限表現型 special biserial algebra が必要_。
 
 ## サポート
 
-質問や問題がある場合は、メニューの Files → "Send Feedback or report issues"を使用するか、
+質問や問題や機能追加の要望等がある場合は、メニューの Files → "Send Feedback or report issues"を使用するか、
 `henomoto [at] omu.ac.jp` にメールを送ってください。
 
 ## 更新履歴
