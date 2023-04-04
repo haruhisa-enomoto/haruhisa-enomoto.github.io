@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide-no-author
-title: "FD Applet - Installation and Usage Guide"
+title: "FD Applet - an applet for Finite-Dimensional algebras"
 permalink: /fd-applet/
 author_profile: false
 toc: true
