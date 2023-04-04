@@ -58,7 +58,7 @@ Kotlin を用いたサーバー・バックエンドと、React を用いたフ�
 
 解凍したディレクトリには、以下のファイルとフォルダが含まれています：
 
-- `lib`フォルダ: `fd-applet-fat.jar`を含む
+- `lib`フォルダ: 本体の`fd-applet-fat.jar`があります
 - `examples`フォルダ: 多元環の例が含まれています
 - Windows: `fd-applet.bat`
 - Mac: `fd-applet.command`, `initial-setup.scpt`
@@ -80,11 +80,11 @@ Kotlin を用いたサーバー・バックエンドと、React を用いたフ�
    - システム環境設定 > セキュリティとプライバシーに移動します。
    - 「開発元を確認できないため」のようなメッセージの横にある「このまま開く」ボタンをクリック
 
-#### Linux やその他の OS のユーザー、または詳しい方へ
+#### Linux 等その他の OS や詳しいユーザー
 
 1. `lib/fd-applet-fat.jar`が FD Applet の本体です。Java 環境をインストールした後、`java -jar fd-applet-fat.jar`というコマンドを(`lib` 内から)実行することで、サーバーが立ち上がります。
 2. サーバーが立ち上がった後、ブラウザで<http://localhost:8080>にアクセスすると、FD Applet が利用できます。
-3. この場合、アップデートは自動で行われませんので、画面に最新版が利用可能というメッセージが表示されたら、手動で提供されているリンクから最新の[fd-applet-fat.jar](/files/fd-applet-fat.jar)をダウンロードし、`lib`フォルダ内のものと置き換えてください。
+3. この場合、アップデートは自動で行われませんので、画面に最新版が利用可能というメッセージが表示されたら、手動で[fd-applet-fat.jar](/files/fd-applet-fat.jar)をダウンロードし、`lib`フォルダ内のものと置き換えてください。
 
 ### アプリの終了
 
