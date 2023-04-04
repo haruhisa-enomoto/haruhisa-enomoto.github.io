@@ -60,7 +60,7 @@ The implementation consists of a server backend using Kotlin, a frontend using R
 The extracted directory contains the following files and folders:
 
 - `lib` folder: contains `fd-applet-fat.jar`
-- `examples` folder: contains algebra examples
+- `examples` folder: contains examples of algebras
 - Windows: `fd-applet.bat`
 - Mac: `fd-applet.command`, `initial-setup.scpt`
 
