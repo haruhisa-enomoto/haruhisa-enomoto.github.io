@@ -72,7 +72,7 @@ Kotlin を用いたサーバー・バックエンドと、React を用いたフ�
 
 #### Mac ユーザー
 
-1. 初回のみ、`initial-setup.scpt`を開いてスクリプトエディタの実行ボタン（三角のアイコン）をクリックし、`fd-applet.command`に実行権限を付与します。
+1. 初回のみ、`initial-setup.scpt`を開いてスクリプトエディタの実行ボタン（三角のアイコン）をクリックして実行します（これは`fd-applet.command`に実行権限を付与します）。
 2. `fd-applet.command`をダブルクリックしてアプリを起動します。
    (このファイルは、アップデートを確認し、`fd-applet-fat.jar`を実行して、ブラウザで<http://localhost:8080>を開く処理を自動的に行います。)
 

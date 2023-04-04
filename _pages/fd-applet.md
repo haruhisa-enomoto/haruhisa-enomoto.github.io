@@ -73,7 +73,7 @@ The extracted directory contains the following files and folders:
 
 #### Mac Users
 
-1. For the first time only, open `initial-setup.scpt` and click the Run button (the triangle icon) in the Script Editor to grant `fd-applet.command` execute permissions.
+1. For the first time only, open `initial-setup.scpt` and click the Run button (the triangle icon) in the Script Editor (to grant `fd-applet.command` execute permissions).
 2. Double-click `fd-applet.command` to launch the app.
    (This file automatically checks for updates, runs `fd-applet-fat.jar`, and opens <http://localhost:8080> in your browser.)
 
