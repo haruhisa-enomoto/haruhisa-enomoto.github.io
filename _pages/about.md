@@ -16,12 +16,12 @@ I am Haruhisa Enomoto (榎本 悠久 in Japanese), a postdoc at
 **Since April 2022, My e-mail address and affiliation has changed since the name of my university has changed.**
 
 **New E-mail**:
-henomoto [at] omu.ac.jp
+`henomoto [at] omu.ac.jp`
 
-(Old1: the35883 [at] osakafu-u.ac.jp,
+(Old1: `the35883 [at] osakafu-u.ac.jp`,
 _I cannot use this address!!!!_)
 
-(Old2 : m16009t [at] math.nagoya-u.ac.jp,
+(Old2 : `m16009t [at] math.nagoya-u.ac.jp`,
 I can still use and check this Nagoya e-mail address)
 
 For more details, see [CV](/cv/).
@@ -45,6 +45,7 @@ For more details, see [CV](/cv/).
 
 ## Update history
 
+- 2023-04-04: Add [talk](/talks/2023-03-23/) and [talk](/talks/2023-03-30/).
 - 2023-02-27: I gave a [talk](/talks/2023-02-27/) at Paris Algebra Seminar.
 - 2023-02-03: New preprint [Maximal self-orthogonal modules and a new generalization of tilting modules](/papers/mso/), and add some related problems to [Problem](/problems/).
 - 2022-11-22: I added a **counter-example** of a [Problem](/problems/) about the lattice-theoretical characterization of the lattice of torsion classes, and add a small [Program](/codes/) used to find it.
