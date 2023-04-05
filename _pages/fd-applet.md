@@ -127,10 +127,6 @@ TL;DR:
 Enter your algebra in the left input area.
 Input Nakayama algebra from Kupisch series via "File" menu if needed.
 
-#### `examples` folder
-
-Inside the unzipped folder, there is an `examples` folder that contains several examples of algebras. To use these examples, go to the "File" menu, select "Open," and choose a file from within the `examples` folder. The quiver and associated relations will be loaded automatically.
-
 #### Quiver
 
 - Add vertices: click canvas.
