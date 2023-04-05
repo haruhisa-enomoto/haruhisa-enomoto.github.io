@@ -59,8 +59,8 @@ The implementation consists of a server backend using Kotlin, a frontend using R
 
 The extracted directory contains the following files and folders:
 
-- `lib` folder: contains `fd-applet-fat.jar`
-- `examples` folder: contains examples of algebras
+- `lib` folder: contains a java file `fd-applet-fat.jar`. **Do not double-click it.**
+- `examples` folder: contains examples of algebras. See [Open and Save](#open-and-save) for how to use them.
 - Windows: `fd-applet.bat`
 - Mac: `fd-applet.command`, `initial-setup.scpt`
 
@@ -121,6 +121,10 @@ TL;DR:
 Enter your algebra in the left input area.
 Input Nakayama algebra from Kupisch series via "File" menu if needed.
 
+#### `examples` folder
+
+Inside the unzipped folder, there is an `examples` folder that contains several examples of algebras. To use these examples, go to the "File" menu, select "Open," and choose a file from within the `examples` folder. The quiver and associated relations will be loaded automatically.
+
 #### Quiver
 
 - Add vertices: click canvas.
@@ -138,7 +142,13 @@ _Supported: monomial and commutative relations only._
 
 #### Update
 
-Click Update button to finish. Save or open via "File" menu.
+Click Update button to finish.
+
+#### Open and Save
+
+You can save your algebra by selecting "File" > "Save" menu, and load a saved algebra using "Open."
+
+For example, when you choose a file from within the `examples` folder using "Open," a quiver and relations will be loaded automatically.
 
 ### Right Tabs
 

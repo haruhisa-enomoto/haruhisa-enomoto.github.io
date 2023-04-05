@@ -58,8 +58,8 @@ Kotlin を用いたサーバー・バックエンドと、React を用いたフ�
 
 解凍したディレクトリには、以下のファイルとフォルダが含まれています：
 
-- `lib`フォルダ: 本体の`fd-applet-fat.jar`があります
-- `examples`フォルダ: 多元環の例が含まれています
+- `lib`フォルダ: `fd-applet-fat.jar`という Java ファイルがあります。**決してダブルクリックして開こうとしないでください**。
+- `examples`フォルダ: 多元環の例が含まれています。使い方は[Open と Save](#open-と-save)をご覧ください。
 - Windows: `fd-applet.bat`
 - Mac: `fd-applet.command`, `initial-setup.scpt`
 
@@ -130,7 +130,13 @@ Kotlin を用いたサーバー・バックエンドと、React を用いたフ�
 
 #### Update
 
-Update ボタンをクリックして完了します。"File"メニューから保存または開くことができます。
+Update ボタンをクリックして完了します。
+
+#### Open と Save
+
+"File"メニューの"Save"から多元環を保存でき、また"Open"から保存した多元環を読み込む事ができます。
+
+例えば"Open"で`examples`フォルダの中のファイルを選ぶと、quiver と関係式が自動で読み込まれます。
 
 ### 右のタブ
 
