@@ -64,7 +64,7 @@ The extracted directory contains the following files and folders:
 - Windows: `fd-applet.bat`
 - Mac: `fd-applet.command`, `initial-setup.scpt`
 
-## Running FD Applet
+## Launching FD Applet
 
 {% capture notice-text %}
 
