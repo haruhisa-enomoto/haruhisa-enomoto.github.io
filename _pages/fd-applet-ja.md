@@ -63,14 +63,28 @@ Kotlin を用いたサーバー・バックエンドと、React を用いたフ�
 - Windows: `fd-applet.bat`
 - Mac: `fd-applet.command`, `initial-setup.scpt`
 
-### FD Applet の実行
+## FD Applet の起動
 
-#### Windows ユーザー
+{% capture notice-text %}
+
+### 重要な注意
+
+- **`fd-applet-fat.jar`をダブルクリックしないでください**。起動はできないか、できたとしても終了することができなくなります。必ず、`fd-applet.bat`（Windows）または `fd-applet.command`（Mac）をダブルクリックする（か[その他](#その他の-os-や詳しいユーザー)に従う）ようお願いします。
+- ブラウザで「サイトにアクセスできません」「サーバーに接続できません」等のエラーが出た場合、**数秒待ってから**ブラウザを更新してみてください。
+- アプリを使用し終わったら、**ターミナルウィンドウ**（Windows の場合はコマンドプロンプト、Mac の場合はターミナル）を**確実に閉じるように**してください。
+
+{% endcapture %}
+
+<div class="notice--danger">
+  {{ notice-text | markdownify }}
+</div>
+
+### Windows ユーザー
 
 1. `fd-applet.bat`をダブルクリックしてアプリを起動します。
    （このファイルは、アップデートを確認し、`fd-applet-fat.jar`を実行して、ブラウザで<http://localhost:8080>を開く処理を自動的に行います。）
 
-#### Mac ユーザー
+### Mac ユーザー
 
 1. 初回のみ、`initial-setup.scpt`を開いてスクリプトエディタの実行ボタン（三角のアイコン）をクリックして実行します（これは`fd-applet.command`に実行権限を付与します）。
 2. `fd-applet.command`をダブルクリックしてアプリを起動します。
@@ -80,15 +94,11 @@ Kotlin を用いたサーバー・バックエンドと、React を用いたフ�
    - システム環境設定 > セキュリティとプライバシーに移動します。
    - 「開発元を確認できないため」のようなメッセージの横にある「このまま開く」ボタンをクリック
 
-#### Linux 等その他の OS や詳しいユーザー
+### その他の OS や詳しいユーザー
 
-1. `lib/fd-applet-fat.jar`が FD Applet の本体です。Java 環境をインストールした後、`java -jar fd-applet-fat.jar`というコマンドを（`lib` 内から）実行することで、サーバーが立ち上がります。
+1. `lib/fd-applet-fat.jar`が FD Applet の本体です。Java 環境をインストールした後、`java -jar fd-applet-fat.jar`というコマンドを（`lib` 内から）実行することで、サーバーが立ち上がります。**ファイルをダブルクリックしないでください。サーバーが起動しても、終了できない可能性があります。**
 2. サーバーが立ち上がった後、ブラウザで<http://localhost:8080>にアクセスすると、FD Applet が利用できます。
 3. この場合、アップデートは自動で行われませんので、画面に最新版が利用可能というメッセージが表示されたら、手動で[fd-applet-fat.jar](/files/fd-applet-fat.jar)をダウンロードし、`lib`フォルダ内のものと置き換えてください。
-
-### アプリの終了
-
-アプリを終了するには、ターミナルウィンドウ（Windows の場合はコマンドプロンプト、Mac の場合はターミナル）とブラウザを閉じてください。
 
 ## 使用方法
 

@@ -64,14 +64,28 @@ The extracted directory contains the following files and folders:
 - Windows: `fd-applet.bat`
 - Mac: `fd-applet.command`, `initial-setup.scpt`
 
-### Running FD Applet
+## Running FD Applet
 
-#### Windows Users
+{% capture notice-text %}
+
+### Important Notes
+
+- **Do not double-click `fd-applet-fat.jar`.** Launching it either won't work or, if it does, you won't be able to close it. Always double-click `fd-applet.bat` (Windows) or `fd-applet.command` (Mac) instead, or follow the instructions for [other operating systems](#other-os-or-advanced-users).
+- If you encounter errors in your browser such as "Unable to access the site" or "Cannot connect to the server," please **wait a few seconds** before refreshing your browser.
+- Once you have finished using the app, make sure to **close the terminal window** (Command Prompt for Windows or Terminal for Mac) **completely**.
+
+{% endcapture %}
+
+<div class="notice--danger">
+  {{ notice-text | markdownify }}
+</div>
+
+### Windows Users
 
 1. Double-click `fd-applet.bat` to launch the app.
    (This file automatically checks for updates, runs `fd-applet-fat.jar`, and opens <http://localhost:8080> in your browser.)
 
-#### Mac Users
+### Mac Users
 
 1. For the first time only, open `initial-setup.scpt` and click the Run button (the triangle icon) in the Script Editor (to grant `fd-applet.command` execute permissions).
 2. Double-click `fd-applet.command` to launch the app.
@@ -81,9 +95,10 @@ The extracted directory contains the following files and folders:
    - Go to System Preferences > Security & Privacy.
    - Click the "Open Anyway" button next to the message about the app being from an unidentified developer.
 
-#### For Linux and Other OS Users or Advanced Users
+### Other OS or Advanced Users
 
 1. `lib/fd-applet-fat.jar` is the main body of FD Applet. After installing the Java environment, execute the command `java -jar fd-applet-fat.jar` (from `lib` directory) to start the server.
+   **Do not double-click the jar file. You won't be able to close the server.**
 2. Once the server is up and running, access <http://localhost:8080> in your browser to use FD Applet.
 3. Note that in this case, the app will not be updated automatically. If a message appears on the screen indicating that a newer version is available, manually download [fd-applet-fat.jar](/files/fd-applet-fat.jar) and replace the one in the `lib` folder.
 
