@@ -153,7 +153,8 @@ Update ボタンをクリックして完了します。"File"メニューから�
 
 #### Quivers
 
-多元環に関連する quiver を表示します（例：τ-tilting quiver、部分圏の Hasse quiver など）。
+- 多元環に関連する quiver を表示します（例：τ-tilting quiver、部分圏の Hasse quiver など）。
+- AR quiver を表示すると、右側の quiver の頂点を選ぶと、対応する加群・部分圏が AR quiver 上で色付けされます。
 
 （有限表現型 special biserial algebra でのみ動きます。）
 
