@@ -38,6 +38,12 @@ This guide covers the installation and usage instructions for FD Applet on Windo
 
 The implementation consists of a server backend using Kotlin, a frontend using React, and scripts for update verification, automatic updating, and startup assistance. The source code will be published in the future. The development of the app and the creation of this documentation have greatly benefited from the support of ChatGPT.
 
+**Source codes**
+
+- [Front-end (React)](https://github.com/haruhisa-enomoto/fd-applet-front)
+
+- Back-end: in preparation
+
 ## Installation
 
 ### System Requirements
