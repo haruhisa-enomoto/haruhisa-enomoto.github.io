@@ -44,6 +44,15 @@ The implementation consists of a server backend using Kotlin, a frontend using R
 
 - Back-end: in preparation
 
+## Changelog
+
+- 2023-04-06: Released version 0.1.1. Fixed UI and behavior:
+
+  - Added "Zoom" options for quivers (default: disabled), allowing users to choose whether scrolling in a quiver will zoom or not.
+  - When the browser or the tab is closed, the server will now shut down automatically.
+
+- 2023-04-04: Released the initial version 0.1.0.
+
 ## Installation
 
 ### System Requirements
@@ -77,8 +86,8 @@ The extracted directory contains the following files and folders:
 ### Important Notes
 
 - **Do not double-click `fd-applet-fat.jar`.** Launching it either won't work or, if it does, you won't be able to close it. Always double-click `fd-applet.bat` (Windows) or `fd-applet.command` (Mac) instead, or follow the instructions for [other operating systems](#other-os-or-advanced-users).
-- If you encounter errors in your browser such as "Unable to access the site" or "Cannot connect to the server," please **wait a few seconds** before refreshing your browser.
-- Once you have finished using the app, make sure to **close the terminal window** (Command Prompt for Windows or Terminal for Mac) **completely**.
+- If you encounter errors in your browser such as "Unable to access the site" or "Cannot connect to the server," please wait a few seconds before refreshing your browser.
+- For ver 0.1.0 only: Once you have finished using the app, make sure to close the terminal window (Command Prompt for Windows or Terminal for Mac) completely.
 
 {% endcapture %}
 
@@ -110,7 +119,7 @@ The extracted directory contains the following files and folders:
 
 ### Closing FD Applet
 
-To close the app, close the terminal window (Command Prompt on Windows, Terminal on Mac) and the browser.
+To close the app, simply close the browser (or the tab). Starting from version 0.1.1, the background server will shut down automatically when the browser is closed, so you no longer need to close the terminal manually.
 
 ## Usage
 
@@ -191,7 +200,3 @@ Calculates things like dimensions of Hom or Ext and projective resolutions based
 ## Support
 
 If you have any questions or issues or feature requests (e.g., a function to perform a specific calculation or a question about whether a certain calculation is possible), please use the menu's Files > "Send Feedback or report issues" option, or send an email to `henomoto [at] omu.ac.jp`.
-
-## Changelog
-
-- 2023-04-04: Released the initial version 0.1.0.
