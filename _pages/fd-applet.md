@@ -46,6 +46,8 @@ The implementation consists of a server backend using Kotlin, a frontend using R
 
 ## Changelog
 
+- 2023-04-07: Released version 0.1.2. Minor UI fixes.
+
 - 2023-04-06: Released version 0.1.1. Fixed UI and behavior:
 
   - Added "Zoom" options for quivers (default: disabled), allowing users to choose whether scrolling in a quiver will zoom or not.
