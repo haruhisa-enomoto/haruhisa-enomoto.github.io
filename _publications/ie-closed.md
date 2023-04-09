@@ -4,6 +4,7 @@ excerpt: "Study subcategories of a module category closed under images and exten
 date: 2023-09-01
 arxiv: "2208.13937"
 venue: "J. Pure Appl. Algebra"
+paperurl: https://doi.org/10.1016/j.jpaa.2023.107372
 citation: "H. Enomoto, A. Sakai, Image-extension-closed subcategories of module categories of hereditary algebras, J. Pure Appl. Algebra 227 (2023), no. 9, Paper No. 107372."
 joint: "A. Sakai"
 ---

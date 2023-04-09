@@ -9,6 +9,10 @@ classes: []
 
 I'm interested in realizing, computing and expressing various objects in the representation theory of algebra using computer, especially using [SageMath](https://www.sagemath.org/) and Theorem prover [Lean](https://leanprover.github.io/).
 
+## FD Applet
+
+[**Look at here!**](/fd-applet/)
+
 ## Generator of finite congruence-uniform lattices in SageMath
 
 Generate all finite congruence-uniform lattices (with a limitation of the number of join-irreducibles if necessary) in SageMath, by iterating Day's interval doubling construction.

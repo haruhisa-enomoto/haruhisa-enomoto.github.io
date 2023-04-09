@@ -47,7 +47,7 @@ For more details, see [CV](/cv/).
 
 ## Update History
 
-- 2023-04-04: Add [FD Applet](/fd-applet/)!
+- 2023-04-04: Add **[FD Applet](/fd-applet/)**!
 - 2023-04-04: Add [talk](/talks/2023-03-23/) and [talk](/talks/2023-03-30/). Also New theme!
 - 2023-02-27: I gave a [talk](/talks/2023-02-27/) at Paris Algebra Seminar.
 - 2023-02-03: New preprint [Maximal self-orthogonal modules and a new generalization of tilting modules](/papers/mso/), and add some related problems to [Problem](/problems/).
