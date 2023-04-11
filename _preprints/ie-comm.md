@@ -1,9 +1,9 @@
 ---
-title: "I(K)E-closed subcategories are torsion-free classes for the commutative case"
+title: "IE-closed subcategories of commutative rings are torsion-free classes"
 excerpt: "I proved the title"
 date: 2023-04-07
 arxiv: "2304.03260"
-citation: "H. Enomoto, I(K)E-closed subcategories are torsion-free classes for the commutative case, arXiv:2304.032608."
+citation: "H. Enomoto, IE-closed subcategories of commutative rings are torsion-free classes, arXiv:2304.032608."
 ---
 
 ## Comment
