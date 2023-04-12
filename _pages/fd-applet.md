@@ -57,11 +57,8 @@ The implementation consists of a server backend using Kotlin, a frontend using R
 
 ## Installation
 
-### System Requirements
-
-- JDK 17: First, please install the Java environment (JDK 17). If you have no preference, it's easy to download and install the "Latest LTS Release" from <https://adoptium.net/>. (Then you can install it with the default settings without changing anything during the installation process.)
-
-### Download and extract
+0. **Install the Java environment (JDK 17):**
+   If you have no preference, it's easy to download and install the "Latest LTS Release" from <https://adoptium.net/>. (Then you can install it with the default settings without changing anything during the installation process.)
 
 1. **Download the appropriate zip file for your system:**
 
@@ -76,10 +73,10 @@ The implementation consists of a server backend using Kotlin, a frontend using R
 
 The extracted directory contains the following files and folders:
 
-- `lib` folder: contains a java file `fd-applet-fat.jar`. **Do not double-click it.**
-- `examples` folder: contains examples of algebras. See [Open and Save](#open-and-save) for how to use them.
 - Windows: `fd-applet.bat`
 - Mac: `fd-applet.command`, `initial-setup.scpt`
+- `examples` folder: contains examples of algebras. See [Open and Save](#open-and-save) for how to use them.
+- `lib` folder: contains a java file `fd-applet-fat.jar`. **Do not double-click it.**
 
 ## Launching FD Applet
 
@@ -89,7 +86,6 @@ The extracted directory contains the following files and folders:
 
 - **Do not double-click `fd-applet-fat.jar`.** Launching it either won't work or, if it does, you won't be able to close it. Always double-click `fd-applet.bat` (Windows) or `fd-applet.command` (Mac) instead, or follow the instructions for [other operating systems](#other-os-or-advanced-users).
 - If you encounter errors in your browser such as "Unable to access the site" or "Cannot connect to the server," please wait a few seconds before refreshing your browser.
-- For ver 0.1.0 only: Once you have finished using the app, make sure to close the terminal window (Command Prompt for Windows or Terminal for Mac) completely.
 
 {% endcapture %}
 
