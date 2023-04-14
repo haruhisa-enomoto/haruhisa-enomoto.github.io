@@ -45,7 +45,10 @@ Kotlin を用いたサーバー・バックエンドと、React を用いたフ�
 
 ## 更新履歴
 
+- 2023-04-07: バージョン 0.2.0 をリリース。UI 修正（AR quiver 周り）、"projectively/injectiely stable Hom"の計算を追加。
+
 - 2023-04-07: バージョン 0.1.2 をリリース。軽微な UI 修正。
+
 - 2023-04-06: バージョン 0.1.1 をリリース。UI と挙動を修正：
   - Quiver に「Zoom」オプションを追加（デフォルト：無効）。Quiver 内でのスクロールでズームするかどうかを選択できるようになりました。
   - ブラウザまたはタブが閉じられたときに、サーバーが自動的にシャットダウンされるようになりました。
@@ -154,7 +157,9 @@ Update ボタンをクリックして完了します。
 
 ### 右のタブ
 
-多元環を入力し、"Get Data"ボタンを押して各タブを使用します。
+- 多元環を入力し、"Get Data"ボタンを押して各タブを使用します。
+
+- "Show AR Quiver"で、AR quiver を（全てのタブについて）表示するか切り替えられます。実際に AR quiver を表示するには、"Compute AR Quiver"ボタンを押してください。
 
 直既約加群の記法：
 
@@ -177,14 +182,14 @@ Update ボタンをクリックして完了します。
 #### Enumerator
 
 - 加群/部分圏を数え上げて列挙します（例：各種 tilting や semibrick など）。"Show Distribution"ボタンで直既約の個数ごとの分布を表示します。
-- AR quiver を表示すると、加群/部分圏を選択すると、頂点が色付けされます。部分圏を選んだ場合は Ext-projective/injective をハイライト表示できます。
+- AR quiver が表示されているとき、加群/部分圏を選択すると、頂点が色付けされます。部分圏を選んだ場合は Ext-projective/injective をハイライト表示できます。
 
 （有限表現型 special biserial algebra でのみ動きます。）
 
 #### Quivers
 
 - 多元環に関連する quiver を表示します（例：τ-tilting quiver、部分圏の Hasse quiver など）。
-- AR quiver を表示すると、右側の quiver の頂点を選ぶと、対応する加群・部分圏が AR quiver 上で色付けされます。
+- AR quiver が表示されているとき、quiver の頂点を選ぶと、対応する加群・部分圏が AR quiver 上で色付けされます。
 
 （有限表現型 special biserial algebra でのみ動きます。）
 

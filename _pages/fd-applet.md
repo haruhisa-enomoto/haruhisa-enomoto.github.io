@@ -46,6 +46,8 @@ The implementation consists of a server backend using Kotlin, a frontend using R
 
 ## Changelog
 
+- 2023-04-07: Released version 0.2.0. UI updates (mainly for the AR quiver), and added "projectively/injectiely stable Hom" calculator.
+
 - 2023-04-07: Released version 0.1.2. Minor UI fixes.
 
 - 2023-04-06: Released version 0.1.1. Fixed UI and behavior:
@@ -161,7 +163,9 @@ For example, when you choose a file from within the `examples` folder using "Ope
 
 ### Right Tabs
 
-Input algebra, press "Get Data" button to use each tab.
+- Input algebra, press "Get Data" button to use each tab.
+
+- Toggle the "Show AR Quiver" switch to determine whether the AR quiver should be displayed (for all tabs) or not. Click on "Compute AR Quiver" to actually show the AR quiver.
 
 Indecomposable module notation:
 
@@ -184,14 +188,14 @@ Calculates things like dimensions of Hom or Ext and projective resolutions based
 #### Enumerator
 
 - Enumerates modules/subcategories (e.g. tilting modules, semibricks). Show distribution with "Show Distribution" button.
-- Show AR quiver; if a module/subcategory is selected, it is colored. Highlight Ext-projectives/injectives in the chosen subcategory.
+- When the AR quiver is diaplayed, if a module/subcategory is selected, it is colored. Highlight Ext-projectives/injectives in the chosen subcategory.
 
 (Only Works for representation-finite special biserial algebras.)
 
 #### Quivers
 
 - Displays quivers related to algebra (e.g. τ-tilting quiver, Hasse quivers of various subcategories).
-- If AR quiver is shown, then the selected module/subcategory in the right quiver is colored in the AR quiver.
+- When the AR quiver is diaplayed, the selected module/subcategory in the quiver is colored in the AR quiver.
 
 (Only Works for representation-finite special biserial algebras.)
 
