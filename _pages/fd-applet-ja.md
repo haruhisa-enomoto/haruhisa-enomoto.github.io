@@ -45,7 +45,7 @@ Kotlin を用いたサーバー・バックエンドと、React を用いたフ�
 
 ## 更新履歴
 
-- 2023-04-07: バージョン 0.2.0 をリリース。UI 修正（AR quiver 周り）、"projectively/injectiely stable Hom"の計算を追加。
+- 2023-04-14: バージョン 0.2.0 をリリース。UI 修正（AR quiver 周り）、"projectively/injectiely stable Hom"の計算を追加。
 
 - 2023-04-07: バージョン 0.1.2 をリリース。軽微な UI 修正。
 

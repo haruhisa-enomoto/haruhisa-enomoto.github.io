@@ -46,7 +46,7 @@ The implementation consists of a server backend using Kotlin, a frontend using R
 
 ## Changelog
 
-- 2023-04-07: Released version 0.2.0. UI updates (mainly for the AR quiver), and added "projectively/injectiely stable Hom" calculator.
+- 2023-04-14: Released version 0.2.0. UI updates (mainly for the AR quiver), and added "projectively/injectiely stable Hom" calculator.
 
 - 2023-04-07: Released version 0.1.2. Minor UI fixes.
 
