@@ -10,6 +10,13 @@ toc_sticky: true
 
 [(English version)](/fd-applet/)
 
+## オンライン版
+
+<https://fd-applet.dt.r.appspot.com/>
+
+このオンラインデモは、使用可能メモリが制限されており、計算も遅い可能性があります。また、接続が不安定になる可能性があります。
+より快適にご利用いただくために、ローカル版のインストールをお勧めします。
+
 ## FD Applet 使用例
 
 ![FD Applet 1](/assets/images/fd-applet/fd-applet1.jpg)
@@ -44,6 +51,8 @@ Kotlin を用いたサーバー・バックエンドと、React を用いたフ�
 - バックエンド：in preparation
 
 ## 更新履歴
+
+- 2023-04-15: バージョン 0.2.1 をリリース。軽微な UI 修正と、オンラインデモの追加。
 
 - 2023-04-14: バージョン 0.2.0 をリリース。UI 修正（AR quiver 周り）、"projectively/injectiely stable Hom"の計算を追加。
 

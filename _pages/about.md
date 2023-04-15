@@ -13,7 +13,9 @@ I am Haruhisa Enomoto (榎本 悠久 in Japanese), a postdoc at
 [Graduate School of Science](https://www.omu.ac.jp/sci/en/),
 [Osaka Metropolitan University](https://www.omu.ac.jp/en/) in Japan.
 
-**[FD Applet](/fd-applet/) - an applet for Finite-Dimentional algebras has been released!**
+# [FD Applet](/fd-applet/) - an applet for Finite-Dimentional algebras has been released!
+
+**Online version: <https://fd-applet.dt.r.appspot.com/>**
 
 Since April 2022, My e-mail address and affiliation has changed since the name of my university has changed.
 

@@ -10,6 +10,13 @@ toc_sticky: true
 
 [(日本語版)](/fd-applet-ja/)
 
+## Online Version
+
+<https://fd-applet.dt.r.appspot.com/>
+
+This online demo has restricted computation memory and may run at a slower pace. Additionally, the connection could be unstable.
+For a better experience, we recommend installing the local version from this page.
+
 ## FD Applet Usage Examples
 
 ![FD Applet 1](/assets/images/fd-applet/fd-applet1.jpg)
@@ -45,6 +52,8 @@ The implementation consists of a server backend using Kotlin, a frontend using R
 - Back-end: in preparation
 
 ## Changelog
+
+- 2023-04-15: Released version 0.2.1. Minor UI fixes, and add online demo.
 
 - 2023-04-14: Released version 0.2.0. UI updates (mainly for the AR quiver), and added "projectively/injectiely stable Hom" calculator.
 
