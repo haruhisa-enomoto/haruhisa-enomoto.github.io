@@ -46,9 +46,7 @@ Kotlin を用いたサーバー・バックエンドと、React を用いたフ�
 
 **ソースコード**
 
-- [フロントエンド（React）](https://github.com/haruhisa-enomoto/fd-applet-front)
-
-- バックエンド：in preparation
+- [GitHub Repository](https://github.com/haruhisa-enomoto/fd-applet)
 
 ## 更新履歴
 

@@ -47,9 +47,7 @@ The implementation consists of a server backend using Kotlin, a frontend using R
 
 **Source codes**
 
-- [Front-end (React)](https://github.com/haruhisa-enomoto/fd-applet-front)
-
-- Back-end: in preparation
+- [GitHub Repository](https://github.com/haruhisa-enomoto/fd-applet)
 
 ## Changelog
 
