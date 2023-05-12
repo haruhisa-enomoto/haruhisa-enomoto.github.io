@@ -47,9 +47,7 @@ I do **NOT** guarantee the rigorousness of the following notes.
 
 ## 学振申請書
 
-DC1 と PD の申請書（書類採用）です。
+DC1 の申請書（書類採用）です。
 ご自由にお使いください。
 
 - [DC1 (2017 年提出)](/files/dc1.pdf)
-
-- [PD (2020 年提出)](/files/pd.pdf)
