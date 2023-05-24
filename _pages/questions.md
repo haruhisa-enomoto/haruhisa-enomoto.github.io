@@ -9,7 +9,8 @@ toc_sticky: true
 
 In this page, I raise some problems in the representation theory of algebras, which are interesting to me, but which seem so difficult that I can't answer by myself. I hope someone will solve (or at least consider) them.
 
-**I DO NOT claim the originality of the problems below**, hence you're free to solve and write papers about them.
+- Listed from newest to oldest.
+- **I DO NOT claim the originality of the problems below**, hence you're free to solve and write papers about them.
 
 ## Self-orthogonal modules and Wakamatsu tilting modules
 
