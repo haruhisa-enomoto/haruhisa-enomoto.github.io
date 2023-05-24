@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Problems"
-permalink: /problems/
+title: "Questions"
+permalink: /questions/
 classes: []
 toc: true
 toc_sticky: true

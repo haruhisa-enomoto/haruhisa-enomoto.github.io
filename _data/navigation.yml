@@ -24,8 +24,8 @@ main:
   - title: "Programs"
     url: /codes/
 
-  - title: "Problems"
-    url: /problems/
+  - title: "Questions"
+    url: /questions/
 
   - title: "CV"
     url: /cv/
