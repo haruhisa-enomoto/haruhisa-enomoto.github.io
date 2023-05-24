@@ -50,14 +50,13 @@ For more details, see [CV](/cv/).
 ## Update History
 
 - 2023-04-04: Add **[FD Applet](/fd-applet/)**!
-- 2023-04-04: Add [talk](/talks/2023-03-23/) and [talk](/talks/2023-03-30/). Also New theme!
-- 2023-02-27: I gave a [talk](/talks/2023-02-27/) at Paris Algebra Seminar.
+- 2023-04-04: New theme!
 - 2023-02-03: New preprint [Maximal self-orthogonal modules and a new generalization of tilting modules](/papers/mso/), and add some related problems to [Problem](/problems/).
-- 2022-11-22: I added a **counter-example** of a [Problem](/problems/) about the lattice-theoretical characterization of the lattice of torsion classes, and add a small [Program](/codes/) used to find it.
+- 2022-11-22: I added a **counter-example** of a [Questions](/questions/) about the lattice-theoretical characterization of the lattice of torsion classes, and add a small [Program](/codes/) used to find it.
 - 2022-09-10: [AR quiver calculator](/codes/) is now (probably) supported on Mac!
 - 2022-08-31: New preprint [Image-extension-closed subcategories of module categories of hereditary algebras](/papers/ie-closed/) (with A. Sakai)!
 - 2022-08-13: **Major update on [AR quiver calculator](/codes/)!**. Now this can compute various subcats (torsion classes, wide subcats, ICE-closed,...) and their Ext-projectives from your AR quiver visually!
 - 2022-08-08: New preprint [Grothendieck monoids of extriangulated categories](/papers/et-monoid/) (with S. Saito)!
 - 2022-06-03: Add **Representation theory of algebra in Lean** to [program](/codes/).
 - 2022-05-16: **My e-mail and affiliation has changed!** since the name of my university has changed.
-- 2021-08-07: I added [Problem](/problems/) page, where I raise some questions which I'm interested in but which I can't solve. _This page will be updated ocasionally_.
+- 2021-08-07: I added [Questions](/questions/) page, where I raise some questions which I'm interested in but which I can't solve. _This page will be updated ocasionally_.
