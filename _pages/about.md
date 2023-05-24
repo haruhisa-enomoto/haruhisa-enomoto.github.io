@@ -51,7 +51,7 @@ For more details, see [CV](/cv/).
 
 - 2023-04-04: Add **[FD Applet](/fd-applet/)**!
 - 2023-04-04: New theme!
-- 2023-02-03: New preprint [Maximal self-orthogonal modules and a new generalization of tilting modules](/papers/mso/), and add some related problems to [Problem](/problems/).
+- 2023-02-03: New preprint [Maximal self-orthogonal modules and a new generalization of tilting modules](/papers/mso/), and add some related problems to [Questions](/questions/).
 - 2022-11-22: I added a **counter-example** of a [Questions](/questions/) about the lattice-theoretical characterization of the lattice of torsion classes, and add a small [Program](/codes/) used to find it.
 - 2022-09-10: [AR quiver calculator](/codes/) is now (probably) supported on Mac!
 - 2022-08-31: New preprint [Image-extension-closed subcategories of module categories of hereditary algebras](/papers/ie-closed/) (with A. Sakai)!
