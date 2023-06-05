@@ -12,28 +12,34 @@ toc_sticky: true
 
 ## Online Version
 
-<https://fd-applet.dt.r.appspot.com/>
+You can try FD Applet from your browser [here](https://fd-applet.dt.r.appspot.com/):
+- <https://fd-applet.dt.r.appspot.com/>
 
-This online demo has restricted computation memory and may run at a slower pace. Additionally, the connection could be unstable.
-For a better experience, we recommend installing the local version from this page.
+Our online version might be a bit slow sometimes and you might run into some connection issues.
+
+For an optimized experience, consider installing our local version from this page.
 
 ## FD Applet Usage Examples
 
 ![FD Applet 1](/assets/images/fd-applet/fd-applet1.jpg)
 
-There are 255,364 τ-rigid modules!
+**Info Tab**: Basic Info (and AR quiver) of this algebra
 
 ![FD Applet 2](/assets/images/fd-applet/fd-applet2.jpg)
 
-The Hasse quiver of resolving subcategories
+**Calculator Tab**: Calculation of Ext^1 between modules
 
 ![FD Applet 3](/assets/images/fd-applet/fd-applet3.jpg)
 
-One of cotorsion pairs
+**Enumerator Tab**: There are 255,364 τ-rigid modules!
 
 ![FD Applet 4](/assets/images/fd-applet/fd-applet4.jpg)
 
-Ext-injectives of some IE-closed subcategories
+**Converter Tab**: Convert a support τ-tilting module to the corresponding semibrick
+
+![FD Applet 5](/assets/images/fd-applet/fd-applet5.jpg)
+
+**Quivers Tab**: The Hasse quiver of resolving subcategories
 
 ## About FD Applet
 
@@ -50,6 +56,10 @@ The implementation consists of a server backend using Kotlin, a frontend using R
 - [GitHub Repository](https://github.com/haruhisa-enomoto/fd-applet)
 
 ## Changelog
+
+- 2023-06-05: Released version 0.3.0.
+  - New Tab: **Converter**, which computes various modules/subcategories from a given modules/subcategories (the smallest torsion class containing a module, Ext-projs of subcategories, various bijections in τ-tilting theory, etc)
+  - Some UI improvements. Add physics settings to the AR quiver.
 
 - 2023-04-15: Released version 0.2.1. Minor UI fixes, and add online demo.
 
@@ -135,8 +145,8 @@ To close the app, simply close the browser (or the tab). Starting from version 0
 TL;DR:
 
 1. Input your algebra (quiver, monomial/commutative relations) in the left input area.
-2. Click Update button, then use right tabs (Basic Info, Calculator, Enumerator, Quivers).
-3. Most features only work for a finite-dimensional special biserial algebra (e.g. a gentle or string algebra); In addition, Enumerator and Quiver tabs only work for a representation-finite algebra.
+2. Click Update button, then use right tabs (Info, Calculator, Enumerator, Converter, Quivers).
+3. Most features only work for a finite-dimensional special biserial algebra (e.g. a gentle or string algebra); In addition, Enumerator, Converter, and Quiver tabs only work for a representation-finite algebra.
 
 ### Input Your Algebra
 
@@ -180,7 +190,7 @@ Indecomposable module notation:
 - `a*b*!c`: the string module `1 -a-> 2 -b-> 3 <-c- 4`.
 - `a*b=d*e`: the biserial module with commutative square `-a->-b-> = -d->-e->`.
 
-#### Basic Info
+#### Info
 
 Displays basic info: homological dimensions, projective/injective modules, etc.
 
@@ -198,6 +208,14 @@ Calculates things like dimensions of Hom or Ext and projective resolutions based
 - When the AR quiver is diaplayed, if a module/subcategory is selected, it is colored. Highlight Ext-projectives/injectives in the chosen subcategory.
 
 (Only Works for representation-finite special biserial algebras.)
+
+#### Converter
+
+From a given module or subcategories, you can compute another module or subcategory by various operations. For example:
+- Given a subcategory, compute the smallest torsion class containing it (or torsion-free class, ICE-closed subcategory, wide subcategory, etc).
+- Given a torsion class, compute the corresponding wide subcategory (under Marks-Stovicek) (and various other bijections in τ-tilting theory).
+- Given an extension-closed subcategory, compute the Ext-projectives of it.
+- and lots of other operations!
 
 #### Quivers
 

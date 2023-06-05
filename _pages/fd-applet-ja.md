@@ -12,28 +12,33 @@ toc_sticky: true
 
 ## オンライン版
 
-<https://fd-applet.dt.r.appspot.com/>
+FD Applet は、ブラウザ上で[ここ]から気軽に遊ぶことができます：
+- <https://fd-applet.dt.r.appspot.com/>
 
 このオンラインデモは、使用可能メモリが制限されており、計算も遅い可能性があります。また、接続が不安定になる可能性があります。
-より快適にご利用いただくために、ローカル版のインストールをお勧めします。
+より快適にご利用したい方は、このページからローカル版のインストールをお勧めします。
 
 ## FD Applet 使用例
 
 ![FD Applet 1](/assets/images/fd-applet/fd-applet1.jpg)
 
-255,364 個の τ-rigid modules たち
+**Info タブ**：この多元環の基本的な情報と AR quiver 
 
 ![FD Applet 2](/assets/images/fd-applet/fd-applet2.jpg)
 
-Rresolving subcategories の Hasse 図
+**Calculator タブ**：加群の間の Ext^1 の計算
 
 ![FD Applet 3](/assets/images/fd-applet/fd-applet3.jpg)
 
-ある cotorsion pair
+**Enumerator タブ**: τ-rigid modulesを全て列挙（255,364個！）
 
 ![FD Applet 4](/assets/images/fd-applet/fd-applet4.jpg)
 
-ある IE-closed subcategories の Ext-injectives
+**Converter タブ**：support τ-tilting moduleを、対応するsemibrickへ変換
+
+![FD Applet 5](/assets/images/fd-applet/fd-applet5.jpg)
+
+**Quivers Tab**: resolving 部分圏の Hasse 図
 
 ## FD Applet について
 
@@ -49,6 +54,10 @@ Kotlin を用いたサーバー・バックエンドと、React を用いたフ�
 - [GitHub Repository](https://github.com/haruhisa-enomoto/fd-applet)
 
 ## 更新履歴
+
+- 2023-06-05: バージョン 0.3.0 をリリース。
+  - 新しい機能：**Converter** を追加。これは、与えられた加群・部分圏から、いろんな操作で別の加群・部分圏を計算します (ある加群を含む最小の torsion class、部分圏の Ext-proj、τ-tilting theory でのさまざまな全単射、などなど)
+  - UIの改善。AR quiver の物理演算の調整機能の追加。
 
 - 2023-04-15: バージョン 0.2.1 をリリース。軽微な UI 修正と、オンラインデモの追加。
 
@@ -129,8 +138,8 @@ Kotlin を用いたサーバー・バックエンドと、React を用いたフ�
 概略
 
 1. 左の入力欄に多元環（quiver、単項および可換関係）を入力します。
-2. Update ボタンをクリックし、右のタブ（Basic Info、Calculator、Enumerator、Quivers）を使用します。
-3. ほとんどの機能は有限次元 special biserial algebra（例えば gentle や string algebra）が必要で、Enumerator と Quivers ではさらに有限表現型なことが必要です。
+2. Update ボタンをクリックし、右のタブ（Info、Calculator、Enumerator、Converter、Quivers）を使用します。
+3. ほとんどの機能は有限次元 special biserial algebra（例えば gentle や string algebra）が必要で、Enumerator と Converter と Quivers ではさらに有限表現型なことが必要です。
 
 ### 多元環の入力
 
@@ -174,7 +183,7 @@ Update ボタンをクリックして完了します。
 - `a*b*!c`：string 加群`1 -a-> 2 -b-> 3 <-c- 4`。
 - `a*b=d*e`：可換正方形`-a->-b-> = -d->-e->`の biserial 加群。
 
-#### Basic Info
+#### Info
 
 各種ホモロジー次元、射影/移入加群など、多元環の基本情報を表示します。
 
@@ -192,6 +201,14 @@ Update ボタンをクリックして完了します。
 - AR quiver が表示されているとき、加群/部分圏を選択すると、頂点が色付けされます。部分圏を選んだ場合は Ext-projective/injective をハイライト表示できます。
 
 （有限表現型 special biserial algebra でのみ動きます。）
+
+#### Converter
+
+加群や部分圏を入力すると、それからさまざまな操作で別の加群・部分圏を計算できます。例えば：
+- 与えられた部分圏に対し、それを含む最小の torsion class (や torsion-free class、ICE-closed subcategory、wide subcategory、などなど)
+- Torsion class を与えると、（Marks-Stovicekの対応で）対応する wide 部分圏を計算（や他にも τ-tilting theory でのさまざまな全単射の計算）
+- 拡大閉部分圏に対して、その Ext-projectives の計算
+- そして他にもたくさんの操作！
 
 #### Quivers
 
