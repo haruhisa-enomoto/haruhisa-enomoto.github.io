@@ -12,7 +12,7 @@ toc_sticky: true
 
 ## Online Version
 
-You can try FD Applet from your browser [here](https://fd-applet.dt.r.appspot.com/):
+You can use FD Applet from your browser [here](https://fd-applet.dt.r.appspot.com/):
 - <https://fd-applet.dt.r.appspot.com/>
 
 Our online version might be a bit slow sometimes and you might run into some connection issues.
