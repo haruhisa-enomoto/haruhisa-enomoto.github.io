@@ -1,9 +1,11 @@
 ---
 title: "From the lattice of torsion classes to the posets of wide subcategories and ICE-closed subcategories"
 excerpt: 'Compute the posets of wide subcats and ICE-closed subcats from the lattice of torsion classes'
-date: 2022-01-03
+date: 2023-06-13
+venue: 'Algebr. Represent. Theory'
+paperurl: 'https://doi.org/10.1007/s10468-023-10214-0'
 arxiv: '2201.00595'
-citation: 'H. Enomoto, From the lattice of torsion classes to the posets of wide subcategories and ICE-closed subcategories, arXiv:2201.00595.'
+citation: 'H. Enomoto, From the lattice of torsion classes to the posets of wide subcategories and ICE-closed subcategories, to appear in Algebr. Represent. Theory. '
 ---
 
 ## Abstract
