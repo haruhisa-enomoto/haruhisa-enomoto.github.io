@@ -60,3 +60,6 @@ For more details, see [CV](/cv/).
 - 2022-06-03: Add **Representation theory of algebra in Lean** to [program](/codes/).
 - 2022-05-16: **My e-mail and affiliation has changed!** since the name of my university has changed.
 - 2021-08-07: I added [Questions](/questions/) page, where I raise some questions which I'm interested in but which I can't solve. _This page will be updated ocasionally_.
+
+Access counter (from 2023-06-22):
+<img src="https://counter.seku.su/cmoe?name=henomoto&theme=r34" />
