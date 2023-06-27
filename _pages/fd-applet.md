@@ -57,6 +57,8 @@ The implementation consists of a server backend using Kotlin, a frontend using R
 
 ## Changelog
 
+- 2023-06-27: Released version 0.3.2. Add the computation of wide τ-tilting modules and its Hasse quiver (via the corresponding Hasse quiver of ICE-closed subcategories). Also for possibly heavy calculation, show the actual computation time.
+
 - 2023-06-05: Released version 0.3.0.
   - New Tab: **Converter**, which computes various modules/subcategories from a given modules/subcategories (the smallest torsion class containing a module, Ext-projs of subcategories, various bijections in τ-tilting theory, etc)
   - Some UI improvements. Add physics settings to the AR quiver.
