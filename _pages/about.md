@@ -49,6 +49,7 @@ For more details, see [CV](/cv/).
 
 ## Update History
 
+- 2023-06-13: I gave an [introductory lectures of $\tau$-tilting and torsion classes using split projectives and wide intervals](/talks/2023-06-13/) in Japanese.
 - 2023-04-04: Add **[FD Applet](/fd-applet/)**!
 - 2023-04-04: New theme!
 - 2023-02-03: New preprint [Maximal self-orthogonal modules and a new generalization of tilting modules](/papers/mso/), and add some related problems to [Questions](/questions/).
@@ -59,4 +60,4 @@ For more details, see [CV](/cv/).
 - 2022-08-08: New preprint [Grothendieck monoids of extriangulated categories](/papers/et-monoid/) (with S. Saito)!
 - 2022-06-03: Add **Representation theory of algebra in Lean** to [program](/codes/).
 - 2022-05-16: **My e-mail and affiliation has changed!** since the name of my university has changed.
-- 2021-08-07: I added [Questions](/questions/) page, where I raise some questions which I'm interested in but which I can't solve. _This page will be updated ocasionally_.
+- 2021-08-07: I added [Questions](/questions/) page, where I raise some questions which I'm interested in but which I can't solve. _This page will be updated occasionally_.

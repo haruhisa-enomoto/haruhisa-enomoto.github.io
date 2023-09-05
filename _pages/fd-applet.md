@@ -49,13 +49,17 @@ This guide covers the installation and usage instructions for FD Applet on Windo
 
 ### Implementation
 
-The implementation consists of a server backend using Kotlin, a frontend using React, and scripts for update verification, automatic updating, and startup assistance. The source code will be published in the future. The development of the app and the creation of this documentation have greatly benefited from the support of ChatGPT.
+The implementation consists of a server backend using Kotlin, a frontend using React, and scripts for update verification, automatic updating, and startup assistance. The development of the app and the creation of this documentation have greatly benefited from the support of ChatGPT.
 
 **Source codes**
 
 - [GitHub Repository](https://github.com/haruhisa-enomoto/fd-applet)
 
 ## Changelog
+
+- 2023-07-25: Released version 0.4.0. *New feature*: the computation of [ICE sequences](https://arxiv.org/abs/2307.11347) introduced by A. Sakai which classifies certain $t$-structures of the bounded derived category.
+
+- 2023-06-27: Released version 0.3.2. Add the computation of wide τ-tilting modules and its Hasse quiver (via the corresponding Hasse quiver of ICE-closed subcategories). Also for possibly heavy calculation, show the actual computation time.
 
 - 2023-06-05: Released version 0.3.0.
   - New Tab: **Converter**, which computes various modules/subcategories from a given modules/subcategories (the smallest torsion class containing a module, Ext-projs of subcategories, various bijections in τ-tilting theory, etc)
