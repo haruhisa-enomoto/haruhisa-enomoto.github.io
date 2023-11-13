@@ -53,6 +53,7 @@ redirect_from:
 
 ## Awards
 
+- [12th Award for Encouragement of Alumni and Students ("Hida Award", 飛田賞)](https://www.math.nagoya-u.ac.jp/ja/alumni/hida-prize.html), Alumni Association of the Graduate School of Mathematics, Nagoya University, October 2023.
 - Nagoya University Outstanding Graduate Student Award ([学術奨励賞 (Japanese)](http://www.nagoya-u.ac.jp/academics/scholarship/nu-incentive/index.html)), October 2020.
 - Master's Thesis Award, Graduate School of Mathematics, Nagoya University, March 2018.
 

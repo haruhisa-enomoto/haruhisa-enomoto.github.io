@@ -49,6 +49,7 @@ For more details, see [CV](/cv/).
 
 ## Update History
 
+- 2023-11-13: I gave [several talks](/talks/) and [received the Hida award](/cv/)!
 - 2023-06-13: I gave an [introductory lectures of $\tau$-tilting and torsion classes using split projectives and wide intervals](/talks/2023-06-13/) in Japanese.
 - 2023-04-04: Add **[FD Applet](/fd-applet/)**!
 - 2023-04-04: New theme!
