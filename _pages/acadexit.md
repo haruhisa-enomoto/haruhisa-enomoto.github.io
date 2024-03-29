@@ -6,6 +6,7 @@ permalink: /acadexit/
 author_profile: false
 toc: true
 toc_sticky: true
+share: true
 ---
 
 - 2024-03-29: 初稿
