@@ -13,6 +13,12 @@ I am Haruhisa Enomoto (榎本 悠久 in Japanese), a postdoc at
 [Graduate School of Science](https://www.omu.ac.jp/sci/en/),
 [Osaka Metropolitan University](https://www.omu.ac.jp/en/) in Japan.
 
+**IMPORTANT**: I will leave math academia in March 2024 and join a company in April 2024. See [here (Japanese)](/acadexit/) for more details if you are interested in why I decided to leave academia.
+
+This site will available after March 2024, but I haven't decided whether I will update this site or not, and its contents.
+
+The e-mail address below will not be available after March 2024.
+
 # [FD Applet](/fd-applet/) - an applet for Finite-Dimentional algebras has been released!
 
 **Online version: <https://fd-applet.dt.r.appspot.com/>**

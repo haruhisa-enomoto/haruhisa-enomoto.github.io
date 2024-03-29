@@ -5,6 +5,10 @@ permalink: /notes/
 author_profile: true
 ---
 
+## アカデミアを離れるにあたって
+
+[純粋数学のアカデミア（研究職）から離れるにあたっての遺書 ― 数学が辛い人へ](/acadexit/)
+
 ## Theses
 
 - Bachelor thesis: [On categories of modules over locular categories (in Japanese)](/files/sotsuron.pdf).
