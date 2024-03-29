@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide-no-author
-title: "FD Applet - an applet for Finite-Dimensional algebras"
+title: "純粋数学のアカデミア（研究職）から離れるにあたっての遺書 ― 数学が辛い人へ"
 permalink: /acadexit/
 author_profile: false
 toc: true
