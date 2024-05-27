@@ -9,9 +9,12 @@ redirect_from:
   - /about.html
 ---
 
-I am Haruhisa Enomoto (榎本 悠久 in Japanese), a postdoc at
+I am Haruhisa Enomoto (榎本 悠久 in Japanese), ~~a postdoc at
 [Graduate School of Science](https://www.omu.ac.jp/sci/en/),
-[Osaka Metropolitan University](https://www.omu.ac.jp/en/) in Japan.
+[Osaka Metropolitan University](https://www.omu.ac.jp/en/) in Japan.~~
+an **R&D Researcher** at [Acompany](https://acompany.tech/) Co., Ltd. (privacy-tech startup) in Japan.
+
+- My personal e-mail: dakenga [at] gmail.com, math-related e-mail are welcome!
 
 **IMPORTANT**: I will leave math academia in March 2024 and join a company in April 2024. See [here (Japanese)](/acadexit/) for more details if you are interested in why I decided to leave academia.
 
