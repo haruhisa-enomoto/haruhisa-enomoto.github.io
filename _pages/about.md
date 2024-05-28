@@ -12,7 +12,7 @@ redirect_from:
 I am Haruhisa Enomoto (榎本 悠久 in Japanese), ~~a postdoc at
 [Graduate School of Science](https://www.omu.ac.jp/sci/en/),
 [Osaka Metropolitan University](https://www.omu.ac.jp/en/) in Japan.~~
-an **R&D Researcher** at [Acompany](https://acompany.tech/) Co., Ltd. (privacy-tech startup) in Japan.
+an **R&D Engineer** at [Acompany](https://acompany.tech/) Co., Ltd. (privacy-tech startup) in Japan.
 
 - My personal e-mail: dakenga [at] gmail.com, math-related e-mail are welcome!
 
