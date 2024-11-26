@@ -9,7 +9,9 @@ redirect_from:
 
 ## Professional Position
 
-- Apr. 2021 -- : [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/)
+* Apr. 2024 -- : R&D Engineer at [Acompany](https://acompany.tech/) Co., Ltd. in Japan
+
+* Apr. 2021 -- Mar. 2024 : [JSPS Research Fellow (PD)](https://www.jsps.go.jp/english/e-pd/)
   - Institution: [Graduate School of Science](https://www.omu.ac.jp/sci/en/), [Osaka Metropolitan University](https://www.omu.ac.jp/en/).
   - Host Researcher: [Yuya Mizuno](https://researchmap.jp/y-mizuno?lang=en)
 
