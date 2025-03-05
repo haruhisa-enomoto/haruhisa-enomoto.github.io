@@ -9,35 +9,25 @@ redirect_from:
   - /about.html
 ---
 
-I am Haruhisa Enomoto (榎本 悠久 in Japanese), ~~a postdoc at
-[Graduate School of Science](https://www.omu.ac.jp/sci/en/),
-[Osaka Metropolitan University](https://www.omu.ac.jp/en/) in Japan.~~
-an **R&D Engineer** at [Acompany](https://acompany.tech/) Co., Ltd. (privacy-tech startup) in Japan.
+I am Haruhisa Enomoto (榎本 悠久 in Japanese), an R&D researcher at [Parakeet Inc.](https://parakeet-inc.com/) in Japan since 2025-03-01, an AI startup focusing on speech related technologies.
 
-- My personal e-mail: dakenga [at] gmail.com, math-related e-mail are welcome!
+Previously:
+- I worked at [Acompany](https://acompany.tech/) Co., Ltd. as an R&D Engineer: 2024-04-01 -- 2025-02-28.
+- I was a postdoc majoring in representation theory of algebras.
 
-**IMPORTANT**: I will leave math academia in March 2024 and join a company in April 2024. See [here (Japanese)](/acadexit/) for more details if you are interested in why I decided to leave academia.
+For more details, see [CV](/cv/).
 
-This site will available after March 2024, but I haven't decided whether I will update this site or not, and its contents.
+- e-mail: haruhisa.enomoto@parakeet-inc.com
+
+I've left math academia in March 2024 and joined a company in April 2024. See [here (Japanese)](/acadexit/) for more details if you are interested in why I decided to leave academia.
+
+This site will be available after March 2024, but I haven't decided whether I will update this site or not, and its contents.
 
 The e-mail address below will not be available after March 2024.
 
 # [FD Applet](/fd-applet/) - an applet for Finite-Dimentional algebras has been released!
 
 **Online version: <https://fd-applet.dt.r.appspot.com/>**
-
-Since April 2022, My e-mail address and affiliation has changed since the name of my university has changed.
-
-_New E-mail_:
-`henomoto [at] omu.ac.jp`
-
-(Old1: `the35883 [at] osakafu-u.ac.jp`,
-_I cannot use this address!!!!_)
-
-(Old2 : `m16009t [at] math.nagoya-u.ac.jp`,
-I can still use and check this Nagoya e-mail address)
-
-For more details, see [CV](/cv/).
 
 ## Research Areas
 
