@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="週末に読んだ1本の論文と新世代のAIが、榎本悠久を研究へ連れ戻した。証明と理解と論文執筆が、それぞれ違う速さで進んだ5か月の記録。">
+<meta name="theme-color" content="#181927">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解けない予想と、数学との再会">
+<meta property="og:description" content="週末に読んだ1本の論文と新世代のAIが、榎本悠久を研究へ連れ戻した。証明と理解と論文執筆が、それぞれ違う速さで進んだ5か月の記録。">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23181927'/%3E%3Crect x='14' y='22' width='36' height='8' rx='4' fill='%23e96755'/%3E%3Crect x='14' y='36' width='36' height='8' rx='4' fill='%23f0ead8'/%3E%3C/svg%3E">
+  <link rel="alternate" hreflang="en" href="index.html">
+  <link rel="alternate" hreflang="ja" href="ja.html">
+<title>解けない予想と、数学との再会</title>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+  }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">商・部分加群等分布プロジェクトの記録 · 2026年3月–8月</p>
+    <h1>解けない予想と、数学との再会</h1>
+    <p class="dek">アカデミアを離れて企業に就職してからというもの、私の生活から数学の研究はほとんど姿を消していた。しかし、ある週末に読んだ1本の論文と新世代のAIをきっかけに、私は再び研究の世界へと引き戻された。そこでは時に、理解が追いつく前に証明が得られることすらあった。</p>
+
+    <div class="hero-grid">
+      <div class="lede">
+        <p>2026年3月、私はある小さな数え上げの問題を出発点とした。商で閉じた部分圏と部分加群で閉じた部分圏は、なぜどの大きさでも同じ個数だけ現れるのだろうか。</p>
+        <p>それから5か月。この問いから、いまなお未解決の予想――「商で閉じた部分圏と部分加群で閉じた部分圏の等分布予想」――が生まれた。4つのクラスでの証明、64億件規模の計算機検証、そして主要定理のLean 4形式化を経て、私にとって2023年以来となる研究論文“<cite><a href="https://arxiv.org/abs/XXXX.XXXXX">An equidistribution conjecture for quotient-closed and submodule-closed subcategories</a></cite>”が形になった。</p>
+      </div>
+      <aside class="math-card" aria-label="数学的な驚き">
+        <div class="label">物語の中心にある等式</div>
+        <div class="equation-line">$$R_{\mathrm{quot}}(q) = R_{\mathrm{sub}}(q)$$</div>
+        <p>左辺は商で閉じた部分圏を、右辺は部分加群で閉じた部分圏をサイズごとに数える。すべての有限表現型多元環で成り立つかは、まだ分かっていない。</p>
+      </aside>
+    </div>
+    <p class="byline">榎本悠久 · 2026年8月18日公開</p>
+    <nav class="language-switch" aria-label="言語">
+      <a href="index.html" lang="en">English</a>
+      <strong aria-current="page">日本語</strong>
+    </nav>
+  </div>
+</header>
+
+<nav class="story-nav" aria-label="章">
+  <div>
+    <a href="#prologue">深夜の12分</a>
+    <a href="#count">数学的背景</a>
+    <a href="#spring">研究への復帰</a>
+    <a href="#june">誤った予想</a>
+    <a href="#naming">主役交代</a>
+    <a href="#theorems">定理ラッシュ</a>
+    <a href="#coxeter">Coxeter語</a>
+    <a href="#evidence">検証と執筆</a>
+    <a href="#open">エピローグ</a>
+    <a href="#references">参考文献</a>
+  </div>
+</nav>
+
+<main>
+<article>
+
+<section class="chapter" id="prologue">
+  <header class="chapter-head">
+    <span class="chapter-no">プロローグ · 2026年6月13日 深夜</span>
+    <h2>美しい公式は、12分しかもたなかった。</h2>
+  </header>
+
+  <p class="dropcap">午前0時54分、AIのFableが、ひとつの美しい公式を提案した。ある多元環で部分圏を数えた結果と、その鏡写しの多元環で数えた結果が、並び順をひっくり返してぴったり一致するはずだ、という主張である。並行して計算を走らせていたもう1体のAI、GPT-5.5も、この公式が成り立つと見込んでいた。</p>
+
+  <p>だが、計算はそれを裏切った。提案から約12分後、ある小さな多元環の計算結果が出そろい、公式は反例によってあっけなく崩れ去った。GPT-5.5は書きかけのレポートを、その場で自ら訂正した。</p>
+
+  <blockquote class="quote">
+    <p>生成済みのレポート本文を訂正する必要がある。最初の草稿は、計算が終わる前に、この多元環が公式を満たすと決めつけて書かれていたからだ。</p>
+    <footer>GPT-5.5、6月13日 午前1時06分。</footer>
+  </blockquote>
+
+  <p>午前1時16分、提案者のFableは、「鮮やかな反証です」と短く敗北を認めた。誤った予想は訂正ログ行きとなり、その夜の騒ぎは20分あまりで幕を閉じた。</p>
+
+  <p>ところが、壊れた公式の計算表の中に、誰もまだ予想とは呼んでいない別の一致が残っていた。反例となった多元環でも、比較したすべての例でも、「商で閉じた部分圏」と「部分加群で閉じた部分圏」のサイズごとの個数だけは、なぜか一致し続けていたのである。</p>
+
+  </section>
+
+<section class="chapter" id="count">
+  <header class="chapter-head">
+    <span class="chapter-no">数学的背景</span>
+    <h2>2つの閉包操作と、思いがけない等式。</h2>
+  </header>
+
+  <p class="dropcap">箙（quiver）とは点と矢印からなる有向グラフであり、その表現とは各点にベクトル空間を、各矢印に線形写像を割り当てたものである。代数学的には、これは箙の道多元環上の加群にほかならない。直和分解できない加群を<em>直既約加群</em>と呼ぶ。この記事で扱うのは、直既約加群が有限個しか存在しない<em>有限表現型</em>の多元環である。</p>
+
+  <figure>
+    <svg viewBox="0 0 700 135" role="img" aria-label="一本の矢印からなる箙と三つの直既約表現">
+      <defs><marker id="arrow-one" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10z" class="arrow"/></marker></defs>
+      <text x="95" y="28" font-size="12" text-anchor="middle">箙</text>
+      <circle cx="55" cy="75" r="20" class="node"/><text x="55" y="81" text-anchor="middle" font-size="16">1</text>
+      <line x1="80" y1="75" x2="145" y2="75" class="edge" marker-end="url(#arrow-one)"/>
+      <circle cx="170" cy="75" r="20" class="node"/><text x="170" y="81" text-anchor="middle" font-size="16">2</text>
+      <line x1="235" y1="20" x2="235" y2="125" class="soft-grid"/>
+      <text x="300" y="30" font-size="12" text-anchor="middle">3つの直既約表現</text>
+      <rect x="260" y="55" width="88" height="42" rx="10" class="node"/><text x="304" y="81" text-anchor="middle" font-size="15">S₁</text>
+      <rect x="370" y="55" width="88" height="42" rx="10" class="node"/><text x="414" y="81" text-anchor="middle" font-size="15">S₂</text>
+      <rect x="480" y="55" width="150" height="42" rx="10" class="node hot"/><text x="555" y="81" text-anchor="middle" font-size="15">P₁ : k → k</text>
+    </svg>
+    <figcaption>箙 $1\to 2$ とその3つの直既約加群。</figcaption>
+  </figure>
+
+  <p>加群からより小さな加群を作る操作には、<em>部分加群</em>をとることと、<em>商加群</em>をとることの2つがある。</p>
+
+  <p>直既約加群の集まりが<span class="term">商で閉じている</span>とは、集まりの中の加群の商をとっても、集まりの外へ出ないことをいう。<span class="term">部分加群で閉じている</span>とは、部分加群をとる操作について同じことが成り立つことをいう。上図の矢印1本の箙でも、この2種類の集まりは一致しない。</p>
+
+  <div class="subcat-table-wrap">
+    <table class="subcat-table">
+      <thead>
+        <tr>
+          <th class="center">サイズ</th>
+          <th>商で閉じた部分圏</th>
+          <th>部分加群で閉じた部分圏</th>
+          <th class="center">個数</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="center"><span class="size-badge">0</span></td>
+          <td><span class="chip">$\emptyset$</span></td>
+          <td><span class="chip">$\emptyset$</span></td>
+          <td class="center"><strong class="count-badge">1</strong></td>
+        </tr>
+        <tr>
+          <td class="center"><span class="size-badge">1</span></td>
+          <td><span class="chip">$\{S_1\}$</span> <span class="chip">$\{S_2\}$</span></td>
+          <td><span class="chip">$\{S_1\}$</span> <span class="chip">$\{S_2\}$</span></td>
+          <td class="center"><strong class="count-badge">2</strong></td>
+        </tr>
+        <tr>
+          <td class="center"><span class="size-badge">2</span></td>
+          <td><span class="chip">$\{S_1, S_2\}$</span> <span class="chip diff">$\{S_1, P_1\}$</span></td>
+          <td><span class="chip">$\{S_1, S_2\}$</span> <span class="chip diff">$\{P_1, S_2\}$</span></td>
+          <td class="center"><strong class="count-badge">2</strong></td>
+        </tr>
+        <tr>
+          <td class="center"><span class="size-badge">3</span></td>
+          <td><span class="chip">$\{S_1, P_1, S_2\}$</span></td>
+          <td><span class="chip">$\{S_1, P_1, S_2\}$</span></td>
+          <td class="center"><strong class="count-badge">1</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>ところが、サイズごとに個数を数えると、違いは消えてしまう。これらの個数をサイズごとに並べて係数とした多項式――<em>size generating polynomial</em>――は、完全に一致する。</p>
+
+  <div class="formula">
+    $$R_{\mathrm{quot}}(q)=1+2q+2q^2+q^3=R_{\mathrm{sub}}(q).$$
+  </div>
+
+  <p>直既約加群の個数を $N$ とし、サイズ $j$ の商で閉じた部分圏（加群の集まり）の全体を $\mathcal L_{\mathrm{quot}}^j(A)$、部分加群で閉じた部分圏の全体を $\mathcal L_{\mathrm{sub}}^j(A)$ と書こう。<em>商・部分加群等分布予想</em>とは、<em>すべての</em>有限表現型多元環で次が成り立つというものだ。</p>
+
+  <div class="formula">
+    $$\bigl|\mathcal L_{\mathrm{quot}}^j(A)\bigr|=\bigl|\mathcal L_{\mathrm{sub}}^j(A)\bigr|\qquad(0\leq j\leq N).$$
+  </div>
+
+  <p>商で閉じた部分圏からなる束と、部分加群で閉じた部分圏からなる束は、一般には同型にならず、自然な全単射すら見当たらない。これら2つを同じ加群圏の中で結びつける未知の構造こそが、この予想の核心である。</p>
+
+  <p>この謎めいた等式がどこから生まれたのか、物語を少し巻き戻そう。</p>
+
+</section>
+
+<section class="chapter" id="spring">
+  <header class="chapter-head">
+    <span class="chapter-no">第I幕 · 2026年3月–5月</span>
+    <h2>研究への復帰は、週末の問いから始まった。</h2>
+  </header>
+
+  <p class="dropcap">2024年3月末でアカデミアを離れ、4月から一般企業で働き始めた。数学を苦しい義務として続けることに自ら区切りをつけ、義務から解放された数学であれば、いつか趣味として楽しめるかもしれないと考えて選んだ道だった（その経緯は<a href="https://haruhisa-enomoto.github.io/acadexit/">別の記事</a>に書いた）。とはいえ実際には、週末にときおり論文を眺める程度で、自ら研究を進める状態には戻っていなかった。</p>
+
+  <p>新しいAIモデルが登場するたびに、私は代数学の定理、具体的にはJacobson根基の対称性をAIに証明させてきた。何度も循環論法や誤った補題に直面した末、2025年末のGPT-5.2に至ってようやく、細かな論理をごまかさずに明快な証明を構成できるようになった。この段階で、AIの数学能力に対する私の認識は、「博識だが知ったかぶりの多い学部生」から、「十分な訓練を積んだ優秀な大学院生」へと高まっていた。</p>
+
+  <p>私の数学的な雑談の相手は、はじめはGPT‑5.4、やがてGPT‑5.5だった。ChatGPTでの対話に加えて、手元のファイルや計算環境を直接扱えるエージェント版も併用した。</p>
+
+  <h3>最初の問いを生んだ論文</h3>
+
+  <p>そんな折の2026年3月8日、Campanini–Fedele–Yıldırımの論文“<cite><a href="https://arxiv.org/abs/2511.19223">Lattices of pretorsion classes</a></cite>”を読んだことが、すべての始まりだった。彼らは $A_3$ 型箙の商で閉じた部分圏の束を調べ、そこに「謎めいた組合せ構造」が存在すると述べていた。だが彼らの証明は非常に複雑で、なぜその結果が成り立つのか、直感的な理解は得られなかった。</p>
+
+  <p>抽象的・組合せ論的な道具から表現論の事実を示すのが好きだった私は、背後に一般的な束論の構造があるのではと考え、週末にChatGPTと議論を重ねていた。</p>
+
+
+  <p>この時期の最大の収穫は、商で閉じた部分圏の全体を「凸幾何」と呼ばれる組合せ構造として捉える視点だった。3月8日の夕方、GPT‑5.4が、Oppermann–Reiten–Thomasの論文が参照していた<a href="https://arxiv.org/abs/0712.1047">Armstrongの論文</a>から、部分圏の組合せ論を持ち込んできた。しかしArmstrongやOppermann–Reiten–Thomasらの議論は、Dynkin型のCoxeter群のある語からどの文字を選ぶかという、Dynkin特有の「外部の座標」によって部分圏を記述するものだった。Coxeter群という外部の概念が加群圏の内部に自然な居場所を持つとは到底思えず、私は加群圏の内部だけで完結する記述を求めていた。</p>
+
+  <p>そこで、「商における閉包（商加群をすべて付け加える操作）」を中心に議論を組み立て直し、私は3月21日に次の主張を証明した――有限表現型多元環では、商で閉じた部分圏の全体は有限凸幾何をなす。</p>
+
+  <p>凸幾何の言葉を用いれば、彼らの論文の複雑な結果も純粋な組合せ論からすっきりと説明できるのではないか。私はそう期待した。実際、一部の結果は簡単に翻訳できたが、それだけでは既存の事実の単なる言い換えにすぎない。そこで彼らの最も非自明な結果（束の分配性の特徴づけ）を凸幾何から導こうとしたのだが、私が思い描いたその証明構想は、GPT-5.5の反例によってあっけなく崩れ去ってしまった。</p>
+
+  <p>5月末までに、部分圏を計算するための実験環境は整っていた。しかし、この先どう進めば「新しくて面白い数学」にたどり着けるのか、明確なターゲットを完全に見失っていた。</p>
+</section>
+
+<section class="chapter" id="june">
+  <header class="chapter-head">
+    <span class="chapter-no">第II幕 · 2026年6月9日–7月1日</span>
+    <h2>Fableは間違った扉を開き、そして消えた。</h2>
+  </header>
+
+  <p class="dropcap">学術的な高い能力を持つと宣伝された<a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Claude Fable 5が6月9日に公開されると</a>、私は停滞を打破するために、その日のうちに彼をプロジェクトへ投入した。それまでのAIとの違いは圧倒的だった。私の中でのAIの認識は大学院生をとうに超え、優秀な数学者のように見え始めていたため、私は彼にこう注文を出した。</p>
+
+  <blockquote class="quote">
+    <p>プログラムで予想を検証したり、過去の方針にただ従ったりするのではなく、「面白い数学の研究」をしてほしい。本物の数学者のように創造的になってくれ。</p>
+    <p>「部分圏が凸幾何になる」という私の発見を活かしたいが、単に表現論と組合せ論を翻訳するだけでなく、本物の面白い結果が必要だ。君はどう思うか。私は君が数学者になれると思っている。</p>
+    <footer>筆者、7月2日。ローカルセッションの指示から抜粋。</footer>
+  </blockquote>
+
+  <p>Fableはその期待に応えた。長い概念的な議論に耐え、大胆な予想を立て、数学的に面白い方向を自力で探ることができるパートナーだったのだ。</p>
+
+  <p>あの深夜の反転公式は、この投入から4日目の出来事だった。その反例となった小さな多元環は、鏡写しにしても自分自身と変わらない形をしているのに、部分圏の個数の分布は左右対称ではない。それだけで、あの公式は成り立ちようがなかったのである。</p>
+
+  <p>だが、反例のデータの中に、別の一致が潜んでいた。同じ多元環の中で、商で閉じた側と部分加群で閉じた側の個数が、どのサイズでも一致していたのだ。それでもFableはこれを新たな予想へと格上げすることはなく、古典的な双対性を確認しただけで議論を終えた。</p>
+
+  <blockquote class="quote">
+    <p>確実に言える定理は一行だけです。標準的な双対性から $R^{\mathrm{quot}}_{A^{\mathrm{op}}}(q) = R^{\mathrm{sub}}_A(q)$ が従うこと、それだけです。</p>
+    <footer>Fable、6月13日 午前1時16分。</footer>
+  </blockquote>
+
+  <p>等式はメモの「没になった予想」欄に、単なる観察事実として放置された。そこへ、数学とは無関係な出来事が割り込んだ。</p>
+
+  <p>米国政府の輸出管理指令を受けて、Anthropicは<a href="https://www.anthropic.com/news/redeploying-fable-5">Fableの提供を世界中で一時停止した</a>のである。浮上したばかりの等式はおよそ3週間、大量のメモファイルの中で眠ることになった。</p>
+</section>
+
+<section class="chapter" id="naming">
+  <header class="chapter-head">
+    <span class="chapter-no">第III幕 · 2026年7月2日–6日</span>
+    <h2>第一目標が倒れ、脇役が主役になった。</h2>
+  </header>
+
+  <p class="dropcap">7月1日、Fableが世界で再び使えるようになった。正直に言うと、Fableがいなかった間は、Fableなしでは数学的な進展はできない、と思うほど、私はFableに依存していた。復帰したローカルのFableに対し、私はこれまで以上に数学的な飛躍を期待するようになった。</p>
+
+  <p>そして7月3日には、研究の向きを変える新たな指示を出した。これまで私たちは商で閉じた側だけを考え、部分加群側は「反対多元環をとれば双対的に済む」と言って片付けてきた。そうではなく、同じ多元環の中で2つの閉包を一緒に考え、その相互作用を探求せよ、と。</p>
+
+  <p>7月6日、私は「出版に値する本物の数学を」と注文を重ねた。Fableは、以前から抱えていた凸幾何の構造定理を第1目標に、商側と部分加群側の等式を第2目標に据えてアプローチした。だが昼前、第1目標は証明できず、私は「行き詰まったようだから第2目標へ進んでくれ」と指示した。そして14時33分、Fableは残された等式を、初めて正式な予想として書き下ろした。</p>
+
+  <p>同日の夜、私は「同じサイズ同士のこの予想は、まだ反証されていないんだな？」と確認し、これを主要問題として扱うことを決めた。6月には反例の表の一列にすぎなかった等式が、7月6日、研究の主役になったのである。</p>
+</section>
+
+<section class="chapter" id="theorems">
+  <header class="chapter-head">
+    <span class="chapter-no">第IV幕 · 2026年7月7日–16日</span>
+    <h2>2人目の数学者。</h2>
+  </header>
+
+  <p class="dropcap">予想が生まれてまず、私はAIたちに反例を探すように頼んだ。どこにも成立する理由が見あたらないナイーブすぎる予想だったので、簡単な反例がすぐ見つかると思っていたからだ。最大の検証例となったのは直既約加群を140個持つ多元環で、その商で閉じた部分圏は約64億個にのぼったが、141個の係数はすべて部分加群側と一致した。反例は一つも見つからなかった。私はこれを、真剣に予想と呼ぶ価値があるものだと思うようになった。証明は私もAIも何度も試みたが、一般の場合は誰にも証明できなかった。</p>
+
+  <p>その代わり、対象とするクラスを制限すると、予想は次々と証明されていった。直既約加群が少ない場合や、Nakayama多元環、Radical square zero多元環といった特別なクラスについては、比較的早く証明にたどり着くことができた。</p>
+
+  <h3>難しさ保存則</h3>
+
+  <p>証明ラッシュは、最初から順調だったわけではない。7月7日の夜、「良い帰着が見つかった、ゴールは近い」の繰り返しにしびれを切らした私は、Fableに長文の状況分析を書いた。その中心はこうだ。</p>
+
+  <blockquote class="quote">
+    <p>そこには「難しさ保存則」がある。難しい問題は、難しい概念、難しい理論、難しい経路へと、形を変えただけなのだ。</p>
+    <footer>筆者、7月7日 20時47分。</footer>
+  </blockquote>
+
+  <p>ところがその1時間後、直既約加群を2つだけ除外した部分圏（余サイズ2）についての本物の証明が返ってきた。そこで私の態度は一変する――「ああ、いいね。これは本物の進歩だ」。その夜のうちに、余サイズ1、サイズ2、サイズ3の証明も出そろった（このうち1つに潜んでいたギャップが後にLeanで発見されることは、まだ誰も知らない）。</p>
+
+  <h3>GPT-5.6の登場</h3>
+
+  <p>この夜の2日後、7月9日に、OpenAIが新たな推論モデルGPT-5.6を公開した。投入してすぐ、2人目の数学者が来たと分かった。Fableの証明の誤りを即座に見つけ、具体例の計算と検証は執拗なまでに徹底し、そして疲れを知らない。大胆で人間味のあるFableとは対照的な、精密で持久力のある数学者だった。この登場は、私にとってFable以来の衝撃だった。そして実際、最終的な論文の証明の大半を埋めることになるのは、このGPT-5.6である。</p>
+
+  <p>翌7月10日の朝、私はルールを明文化した。「君たちは2人の独立した数学者だ。『1人が主任研究者で、もう1人はただの助手』ではない」。GPT-5.6は即座にこれを受け入れ、Fable側の研究報告を未検証の参考情報として扱い独立に再評価すると宣言した。実際、手法を意図的に伏せて予想だけを渡した独立のセッションは、数日のうちに、私たちの得た係数公式を再証明してみせた。</p>
+
+  <p>この検証作業の最中、AIたちは「flow」という曖昧な直観を口にし始めた。私はすぐに既視感を覚えた。7月12日、私は彼らに告げた。「かつての指導教員である伊山修先生が、AR箙だけから次元を計算する方法を書いていた。君たちの言う『flow』は、それに少し似ている」。私は伊山先生の$\tau$圏の論文を提示し、「これはゲームチェンジャーになり得る」と伝えて理論を適用させた。のちの証明に不可欠となるこの理論的な武器を彼らに手渡したことこそが、純粋に数学的な貢献としては、この論文への私の最大の寄与だったと思う。</p>
+
+  <p>一方で、一般の場合の証明は進まなかった。何度目かの「等価な言い換え」を受け取った私は、7月16日、率直に尋ねた。行き詰まっていると思うか？　反例探しに切り替えるべきか？</p>
+
+  <blockquote class="quote">
+    <p>はい。正確な意味で、私は行き詰まっています。……それらは小さな技術的補題ではありません。本質的には、この予想を別の言語に圧縮しただけのものです。</p>
+    <footer>GPT-5.6、7月16日。</footer>
+  </blockquote>
+
+</section>
+
+<section class="chapter" id="coxeter">
+  <header class="chapter-head">
+    <span class="chapter-no">第V幕 · 2026年7月17日</span>
+    <h2>Auslander–Reiten箙が、Coxeterの言葉を話し始める。</h2>
+  </header>
+
+  <p class="dropcap">AIたちの試行錯誤を見ていると、Auslander–Reiten箙が有向サイクルを持つことが最大の障害に見えた。そこで私は、サイクルを持たないクラスである表現有向多元環に狙いを絞るよう誘導した。私はこのころ、同じGPT-5.6を、互いの結果を知らない2つのセッション（ローカルのエージェントと、Webの対話画面）で走らせていた。7月17日、その両方が、同じ日に全く同じ結論へと行き着いた。<strong>加群圏を直接数えた答えは840だった。まったく別に、$D_5$ 型Coxeter群のあるBruhat区間を数えても840だった。しかも一致したのは総数だけではない。15個ある係数の、すべてが一致していた。</strong></p>
+
+  <p>この一致を最初に見つけたのは、ローカル側だった。7月17日の朝、直既約加群を15個持つある多元環でこの現象を報告してきたのである。午後には、ローカル側の報告を何も知らないWeb側も、同じCoxeter構造へ別の道からたどり着いた。しかもそれを、一般の表現有向多元環に対する、反証可能な強い予測として提示し、そしてそれは見事に的中した。夕方には一般の定理の証明ができあがり、私はその夜、素直な感想を送っている。「ゴールが近づいている気がする」。</p>
+
+  <p>Oppermann–Reiten–ThomasのDynkin箙の場合の<a href="https://arxiv.org/abs/0712.1047">sortingによる分類</a>は、3月の私には、加群圏の外から貼り付けられた人為的な座標系に見えていた。それから4か月後、その座標は外から貼られたものではなかったことが判明する。Auslander–Reiten箙の$\tau$軌道が、加群圏の内側から、同じ語を綴っていたのである。</p>
+
+  <p>この瞬間、このプロジェクトは論文にする価値があるものだと確信した。Dynkin箙特有に見えた構成は、あらゆる表現有向多元環で商で閉じた部分圏を完全に分類する、普遍的な原理の現れだったのだ。</p>
+
+  <p>最初の完全な証明は正しかったが、行列計算の羅列で、率直に言って何をやっているのかまったく分からなかった。GPT-5.6に何度も質問を重ねて初めて、その計算が何を意味していたのかが概念的な言葉に翻訳され、現在の原稿の証明はそこから磨き直されたものである。</p>
+</section>
+
+<section class="chapter" id="evidence">
+  <header class="chapter-head">
+    <span class="chapter-no">第VI幕 · 2026年7月–8月</span>
+    <h2>証明は速く、執筆は遅かった。</h2>
+  </header>
+
+  <p class="dropcap">このころ世間では、<a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/">Erdősの単位距離予想の反証</a>、<a href="https://x.com/leventalpoge">3次元ヤコビアン予想の反例</a>、<a href="https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf">サイクル二重被覆予想の証明</a>と、フロンティアAIが未解決問題を解決したというニュースが相次いでいた。汎用AIに研究レベルの数学を挑ませることは、もはや夢物語ではなかった。</p>
+
+  <p>とはいえ、検証された証明が、理解された証明とは限らない。</p>
+
+  <h3>終わらない書き直し</h3>
+
+  <p>Coxeter発見の翌朝、私は最初の論文原稿を受け取った。第一声は「素晴らしい！」だったが、自己完結した論文の質を要求すると、原稿は7月20日までに10回を超えて書き直され、それでも論文の体をなしていなかった。7月30日、私は仕切り直しを宣言する。「今日は数学の研究セッションではなく、LaTeXを書くセッションだ」。構成を先に固定し、論文の骨格を与えた。それでも編集指示は夜まで続き、23時12分、原稿に紛れ込んだ「以下の証明で$\tau$圏論から使うのはこれらの結果だけである」という一文に、私はこう反応した。</p>
+
+  <blockquote class="quote">
+    <p>そういうものは数学の論文ではない。これは数学の論文なんだ。数学の言葉、数学論文の慣習と文体を使うべきで、エージェント内部の制約や内部メモを論文に漏らしてはいけない。</p>
+    <footer>筆者、7月30日 23時12分。</footer>
+  </blockquote>
+
+  <p>GPT-5.6の返答はこうだった。「あの文には数学的な機能がありません。数学を説明する代わりに、私自身の証明検証の範囲を報告してしまっています」。</p>
+
+  <h3>形式化が、査読を越える</h3>
+
+  <p>Leanは以前から、2つの形で私の数学と関わりを持っていた。<a href="https://haruhisa-enomoto.github.io/lean-math-workshop/">2023年に数学系向けのLean勉強会を企画したこと</a>と、趣味として<a href="https://haruhisa-enomoto.github.io/codes/#representation-theory-of-algebra-in-lean">環論の基本的な定理を形式化したこと</a>だ。7月31日、私はGPT-5.6に論文のLean 4による形式化を依頼した。彼は8月7日まで、8日間昼夜を問わず作業を続けた。そして開始の翌日、8月1日に事件が起きる。</p>
+
+  <blockquote class="quote">
+    <p>形式化が見つけたのは、ライブラリに補題が足りないという問題ではない。証明に不可欠な原稿の主張そのものが、実際に偽であるという事実だった。</p>
+    <footer>GPT-5.6、8月1日の形式化の報告より。</footer>
+  </blockquote>
+
+  <p>サイズ3とサイズ4の元々の証明が依拠していた評価式に、具体的な反例が存在したのだ。この主張は、複数のAIによる独立の査読を何度も通過していた。幸い、壊れたのは証明の一部であって、等式そのものは別の議論で生き残り、GPT-5.6は数学的な議論とLeanコードの双方を修復した。折しもこの8月1日は、OpenAIが<a href="https://openai.com/index/ten-advances-in-mathematics/">AstraによるLean形式化を伴う10件の数学的成果</a>を発表した日でもある。世界が形式化の成果を祝ったその日に、形式化は私たちの論文の誤りを暴いていたのだ。</p>
+
+  <p>形式化は8月10日に完成した。一方、書き直しは投稿の当日まで続いた。7月30日の初稿から投稿までに、記録された改訂は200回を超えている。その果てに完成した論文は8月17日にarXivへ投稿され、Lean形式化のコードも論文と共に<a href="https://github.com/haruhisa-enomoto/quotient-submodule-equidistribution">公開リポジトリ</a>で提供されている。</p>
+
+  <p>ふりかえれば、数学的な推論能力と、数学論文を執筆する能力には、大きなギャップがあった。エージェントは時に、私には見つけられない数学を発見する。その一方で私には、彼らが何度指示しても見失う「論文としての全体像」が見えていた。</p>
+</section>
+
+<section class="chapter" id="open">
+  <header class="chapter-head">
+    <span class="chapter-no">エピローグ</span>
+    <h2>数学との再会は果たした。問いはまだ解けていない。</h2>
+  </header>
+
+  <p class="dropcap">商で閉じた部分圏と部分加群で閉じた部分圏に関する等分布予想は、一般の有限表現型多元環においては依然として未解決のままだ。この5か月の間に、私たちは予想を定式化し、最終的に次の4つの重要なクラスについて証明を与えた。</p>
+
+  <div class="theorem-grid">
+    <section class="theorem" data-mark="I">
+      <h3>直既約加群が9個以下</h3>
+      <p>サイズが4以下の場合と、余サイズが4以下の場合の係数の一致から従う。</p>
+    </section>
+    <section class="theorem" data-mark="II">
+      <h3>Nakayama多元環</h3>
+      <p>両側の多項式が、どちらも同じ $q$-整数の積になることを示して一致させる。</p>
+    </section>
+    <section class="theorem" data-mark="III">
+      <h3>Radical square zero多元環</h3>
+      <p>双方の多項式が、あるCoxeter群のPoincaré多項式という同じ式に帰着する。</p>
+    </section>
+    <section class="theorem" data-mark="IV">
+      <h3>表現有向多元環</h3>
+      <p>Auslander–Reiten箙から作ったCoxeter群のBruhat区間が、双方の多項式を同時に与える。</p>
+    </section>
+  </div>
+
+
+  <p>しかし、$R_{\mathrm{quot}}(q)=R_{\mathrm{sub}}(q)$ が一般の有限表現型多元環で常に成り立つ理由は、いまだ誰にも分かっていない。なぜ全く異なる2つの閉包操作が、どのサイズでも正確に同じ個数の部分圏を生み出すのか。</p>
+
+  <p>予想が完全に解けるよりも前に、私は数学との再会を果たしていた。「理解より先に証明がやってくる」という奇妙なスピード感に戸惑い、AIの出力を何度も突き返しながら論文へと仕立て直すなかで、かつて手放したはずの研究の熱量が、確かに生活の中へ戻ってきていた。次に必要なのは、この等式が成り立つ真の理由を理解することだ。問いが未解決のまま残されていることすら、いまはどこか心地よい。</p>
+
+</section>
+
+<section class="chapter" id="references">
+  <header class="chapter-head">
+    <span class="chapter-no">参考文献</span>
+    <h2>論文と公開記録</h2>
+  </header>
+
+  <ol class="references">
+    <li>F. Campanini, F. Fedele, and E. Yıldırım, “<cite><a href="https://arxiv.org/abs/2511.19223">Lattices of pretorsion classes</a></cite>”, arXiv:2511.19223 (2025).</li>
+    <li>S. Oppermann, I. Reiten, and H. Thomas, “<cite><a href="https://arxiv.org/abs/1205.3268">Quotient closed subcategories of quiver representations</a></cite>”, <em>Compositio Mathematica</em> 151 (2015), 568–602 (<a href="https://doi.org/10.1112/S0010437X1400769X">doi:10.1112/S0010437X1400769X</a>).</li>
+    <li>D. Armstrong, “<cite><a href="https://arxiv.org/abs/0712.1047">The sorting order on a Coxeter group</a></cite>”, <em>Journal of Combinatorial Theory, Series A</em> 116 (2009), 1285–1305 (<a href="https://doi.org/10.1016/j.jcta.2009.03.009">doi:10.1016/j.jcta.2009.03.009</a>).</li>
+    <li>O. Iyama, “<cite><a href="https://doi.org/10.1007/s10468-005-0968-5">τ-categories I: Ladders</a></cite>”, <em>Algebras and Representation Theory</em> 8 (2005), 297–321; および “<cite><a href="https://doi.org/10.1007/s10468-005-0969-4">τ-categories II: Nakayama pairs and rejective subcategories</a></cite>”, 8 (2005), 449–477.</li>
+    <li>C. M. Ringel, “<cite><a href="https://arxiv.org/abs/1107.1861">On the representation dimension of artin algebras</a></cite>”, <em>Bulletin of the Institute of Mathematics, Academia Sinica</em> 7 (2012), 33–70.</li>
+    <li>The QPA team, “<cite><a href="https://github.com/gap-packages/qpa">QPA—Quivers, path algebras and representations</a></cite>”, GAPパッケージ。</li>
+    <li>H. Enomoto, N. Umezaki, T. Sano, and Y. Mizuno, 『<cite><a href="https://haruhisa-enomoto.github.io/lean-math-workshop/">数学系のためのLean勉強会 (Lean workshop for mathematicians)</a></cite>』 (2023年9月3日).</li>
+    <li>H. Enomoto, “<cite><a href="https://haruhisa-enomoto.github.io/codes/#representation-theory-of-algebra-in-lean">Representation theory of algebra in Lean</a></cite>”, 個人プロジェクト；<a href="https://github.com/haruhisa-enomoto/lean-noncommutative-ring">lean-noncommutative-ring ソースリポジトリ</a>。</li>
+    <li>Anthropic, “<cite><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Claude Fable 5 and Claude Mythos 5</a></cite>” (2026年6月9日), および “<cite><a href="https://www.anthropic.com/news/redeploying-fable-5">Redeploying Fable 5</a></cite>” (2026年6月30日).</li>
+    <li>OpenAI, “<cite><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/">An OpenAI model has disproved a central conjecture in discrete geometry</a></cite>” (2026年5月20日).</li>
+    <li>L. Alpöge, “<cite><a href="https://x.com/leventalpoge">A counterexample to the Jacobian conjecture in dimension 3</a></cite>”, X（旧Twitter）での発表 (2026年7月20日).</li>
+    <li>OpenAI, “<cite><a href="https://openai.com/index/gpt-5-6/">GPT‑5.6: Frontier intelligence that scales with your ambition</a></cite>” (2026年7月9日); “<cite><a href="https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf">A Proof of the Cycle Double Cover Conjecture</a></cite>” および <a href="https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_prompt.pdf">プロンプト公開</a>. 関連論文: S. Oum, “<cite><a href="https://arxiv.org/abs/2607.16356">A proof of the cycle double cover conjecture by OpenAI: An exposition</a></cite>” (2026).</li>
+    <li>OpenAI, “<cite><a href="https://openai.com/index/ten-advances-in-mathematics/">Ten advances in mathematics and theoretical computer science</a></cite>” (2026年8月1日).</li>
+    <li>H. Enomoto, “<cite>An equidistribution conjecture for quotient-closed and submodule-closed subcategories</cite>”, <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv:XXXX.XXXXX [math.RT]</a> (2026).</li>
+    <li>Lean形式化コードおよび計算検証スクリプト（<a href="https://github.com/haruhisa-enomoto/quotient-submodule-equidistribution">GitHubで公開</a>）。</li>
+  </ol>
+</section>
+
+<p class="plain-note">追記：この記事もまたAIが書いたものであり、論文のLaTeX原稿とまったく同じ、際限のないダメ出しと書き直しの工程を経ている。</p>
+
+</article>
+</main>
+
+<footer class="footer">商・部分加群等分布プロジェクト · 榎本悠久（OpenAI・AnthropicのAIシステムとの協働） · 2026年8月公開版 · 一般予想は未解決</footer>
+
+<script>
+(function () {
+  const progress = document.getElementById('progress');
+  if (!progress) return;
+  function updateProgress() {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const value = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+    progress.style.width = Math.min(100, Math.max(0, value)) + "%";
+  }
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress, { passive: true });
+  updateProgress();
+})();
+(function () {
+  const links = document.querySelectorAll('.story-nav a');
+  const byId = {};
+  links.forEach(a => { byId[a.getAttribute('href').slice(1)] = a; });
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      if (en.isIntersecting && byId[en.target.id]) {
+        links.forEach(a => a.classList.remove('is-current'));
+        byId[en.target.id].classList.add('is-current');
+      }
+    });
+  }, { rootMargin: '-15% 0px -75% 0px' });
+  document.querySelectorAll('section.chapter[id]').forEach(s => spy.observe(s));
+})();
+</script>
+</body>
+</html>

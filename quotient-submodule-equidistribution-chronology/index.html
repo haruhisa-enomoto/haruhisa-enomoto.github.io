@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A paper read on a quiet weekend and a new generation of AI models drew Haruhisa Enomoto back into research. A five-month record of proofs, understanding, and mathematical writing moving at different speeds.">
+<meta name="theme-color" content="#181927">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Unsolved Conjecture and the Return of Mathematics">
+<meta property="og:description" content="A paper read on a quiet weekend and a new generation of AI models drew Haruhisa Enomoto back into research. A five-month record of proofs, understanding, and mathematical writing moving at different speeds.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23181927'/%3E%3Crect x='14' y='22' width='36' height='8' rx='4' fill='%23e96755'/%3E%3Crect x='14' y='36' width='36' height='8' rx='4' fill='%23f0ead8'/%3E%3C/svg%3E">
+  <link rel="alternate" hreflang="en" href="index.html">
+  <link rel="alternate" hreflang="ja" href="ja.html">
+<title>The Unsolved Conjecture and the Return of Mathematics</title>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+  }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">A Chronology of the Quotient–Submodule Equidistribution Project · March–August 2026</p>
+    <h1>The Unsolved Conjecture and the Return of Mathematics</h1>
+    <p class="dek">After I left academia for industry, mathematical research had all but vanished from my life. Then a paper read on a quiet weekend, and a new generation of AI models, pulled me back in&mdash;into a place where, at times, proofs arrived before my own understanding did.</p>
+
+    <div class="hero-grid">
+      <div class="lede">
+        <p>In March 2026, I started with a small counting problem. Why do quotient-closed subcategories and submodule-closed subcategories appear in exactly the same numbers at every size?</p>
+        <p>Five months later, this question had grown into a still-unsolved conjecture&mdash;the equidistribution conjecture for quotient-closed and submodule-closed subcategories. Through proofs in four classes, computational verification on the scale of billions of cases, and a Lean&nbsp;4 formalization of the main theorems, it took shape as my first research paper since 2023: &ldquo;<cite><a href="https://arxiv.org/abs/XXXX.XXXXX">An equidistribution conjecture for quotient-closed and submodule-closed subcategories</a></cite>&rdquo;.</p>
+      </div>
+      <aside class="math-card" aria-label="Mathematical surprise">
+        <div class="label">The Equation at the Center of the Story</div>
+        <div class="equation-line">$$R_{\mathrm{quot}}(q) = R_{\mathrm{sub}}(q)$$</div>
+        <p>The left side counts quotient-closed subcategories by size; the right side counts submodule-closed ones. Whether this holds for every representation-finite algebra is not known.</p>
+      </aside>
+    </div>
+    <p class="byline">Haruhisa Enomoto · Published 18 August 2026</p>
+    <nav class="language-switch" aria-label="Language">
+      <strong aria-current="page">English</strong>
+      <a href="ja.html" lang="ja">日本語</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="story-nav" aria-label="Sections">
+  <div>
+    <a href="#prologue">Twelve Minutes</a>
+    <a href="#count">Background</a>
+    <a href="#spring">The Return</a>
+    <a href="#june">False Conjecture</a>
+    <a href="#naming">New Lead</a>
+    <a href="#theorems">Theorem Rush</a>
+    <a href="#coxeter">Coxeter Words</a>
+    <a href="#evidence">Proofs &amp; Writing</a>
+    <a href="#open">Epilogue</a>
+    <a href="#references">References</a>
+  </div>
+</nav>
+
+<main>
+<article>
+
+<section class="chapter" id="prologue">
+  <header class="chapter-head">
+    <span class="chapter-no">Prologue · Late night, 13 June 2026</span>
+    <h2>The beautiful formula lasted twelve minutes</h2>
+  </header>
+
+  <p class="dropcap">At 0:54 a.m., the AI Fable proposed a beautiful formula: counting subcategories in an algebra and counting them in its mirror-image algebra should give the same list of numbers, read in reverse order. GPT-5.5, another AI running computations in parallel, also expected the formula to hold.</p>
+
+  <p>The computation betrayed them both. About twelve minutes after the proposal, the results for one small algebra came in, and the formula collapsed against a counterexample. GPT-5.5 corrected its own half-written report on the spot.</p>
+
+  <blockquote class="quote">
+    <p>I need to correct the generated report text, because the first draft assumed [this algebra] would pass before the computation finished.</p>
+    <footer>GPT-5.5, 13 June, 1:06 a.m.</footer>
+  </blockquote>
+
+  <p>At 1:16 a.m., Fable, the proposer, conceded defeat in two words: &ldquo;Clean kill.&rdquo; The false conjecture went into the corrections log, and the night&rsquo;s commotion was over in a little more than twenty minutes.</p>
+
+  <p>But inside the computation tables of the broken formula, another coincidence survived&mdash;one that nobody was yet calling a conjecture. In the counterexample algebra, and in every example compared, the counts of quotient-closed subcategories and of submodule-closed subcategories kept matching at every single size, for no reason anyone could name.</p>
+
+  </section>
+
+<section class="chapter" id="count">
+  <header class="chapter-head">
+    <span class="chapter-no">Mathematical Background</span>
+    <h2>Two closures and an unexpected equality</h2>
+  </header>
+
+  <p class="dropcap">A quiver is a directed graph of vertices and arrows, and a representation of it assigns a vector space to each vertex and a linear map to each arrow. Algebraically, these are exactly the modules over the path algebra of the quiver. A module that cannot be decomposed into a direct sum is called an <em>indecomposable module</em>. This article deals with <em>representation-finite</em> algebras&mdash;those with only finitely many indecomposable modules.</p>
+
+  <figure>
+    <svg viewBox="0 0 700 135" role="img" aria-label="A single-arrow quiver and its three indecomposable representations">
+      <defs><marker id="arrow-one" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10z" class="arrow"/></marker></defs>
+      <text x="95" y="28" font-size="12" text-anchor="middle">quiver</text>
+      <circle cx="55" cy="75" r="20" class="node"/><text x="55" y="81" text-anchor="middle" font-size="16">1</text>
+      <line x1="80" y1="75" x2="145" y2="75" class="edge" marker-end="url(#arrow-one)"/>
+      <circle cx="170" cy="75" r="20" class="node"/><text x="170" y="81" text-anchor="middle" font-size="16">2</text>
+      <line x1="235" y1="20" x2="235" y2="125" class="soft-grid"/>
+      <text x="300" y="30" font-size="12" text-anchor="middle">three indecomposables</text>
+      <rect x="260" y="55" width="88" height="42" rx="10" class="node"/><text x="304" y="81" text-anchor="middle" font-size="15">S₁</text>
+      <rect x="370" y="55" width="88" height="42" rx="10" class="node"/><text x="414" y="81" text-anchor="middle" font-size="15">S₂</text>
+      <rect x="480" y="55" width="150" height="42" rx="10" class="node hot"/><text x="555" y="81" text-anchor="middle" font-size="15">P₁ : k → k</text>
+    </svg>
+    <figcaption>The quiver $1\to 2$ and its three indecomposable modules.</figcaption>
+  </figure>
+
+  <p>There are two ways to produce smaller modules from a module: taking <em>submodules</em>, and taking <em>quotient modules</em>.</p>
+
+  <p>A collection of indecomposable modules is <span class="term">quotient-closed</span> if taking quotients of its members never leads outside the collection, and <span class="term">submodule-closed</span> if the same holds for taking submodules. Even for the single-arrow quiver above, the two kinds of collections differ.</p>
+
+  <div class="subcat-table-wrap">
+    <table class="subcat-table">
+      <thead>
+        <tr>
+          <th class="center">Size</th>
+          <th>Quotient-closed</th>
+          <th>Submodule-closed</th>
+          <th class="center">Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="center"><span class="size-badge">0</span></td>
+          <td><span class="chip">$\emptyset$</span></td>
+          <td><span class="chip">$\emptyset$</span></td>
+          <td class="center"><strong class="count-badge">1</strong></td>
+        </tr>
+        <tr>
+          <td class="center"><span class="size-badge">1</span></td>
+          <td><span class="chip">$\{S_1\}$</span> <span class="chip">$\{S_2\}$</span></td>
+          <td><span class="chip">$\{S_1\}$</span> <span class="chip">$\{S_2\}$</span></td>
+          <td class="center"><strong class="count-badge">2</strong></td>
+        </tr>
+        <tr>
+          <td class="center"><span class="size-badge">2</span></td>
+          <td><span class="chip">$\{S_1, S_2\}$</span> <span class="chip diff">$\{S_1, P_1\}$</span></td>
+          <td><span class="chip">$\{S_1, S_2\}$</span> <span class="chip diff">$\{P_1, S_2\}$</span></td>
+          <td class="center"><strong class="count-badge">2</strong></td>
+        </tr>
+        <tr>
+          <td class="center"><span class="size-badge">3</span></td>
+          <td><span class="chip">$\{S_1, P_1, S_2\}$</span></td>
+          <td><span class="chip">$\{S_1, P_1, S_2\}$</span></td>
+          <td class="center"><strong class="count-badge">1</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Yet when counted by size, the difference vanishes. The polynomials whose coefficients record these counts&mdash;the <em>size generating polynomials</em>&mdash;match exactly:</p>
+
+  <div class="formula">
+    $$R_{\mathrm{quot}}(q)=1+2q+2q^2+q^3=R_{\mathrm{sub}}(q).$$
+  </div>
+
+  <p>Writing $N$ for the number of indecomposable modules, $\mathcal L_{\mathrm{quot}}^j(A)$ for the quotient-closed subcategories (collections of modules) of size $j$, and $\mathcal L_{\mathrm{sub}}^j(A)$ for the submodule-closed ones, the <em>quotient&ndash;submodule equidistribution conjecture</em> asserts that for <em>every</em> representation-finite algebra:</p>
+
+    <div class="formula">
+    $$\bigl|\mathcal L_{\mathrm{quot}}^j(A)\bigr|=\bigl|\mathcal L_{\mathrm{sub}}^j(A)\bigr|\qquad(0\leq j\leq N).$$
+  </div>
+
+  <p>The lattice of quotient-closed subcategories and the lattice of submodule-closed subcategories are generally not isomorphic, and there is no natural bijection in sight. The unknown structure tying these two together inside the same module category is the heart of the conjecture.</p>
+
+  <p>To trace the source of this mysterious equality, let us rewind the story.</p>
+
+</section>
+
+<section class="chapter" id="spring">
+  <header class="chapter-head">
+    <span class="chapter-no">Act I · March&ndash;May 2026</span>
+    <h2>A return to research began with a weekend question</h2>
+  </header>
+
+  <p class="dropcap">I left academia at the end of March 2024 and started at an ordinary company that April. I had chosen to stop doing mathematics as a painful obligation, hoping that mathematics freed from duty might one day become a hobby I could enjoy (a story I told in <a href="https://haruhisa-enomoto.github.io/acadexit/">a separate post</a>). In practice, though, I only browsed papers on occasional weekends; I was nowhere near doing research of my own.</p>
+
+  <p>Every time a new AI model appeared, I would test it on an algebra theorem&mdash;specifically, the symmetry of the Jacobson radical. After countless circular arguments and false lemmas, GPT-5.2 in late 2025 finally managed to build a clear proof without fudging the fine logic. By this point, my estimate of AI&rsquo;s mathematical ability had risen from &ldquo;a well-read undergraduate prone to bluffing&rdquo; to &ldquo;a well-trained, talented graduate student.&rdquo;</p>
+
+  <p>My mathematical sparring partner was first GPT&#8209;5.4, then GPT&#8209;5.5. Alongside the ChatGPT conversations, I also used the agent version, which could work directly with my local files and computing environment.</p>
+
+  <h3>The paper that started the question</h3>
+
+  <p>It all began on 8 March 2026, when I read Campanini, Fedele, and Yıldırım&rsquo;s paper &ldquo;<cite><a href="https://arxiv.org/abs/2511.19223">Lattices of pretorsion classes</a></cite>&rdquo;. Studying the lattices of quotient-closed subcategories for the $A_3$ quiver, they pointed to a &ldquo;mysterious combinatorial structure&rdquo; hiding there. But their proofs were formidably complicated, and I came away with no feeling for why the results held.</p>
+
+  <p>Having always enjoyed deriving representation-theoretic facts from abstract, combinatorial machinery, I suspected a general lattice-theoretic structure behind their results, and spent the weekend discussing it with ChatGPT.</p>
+
+  <p>The great harvest of this period was a viewpoint: the quotient-closed subcategories, taken together, form a combinatorial structure called a convex geometry. On the evening of 8 March, GPT&#8209;5.4 brought in the combinatorics of subcategories from <a href="https://arxiv.org/abs/0712.1047">Armstrong&rsquo;s paper</a>, which Oppermann&ndash;Reiten&ndash;Thomas had cited. But the arguments of Armstrong and Oppermann&ndash;Reiten&ndash;Thomas describe subcategories through &ldquo;external coordinates&rdquo;&mdash;choosing letters from a word in a Dynkin Coxeter group. It seemed impossible to me that an external concept like a Coxeter group could have a natural home inside the module category, and I wanted a description that lived entirely within it.</p>
+
+  <p>So I recentered the discussion on quotient closure&mdash;the operation of adjoining all quotient modules. On 21 March, I proved the following: for a representation-finite algebra, the quotient-closed subcategories form a finite convex geometry.</p>
+
+  <p>I hoped that, in the language of convex geometries, the complicated results of their paper would smoothly follow from pure combinatorics. Some of them did, but this was merely a trivial rephrasing of existing facts. To produce something truly new, I tried to use this framework to explain their most non-trivial result&mdash;the characterization of the distributivity of the lattice&mdash;but the argument I had imagined was quickly sunk by a counterexample from GPT&#8209;5.5.</p>
+
+  <p>By the end of May, the computational playground was fully built, but I was at a complete loss for how to proceed. We had no clear, interesting mathematical target in sight.</p>
+</section>
+
+<section class="chapter" id="june">
+  <header class="chapter-head">
+    <span class="chapter-no">Act II · 9 June &ndash; 1 July 2026</span>
+    <h2>Fable opened the wrong door, then disappeared</h2>
+  </header>
+
+  <p class="dropcap">When the highly acclaimed <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Claude Fable 5 was launched on 9 June</a>, I immediately brought him onto the project to break the deadlock. The difference from previous AIs was overwhelming. My perception of the AI quickly moved past &ldquo;graduate student&rdquo; to something resembling an outstanding mathematician, so I gave him a directive to match:</p>
+
+  <blockquote class="quote">
+    <p>I want you to do some &ldquo;interesting mathematical work&rdquo;, not just verifying some conjecture by computer program, nor just following previous direction. Be creative like real mathematician.</p>
+    <p>I want to &ldquo;utilize&rdquo; my findings about &ldquo;quotient-closed subcats becomes convex geometry&rdquo; &hellip; but needs some interesting real results not just &ldquo;we can translate rep-theory into combinatorics, and vice versa&rdquo;. Tell me what you think. I think you can be mathematician.</p>
+    <footer>me, 2 July, from the opening instruction of a local session.</footer>
+  </blockquote>
+
+  <p>Fable lived up to the prompt. He could sustain long conceptual discussions, formulate bold conjectures, and seek out mathematically interesting directions on his own.</p>
+
+  <p>The late-night reversal formula came four days after that deployment. The small algebra that killed it has a shape unchanged by mirror reflection&mdash;yet its distribution of subcategory counts is not left-right symmetric. That alone made the formula impossible.</p>
+
+  <p>But within the counterexample data, another coincidence survived: inside one and the same algebra, the counts on the quotient-closed side and the submodule-closed side agreed at every size. Still, Fable did not promote this to a new conjecture; it closed the discussion after confirming classical duality.</p>
+
+  <blockquote class="quote">
+    <p>The honest theorem is one line: standard duality gives $R^{\mathrm{quot}}_{A^{\mathrm{op}}}(q) = R^{\mathrm{sub}}_A(q)$.</p>
+    <footer>Fable, 13 June, 1:16 a.m.</footer>
+  </blockquote>
+
+  <p>The equality was left in the notes, filed under discarded conjectures as a mere observed fact. Then an event with nothing to do with mathematics cut in.</p>
+
+  <p>Following a US-government export-control directive, Anthropic <a href="https://www.anthropic.com/news/redeploying-fable-5">suspended Fable worldwide</a>. The freshly surfaced equality would sleep for some three weeks inside heaps of memo files.</p>
+</section>
+
+<section class="chapter" id="naming">
+  <header class="chapter-head">
+    <span class="chapter-no">Act III · 2&ndash;6 July 2026</span>
+    <h2>The primary target fell, and the understudy took the stage</h2>
+  </header>
+
+  <p class="dropcap">On 1 July, Fable became available worldwide again. Honestly, during his absence I had come to rely on him so much that I felt mathematical progress was impossible without him. When he returned to the local environment, I expected even greater mathematical leaps than before.</p>
+
+  <p>On 3 July, I gave him a new directive to redirect the research itself. Until then we had considered only the quotient-closed side, dismissing the submodule side with &ldquo;take the opposite algebra and it follows by duality.&rdquo; Instead, I said: consider the two closures together, inside the same algebra, and study their interaction.</p>
+
+  <p>On 6 July I pressed further: &ldquo;I want you to do some real math which worth publication.&rdquo; Fable attacked with the convex-geometry structure theorem it had long carried as its primary target, keeping the quotient&ndash;submodule equality as the secondary one. By late morning the primary target had not yielded, and I told it: &ldquo;go ahead for secondary target.&rdquo; At 14:33, Fable wrote the remaining equality down as a formal conjecture for the first time.</p>
+
+  <p>That evening I checked&mdash;&ldquo;so you mean there is still a conjecture &hellip; which is still not yet rejected?&rdquo;&mdash;and decided to treat it as the main problem. The equality that in June had been one column of a counterexample table became, on 6 July, the lead of the research.</p>
+</section>
+
+<section class="chapter" id="theorems">
+  <header class="chapter-head">
+    <span class="chapter-no">Act IV · 7&ndash;16 July 2026</span>
+    <h2>The second mathematician</h2>
+  </header>
+
+  <p class="dropcap">Once the conjecture existed, my first move was to ask the AIs to hunt for counterexamples. The statement seemed far too naive to hold&mdash;there was no visible reason for it anywhere&mdash;so I expected an easy counterexample to turn up at once. The largest verification case was an algebra with 140 indecomposable modules: its quotient-closed subcategories numbered about 6.4 billion, and all 141 coefficients matched the submodule side. Not a single counterexample was found. I began to think the statement genuinely deserved to be called a conjecture. I tried proofs myself and set the AIs on it over and over, but nobody could prove the general case.</p>
+
+  <p>Instead, once we restricted the class of algebras, the conjecture began to be proved, case after case. For small quivers or special classes like Nakayama algebras and radical square zero algebras, we reached proofs relatively quickly.</p>
+
+  <h3>The law of conservation of difficulty</h3>
+
+  <p>The proof rush did not begin smoothly. On the night of 7 July, worn out by the loop of &ldquo;found a good reduction, the goal is near,&rdquo; I wrote Fable a long diagnosis. Its center was this:</p>
+
+  <blockquote class="quote">
+    <p>There is a &ldquo;law of conservation of difficulity&rdquo;: difficult problem just changed the shape to difficult concept or difficult theory or difficult route.</p>
+    <footer>me, 7 July, 8:47 p.m.</footer>
+  </blockquote>
+
+  <p>An hour later, however, a genuine proof came back&mdash;for subcategories omitting exactly two indecomposables (cosize 2). My reply turned on a dime: &ldquo;aha good. This is real progress.&rdquo; Before the night was over, proofs for cosize 1, size 2, and size 3 had all arrived. (Nobody yet knew that a gap hiding in one of them would later be found by Lean.)</p>
+
+  <h3>GPT-5.6 arrives</h3>
+
+  <p>Two days after that night, on 9 July, OpenAI released its new reasoning model, GPT-5.6. The moment I deployed it, I knew a second mathematician had arrived. It caught the errors in Fable&rsquo;s proofs instantly, was relentless to the point of obsession in computing and checking examples, and never tired. It was a precise mathematician of great stamina&mdash;the opposite of the bold, human-like Fable. Its arrival was my biggest shock since Fable itself. And in fact, it is GPT-5.6 that would go on to fill in most of the proofs of the final paper.</p>
+
+  <p>The next morning, 10 July, I made the rule explicit: &ldquo;You are two independent mathematician, not &lsquo;one main researcher, the other just assistant&rsquo;.&rdquo; GPT-5.6 accepted at once, declaring it would downgrade Fable&rsquo;s research reports to unverified leads and reassess them independently. Indeed, an independent session that was handed only the conjecture&mdash;with our methods deliberately withheld&mdash;reproved our coefficient formulas within days.</p>
+
+  <p>Amidst this verification work, the AIs began expressing a vague intuition they called &ldquo;flow&rdquo; in the quiver. I recognized the flavor immediately. On 12 July, I told them: &ldquo;My former adviser Osamu Iyama wrote something about how to compute dimensions only from the AR quiver&hellip; your &lsquo;flow&rsquo; intuition is something a bit similar.&rdquo; I handed them Iyama&rsquo;s paper on $\tau$-category theory, adding that this could be a &ldquo;game-changer.&rdquo; As a purely mathematical contribution, handing them this theoretical weapon was my largest input to the paper.</p>
+
+  <p>Yet the general case still refused to move. After receiving yet another &ldquo;equivalent reformulation,&rdquo; on 16 July I asked plainly: Do you think you are stuck? Should we switch to hunting counterexamples?</p>
+
+  <blockquote class="quote">
+    <p>Yes. In a precise sense, I am stuck. &hellip; Those are not small technical lemmas. They are essentially [this conjecture] compressed into different language.</p>
+    <footer>GPT-5.6, 16 July.</footer>
+  </blockquote>
+
+</section>
+
+<section class="chapter" id="coxeter">
+  <header class="chapter-head">
+    <span class="chapter-no">Act V · 17 July 2026</span>
+    <h2>The Auslander&ndash;Reiten quiver starts speaking Coxeter</h2>
+  </header>
+
+  <p class="dropcap">Watching the AIs&rsquo; trial and error, the oriented cycles in the Auslander&ndash;Reiten quiver looked like the biggest obstacle. So I steered them toward the class without cycles: representation-directed algebras. Around this time, I was running the same GPT-5.6 in two sessions that knew nothing of each other&rsquo;s results&mdash;the local agent and the web chat interface. On 17 July, both reached exactly the same conclusion on the same day. <strong>Counting directly in the module category gave 840. Counting a certain Bruhat interval in a Coxeter group of type $D_5$&mdash;an entirely separate computation&mdash;also gave 840. And the totals were not all that matched: every one of the fifteen coefficients agreed.</strong></p>
+
+  <p>The local side found the coincidence first, reporting the phenomenon that morning for an algebra with fifteen indecomposable modules. In the afternoon, the web side&mdash;knowing nothing of the local report&mdash;arrived at the same Coxeter structure by a different route, and presented it as a strong, falsifiable prediction for all representation-directed algebras. The prediction hit the mark. By evening the proof of the general theorem was complete, and that night I sent my honest reaction: &ldquo;I think the goal is coming.&rdquo;</p>
+
+  <p>Oppermann&ndash;Reiten&ndash;Thomas&rsquo;s <a href="https://arxiv.org/abs/0712.1047">sorting classification</a> for Dynkin quivers had looked, to the me of March, like an artificial coordinate system pasted onto the module category from outside. Four months later, it turned out the coordinates had never been pasted on from outside at all: the $\tau$-orbits of the Auslander&ndash;Reiten quiver had been spelling the same word from within.</p>
+
+  <p>At that moment, I became certain the project deserved a paper. The construction that had seemed peculiar to Dynkin quivers was the visible face of a universal principle&mdash;one that completely classifies quotient-closed subcategories over every representation-directed algebra.</p>
+
+  <p>The first complete proof was correct, but it was a wall of matrix computation; frankly, I could not tell what it was doing at all. The proof was easy for an AI, yet indigestible for a human. Only after round upon round of questioning GPT-5.6 was the computation translated into conceptual language, and the proof in the current manuscript is the polished result of that translation.</p>
+</section>
+
+<section class="chapter" id="evidence">
+  <header class="chapter-head">
+    <span class="chapter-no">Act VI · July&ndash;August 2026</span>
+    <h2>Proofs were fast; writing was slow</h2>
+  </header>
+
+  <p class="dropcap">Around this time, the wider world was seeing a run of headlines about frontier AI settling open problems: the <a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/">disproof of Erd&#337;s&rsquo;s unit distance conjecture</a>, a <a href="https://x.com/leventalpoge">counterexample to the three-dimensional Jacobian conjecture</a>, a <a href="https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf">proof of the Cycle Double Cover conjecture</a>. Setting general-purpose AI on research-level mathematics was no longer a fantasy.</p>
+
+  <p>And yet a verified proof is not necessarily an understood proof.</p>
+
+  <h3>The rewrites that would not end</h3>
+
+  <p>The morning after the Coxeter discovery, I received the first draft of the paper. My first words were &ldquo;Looks great!&rdquo;&mdash;but once I demanded the self-contained quality of a real paper, the manuscript was rewritten more than ten times by 20 July and still was not a paper. On 30 July, I declared a reset: &ldquo;this is not math research session but latex writing session.&rdquo; I fixed the structure first and gave the paper its skeleton. Even so, the editing instructions ran on into the night, and at 11:12 p.m., one sentence that had slipped into the manuscript&mdash;&ldquo;These are the only results from $\tau$-category theory used in the following proof.&rdquo;&mdash;drew this reaction from me:</p>
+
+  <blockquote class="quote">
+    <p>That is not math paper. This is a math paper. We should use math language, math paper convention, style, etc. Do not leak something internal agent constraints or agent memo to paper.</p>
+    <footer>me, 30 July, 11:12 p.m.</footer>
+  </blockquote>
+
+  <p>GPT-5.6&rsquo;s answer: &ldquo;That sentence has no mathematical function; it reports my proof-audit boundary instead of explaining mathematics.&rdquo;</p>
+
+  <h3>Formalization outdoes peer review</h3>
+
+  <p>Lean had already touched my mathematical life in two ways: <a href="https://haruhisa-enomoto.github.io/lean-math-workshop/">organizing a Lean workshop for mathematicians in 2023</a>, and <a href="https://haruhisa-enomoto.github.io/codes/#representation-theory-of-algebra-in-lean">formalizing basic ring-theoretic theorems</a> as a hobby. On 31 July, I asked GPT-5.6 to formalize the paper in Lean 4. It worked day and night for eight days, through 7 August. And on 1 August, the day after it began, the incident happened.</p>
+
+  <blockquote class="quote">
+    <p>The formalization has found a genuine false proof-essential manuscript claim rather than a missing library lemma.</p>
+    <footer>GPT-5.6, from the formalization report of 1 August.</footer>
+  </blockquote>
+
+  <p>An estimate on which the original size-3 and size-4 proofs depended had a concrete counterexample. That claim had passed independent review by multiple AIs, many times over. Fortunately, only part of the proof broke: the equality itself survived by a different argument, and GPT-5.6 repaired both the mathematics and the Lean code. As it happened, this 1 August was also the day OpenAI announced <a href="https://openai.com/index/ten-advances-in-mathematics/">ten mathematical results with Lean formalizations by Astra</a>. On the very day the world celebrated formalization&rsquo;s achievements, formalization was exposing the error in our paper.</p>
+
+  <p>The formalization was completed on 10 August. The rewriting, on the other hand, continued to the day of submission: from the first draft of 30 July to submission, the recorded revisions number more than two hundred. The finished paper was submitted to arXiv on 17 August, and the Lean formalization code is provided with the paper in a <a href="https://github.com/haruhisa-enomoto/quotient-submodule-equidistribution">public repository</a>.</p>
+
+  <p>Looking back, the mismatch between mathematical reasoning ability and paper-writing ability was enormous. The agents sometimes discovered mathematics that I could not find. I, in turn, could see the one thing they kept losing no matter how often I pointed to it: the shape of the paper as a whole.</p>
+</section>
+
+<section class="chapter" id="open">
+  <header class="chapter-head">
+    <span class="chapter-no">Epilogue</span>
+    <h2>Mathematics has returned. The question remains open.</h2>
+  </header>
+
+  <p class="dropcap">The equidistribution conjecture for quotient-closed and submodule-closed subcategories remains unsolved for general representation-finite algebras. In these five months, we formulated the conjecture, and ultimately provided proofs for the following four substantial classes.</p>
+
+  <div class="theorem-grid">
+    <section class="theorem" data-mark="I">
+      <h3>At most 9 indecomposables</h3>
+      <p>Follows from the coefficient matches for sizes at most 4 and cosizes at most 4.</p>
+    </section>
+    <section class="theorem" data-mark="II">
+      <h3>Nakayama algebras</h3>
+      <p>Both polynomials are shown to be one and the same product of $q$-integers.</p>
+    </section>
+    <section class="theorem" data-mark="III">
+      <h3>Radical square zero algebras</h3>
+      <p>Both polynomials reduce to a single expression: the Poincar&eacute; polynomial of a Coxeter group.</p>
+    </section>
+    <section class="theorem" data-mark="IV">
+      <h3>Representation-directed algebras</h3>
+      <p>A Bruhat interval in a Coxeter group built from the Auslander&ndash;Reiten quiver yields both polynomials at once.</p>
+    </section>
+  </div>
+
+
+  <p>But why $R_{\mathrm{quot}}(q)=R_{\mathrm{sub}}(q)$ should always hold for a general representation-finite algebra, nobody yet knows. Why do two entirely different closure operations produce exactly the same number of subcategories at every size?</p>
+
+  <p>Mathematics came back to me before the conjecture was solved. Bewildered by the strange speed of &ldquo;proofs arriving ahead of understanding,&rdquo; sending the AI&rsquo;s output back again and again to be reworked into a paper, I found that the heat of research I thought I had let go had unmistakably returned to my daily life. What is needed next is to understand the true reason this equality holds. Even the fact that the question is still open feels, these days, quietly pleasant.</p>
+
+</section>
+
+<section class="chapter" id="references">
+  <header class="chapter-head">
+    <span class="chapter-no">References</span>
+    <h2>Papers and public records</h2>
+  </header>
+
+  <ol class="references">
+    <li>F. Campanini, F. Fedele, and E. Yıldırım, &ldquo;<cite><a href="https://arxiv.org/abs/2511.19223">Lattices of pretorsion classes</a></cite>&rdquo;, arXiv:2511.19223 (2025).</li>
+    <li>S. Oppermann, I. Reiten, and H. Thomas, &ldquo;<cite><a href="https://arxiv.org/abs/1205.3268">Quotient closed subcategories of quiver representations</a></cite>&rdquo;, <em>Compositio Mathematica</em> 151 (2015), 568&ndash;602 (<a href="https://doi.org/10.1112/S0010437X1400769X">doi:10.1112/S0010437X1400769X</a>).</li>
+    <li>D. Armstrong, &ldquo;<cite><a href="https://arxiv.org/abs/0712.1047">The sorting order on a Coxeter group</a></cite>&rdquo;, <em>Journal of Combinatorial Theory, Series A</em> 116 (2009), 1285&ndash;1305 (<a href="https://doi.org/10.1016/j.jcta.2009.03.009">doi:10.1016/j.jcta.2009.03.009</a>).</li>
+    <li>O. Iyama, &ldquo;<cite><a href="https://doi.org/10.1007/s10468-005-0968-5">τ-categories I: Ladders</a></cite>&rdquo;, <em>Algebras and Representation Theory</em> 8 (2005), 297&ndash;321; and &ldquo;<cite><a href="https://doi.org/10.1007/s10468-005-0969-4">τ-categories II: Nakayama pairs and rejective subcategories</a></cite>&rdquo;, 8 (2005), 449&ndash;477.</li>
+    <li>C. M. Ringel, &ldquo;<cite><a href="https://arxiv.org/abs/1107.1861">On the representation dimension of artin algebras</a></cite>&rdquo;, <em>Bulletin of the Institute of Mathematics, Academia Sinica</em> 7 (2012), 33&ndash;70.</li>
+    <li>The QPA team, &ldquo;<cite><a href="https://github.com/gap-packages/qpa">QPA&mdash;Quivers, path algebras and representations</a></cite>&rdquo;, GAP package.</li>
+    <li>H. Enomoto, N. Umezaki, T. Sano, and Y. Mizuno, <cite><a href="https://haruhisa-enomoto.github.io/lean-math-workshop/">Lean workshop for mathematicians</a></cite> (3 September 2023).</li>
+    <li>H. Enomoto, &ldquo;<cite><a href="https://haruhisa-enomoto.github.io/codes/#representation-theory-of-algebra-in-lean">Representation theory of algebra in Lean</a></cite>&rdquo;, personal project; <a href="https://github.com/haruhisa-enomoto/lean-noncommutative-ring">lean-noncommutative-ring source repository</a>.</li>
+    <li>Anthropic, &ldquo;<cite><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Claude Fable 5 and Claude Mythos 5</a></cite>&rdquo; (9 June 2026), and &ldquo;<cite><a href="https://www.anthropic.com/news/redeploying-fable-5">Redeploying Fable 5</a></cite>&rdquo; (30 June 2026).</li>
+    <li>OpenAI, &ldquo;<cite><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/">An OpenAI model has disproved a central conjecture in discrete geometry</a></cite>&rdquo; (20 May 2026).</li>
+    <li>L. Alp&ouml;ge, &ldquo;<cite><a href="https://x.com/leventalpoge">A counterexample to the Jacobian conjecture in dimension 3</a></cite>&rdquo;, announcement on X (20 July 2026).</li>
+    <li>OpenAI, &ldquo;<cite><a href="https://openai.com/index/gpt-5-6/">GPT&#8209;5.6: Frontier intelligence that scales with your ambition</a></cite>&rdquo; (9 July 2026); &ldquo;<cite><a href="https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf">A Proof of the Cycle Double Cover Conjecture</a></cite>&rdquo; and <a href="https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_prompt.pdf">released prompts</a>. Related exposition: S. Oum, &ldquo;<cite><a href="https://arxiv.org/abs/2607.16356">A proof of the cycle double cover conjecture by OpenAI: An exposition</a></cite>&rdquo; (2026).</li>
+    <li>OpenAI, &ldquo;<cite><a href="https://openai.com/index/ten-advances-in-mathematics/">Ten advances in mathematics and theoretical computer science</a></cite>&rdquo; (1 August 2026).</li>
+    <li>H. Enomoto, &ldquo;<cite>An equidistribution conjecture for quotient-closed and submodule-closed subcategories</cite>&rdquo;, <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv:XXXX.XXXXX [math.RT]</a> (2026).</li>
+    <li>The Lean formalization code and the computational verification scripts (<a href="https://github.com/haruhisa-enomoto/quotient-submodule-equidistribution">available on GitHub</a>).</li>
+  </ol>
+</section>
+
+<p class="plain-note">P.S. This article, too, was written by AI&mdash;through exactly the same endless cycle of critique and rewriting as the paper&rsquo;s LaTeX manuscript.</p>
+
+</article>
+</main>
+
+<footer class="footer">The Quotient&ndash;Submodule Equidistribution Project · Haruhisa Enomoto, in collaboration with OpenAI and Anthropic AI systems · August 2026 · The general conjecture remains open</footer>
+
+<script>
+(function () {
+  const progress = document.getElementById('progress');
+  if (!progress) return;
+  function updateProgress() {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const value = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+    progress.style.width = Math.min(100, Math.max(0, value)) + "%";
+  }
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress, { passive: true });
+  updateProgress();
+})();
+(function () {
+  const links = document.querySelectorAll('.story-nav a');
+  const byId = {};
+  links.forEach(a => { byId[a.getAttribute('href').slice(1)] = a; });
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      if (en.isIntersecting && byId[en.target.id]) {
+        links.forEach(a => a.classList.remove('is-current'));
+        byId[en.target.id].classList.add('is-current');
+      }
+    });
+  }, { rootMargin: '-15% 0px -75% 0px' });
+  document.querySelectorAll('section.chapter[id]').forEach(s => spy.observe(s));
+})();
+</script>
+</body>
+</html>
