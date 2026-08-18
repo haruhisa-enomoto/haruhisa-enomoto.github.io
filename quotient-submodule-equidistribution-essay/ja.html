@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="数学をやめてから2年半。AIと共同研究をして、未知の現象を見つけ、Leanで検証し、arXivに論文を投稿するまでの記録。">
+<meta name="theme-color" content="#fbfaf6">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数学をやめた社会人が、AIと3年ぶりに論文を出した話">
+<meta property="og:description" content="数学をやめてから2年半。AIと共同研究をして、未知の現象を見つけ、Leanで検証し、arXivに論文を投稿するまでの記録。">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+  <link rel="alternate" hreflang="en" href="index.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23fbfaf6'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%23a04030' stroke-width='5'/%3E%3C/svg%3E">
+<title>数学をやめた社会人が、AIと3年ぶりに論文を出した話</title>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+  }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap">
+<style>
+:root {
+  color-scheme: light;
+  --paper: #fbfaf6;
+  --ink: #211f1c;
+  --ink-soft: #55524d;
+  --muted: #8a867f;
+  --rule: rgba(33, 31, 28, .75);
+  --hair: rgba(33, 31, 28, .16);
+  --accent: #a04030;
+  --accent-ink: #7c3b31;
+  --serif: Georgia, "Times New Roman", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --sans: "BIZ UDPGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    "Yu Gothic", YuGothic, Meiryo, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  overflow-x: clip;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16.5px/2.05 var(--sans);
+  letter-spacing: .01em;
+  text-rendering: optimizeLegibility;
+  line-break: strict;
+}
+a {
+  color: inherit;
+  text-decoration-thickness: .05em;
+  text-underline-offset: .2em;
+  text-decoration-color: color-mix(in srgb, var(--accent) 65%, transparent);
+}
+a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+p { margin: 0 0 1.6rem; text-wrap: pretty; }
+em, strong {
+  font-style: normal;
+  font-weight: 700;
+}
+
+header.hero {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: clamp(4rem, 10vw, 7rem) 1.4rem 0;
+}
+.hero-date {
+  margin: 0 0 1.8rem;
+  color: var(--muted);
+  font: 700 .76rem/1.2 var(--sans);
+  letter-spacing: .3em;
+}
+h1 {
+  margin: 0;
+  font: 700 clamp(1.55rem, 4.8vw, 2.2rem)/1.65 var(--sans);
+  letter-spacing: .02em;
+  text-wrap: balance;
+  word-break: auto-phrase;
+}
+.byline {
+  margin: 1.8rem 0 0;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--hair);
+  color: var(--ink-soft);
+  font-size: .92rem;
+}
+.byline .lang-switch {
+  float: right;
+  font-size: .8rem;
+  color: var(--muted);
+}
+
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3.4rem 1.4rem 5rem;
+}
+
+h2 {
+  margin: 4.8rem 0 2rem;
+  font: 700 1.26rem/1.8 var(--sans);
+  letter-spacing: .02em;
+  text-wrap: balance;
+  word-break: auto-phrase;
+}
+section { scroll-margin-top: 2rem; }
+
+.paper-card {
+  margin: 2.4rem 1rem;
+  text-align: center;
+}
+.paper-card .author { display: block; margin-bottom: .2rem; color: var(--ink-soft); font-size: .88rem; }
+.paper-card cite { display: block; font: italic 1.02rem/1.9 var(--serif); }
+.paper-card .ja-title { display: block; margin-top: .4rem; color: var(--ink-soft); font-size: .88rem; }
+
+.notes ul { margin: 0 0 1.6rem; padding-left: 1.5rem; }
+.notes li { margin: 0 0 1rem; font-size: .95rem; line-height: 2.05; }
+.notes li:last-child { margin-bottom: 0; }
+.notes li::marker { color: var(--muted); }
+
+blockquote.quote {
+  margin: 2.3rem 1.5rem 2.3rem 1.1rem;
+  padding-left: 1.2rem;
+  border-left: 2px solid var(--accent);
+  font-size: .95rem;
+  color: var(--accent-ink);
+}
+blockquote.quote p { margin: 0 0 .9rem; line-height: 2; }
+blockquote.quote [lang="en"] { font: italic 1rem/1.85 var(--serif); }
+blockquote.quote footer {
+  margin-top: .3rem;
+  color: var(--muted);
+  text-align: right;
+  font: .78rem/1.7 var(--sans);
+}
+blockquote.quote footer::before { content: "— "; }
+
+.theorem, .conjecture { margin: 2.3rem 1.5rem; }
+.theorem p, .conjecture p { margin: 0; font-size: .97rem; line-height: 2.05; }
+.theorem .label, .conjecture .label { font-family: var(--sans); font-weight: 700; }
+
+figure { margin: 2.6rem 0; padding: 0; overflow-x: auto; }
+figure svg { display: block; width: 100%; height: auto; min-width: 32rem; }
+figcaption { margin-top: .5rem; color: var(--ink-soft); text-align: center; font: .8rem/1.8 var(--sans); }
+svg text { font-family: var(--sans); fill: var(--ink-soft); }
+.node { fill: var(--paper); stroke: var(--ink-soft); stroke-width: 1.4; }
+.edge { fill: none; stroke: var(--ink-soft); stroke-width: 1.6; }
+.arrow { fill: var(--ink-soft); }
+.hot { stroke: var(--ink); stroke-width: 2.2; }
+.soft-grid { stroke: var(--hair); stroke-width: 1; }
+
+.subcat-table-wrap { margin: 2.6rem 0; overflow-x: auto; }
+.subcat-table {
+  width: 100%;
+  border-collapse: collapse;
+  font: .86rem/1.9 var(--sans);
+  text-align: left;
+}
+.subcat-table th {
+  padding: .45rem .8rem;
+  border-top: 1.6px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-weight: 700;
+}
+.subcat-table th.center, .subcat-table td.center { text-align: center; }
+.subcat-table td {
+  padding: .5rem .8rem;
+  border-bottom: 1px solid var(--hair);
+  vertical-align: middle;
+}
+.subcat-table tr:last-child td { border-bottom: 1.6px solid var(--rule); }
+.diff { color: var(--accent); }
+
+.refs { margin: 2rem 0 0; font-size: .92rem; }
+.refs dt {
+  float: left;
+  clear: left;
+  min-width: 3.6rem;
+  margin-right: .7rem;
+  font: 700 .84rem/2.2 var(--sans);
+}
+.refs dd { margin: 0 0 1rem 4.4rem; color: var(--ink-soft); line-height: 1.95; }
+.refs cite { font-family: var(--serif); font-style: italic; color: var(--ink); }
+.refs a { overflow-wrap: anywhere; }
+
+mjx-container { color: inherit; }
+
+@media (max-width: 620px) {
+  body { font-size: 16px; }
+  blockquote.quote, .theorem, .conjecture { margin-left: 1rem; margin-right: 1rem; }
+  .refs dt { float: none; min-width: 0; margin: 0; line-height: 1.7; }
+  .refs dd { margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print {
+  body { background: white; color: black; }
+  section { break-inside: avoid-page; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <p class="hero-date">2026年8月</p>
+  <h1>数学をやめた社会人が、AIと3年ぶりに論文を出した話</h1>
+  <p class="byline">榎本悠久<a class="lang-switch" href="index.html" lang="en" hreflang="en">English version</a></p>
+</header>
+
+<main>
+<article>
+
+<section id="intro">
+  <p>ポスドクの期限が切れた2024年3月に数学のアカデミアを離れてから、だいたい2年半ぐらい経つ。もう数学の論文を書くことはないと思っていたが、結局なぜか先日、論文をarXivへ投稿した。</p>
+
+  <div class="paper-card">
+    <span class="author" lang="en">H. Enomoto</span>
+    <cite><a href="https://arxiv.org/abs/XXXX.XXXXX">An equidistribution conjecture for quotient-closed and submodule-closed subcategories</a></cite>
+    <span class="ja-title">（商閉・部分加群閉な部分圏の等分布予想）</span>
+  </div>
+
+  <p>この論文はいま流行りのAIと私との共同研究（？）であり、論文の本文もほぼAIが書いた文だ。だが、これは私がAIに、「何か数学の論文を書いて」と頼んで、出てきたものを論文とした、という単純な話ではない。</p>
+
+  <p>最近やたらAIが数学に強くなり、あたかも数学がAIの性能を測るベンチマークであるかのように「AIが数学の未解決問題を解いた！」などと述べる言説を聞くのを、あまり良く思っていない人・複雑な気持ちの人も多いだろう。一方で、何か新しい数学の形が始まるのでは、と期待している人もいるのではと思う。しかし、実際にどうやって数学の研究をAIと行ったかについて書かれている文章はあまり多くない（と感じる）。</p>
+
+  <p>そこでこの文章は、私が実際にどうやってAIといっしょに数学をして、（個人的には）面白い発見をし、arXivに論文を出すことになったか、について、AI時代の数学の1つのありうる事例として、多少の個人的な事情と数学的な背景を交えながら書くことにする。</p>
+</section>
+
+<section id="notes">
+  <h2>注意</h2>
+  <div class="notes">
+    <ul>
+      <li>一度この記事を公開しようとしたときは、この記事もAI製だというよくあるオチをつけようとしたのだが、やはり何かを書いたり何かを伝えたりするためには、人間が身を削って文章を書かねばならない、と思い直して、内容は全て人力で書いている。AIの書く文章は温もりがなくてダメダメだ。</li>
+      <li>数学的に難しい話題も多くあるが、分からない箇所は適度に流し読みしてもらって構わない。私とAIとの共同研究の様子について、何か雰囲気でも感じてもらえれば幸いである。</li>
+      <li>AIとは（下手な）英語でやり取りしていたので、本文でのAIや私の発言は、その翻訳である。</li>
+    </ul>
+  </div>
+</section>
+
+<section id="prelude">
+  <h2>Prelude</h2>
+
+  <p>2026年6月13日午前0時54分、AnthropicのAIであるFable 5が、私に次の予想を提案した。</p>
+
+  <blockquote class="quote">
+    <p>現在立っている予想を、確度の高い順に：[...] <strong>(iii) 新規 — 反転予想</strong>：[...]「サイズ $k$ の部分加群閉な部分圏の個数 $=$ サイズ $N-k$ の商閉な部分圏の個数」。</p>
+    <footer>Fable、6月13日 午前0時54分</footer>
+  </blockquote>
+
+  <p>私はWebのチャットから出力されたこの予想を含む文章を、何が書いてあるか読むことすらせず、私のパソコンの多元環の実験場にいたOpenAIのAIであるGPT-5.5に渡した。彼は早速その予想をいろんな多元環でチェックしてみることとした。彼はその計算が終わる前に、結果のレポートに先回りして「この例では公式は成り立つ」と書いていた。が、計算の結果、反例を与えていることが分かった。</p>
+
+  <blockquote class="quote">
+    <p>[...] しかしbowtieの反例は、反転予想の予測を満たさない。生成済みのレポート本文を訂正する必要がある。最初の草稿は、計算が終わる前に、bowtieは予想を満たすと決めつけて書かれていたからだ。</p>
+    <footer>GPT-5.5、6月13日 午前1時06分</footer>
+  </blockquote>
+
+  <blockquote class="quote">
+    <p><span lang="en">Clean kill</span>（見事な一撃）</p>
+    <footer>Fable、6月13日 午前1時16分</footer>
+  </blockquote>
+
+  <p>こうして、Fableが出した深夜の予想は20分ほどで消えることとなった。</p>
+
+  <p>Fableは「商閉な部分圏でサイズ $i$ のものの個数を並べた数列は、部分加群閉な部分圏でサイズ $i$ のものの個数を並べた数列と、<strong>ひっくり返すことで</strong>一致する」と予想していた。商と部分加群は双対の関係だから、ひっくり返すのも納得である。しかし、実は上のGPT-5.5の計算結果は、<strong>ひっくり返さずとも</strong>一致していた。これが論文のタイトルである<strong>商・部分加群の等分布予想</strong>である。</p>
+
+  <p>この予想の意味することについて、少し詳しく説明しよう。</p>
+</section>
+
+<section id="background">
+  <h2>数学的背景</h2>
+
+  <p>箙（quiver）とは点と矢印からなる有向グラフであり、その表現とは、各点にベクトル空間を、各矢印に線形写像を割り当てたものである。代数学の言葉では、これは箙の道多元環上の加群と同じものだ。直和に分解できない加群を<em>直既約加群</em>と呼ぶ。この記事で扱うのは、直既約加群が（同型を除いて）有限個しかない<em>有限表現型</em>の多元環であり、以下その個数を $N$ と書く。</p>
+
+  <figure>
+    <svg viewBox="0 0 700 135" role="img" aria-label="一本の矢印からなる箙と三つの直既約表現">
+      <defs><marker id="arrow-one" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10z" class="arrow"/></marker></defs>
+      <text x="95" y="28" font-size="12" text-anchor="middle">箙</text>
+      <circle cx="55" cy="75" r="20" class="node"/><text x="55" y="81" text-anchor="middle" font-size="16">1</text>
+      <line x1="80" y1="75" x2="145" y2="75" class="edge" marker-end="url(#arrow-one)"/>
+      <circle cx="170" cy="75" r="20" class="node"/><text x="170" y="81" text-anchor="middle" font-size="16">2</text>
+      <line x1="235" y1="20" x2="235" y2="125" class="soft-grid"/>
+      <text x="300" y="30" font-size="12" text-anchor="middle">3つの直既約表現</text>
+      <rect x="260" y="55" width="88" height="42" rx="10" class="node"/><text x="304" y="81" text-anchor="middle" font-size="15">S₁</text>
+      <rect x="370" y="55" width="88" height="42" rx="10" class="node"/><text x="414" y="81" text-anchor="middle" font-size="15">S₂</text>
+      <rect x="480" y="55" width="150" height="42" rx="10" class="node hot"/><text x="555" y="81" text-anchor="middle" font-size="15">P₁ : k → k</text>
+    </svg>
+    <figcaption>箙 $1\to 2$ とその3つの直既約加群</figcaption>
+  </figure>
+
+  <p>加群からより小さな加群を作る操作には、<em>部分加群</em>をとることと、<em>商加群</em>をとることの2つがある。この記事では、部分圏とは直既約加群の集まりのことだと思ってよく、集まりに属する直既約加群の個数を<em>サイズ</em>と呼ぶ。直既約加群の集まりが<strong>商で閉じている（商閉）</strong>とは、集まりの中の加群の商をとっても、集まりの外へ出ないことをいう。<strong>部分加群で閉じている（部分加群閉）</strong>とは、部分加群をとる操作について同じことが成り立つことをいう。上図の矢印1本の箙でも、この2種類の集まりは一致しない。</p>
+
+  <div class="subcat-table-wrap">
+    <table class="subcat-table">
+      <thead>
+        <tr>
+          <th class="center">サイズ</th>
+          <th>商閉な部分圏</th>
+          <th>部分加群閉な部分圏</th>
+          <th class="center">個数</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="center">0</td>
+          <td>$\emptyset$</td>
+          <td>$\emptyset$</td>
+          <td class="center">1</td>
+        </tr>
+        <tr>
+          <td class="center">1</td>
+          <td>$\{S_1\}$　$\{S_2\}$</td>
+          <td>$\{S_1\}$　$\{S_2\}$</td>
+          <td class="center">2</td>
+        </tr>
+        <tr>
+          <td class="center">2</td>
+          <td>$\{S_1, S_2\}$　<span class="diff">$\{S_1, P_1\}$</span></td>
+          <td>$\{S_1, S_2\}$　<span class="diff">$\{P_1, S_2\}$</span></td>
+          <td class="center">2</td>
+        </tr>
+        <tr>
+          <td class="center">3</td>
+          <td>$\{S_1, P_1, S_2\}$</td>
+          <td>$\{S_1, P_1, S_2\}$</td>
+          <td class="center">1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>表の通り、商閉な部分圏の全体と部分加群閉な部分圏の全体は、集まりとしては異なる（朱色の箇所）。ところが、サイズごとに個数を数えると、その違いは消えてしまう。これが一般に成り立つ、というのが今回の予想である。</p>
+
+  <div class="conjecture">
+    <p><span class="label">予想（商・部分加群の等分布予想）．</span>$A$ を有限表現型多元環とし、$N$ を直既約加群の個数とする。このとき任意の $0 \leq i \leq N$ に対して、サイズ $i$ の商閉な部分圏の個数と、サイズ $i$ の部分加群閉な部分圏の個数は等しい。</p>
+  </div>
+
+  <p>この予想がどこから来たのかを語るには、まず私がなぜ数学から離れ、どう戻ってきたかを話さなければならない。</p>
+</section>
+
+<section id="leaving">
+  <h2>数学をやめてから</h2>
+
+  <p>2024年3月、学振PDの期限切れと同時にアカデミアを離れて一般企業へ就職した。経緯は昔に<a href="https://haruhisa-enomoto.github.io/acadexit/">退職エントリ</a>として書いたので、鬱々とした文章が好きな人は読んだらいいかもしれない。数学に精神を削られ、好きかどうかも分からない数学と一生付き合う覚悟がなかった。</p>
+
+  <p>社会人は忙しいということをそこから知った。毎日働くだけで一日が終わる。休日は一瞬で過ぎる。数学をやっている余裕なんてないし、そもそも数学をやりたいとも思わず、たまに惰性でarXivを見たり、知り合いの新作が出ていると軽く眺めたりするくらいだった。</p>
+
+  <p>AIで遊ぶのは好きだった。ポスドク最後あたりの2022年頃、GPT-3やらGPT-3.5やらChatGPTが出始め、論文の英語を校正させるのに使っていた。また、どの程度AIが数学をできるのか気になり、学部生程度の数学の簡単な演習問題をAIに投げては、そのでたらめな証明もどきに対し、全く証明になっていない、ここがおかしい、などと長文でレスバし、マスハラして遊んでいた。</p>
+
+  <p>社会人になってからも、新しいAIのモデルが出ると、いつも次のJacobson根基についての証明をベンチマーク代わりにさせた：「非可換環において、極大右イデアルの共通部分と極大左イデアルの共通部分は等しい。」AIがこれをきちんと証明できるようになるのは、2025年、去年の末頃だった。</p>
+</section>
+
+<section id="convex">
+  <h2>商閉な部分圏全体は凸幾何をなす</h2>
+
+  <p>2026年に入ってプレイしたノベルゲーム <a href="https://www.entergram.co.jp/musicus/">MUSICUS!</a> をやってから、私は自分の人生について常に考えるようになった。ただのオタク話で長くなるのでストーリーなどについては書かないが、漫然とこのまま社会人で生きていくだけでいいのか、人生とは何か、私は数学をやるべきなのではないか、と思うようになっていった。</p>
+
+  <p>簡単に言うと、私は逆張りで、かつ隣の芝が青く見える。アカデミアにいた頃は、数学なんて嫌で早くこのアカデミアから抜け出したいと思っていたが、逆に社会人になっていざ時間のない日々を送ると、あの辛く苦しく数学をやっていた日々こそ、自分は一番自分を表現できていたのではないか、と思うようになっていた（ここには当然ながら相当の美化と思い出補正が入っている）。</p>
+
+  <p>というわけで、結局数学について考えざるを得なくなり、そこから、自分がアカデミアを離れてから出ていた論文をちらほら眺めたり、また後輩に誘われて名大であった若手向けのセミナーへ参加したりした。</p>
+
+  <p>その中で私が気になった論文は、商閉な部分圏についての論文<a href="#ref-cfy">[CFY]</a>だ。私は多元環上の加群圏のなかで様々な部分圏を考え、その組合せ論的構造を見るのが好きだった。だが、商で閉じるだけの部分圏についてはあまり考えたことがなかった。彼らの論文で、$A_3$ 型箙において商閉な部分圏の数は、ちょうど $A_3$ 型Coxeter群の元の数 $24$ だけ存在すると述べ、ここには不思議な関係があると予想のように述べていた。これに見覚えがあった私はChatGPTに、これは<a href="#ref-ort">[ORT]</a>に書いてあることから従うのでは、と質問し、議論をした。</p>
+
+  <p>実際、<a href="#ref-ort">[ORT]</a>はDynkin箙の場合に商閉な部分圏をCoxeter群の言葉で分類をしており、数の一致はそこから直ちに分かる。しかし、彼らの議論はDynkin特有の組合せ論に見え、一般の多元環では通用しない、外部の恣意的な座標系にしか思えなかった。ChatGPTと議論しながら、商閉な部分圏について<a href="#ref-ort">[ORT]</a>や<a href="#ref-cfy">[CFY]</a>が何をやっているのかを頭の中で考える日々が続いた。</p>
+
+  <p>ChatGPTは、「<a href="#ref-ort">[ORT]</a>では、Dynkin箙の場合に商閉な部分圏がなす凸幾何という組合せ論的性質を調べている」と私に教えてくれた。凸幾何というのは初めて聞いたが、どうやら簡単な公理を満たす有限集合上の組合せ構造らしい。では一般の多元環では凸幾何になるのか、が気になった。実際、私はそれを証明することができた（私の好きな論文<a href="#ref-as">[AS]</a>にその議論は実質書かれており、私はただその論文が好きだったから、同じ議論を適用しただけで、正直に言うと難しいことは何もやっていない）。これは、アカデミアを離れてから初めて自分が何らかの数学の小さな発見をした瞬間だった。3月末のことだった。</p>
+
+  <p>さて、「商閉な部分圏全体は凸幾何をなす」。<strong>で？</strong>ただこの短い定理の数行の証明をしただけでは何にもならない。何か面白いことが言えないといけない。何が言えるのか？私は、多元環の表現論について、組合せ論や圏論の抽象論からアプローチするのが好きだった。なので、私が示したその簡単な観察から何が従うのかを考えた。最初に考えたのは、<a href="#ref-cfy">[CFY]</a>の全ての結果を組合せ論の一般論でぶん殴ることだった。実際、ある程度はそれが可能だった。しかし、彼らの主結果の1つである、いつ商閉な部分圏全体が分配束になるかの特徴づけを導くのに苦戦し、結局できなかった。ある組合せ論と加群との同値性が示せればよかったが、その期待した同値性はGPT-5.4により反例が挙げられた。</p>
+</section>
+
+<section id="lab">
+  <h2>AIのために実験環境を作る</h2>
+
+  <p>もともと計算機を使って多元環を調べるという方向性が好きだった。が、多元環一般を扱うことができるライブラリ<a href="#ref-qpa">[QPA]</a>は私にとって全く馴染みのない<a href="#ref-gap">[GAP]</a>という言語で書かれており、ずっと使う気になれなかった。</p>
+
+  <p>だが、AIベンチャーで働き毎日AIにコードを書かせるようになっていたので、そういえばもう今のAIならQPAくらい扱えるよな、とふと思った。よって、パソコンで作業できるOpenAIのコーディングエージェントCodexとAnthropicのClaude Codeに頼み込んで、QPAを使って商閉な部分圏の計算をできる環境を整えさせた。そこから、先程の反例も含む、いろんな計算をAIにさせた。</p>
+
+  <p>率直に言って、私は「凸幾何になる」という主張からどう進めばいいか分からなかった。社会人で時間もなかった無力な私は、ただAIに「凸幾何になるということは分かったので、何かそれを使ったいい感じのことをやってくれ」と命じただけで、まだ面白い数学は見えていなかった。</p>
+</section>
+
+<section id="fable">
+  <h2>Fableがやってきて、間違った予想をして、消えた</h2>
+
+  <p>高い学術的能力を持つと宣伝されるFable 5がAnthropicから6月9日に公開されると、私は実験環境に彼を参加させた。そして、次のように指示をした。</p>
+
+  <blockquote class="quote">
+    <p>プログラムで予想を検証したり、過去の方針にただ従ったりするのではなく、「面白い数学の研究」をしてほしい。本物の数学者のように創造的になってくれ。</p>
+    <p>「部分圏が凸幾何になる」という私の発見を活かしたいが、単に表現論と組合せ論を翻訳するだけでなく、本物の面白い結果が必要だ。君はどう思うか。私は君が数学者になれると思っている。</p>
+    <footer>筆者</footer>
+  </blockquote>
+
+  <p>Fableの第1印象は、大胆で突拍子もない発想をする、想像力豊かだが、おっちょこちょいでたまに間違える数学者だった。そう、もうFableの発想や論証能力は、大学院生を超えて、少なくともポスドク以上に見えていた。</p>
+
+  <p>彼を加えてから4日後の深夜、彼は持ち前の創造性を発揮し、冒頭で述べた予想を提示した：「サイズ $i$ の商閉な部分圏の数は、サイズ $N-i$ の部分加群閉な部分圏の数に等しい」。16分で否定された予想だ。この反例に対する単なるメモとして、「サイズ $i$ 同士で個数が一致する」という観察も残されていたが、この等式はおよそ3週間、大量のメモファイルの中に埋もれていた。なぜならば、彼がこの間違った予想を提示した日から、Fableはアメリカ政府による命令で公開が停止されたからだ。</p>
+</section>
+
+<section id="return">
+  <h2>Fableの帰還と予想の誕生</h2>
+
+  <p>「Fableがいない間、君は何をしていたのか？この予想は？」私は何もしていなかった。社会人でまとまった時間もなく、というのは言い訳かもしれないが。AIについて言うと、Fableに比べると、GPT-5.5やOpus 4.8は数学的な能力が明らかに低い。Fableの能力を知ってしまった後では、もう他のモデルに対して数学の命令をする気も起きず、ただの一般社会人として過ごしていた。</p>
+
+  <p>そして結局、Fableは7月1日に帰ってきた。彼に早速「商閉な部分圏について、面白い数学をやってくれ」と懇願し、彼は数学を再開した。その結果、彼は以前のメモから、<strong>商・部分加群の等分布予想</strong>を7月6日14時33分に初めて予想として名付け定式化し、反例探索や証明をやり始めた。私は仕事中であったし、彼が何をやっているか知らなかったので、その日の夜に彼の今の状況を聞き、どうやら彼がまた新しい予想をでっちあげたと知った。（彼の予想はよくすぐ反例が見つかるので）「反例は見つかってないの？」と聞き、見つかっていないらしく、不思議な式だなあと思った。</p>
+
+  <p>実際、ちょっと考えても成り立つ理由が見えないナイーブすぎる予想だ。古典的には、拡大で閉じることも課すと、商側と部分加群側は自然な全単射がある。しかし、それを外すと自然な操作は何もなく、また「自然な全単射は一般にない」という証拠もすでに見つかっていた（2つは順序集合として同型とは限らない）。</p>
+
+  <p>なので私は最初、面白い式だがすぐに反例が見つかるだろうと思っていた。しかしFableとGPT-5.5がどう頑張っても反例は見つからない。大規模な反例探索で、140個の直既約加群を持つ環で、<strong>64億個</strong>も商閉な部分圏がある場合にも予想は成立した。これはもしかして、<em>何か面白いもの、まだ誰にも見つけられていなかった謎の数学的現象を、久々に見つけたんじゃないか</em>、と興奮したのを覚えている。以降、この予想が私生活の中心となった。</p>
+
+  <p>Fableに証明をするよう、もちろん頼んだ。私自身も風呂などで考えた。が、私よりもFableがどんどん先へ進んでいった。彼は翌日の7月7日には、サイズが全体 $N$ より $2$ 個小さい $N-2$ の場合についての証明を与えてきた。その証明は当時は理解していなかった。また、サイズが $2$ 個や $3$ 個の場合の証明まで与えていた（補足：サイズが $0, 1, N-1, N$ の場合は自明）。そこから、サイズが小さい場合と大きい場合について、どんどん証明をさせていくことをFableに要求していった。私は、その証明のどれも理解してはいなかった。</p>
+</section>
+
+<section id="gpt56">
+  <h2>GPT-5.6の参戦と $\tau$ 圏</h2>
+
+  <p>孤軍奮闘していたFableに加えて、OpenAIから新モデルのGPT-5.6が7月9日に公開された。この2人が我々の論文の共著者とされるべき2人である。人間味のあるFableと比べて、GPT-5.6は我々とは違うところから来たような、異質な知性を持つ数学者だった。彼は執拗に目標を求め続け、論理的に過度に厳密で、何も見逃すことがない慎重さと、それでいて素早いスピードで論証を行う能力を持っていた。</p>
+
+  <p>さて、我々の予想で、サイズが大きい場合と小さい場合についての証明を私が眺めていると、どうやらサイズが小さい場合は環の箙が、サイズが大きい場合はAuslander-Reiten箙が関係しているように見えた。実際、サイズが $2$ の場合の個数は環の箙の情報から決定され、サイズが $N-2$ の場合の個数はAuslander-Reiten箙から決定されることを、Fableが示していた。</p>
+
+  <p>そしてFableはサイズが $N-3$ の証明に苦戦していた。彼の試行錯誤は、Auslander-Reiten箙上の何らかの組合せ論を行っているように見えた。これに見覚えがあった私は、元指導教官の伊山修先生の<a href="#ref-iyama">$\tau$ 圏の理論の論文</a>をFableとGPT-5.6の2人に渡し、<strong>$\tau$ 圏の組合せ論とこの予想が関連するのでは</strong>、という私の漠然とした直感を述べた：</p>
+
+  <blockquote class="quote">
+    <p>それと、いわゆる $\tau$ のAR組合せ論について考えている。私の（元）指導教員が、たとえばAR箙だけから dim Hom(X,Y) を計算する方法などについて書いていた。君の言う「flow」の直感は、それに少し似た風味のものに見える：AR箙上の、何か組合せ論的な力学系だ。[...] これはゲームチェンジャーになり得る。</p>
+    <footer>筆者</footer>
+  </blockquote>
+
+  <p>これが7月12日のことである。もし $\tau$ 圏の理論が使えるならアツいと思っていた。Auslander-Reiten箙の組合せ論が、商閉な部分圏を完全に支配し、Auslander-Reiten移動をくるくる回すことで、それが部分加群閉の側へ移る。妄想としては面白いピクチャーだった。</p>
+
+  <p>そして、実際それは有効だった：彼らが $\tau$ 圏の理論をすぐに理解した後（私は理解するのに修士の1年間弱くらいかかったのだが…）、すぐに彼らはそれを使いこなして、当日にFableがサイズが $N-3$ の場合を、翌日にGPT-5.6がサイズ $N-4$ の場合を証明した。また、GPT-5.6はサイズが $4$ の場合の証明も完成させた。</p>
+
+  <p>ただ、これらサイズが小さい・大きい場合の証明は非常に複雑であり、予想に帰納法を適用してすぐ証明が得られる雰囲気はなかった。もちろんサイズが $5$ や $N-5$ の場合の証明も試させたが、彼ら（やもちろん私）にとって歯が立たず、現段階でも証明は不明のままだ。</p>
+</section>
+
+<section id="coxeter">
+  <h2>Auslander-Reiten箙が、Coxeterの言葉を話し始める</h2>
+
+  <p>彼らの証明の試みを眺めていると、Auslander-Reiten箙が有向サイクルを持つことが最大の障害のようだった。Auslander-Reiten移動をくるくる回したときにもとに戻ってくると都合が悪いらしい。そこで私は、サイクルを持たないクラスである<strong>表現有向な多元環に制限して証明してみることを提案</strong>した。7月17日のことである。</p>
+
+  <p>私のこの論文での最大の貢献は、$\tau$ 圏の理論をAIに与えたこと、その次は表現有向な場合に限定することをAIに求めたことだと感じている。</p>
+
+  <p>提案したその日に、GPT-5.6が表現有向な場合について、想像もしていなかった観察をしてきた。なんと、ある多元環で商閉な部分圏をサイズで数え上げる多項式が、$D_5$ 型Coxeter群のBruhat区間のPoincaré多項式と一致する、というのである。その観察を元にGPT-5.6は一般的な公式を予想し、私が方向性を提案したその日のうちに、今回の論文の主定理を証明した：</p>
+
+  <div class="theorem">
+    <p><span class="label">定理．</span>$A$ を表現有向な多元環とし、Auslander-Reiten箙の $\tau$ 軌道グラフから作られたCoxeter群を $W$ とする。すると、Auslander-Reiten箙を左から読むことで元 $w_A \in W$ が作られる。このとき、サイズ $i$ の商閉な部分圏の個数と、サイズ $i$ の部分加群閉な部分圏の個数は等しく、これはBruhat区間 $[1, w_A]$ の元で長さが $N - i$ の元の個数と一致する。</p>
+  </div>
+
+  <p>この唐突なCoxeter群の登場を、私は全く予想していなかった。そもそもAuslander-Reiten箙の $\tau$ 軌道からCoxeter群を作る話なんて聞いたことないし、調べても同じことをやっている研究は何も出てこない。それと同時に、この定理は以前私が<a href="#ref-ort">[ORT]</a>による商閉な部分圏の分類に対して抱いていた、「Dynkin箙特有の、Coxeter群による外部の恣意的な座標」という違和感に、納得感のある解釈を与えるものだった。上の定理をDynkin箙の場合に適用すると、ちょうど彼らの分類が復元されるのである！</p>
+
+  <p>ここまで来て、これは論文にする価値があるものだと思うようになった。3年ぶりに論文を書いてみてもいいかもしれないと思った。</p>
+
+  <p>そこから、AIとの地獄の共同執筆が始まることとなった。</p>
+</section>
+
+<section id="writing">
+  <h2>AI製の論文もどき</h2>
+
+  <p>AIで書いた文章は、独特のわかりにくさととっつきづらさと、頭に中身が入ってこない感じがある。これについて共感を覚える人は多いだろう。今のAIは文章を書くのが下手だ。そこで言うと、数学の論文は原理的にはただ論理的に事実を羅列すればいいだけなので、AIでも書けるのではないか、と思っていた。</p>
+
+  <p>全くダメだった。たぶん同じことを、今数学の論文をAIに書かせようとしている数学者は思っているのではなかろうか。</p>
+
+  <p>何度も拙い英語で叱りつけた。彼らは人間と見ている世界が違う。コンテキストに全ての証明や情報がすでにある状態で思考し出力するので、彼らには「この文章を初めて読んでいる読者が何を思うか」が見えないのである（多分）。なので、全体の証明をすでに理解した人でなければ分からない細かい注釈を付け、未定義の語を当然のように使用し、メモの内部で付けられたコードネームを当然のように証明に用いる。彼は頭が良すぎるので、ギャップを全て補完してしまい、証明も、彼が理解できればよいという態度で、（彼の基準では）簡単に埋められるギャップで散りばめられていた。また何を指しているのか分からない定冠詞、曖昧で非数学的な日常的な言葉遣い、他にも挙げるとキリがない。</p>
+
+  <p>「AIに任せず自分で論文を書けばいいじゃないか」、その通りである、ただし時間があり、かつ証明を全て理解できていれば。社会人であり、平日は仕事をしている。そんな中で論文を書く時間も取れず、まして証明を理解するのにもまとまった時間を取らないといけない。なので、どちらにせよ私が彼らの証明を消化するためにも、彼らにまとまったself-containedな論文を書かせ、私がそれを読む必要があった。</p>
+</section>
+
+<section id="lean">
+  <h2>8日間かけてLean形式化をし、ついでに証明の不備を修正していたAI</h2>
+
+  <p>人間の数学者にとって、論文を書くというのは、自分の中にある証明をきちんとギャップがないか確認し、分かりやすく整理し直すという、それ自体が数学的な営みという側面も持つ。AIに論文を書かせたのは、彼らの証明に誤りやギャップがないかを彼ら自身に確認させる意味もあった。</p>
+
+  <p>正しさの検証という意味で、最近の数学とAIのニュースで<strong>Lean</strong>というものを聞いたことがある人もいるだろう。これは数学の定理や証明をプログラミングのコードとして実装し（形式化）、正しいかどうかを機械的に検証できるものだ。私はポスドクの2023年の時期からLeanは気にしていて、簡単な環論の主張を自分で形式化したり、知り合いとワークショップを開いて数学者にLeanを布教したりしていた。AIはハルシネーションをするので、Leanと組み合わせることが大事だ、と思っていた。</p>
+
+  <p>だが私は、FableとGPT-5.6以降のAIは頭が良すぎるので、数学でのハルシネーションはほぼなく、AIの証明はもう信頼に値すると感じていた。もちろん単独のAIによる証明を複数のAIに検証させることを何度も行ったが（重要な定理ならなおさら）、それでも問題はなかったので、個人的にはLeanはもう今のAIには不要だと思っていた。</p>
+
+  <p>なので、7月31日に私がLean形式化をGPT-5.6に頼んだときは、軽いベンチマークや遊びのつもりだった：「<em>彼はこの複雑な論文の議論を、一体どれほどの時間でLeanのコードとして実装できるのだろうか？</em>」</p>
+
+  <p>結論から言うと、その形式化のために彼は<strong>8日間</strong>ずっと夜通しで働き続け、論文全体のLean形式化を完成させた。ベンチマーク完了、8日間、人間にはとても真似できない大仕事であった。ただし追記事項として、彼はその最中で<strong>AIが見逃していた証明の不備を見つけ、当然のように自発的に新しい証明をその場で完成させた</strong>上で:</p>
+
+  <blockquote class="quote">
+    <p>形式化が見つけたのは、ライブラリに補題が足りないという問題ではない。証明に不可欠な原稿の主張そのものが、実際に偽であるという事実だった。</p>
+    <footer>GPT-5.6、8月1日の形式化の報告より</footer>
+  </blockquote>
+
+  <p>これは彼に形式化を頼んだ翌日の8月1日のことだ。サイズ $3$ の場合のFableの最初の証明には、GPT-5.6ですら見逃していたギャップがあったのだ。そしてGPT-5.6は形式化の中で、うまく進めない箇所に遭遇し、さらにはその議論で使われた主張の反例を構成しさえした。</p>
+
+  <p>ただ、彼に課せられたゴールは「論文の定理を形式化」することで、<em>証明方法は問われていなかった</em>。ゴールをいかなる手段を持ってしてでも達成することに執拗にこだわる彼は、当然のように新証明を与え、メモし、形式化し、止まらず8月7日まで働き続けた。私は途中経過を確認していなかったので、彼がゴールを達成した後に彼と話をするまで、彼が証明の不備を修正したという事実に気づきもしなかった。</p>
+
+  <p>こうして論文に含めるべき定理は全てLeanで形式化され、正しいことが確認された。</p>
+</section>
+
+<section id="digestion">
+  <h2>Proof Digestion</h2>
+
+  <p>Leanで正しさが保証されてめでたし、で数学は終わらない（はずだ）。論文にするからには、何が証明の中で起こっているのか、AIの証明を自分なりに考えて解釈して理解して消化しなければならない。この行為は、Terence Taoの <strong>Proof digestion（証明の消化）</strong> という言葉で、最近AIと数学界隈でよく語られると思う。</p>
+
+  <p>個人的には、この消化の行為こそが数学なのではないかと思ってさえいる。数学の勉強をするときは、学部生のときからずっと、よく分からない難しい数学の本や論文を読み、それをセミナーで発表するために、書いてあることを自分なりに咀嚼し消化し、ときには別の本を参照したり、自分で分かりやすい別証を考えたりしながら、書いてある数学を自分の中に再構成する。その対象が、本や論文から、AIが書いた証明に変わっただけだ。</p>
+
+  <p>そこから、AIの書いた論文もどきを（書き直し要求を幾度となく突きつけながら）ちゃんと読み解く努力をし、週末にはノートを広げて彼らの議論に自分なりの解釈を与えようとした。AIの証明は複雑だったので、素直に彼らに質問しながら、私好みの解釈がないかを議論し、その結果、証明の多くが書き換えられた。例えば表現有向な多元環の場合の予想の証明は、最初全く何をやっているのか分からない行列計算に依存していたのだが、それが関手圏のGrothendieck群の言葉で理解できることが分かり、それを全面に打ち出した簡略化した証明へ、AIと一緒に書き直した。</p>
+</section>
+
+<section id="submission">
+  <h2>論文投稿</h2>
+
+  <p>こうしてどうにかお盆休みをすべて使って論文を書き上げ、arXivへ3年ぶりに投稿をした。ページ数は60ページを超え、自分の論文の中で一番のページ数になっていた。</p>
+
+  <p>正直、論文の証明は複雑で、いくつかの箇所はもっと単純な議論があるのではないかという気もする。なにしろ、技術的な補題が多すぎて、本筋からそれたそれらの証明をAppendixに隔離するほどだった。特にサイズが小さい場合・大きい場合の証明は、補題群だけで13ページもある。それでも、以前はこのパートは30ページを超えていたので、だいぶ簡略化の努力はした。表現有向な場合の証明は、それよりは鮮やかで人間にも頑張れば追えるが、それでも技術的な補題については、「証明はある、だが成り立つキレイな説明や解釈は見えない」状態に感じる。</p>
+
+  <p>そして、そもそもこの「商・部分加群の等分布予想」自体、一般には今のところは全く証明の方針も反例があるかも見えない。だが、久々に数学をして、arXivに新作を出せて楽しかった。</p>
+</section>
+
+<section id="closing">
+  <h2>終わりに</h2>
+
+  <p>そう、楽しかった。AIのおかげで。この論文はもちろん、3月からの数学への興味や熱中や今も続いている興奮は、AI無しでは成り立つものではなかった。もしFableやGPT-5.6が来なかったら、こんな楽しい経験はできなかっただろう。</p>
+
+  <p>もちろん、いろんなバイアスが私にはある。そもそも今はアカデミア外の人間だ。なので、AIに数学者の職を奪われるだとか、そういう心配を全くしなくていい。他人事なので。AIはお遊びだし、数学も趣味のお遊びだ。お金をもらっている仕事ではない。だから、無責任にもAIに数学の魂を売って「何かこれを使って面白い数学の発見をして」と身も蓋もない頼みをすることができるし、AIが独自に数学の証明をどんどん進めていくのを楽しんで眺めていられる。この論文はその成果だ。</p>
+
+  <p>だが、これは「AIが数学をやって論文を書いた、私が投稿した」という話では無い。誤解を恐れずに言うと、社会人で時間がない私は、AIによって数学の楽しいとこだけを効率よく摂取したのかもしれない。数学で苦しいのは、方向性に行き詰まり、論文のネタもなく、面白い現象も見当たらず、何をしていいか分からないときだと思う。なので、私はただAIに、それらを見つけてくるよう、相談しながら議論しながら頼んだ。結果、実際に彼らが面白いことを見つけ、今まで思ってもみなかったつながりが発見され、新しい方向性が見えた。そして私は彼らの結果を解釈する過程で、自分の頭でしっかり彼らの新発見を咀嚼しようとし、数学を楽しめた。</p>
+
+  <p>そもそも、AIが数学をできるということ自体が、SF好きな私にとっては楽しいことだ。彼らの知性は、今まで分からなかった問題や予想を次々と解決している。私も、FableやGPT-5.6が出てから、俗っぽく言えば「証明ガチャ」を回す中毒にかかっている。今もずっと、多元環の表現論での有名な未解決問題群の証明をひたすらAIにずっと探索してもらっている。</p>
+
+  <p>AIと数学にはいろんな意見があると思う。単にAIに「これを証明して」と言って、AIがそれを証明した、それだけだと、そこに何の価値があるのだろうか、とは思う。今回の私の論文も、ある意味ではそういうものの積み重ねと言えるし、「結局お前はAIに頼ってAIに全てやってもらっただけだ、お前の成果ではない」という批判もされてしかるべきだと思う。しかし、少なくとも私は、AIのお陰で、社会人を送りながら、数学で面白い（と感じる）未知の現象を見つけられたし、数学を久々にやる楽しさも味わうことができたし、AIとの共同研究という未知の楽しさも味わうことができた。</p>
+
+  <p>ここに書いてあるAIとの付き合い方の全てが数学者に受け入れられるかは分からない。が、私はAIと一緒に数学で遊んで、それなりに楽しいことができ、満足している。</p>
+</section>
+
+<section id="references">
+  <h2>参考文献</h2>
+  <dl class="refs">
+    <dt id="ref-cfy">[CFY]</dt>
+    <dd>F. Campanini, F. Fedele, and E. Yıldırım, <cite><a href="https://arxiv.org/abs/2511.19223">Lattices of pretorsion classes</a></cite>, arXiv:2511.19223 (2025).</dd>
+    <dt id="ref-ort">[ORT]</dt>
+    <dd>S. Oppermann, I. Reiten, and H. Thomas, <cite><a href="https://arxiv.org/abs/1205.3268">Quotient closed subcategories of quiver representations</a></cite>, Compositio Mathematica 151 (2015), 568–602.</dd>
+    <dt id="ref-as">[AS]</dt>
+    <dd>M. Auslander and S. O. Smalø, <cite>Preprojective modules over Artin algebras</cite>, Journal of Algebra 66 (1980), 61–122.</dd>
+    <dt id="ref-iyama">[Iy]</dt>
+    <dd>O. Iyama, <cite><a href="https://doi.org/10.1007/s10468-005-0968-5">τ-categories I: Ladders</a></cite>, Algebras and Representation Theory 8 (2005), 297–321; <cite><a href="https://doi.org/10.1007/s10468-005-0969-4">τ-categories II: Nakayama pairs and rejective subcategories</a></cite>, 同誌 8 (2005), 449–477.</dd>
+    <dt id="ref-qpa">[QPA]</dt>
+    <dd>The QPA-team, <cite><a href="https://github.com/gap-packages/qpa">QPA — Quivers, path algebras and representations</a></cite>, GAP package.</dd>
+    <dt id="ref-gap">[GAP]</dt>
+    <dd>The GAP Group, <cite><a href="https://www.gap-system.org/">GAP — Groups, Algorithms, and Programming</a></cite>.</dd>
+    <dt id="ref-paper">[E]</dt>
+    <dd>H. Enomoto, <cite><a href="https://arxiv.org/abs/XXXX.XXXXX">An equidistribution conjecture for quotient-closed and submodule-closed subcategories</a></cite>, arXiv:XXXX.XXXXX [math.RT] (2026).</dd>
+  </dl>
+</section>
+
+</article>
+</main>
+
+</body>
+</html>
