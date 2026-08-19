@@ -17,7 +17,7 @@ Previously:
 
 For more details, see [CV](/cv/).
 
-- e-mail: haruhisa.enomoto@parakeet-inc.com
+- e-mail: haruhisa.enomoto.math@gmail.com
 
 I've left math academia in March 2024 and joined a company in April 2024. See [here (Japanese)](/acadexit/) for more details if you are interested in why I decided to leave academia.
 
