@@ -9,6 +9,10 @@ author_profile: true
 
 [純粋数学のアカデミア（研究職）から離れるにあたっての遺書 ― 数学が辛い人へ](/acadexit/)
 
+## Essays
+
+- [I Quit Math, Then Wrote a Paper with AI](/quotient-submodule-equidistribution-essay/) ([日本語: 数学をやめたはずが、AIと論文を書いていた。](/quotient-submodule-equidistribution-essay/ja.html))
+
 ## Theses
 
 - Bachelor thesis: [On categories of modules over locular categories (in Japanese)](/files/sotsuron.pdf).
