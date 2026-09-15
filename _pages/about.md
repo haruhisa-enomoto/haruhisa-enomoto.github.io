@@ -17,6 +17,10 @@ Previously:
 
 For more details, see [CV](/cv/).
 
+# Essay: [I Quit Math, Then Wrote a Paper with AI](/quotient-submodule-equidistribution-essay/)
+
+**This is what I most want you to read.** ([日本語版: 数学をやめたはずが、AIと論文を書いていた。](/quotient-submodule-equidistribution-essay/ja.html))
+
 - e-mail: haruhisa.enomoto.math@gmail.com
 
 I've left math academia in March 2024 and joined a company in April 2024. See [here (Japanese)](/acadexit/) for more details if you are interested in why I decided to leave academia.
@@ -48,6 +52,9 @@ The e-mail address below will not be available after March 2024.
 
 ## Update History
 
+- 2026-09-15: New preprints [Finiteness and growth of brick chain filtrations](/papers/brick-chain/), [A counterexample to the periodicity conjecture for finite-dimensional algebras](/papers/periodicity/), and [Tachikawa's second conjecture implies the Auslander–Reiten conjecture](/papers/tc2-arc/) (PDF only for now; arXiv version coming soon)!
+- 2026-08-24: New preprint [The Cartan determinant conjecture for representation-finite algebras](/papers/cartan-determinant/)!
+- 2026-08-18: New preprint [An equidistribution conjecture for quotient-closed and submodule-closed subcategories](/papers/equidistribution/)!
 - 2023-11-13: I gave [several talks](/talks/) and [received the Hida award](/cv/)!
 - 2023-06-13: I gave an [introductory lectures of $\tau$-tilting and torsion classes using split projectives and wide intervals](/talks/2023-06-13/) in Japanese.
 - 2023-04-04: Add **[FD Applet](/fd-applet/)**!
