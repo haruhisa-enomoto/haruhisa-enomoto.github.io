@@ -52,7 +52,9 @@ The e-mail address below will not be available after March 2024.
 
 ## Update History
 
-- 2026-09-15: New preprints [Finiteness and growth of brick chain filtrations](/papers/brick-chain/), [A counterexample to the periodicity conjecture for finite-dimensional algebras](/papers/periodicity/), and [Tachikawa's second conjecture implies the Auslander–Reiten conjecture](/papers/tc2-arc/) (PDF only for now; arXiv version coming soon)!
+- 2026-09-30: [On the homological conjectures for Artin algebras](/papers/tc2-arc/), joint with Rene Marczinzik, is available as [arXiv:2609.19172v2](https://arxiv.org/abs/2609.19172v2). The title, co-author information, and results have been updated.
+
+- 2026-09-15: New preprints [Finiteness and growth of brick chain filtrations](/papers/brick-chain/), [A counterexample to the periodicity conjecture for finite-dimensional algebras](/papers/periodicity/), and [On the homological conjectures for Artin algebras](/papers/tc2-arc/) (with Rene Marczinzik; updated title and arXiv version)!
 - 2026-08-24: New preprint [The Cartan determinant conjecture for representation-finite algebras](/papers/cartan-determinant/)!
 - 2026-08-18: New preprint [An equidistribution conjecture for quotient-closed and submodule-closed subcategories](/papers/equidistribution/)!
 - 2023-11-13: I gave [several talks](/talks/) and [received the Hida award](/cv/)!
