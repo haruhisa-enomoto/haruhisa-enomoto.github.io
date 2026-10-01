@@ -52,6 +52,8 @@ The e-mail address below will not be available after March 2024.
 
 ## Update History
 
+- 2026-10-01: New preprint [Magnitude of module categories and special biserial algebras](/papers/magnitude-conjecture/) ([PDF](/files/magnitude-conjecture.pdf); arXiv version not yet available)!
+
 - 2026-09-30: [On the homological conjectures for Artin algebras](/papers/tc2-arc/), joint with Rene Marczinzik, is available as [arXiv:2609.19172v2](https://arxiv.org/abs/2609.19172v2). The title, co-author information, and results have been updated.
 
 - 2026-09-15: New preprints [Finiteness and growth of brick chain filtrations](/papers/brick-chain/), [A counterexample to the periodicity conjecture for finite-dimensional algebras](/papers/periodicity/), and [On the homological conjectures for Artin algebras](/papers/tc2-arc/) (with Rene Marczinzik; updated title and arXiv version)!
