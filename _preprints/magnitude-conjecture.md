@@ -2,8 +2,8 @@
 title: "Magnitude of module categories and special biserial algebras"
 excerpt: "We prove the magnitude conjecture for representation-finite algebras over an algebraically closed field, with equality precisely for special biserial algebras."
 date: 2026-09-30
-pdf: "/files/magnitude-conjecture.pdf"
-citation: "H. Enomoto, Magnitude of module categories and special biserial algebras, preprint (2026)."
+arxiv: "2610.00413"
+citation: "H. Enomoto, Magnitude of module categories and special biserial algebras, arXiv:2610.00413."
 ---
 
 ## Comment
@@ -12,4 +12,4 @@ We prove the conjecture of Børve, Horiatakis, and Kalck that the magnitude of t
 
 For representation-directed algebras, we relate magnitude to Serre subcategories and ideal quotients, and compute the magnitude of the resulting categories of poset representations. The general case reduces to the representation-directed case through algebras obtained by grading a standard form.
 
-The arXiv version is not yet available; the PDF is available [here](/files/magnitude-conjecture.pdf).
+The paper is available on [arXiv](https://arxiv.org/abs/2610.00413).
