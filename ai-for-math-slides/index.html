@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIのおかげで数学を再開しました — 榎本 悠久（第3回 AI for Math 招待講演）</title>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root {
+  --bg: #fafafa;
+  --card-bg: #ececec;
+  --card-head: #dcdcdc;
+  --white: #ffffff;
+  --ink: #222222;
+  --ink-soft: #444444;
+  --muted: #777777;
+  --red: #a81c17;
+  --red-soft: #f9eceb;
+  --red-bar: #d8b5b3;
+  --navy: #1f3d7a;
+  --navy-soft: #ebeff7;
+  --green: #1e6b43;
+  --green-soft: #eaf4ee;
+  --link: #1a4b8c;
+  --border: #d0d0d0;
+  --sans: "BIZ UDPGothic", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --mono: "JetBrains Mono", Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  color: var(--ink);
+  font-family: var(--sans);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Links */
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: rgba(26, 75, 140, 0.45);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+a:hover {
+  color: var(--red);
+  text-decoration-color: var(--red);
+}
+a.hl {
+  color: var(--red);
+  text-decoration-color: rgba(168, 28, 23, 0.45);
+}
+a.navy {
+  color: var(--navy);
+  text-decoration-color: rgba(31, 61, 122, 0.45);
+}
+a.green {
+  color: var(--green);
+  text-decoration-color: rgba(30, 107, 67, 0.45);
+}
+svg a {
+  text-decoration: none;
+  cursor: pointer;
+}
+svg a:hover rect {
+  filter: brightness(0.95);
+}
+svg a text.link-text {
+  text-decoration: underline;
+}
+
+#deck {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide {
+  display: none;
+  width: 1280px;
+  height: 720px;
+  flex-shrink: 0;
+  background: var(--bg);
+  color: var(--ink);
+  padding: 0;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  transform-origin: center center;
+  overflow: hidden;
+}
+
+.slide.active {
+  display: flex;
+}
+
+/* Overview mode */
+body.overview {
+  overflow-y: auto;
+  height: auto;
+}
+body.overview #deck {
+  height: auto;
+  min-height: 100vh;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 28px;
+  align-items: start;
+}
+body.overview .slide {
+  display: flex !important;
+  width: 1280px;
+  height: 720px;
+  transform: scale(0.28) !important;
+  transform-origin: top left !important;
+  margin-bottom: -518px;
+  margin-right: -920px;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+body.overview .slide.active {
+  border-color: var(--red);
+}
+
+/* Header with Beamer-style progress bar */
+.slide-header {
+  padding: 24px 56px 0;
+  flex-shrink: 0;
+}
+.slide-title {
+  margin: 0 0 12px;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--red);
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+}
+.progress-track {
+  width: 100%;
+  height: 6px;
+  background: var(--red-bar);
+  position: relative;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--red);
+  width: 0%;
+}
+
+/* Main content area */
+.content {
+  flex: 1;
+  padding: 28px 64px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  font-size: 27px;
+  line-height: 1.52;
+}
+
+/* Footer (Beamer bottom-right frame number) */
+.slide-footer {
+  position: absolute;
+  bottom: 14px;
+  right: 36px;
+  font-size: 18px;
+  color: var(--ink-soft);
+  pointer-events: none;
+}
+
+/* Title Slide */
+.slide.title-slide {
+  justify-content: center;
+  padding: 0 96px;
+}
+.title-main {
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--red);
+  line-height: 1.35;
+  margin: 0 0 28px;
+}
+.title-rule {
+  width: 100%;
+  height: 6px;
+  background: var(--red);
+  margin-bottom: 36px;
+}
+.title-author {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.title-event {
+  font-size: 26px;
+  color: var(--ink-soft);
+  margin-bottom: 24px;
+}
+.title-affil {
+  font-size: 22px;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+/* Lists */
+ul, ol {
+  margin: 0;
+  padding-left: 1.35em;
+}
+li {
+  margin-bottom: 10px;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+li > ul, li > ol {
+  margin-top: 6px;
+  font-size: 0.9em;
+  color: var(--ink-soft);
+}
+li > ul > li, li > ol > li {
+  margin-bottom: 5px;
+}
+
+/* Emphasis */
+.hl {
+  color: var(--red);
+  font-weight: 700;
+}
+.navy {
+  color: var(--navy);
+  font-weight: 700;
+}
+.green {
+  color: var(--green);
+  font-weight: 700;
+}
+.muted {
+  color: var(--muted);
+  font-size: 0.85em;
+}
+
+/* Beamer-style flat blocks */
+.block {
+  background: var(--card-bg);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.block-head {
+  background: var(--card-head);
+  padding: 9px 22px;
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.block-head.red {
+  color: var(--red);
+}
+.block-head.navy {
+  color: var(--navy);
+}
+.block-head.green {
+  color: var(--green);
+}
+.block-body {
+  padding: 14px 24px;
+  font-size: 24.5px;
+  line-height: 1.5;
+}
+
+/* Grid helpers */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+.grid-2 .block-head {
+  font-size: 22.5px;
+  padding: 9px 18px;
+}
+
+/* Compact table for preprints */
+table.clean-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 20.5px;
+  line-height: 1.38;
+  background: var(--white);
+  border: 1px solid var(--border);
+}
+table.clean-table th, table.clean-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 7px 14px;
+  text-align: left;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+table.clean-table th {
+  background: var(--card-head);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Ringel box */
+.ringel-box {
+  border: 3px ridge #888;
+  background: #fff6b3;
+  color: #000;
+  padding: 20px 28px;
+  font-family: var(--sans);
+  font-size: 24px;
+  line-height: 1.56;
+}
+.ringel-box h4 {
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: 27px;
+}
+.ringel-box hr {
+  border: none;
+  border-top: 2px solid #888;
+  margin: 14px 0;
+}
+
+.qed {
+  text-align: right;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.proof-head {
+  font-weight: 700;
+  margin-right: 0.35em;
+}
+.qed-wrap {
+  float: right;
+  margin-left: 0.6em;
+}
+.qed-box {
+  display: inline-block;
+  width: 0.62em;
+  height: 0.62em;
+  border: 2.2px solid currentColor;
+  vertical-align: -0.04em;
+}
+.qed-box.filled {
+  background: currentColor;
+}
+
+/* Controls */
+#controls {
+  position: fixed;
+  bottom: 14px;
+  right: 18px;
+  z-index: 100;
+  display: flex;
+  gap: 6px;
+  background: rgba(33, 31, 28, 0.82);
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: #eee;
+  font-size: 13px;
+  align-items: center;
+}
+#controls button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 13px;
+}
+#controls button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media print {
+  @page {
+    size: 1280px 720px;
+    margin: 0;
+  }
+  html, body {
+    background: var(--bg);
+    overflow: visible;
+    height: auto;
+  }
+  #controls {
+    display: none !important;
+  }
+  #deck {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+  .slide {
+    display: flex !important;
+    transform: none !important;
+    box-shadow: none !important;
+    page-break-after: always;
+    break-after: page;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="deck">
+  <section class="slide title-slide active">
+    <h1 class="title-main">AIのおかげで数学を再開しました</h1>
+    <div class="title-rule"></div>
+    <div class="title-author">
+      <a href="https://haruhisa-enomoto.github.io/" target="_blank" rel="noopener" style="color:var(--ink);">榎本 悠久 (Haruhisa Enomoto)</a>
+    </div>
+    <div class="title-event">
+      2026年10月22日　<a href="https://aiformath.jp/meetings/2026-10-22-03/" target="_blank" rel="noopener">第3回 AI for Math</a> 招待講演
+    </div>
+    <div class="title-affil">
+      <a href="https://parakeet-inc.com/" target="_blank" rel="noopener">Parakeet株式会社</a> 研究員<br>
+      Web: <a href="https://haruhisa-enomoto.github.io/" target="_blank" rel="noopener" style="font-family:var(--mono); font-size:20px;">https://haruhisa-enomoto.github.io/</a>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">注意事項</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content">
+<ul><li>私はAI推進過激派で、今は数学のアカデミア外のAI企業の人間です</li><li>そういう人間の1人の意見としてお聞きください</li><li>途中シリアスっぽい話もありますが、そんな人もいるんだなと笑って聞き流してください</li></ul>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">Introduction</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content">
+<div class="block">
+  <div class="block-head">背景</div>
+  <div class="block-body">
+<div style="width:100%;">最近次のようなことがよく言われる：</div>
+<ul><li>「AIのせいで数学が楽しくなくなった」「AIのせいで数学をやめることにした」</li><li>「AIが私から数学の楽しみを奪った」</li></ul>
+  </div>
+</div>
+
+<div class="block">
+  <div class="block-head red">主定理 [E]</div>
+  <div class="block-body">
+<div style="width:100%;">次の条件を満たす人間が<span class="hl">少なくとも 1 人以上存在する</span>：</div>
+<ol style="margin-top:10px;"><li>AI以前は<span class="hl">数学なんて辛く嫌い</span>で、数学を楽しめなくなり、アカデミアを離れて数学をやめた</li><li><span class="hl">AIのおかげで</span>、数学を再開し、数学を楽しめるようになった</li><li>AIが切り開く新しい数学と発見に<span class="hl">純粋にワクワクしている</span></li></ol>
+  </div>
+</div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">Outline</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content">
+<div class="block">
+  <div class="block-head">本日の内容</div>
+  <div class="block-body" style="font-size:28px; line-height:1.85; padding:24px 32px;">
+<ol style="margin-top:10px;"><li><strong>自己紹介</strong></li><li><strong>主定理の証明</strong></li><li><strong>AIとどう数学をやっているか</strong></li><li><strong>私の立場から見る「AIと数学」</strong></li></ol>
+  </div>
+</div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">自己紹介</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content">
+<div class="grid-2" style="flex:1;">
+<div class="block">
+  <div class="block-head"><a href="https://haruhisa-enomoto.github.io/cv/" target="_blank" rel="noopener" style="color:var(--ink);">3年前の自己紹介</a></div>
+  <div class="block-body" style="font-size:23px; line-height:1.46;">
+<ul><li>名古屋大学 数学科 $\to$ 修士・博士</li><li><strong>学振 DC1</strong> $\to$ <strong>博士を2年半で早期取得</strong><br>
+$\to$ <strong>学振 PD</strong>でポスドク</li><li>専門：<span class="hl">多元環の表現論</span>（環上の加群圏の構造を調べる分野）</li><li><a href="https://haruhisa-enomoto.github.io/papers/" target="_blank" rel="noopener"><strong>論文 16 本</strong></a>（<em>Adv. Math.</em> 3本、<em>Math. Z.</em>、<em>J. Algebra</em> 5本など）</li><li><a href="https://haruhisa-enomoto.github.io/talks/2023-09-23/" target="_blank" rel="noopener"><strong>日本数学会 代数学分科会 特別講演</strong></a>など <br>
+招待講演多数</li><li>受賞：<a href="http://www.nagoya-u.ac.jp/academics/scholarship/nu-incentive/index.html" target="_blank" rel="noopener">名古屋大学 学術奨励賞</a>、<a href="https://www.math.nagoya-u.ac.jp/ja/alumni/hida-prize.html" target="_blank" rel="noopener">名古屋大学 飛田賞</a>、修士論文賞</li></ul>
+  </div>
+</div>
+</div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide" data-same-page="true">
+    <div class="slide-header">
+      <h2 class="slide-title">自己紹介</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content">
+<div class="grid-2" style="flex:1;">
+<div class="block">
+  <div class="block-head"><a href="https://haruhisa-enomoto.github.io/cv/" target="_blank" rel="noopener" style="color:var(--ink);">3年前の自己紹介</a></div>
+  <div class="block-body" style="font-size:23px; line-height:1.46;">
+<ul><li>名古屋大学 数学科 $\to$ 修士・博士</li><li><strong>学振 DC1</strong> $\to$ <strong>博士を2年半で早期取得</strong> <br>
+$\to$ <strong>学振 PD</strong>でポスドク</li><li>専門：<span class="hl">多元環の表現論</span>（環上の加群圏の構造を調べる分野）</li><li><a href="https://haruhisa-enomoto.github.io/papers/" target="_blank" rel="noopener"><strong>論文 16 本</strong></a>（<em>Adv. Math.</em> 3本、<em>Math. Z.</em>、<em>J. Algebra</em> 5本など）</li><li><a href="https://haruhisa-enomoto.github.io/talks/2023-09-23/" target="_blank" rel="noopener"><strong>日本数学会 代数学分科会 特別講演</strong></a>など <br>
+招待講演多数</li><li>受賞：<a href="http://www.nagoya-u.ac.jp/academics/scholarship/nu-incentive/index.html" target="_blank" rel="noopener">名古屋大学 学術奨励賞</a>、<a href="https://www.math.nagoya-u.ac.jp/ja/alumni/hida-prize.html" target="_blank" rel="noopener">名古屋大学 飛田賞</a>、修士論文賞</li></ul>
+  </div>
+</div>
+
+<div class="block">
+  <div class="block-head navy">現在の自己紹介</div>
+  <div class="block-body">
+<ul><li><a href="https://parakeet-inc.com/" target="_blank" rel="noopener"><strong>Parakeet株式会社</strong></a>（音声AIベンチャー）の研究員</li><li>AIの論文を読み・実装し・実験する日々</li><li><strong><a href="https://huggingface.co/spaces/Parakeet-Inc/paratts_demo" target="_blank" rel="noopener">日本語音声合成</a></strong>・アニメ吹き替え等</li><li>漢字の読み予測AI <a href="https://huggingface.co/spaces/Parakeet-Inc/Parayomi" target="_blank" rel="noopener" class="navy">「Parayomi」</a> を一から開発</li><li>日本音響学会等で論文投稿・研究発表（<a href="https://acoustics.jp/cms/wp_asj/wp-content/uploads/009_2025autumn_program.pdf#page=14" target="_blank" rel="noopener">[1]</a>, <a href="https://drive.google.com/file/d/1CZ74Nvmca7nneK2zCfRyogFAMVLUx0Ik/view" target="_blank" rel="noopener">[2]</a>, <a href="https://sython.org/papers/SIG-SLP/saito26slp06.pdf" target="_blank" rel="noopener">[3]</a>）</li></ul>
+  </div>
+</div>
+</div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">自己紹介</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content" style="gap:8px;">
+<ul style="font-size:21.5px;"><li>2026年8月以降、<span class="hl">2ヶ月で <a href="https://haruhisa-enomoto.github.io/papers/" target="_blank" rel="noopener" class="hl">8 本のプレプリント</a></span>を公開：</li></ul>
+<table class="clean-table" style="font-size:21px;"><thead><tr><th style="width:95px;">時期</th><th style="width:265px;">略称</th><th>内容・リンク</th></tr></thead><tbody><tr><td>2026.08</td><td><a href="https://haruhisa-enomoto.github.io/papers/equidistribution/" target="_blank" rel="noopener" class="hl">Equidistribution</a></td><td>部分圏の個数の等分布予想とCoxeter群 (<a href="https://arxiv.org/abs/2608.18024" target="_blank" rel="noopener"><code>arXiv:2608.18024</code></a>)</td></tr><tr><td>2026.08</td><td><a href="https://haruhisa-enomoto.github.io/papers/cartan-determinant/" target="_blank" rel="noopener"><strong>Cartan determinant</strong></a></td><td>有限表現型多元環のCartan行列式予想の証明 (<a href="https://arxiv.org/abs/2608.23132" target="_blank" rel="noopener"><code>arXiv:2608.23132</code></a>)</td></tr><tr><td>2026.09</td><td><a href="https://haruhisa-enomoto.github.io/papers/periodicity/" target="_blank" rel="noopener"><strong>Periodicity</strong></a></td><td>多元環の周期性予想の反例 (<a href="https://arxiv.org/abs/2609.09732" target="_blank" rel="noopener"><code>arXiv:2609.09732</code></a>)</td></tr><tr><td>2026.09</td><td><a href="https://haruhisa-enomoto.github.io/papers/brick-chain/" target="_blank" rel="noopener"><strong>Brick chain</strong></a></td><td>加群のbrick filtrationの有限性と増大度 (<a href="https://arxiv.org/abs/2609.10217" target="_blank" rel="noopener"><code>arXiv:2609.10217</code></a>)</td></tr><tr><td>2026.09</td><td><a href="https://haruhisa-enomoto.github.io/papers/tc2-arc/" target="_blank" rel="noopener" class="navy">Homological conjectures</a></td><td>古典的なホモロジカル予想群の同値性 (<a href="https://arxiv.org/abs/2609.19172" target="_blank" rel="noopener"><code>arXiv:2609.19172</code></a>)</td></tr><tr><td>2026.10</td><td><a href="https://haruhisa-enomoto.github.io/papers/magnitude-conjecture/" target="_blank" rel="noopener"><strong>Magnitude</strong></a></td><td>加群圏のmagnitude予想の解決 (<a href="https://arxiv.org/abs/2610.00413" target="_blank" rel="noopener"><code>arXiv:2610.00413</code></a>)</td></tr><tr><td>2026.10</td><td><a href="https://hexagonmath.org/2610.00024v1" target="_blank" rel="noopener" class="hl">Reflexive equivalence</a></td><td>多元環の反射的同値の理論 (<a href="https://hexagonmath.org/2610.00024v1" target="_blank" rel="noopener"><code>Hexagon:2610.00024</code></a>)</td></tr><tr><td>2026.10</td><td><a href="https://hexagonmath.org/2610.00179v1" target="_blank" rel="noopener"><strong>3rd Brauer–Thrall</strong></a></td><td>第3 Brauer–Thrall予想の解決 (<a href="https://hexagonmath.org/2610.00179v1" target="_blank" rel="noopener"><code>Hexagon:2610.00179</code></a>)</td></tr></tbody></table>
+<ul style="font-size:21.5px;"><li>さらに<strong>進行中の研究・執筆中の論文も多数</strong></li></ul>
+<div style="text-align:center; font-size:25px; font-weight:700; color:var(--red);">Question: 一体何が起こったのか？</div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">自分語り1：数学が好きだった頃 $\leadsto$ 心を病むまで</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content">
+<div class="block">
+  <div class="block-head">中高〜大学時代：数学が好きだった</div>
+  <div class="block-body">
+<ul><li>中高の頃から、友達がいない代わりに数学の本を読んだり考えたりしていた</li><li>大学で「数学を通じて人と関わる楽しさ」を知り、<span class="hl">数学者を当たり前に目指し</span>、修士 $\to$ 博士 $\to$ ポスドクへ進んだ</li></ul>
+  </div>
+</div>
+
+<div class="block">
+  <div class="block-head red">大学院以降、内面では数学が嫌いに</div>
+  <div class="block-body">
+<ul><li><strong>常につきまとう劣等感</strong>：「人より自分は数学が劣っている」「なぜ人はあんなに楽しそうに数学をできるのだろう」「なぜ自分は数学をやっているのか」</li><li><strong>「数学 ＝ 自分」の共依存状態</strong></li><li>M2の学振申請での燃え尽きを機に<span class="hl">うつ病</span></li><li>$\leadsto$ <a href="https://haruhisa-enomoto.github.io/acadexit/" target="_blank" rel="noopener" class="hl">数学に心を傷つけられて病み、数学が嫌になった</a></li></ul>
+  </div>
+</div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">自分語り2：数学をやめた ＆「その場の興味」への熱中</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content">
+<ul><li><strong>「数学 ＝ 自分」ではない</strong>と捉え直し、民間企業への就職を選択</li><li><strong>数学ではない自分を大切にしよう</strong>と思い、その時に<span class="hl">熱中できるものを大事に</span>：</li></ul>
+
+<div class="block">
+  <div class="block-head navy"><span class="hl">熱中していたこと</span></div>
+  <div class="block-body">
+<ol style="margin-top:10px;"><li>2018年頃のVR黎明期にVRに熱中し、数学系VTuber（<a href="https://www.youtube.com/channel/UCRAWk5rqZVEC_qUii-jdxhg" target="_blank" rel="noopener"><strong>バーチャル数学科大学院生いたりんっ</strong></a>）として活動</li><li>数学の計算機的側面に熱中し、<a href="https://haruhisa-enomoto.github.io/fd-applet/" target="_blank" rel="noopener" class="navy">計算Webアプリ</a>の開発、Leanにハマり2023年に<a href="https://haruhisa-enomoto.github.io/lean-math-workshop/" target="_blank" rel="noopener" class="navy">数学者向けのLean勉強会</a>の主催</li><li>2023年頃のAIの進化で画像生成AI・<span class="hl">音声AI</span> に熱中しいろいろ活動（$\leadsto$ <a href="https://parakeet-inc.com/" target="_blank" rel="noopener"><strong>現職</strong></a>へ繋がる）</li></ol>
+  </div>
+</div>
+
+<ul><li>こうして数学から距離を取り、<span class="hl">数学から離れた平和な生活</span>を手に入れた（終）</li></ul>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">自分語り3: 『MUSICUS!』はいいぞ</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content">
+<div class="block">
+  <div class="block-head">社会人生活</div>
+  <div class="block-body">
+<ul><li>平日は仕事、土日は休むだけで終了 $\leadsto$ <strong>数学なんてやってる暇はない</strong></li><li>「機械学習やAIを専門に学んだ人の方が向いているのでは」「交換可能な社会の歯車だ」「自分である理由がない」という気持ち</li></ul>
+  </div>
+</div>
+
+<div class="block">
+  <div class="block-head red">転機：美少女ゲーム（ビジュアルノベル） <a href="https://www.entergram.co.jp/musicus/" target="_blank" rel="noopener" class="hl">『MUSICUS!』</a> を今年1月にプレイ</div>
+  <div class="block-body">
+<ul><li>医者の道を歩むはずだった高校生が、ロックバンドというものに出会い、高校をやめてロックの世界で生きるお話（超おすすめだよ！）</li><li>プレイ後、毎日突きつけられた問い：<br>
+<span class="hl">「このまま漫然と社会人で生きていていいのか？ あの辛く苦しい数学で論文を書いていた日々こそ、自己表現ができていたのではないか？」</span></li><li>$\leadsto$ <strong>数学について考えざるを得なく</strong>なった</li></ul>
+  </div>
+</div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">自分語り4: なぜAIのおかげで数学を再開できたか</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content">
+<ul><li>とはいっても忙しい社会人にとって数学の研究は限界があり、特に何もできず……</li><li>$\leadsto$ 今年7月頃に<strong>数学に強いAI</strong>が登場してから<span class="hl">一気に数学への熱が盛り上がり研究が加速</span></li><li>AIとの共同研究の成果を<a href="https://arxiv.org/abs/2608.18024" target="_blank" rel="noopener"><strong>3年ぶりの数学論文</strong></a>としてまとめた（<a href="https://haruhisa-enomoto.github.io/quotient-submodule-equidistribution-essay/ja.html" target="_blank" rel="noopener">詳しい経緯</a>）</li><li>そこからずっとAIとの数学が楽しすぎて、毎日熱中して仕事に支障をきたしている</li></ul>
+
+<div class="block">
+  <div class="block-head red">Q: なぜ数学と向き合えるようになったか？ A: AIのおかげ</div>
+  <div class="block-body">
+<ol style="margin-top:10px;"><li><strong>時間がない社会人でも数学ができる！</strong><br>
+方向性を与えると、<span class="hl">非自明な証明や例の構成を超人的なスピードで代わりにやってくれる！</span></li><li><strong>「数学の辛いところをAIに任せて、楽しいところだけを摂取している」感覚</strong>
+<ul><li><strong>辛いところ（AI）</strong>：研究の方向性に行き詰まり、論文のネタもなく、面白い現象も見当たらず、証明もできず、例も見つからず、何をしていいか分からない</li><li><strong>楽しいところ（私）</strong>：<span class="hl">気になったことを自由にAIに投げて議論し妄想し、AIガチャ結果に驚き興奮する</span></li></ul></li></ol>
+  </div>
+</div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">主定理再掲</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content">
+<div class="block">
+  <div class="block-head red">主定理[E]</div>
+  <div class="block-body">
+<div style="width:100%;">次の条件を満たす人間が<span class="hl">少なくとも 1 人以上存在する</span>：</div>
+<ol style="margin-top:10px;"><li>AI以前は<span class="hl">数学なんて辛く嫌い</span>で、数学を楽しめなくなり、アカデミアを離れて数学をやめた</li><li><span class="hl">AIのおかげで</span>、数学を再開し、数学を楽しめるようになった</li><li>AIが切り開く新しい数学と発見に<span class="hl">純粋にワクワクしている</span></li></ol>
+  </div>
+</div>
+
+<div style="width:100%;"><span class="proof-head">(証明)</span> これまでの議論によりその人間の構成や条件の成立が示された。<span class="qed-wrap"><span class="qed-box"></span></span></div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">AIとどう数学をやっているか1：平日夜・週末の過ごし方</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content" style="gap:10px;">
+<ul style="font-size:23px;"><li><strong>平日夜・週末</strong>：AIを3人くらい並列で数学をさせ、さらに3人くらいで並列でtexを書かせる</li><li>自作の<a href="https://github.com/haruhisa-enomoto/math-research-harness" target="_blank" rel="noopener">研究ハーネス</a>・<a href="https://github.com/haruhisa-enomoto/math-paper-skills" target="_blank" rel="noopener">論文化スキル</a>をGitHubで公開</li></ul>
+      <div style="flex:1; display:flex; align-items:center; justify-content:center; background:var(--white); border:1.5px solid var(--border); padding:8px;">
+        <svg viewBox="0 0 1120 380" width="100%" height="100%" style="max-height:380px; font-family:var(--sans);">
+          <!-- Col 1 -->
+          <rect x="15" y="12" width="255" height="356" rx="4" fill="#ececec" stroke="#999" stroke-width="1.5"/>
+          <text x="142" y="44" text-anchor="middle" font-weight="bold" font-size="19.5" fill="#1f3d7a">① 基本設定・私の指示</text>
+          <rect x="30" y="62" width="225" height="86" rx="4" fill="#fff" stroke="#bbb"/>
+          <text x="142" y="95" text-anchor="middle" font-weight="bold" font-size="17.5">好みの分野・ルール設定</text>
+          <text x="142" y="124" text-anchor="middle" font-size="15" fill="#444">研究スタイル・証明基準</text>
+
+          <rect x="30" y="166" width="225" height="184" rx="4" fill="#fff" stroke="#a81c17" stroke-width="2"/>
+          <text x="142" y="198" text-anchor="middle" font-weight="bold" font-size="18.5" fill="#a81c17">私（自然言語で指示）</text>
+          <text x="142" y="232" text-anchor="middle" font-size="16" fill="#222">・「この方向で調べて」</text>
+          <text x="142" y="262" text-anchor="middle" font-size="16" fill="#222">・「予想群をアタック」</text>
+          <text x="142" y="292" text-anchor="middle" font-size="16" fill="#222">・「もっと概念的な証明に」</text>
+          <text x="142" y="322" text-anchor="middle" font-size="16" fill="#222">・「論文にまとめて」</text>
+
+          <!-- Col 2 -->
+          <a href="https://github.com/haruhisa-enomoto/math-research-harness" target="_blank" rel="noopener">
+            <rect x="290" y="12" width="510" height="212" rx="4" fill="#ececec" stroke="#1f3d7a" stroke-width="1.5"/>
+            <text x="545" y="44" text-anchor="middle" font-weight="bold" font-size="18.5" fill="#1f3d7a" class="link-text">② 研究ハーネス (math-research-harness)</text>
+          </a>
+
+          <rect x="308" y="64" width="150" height="142" rx="4" fill="#fff" stroke="#1f3d7a" stroke-width="1.5"/>
+          <text x="383" y="96" text-anchor="middle" font-weight="bold" font-size="17.5" fill="#1f3d7a">研究状況メモ</text>
+          <text x="383" y="128" text-anchor="middle" font-size="15" fill="#333">現在の研究地図</text>
+          <text x="383" y="156" text-anchor="middle" font-size="15" fill="#333">解決／未解決境界</text>
+          <text x="383" y="184" text-anchor="middle" font-size="15" fill="#333">次の方針</text>
+
+          <rect x="470" y="64" width="150" height="142" rx="4" fill="#fff" stroke="#1f3d7a" stroke-width="1.5"/>
+          <text x="545" y="96" text-anchor="middle" font-weight="bold" font-size="17.5" fill="#1f3d7a">結果カタログ</text>
+          <text x="545" y="128" text-anchor="middle" font-size="15" fill="#333">判明した命題一覧</text>
+          <text x="545" y="156" text-anchor="middle" font-size="14" fill="#1e6b43">証明済 / 計算検証済</text>
+          <text x="545" y="184" text-anchor="middle" font-size="14" fill="#a81c17">未解決 / 反例発見</text>
+
+          <rect x="632" y="64" width="150" height="142" rx="4" fill="#fff" stroke="#1f3d7a" stroke-width="1.5"/>
+          <text x="707" y="96" text-anchor="middle" font-weight="bold" font-size="17.5" fill="#1f3d7a">研究ノート</text>
+          <text x="707" y="128" text-anchor="middle" font-size="15" fill="#333">証明・反例の記録</text>
+          <text x="707" y="156" text-anchor="middle" font-size="15" fill="#333">実験スクリプト</text>
+          <text x="707" y="184" text-anchor="middle" font-size="15" fill="#333">試行錯誤のログ</text>
+
+          <!-- Col 2 Bottom: Engines -->
+          <rect x="290" y="238" width="510" height="130" rx="4" fill="#ececec" stroke="#999" stroke-width="1.5"/>
+          <text x="545" y="268" text-anchor="middle" font-weight="bold" font-size="19.5" fill="#1e6b43">③ 計算・文献・形式化ツール連携</text>
+
+          <a href="https://github.com/haruhisa-enomoto/qpa-rust" target="_blank" rel="noopener">
+            <rect x="308" y="282" width="150" height="72" rx="4" fill="#fff" stroke="#1e6b43" stroke-width="1.5"/>
+            <text x="383" y="310" text-anchor="middle" font-weight="bold" font-size="16" fill="#1e6b43" class="link-text">qpa-rust 計算基盤</text>
+            <text x="383" y="336" text-anchor="middle" font-size="14" fill="#444">Rust製・高速探索</text>
+          </a>
+
+          <rect x="470" y="282" width="150" height="72" rx="4" fill="#fff" stroke="#1e6b43" stroke-width="1.5"/>
+          <text x="545" y="310" text-anchor="middle" font-weight="bold" font-size="16.5">arXiv論文DB</text>
+          <text x="545" y="336" text-anchor="middle" font-size="13.5" fill="#444">予想抽出・先行研究</text>
+
+          <a href="https://leanprover.github.io/" target="_blank" rel="noopener">
+            <rect x="632" y="282" width="150" height="72" rx="4" fill="#fff" stroke="#1e6b43" stroke-width="1.5"/>
+            <text x="707" y="310" text-anchor="middle" font-weight="bold" font-size="16.5" fill="#1e6b43" class="link-text">Lean 4 形式化</text>
+            <text x="707" y="336" text-anchor="middle" font-size="13.5" fill="#444">複雑な証明の保証</text>
+          </a>
+
+          <!-- Col 3 -->
+          <rect x="820" y="12" width="285" height="356" rx="4" fill="#ececec" stroke="#a81c17" stroke-width="1.5"/>
+          <text x="962" y="44" text-anchor="middle" font-weight="bold" font-size="19.5" fill="#a81c17">④ 論文化パイプライン</text>
+
+          <a href="https://github.com/haruhisa-enomoto/math-paper-skills" target="_blank" rel="noopener">
+            <rect x="838" y="64" width="250" height="88" rx="4" fill="#fff" stroke="#a81c17" stroke-width="1.5"/>
+            <text x="963" y="96" text-anchor="middle" font-weight="bold" font-size="17.5" fill="#a81c17" class="link-text">math-paper-skills</text>
+            <text x="963" y="126" text-anchor="middle" font-size="15" fill="#444">複数モデルの分業執筆</text>
+          </a>
+
+          <rect x="838" y="168" width="250" height="82" rx="4" fill="#fff" stroke="#bbb"/>
+          <text x="963" y="200" text-anchor="middle" font-weight="bold" font-size="17.5">スタイル・引用チェック</text>
+          <text x="963" y="228" text-anchor="middle" font-size="15" fill="#444">過去論文のスタイルに統一</text>
+
+          <a href="https://haruhisa-enomoto.github.io/papers/" target="_blank" rel="noopener">
+            <rect x="838" y="266" width="250" height="88" rx="4" fill="#a81c17"/>
+            <text x="963" y="300" text-anchor="middle" font-weight="bold" font-size="19" fill="#fff" class="link-text">公開済8本＋進行中多数</text>
+            <text x="963" y="330" text-anchor="middle" font-size="15.5" fill="#f9eceb">arXiv / Hexagon 公開</text>
+          </a>
+        </svg>
+      </div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">AIとどう数学をやっているか2：AIとの研究のマップ</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content" style="padding-top:14px;">
+      <div style="flex:1; display:flex; align-items:center; justify-content:center; background:var(--white); border:1.5px solid var(--border); padding:4px;">
+        <svg viewBox="0 0 1140 525" width="100%" height="100%" style="max-height:525px; font-family:var(--sans);">
+          <defs>
+            <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 10 5 L 0 9 z" fill="#a81c17" />
+            </marker>
+          </defs>
+
+          <!-- Quadrants -->
+          <rect x="35" y="36" width="465" height="234" fill="#f4f6fa" />
+          <rect x="500" y="36" width="610" height="234" fill="#fdf4f3" />
+          <rect x="35" y="270" width="465" height="220" fill="#f2f8f4" />
+          <rect x="500" y="270" width="610" height="220" fill="#f7f7f7" />
+
+          <!-- Axes -->
+          <line x1="35" y1="270" x2="1110" y2="270" stroke="#222" stroke-width="2.5" />
+          <line x1="500" y1="32" x2="500" y2="494" stroke="#222" stroke-width="2.5" />
+          <polygon points="1118,270 1104,263 1104,277" fill="#222"/>
+          <polygon points="27,270 41,263 41,277" fill="#222"/>
+          <polygon points="500,24 493,38 507,38" fill="#222"/>
+          <polygon points="500,502 493,488 507,488" fill="#222"/>
+
+          <!-- Concise Axis Titles -->
+          <text x="500" y="20" text-anchor="middle" font-weight="bold" font-size="18.5" fill="#222">▲ 理論構築・現象発見・概念的証明</text>
+          <text x="500" y="518" text-anchor="middle" font-weight="bold" font-size="18.5" fill="#222">▼ 個別の予想・問題の解決</text>
+          <text x="46" y="259" text-anchor="start" font-weight="bold" font-size="17.5" fill="#1e6b43">◀ AI自律</text>
+          <text x="1100" y="292" text-anchor="end" font-weight="bold" font-size="17.5" fill="#a81c17">私が主導 ▶</text>
+
+          <!-- Legend badge at top-left -->
+          <text x="45" y="55" font-size="12.5" fill="#444" font-weight="bold">実線枠＝公開済(8本) ／ 破線枠＝進行中</text>
+
+          <!-- ==================== TOP-RIGHT (Human-led & Theory/Conceptual) ==================== -->
+          <!-- Row 1 Left: 80s Theorem -->
+          <a href="https://haruhisa-enomoto.github.io/multiplicative-bases-deformations/" target="_blank" rel="noopener">
+            <g transform="translate(655, 66)">
+              <rect x="-142" y="-21" width="284" height="42" rx="5" fill="#fff" stroke="#a81c17" stroke-width="1.8" stroke-dasharray="5,3"/>
+              <text x="0" y="-3" text-anchor="middle" font-weight="bold" font-size="15" fill="#a81c17" class="link-text">★ 80年代の大定理の再証明</text>
+              <text x="0" y="14" text-anchor="middle" font-size="12.5" fill="#444">忘れられた複雑証明を概念化＋Lean</text>
+            </g>
+          </a>
+
+          <!-- Row 1 Right: Reflexive equivalence -->
+          <a href="https://hexagonmath.org/2610.00024v1" target="_blank" rel="noopener">
+            <g transform="translate(955, 66)">
+              <rect x="-145" y="-22" width="290" height="44" rx="5" fill="#fff" stroke="#a81c17" stroke-width="2.5"/>
+              <text x="0" y="-3" text-anchor="middle" font-weight="bold" font-size="16.5" fill="#a81c17" class="link-text">Reflexive equivalence</text>
+              <text x="0" y="15" text-anchor="middle" font-size="13" fill="#222">対話のキャッチボールで新理論構築</text>
+            </g>
+          </a>
+
+          <!-- Row 2 Left: Global JHP & Extension-closed -->
+          <g transform="translate(655, 120)">
+            <rect x="-142" y="-21" width="284" height="42" rx="5" fill="#fff" stroke="#a81c17" stroke-width="1.8" stroke-dasharray="5,3"/>
+            <text x="0" y="-3" text-anchor="middle" font-weight="bold" font-size="14.2" fill="#a81c17">★ 大域Jordan–Hölder性・拡大閉部分圏</text>
+            <text x="0" y="14" text-anchor="middle" font-size="12.3" fill="#444">私の指示・興味から一般理論を構築</text>
+          </g>
+
+          <!-- Row 2 Right: Equidistribution -->
+          <a href="https://arxiv.org/abs/2608.18024" target="_blank" rel="noopener">
+            <g transform="translate(955, 120)">
+              <rect x="-145" y="-22" width="290" height="44" rx="5" fill="#fff" stroke="#a81c17" stroke-width="2.5"/>
+              <text x="0" y="-3" text-anchor="middle" font-weight="bold" font-size="16.5" fill="#a81c17" class="link-text">Equidistribution</text>
+              <text x="0" y="15" text-anchor="middle" font-size="13" fill="#222">Fableが現象発見 × 私が証明方針を指示</text>
+            </g>
+          </a>
+
+          <!-- Row 3 Left: Magnitude -->
+          <a href="https://arxiv.org/abs/2610.00413" target="_blank" rel="noopener">
+            <g transform="translate(658, 176)">
+              <rect x="-146" y="-22" width="292" height="44" rx="5" fill="#fff" stroke="#a81c17" stroke-width="2.5"/>
+              <text x="0" y="-3" text-anchor="middle" font-weight="bold" font-size="16.5" fill="#a81c17" class="link-text">Magnitude</text>
+              <text x="0" y="15" text-anchor="middle" font-size="12.3" fill="#222">私が「被覆なし・概念的証明」を指示</text>
+            </g>
+          </a>
+
+          <!-- Row 3 Right: CE/KE joint work -->
+          <g transform="translate(958, 176)">
+            <rect x="-142" y="-21" width="284" height="42" rx="5" fill="#fff" stroke="#a81c17" stroke-width="1.8" stroke-dasharray="5,3"/>
+            <text x="0" y="-3" text-anchor="middle" font-weight="bold" font-size="14.2" fill="#a81c17">★ 後輩との共同研究（CE/KEとt-構造）</text>
+            <text x="0" y="14" text-anchor="middle" font-size="12.2" fill="#444">行き詰まっていた問題群を一気に突破</text>
+          </g>
+
+          <!-- Row 4: Thread tags in Top-Right -->
+          <g transform="translate(805, 232)">
+            <rect x="-290" y="-16" width="580" height="32" rx="14" fill="#fff8f7" stroke="#c97a76" stroke-width="1.2" stroke-dasharray="3,2"/>
+            <text x="0" y="4" text-anchor="middle" font-size="11.8" fill="#7a1c18">他：前ねじれ類・像閉部分圏 ／ 拡張加群圏のDGメッシュ ／ 高次二重Ext双対性 ／ 純入射分解と束の分配性</text>
+          </g>
+
+          <!-- Trajectory arrow for Magnitude: from bottom-left initial solution to top-right conceptual theory -->
+          <g transform="translate(360, 304)">
+            <rect x="-125" y="-16" width="250" height="32" rx="4" fill="#fff" stroke="#777" stroke-width="1.4" stroke-dasharray="4,3"/>
+            <text x="0" y="5" text-anchor="middle" font-size="12.8" fill="#444">Magnitude 初期解決（被覆で証明）</text>
+          </g>
+          <path d="M 435 288 C 495 255, 540 225, 575 198" fill="none" stroke="#a81c17" stroke-width="2.2" stroke-dasharray="5,4" marker-end="url(#arrow-red)"/>
+
+          <!-- ==================== TOP-LEFT (AI-autonomous / Hybrid & Structural) ==================== -->
+          <a href="https://arxiv.org/abs/2609.19172" target="_blank" rel="noopener">
+            <g transform="translate(267, 118)">
+              <rect x="-175" y="-26" width="350" height="52" rx="5" fill="#fff" stroke="#1f3d7a" stroke-width="2.5"/>
+              <text x="0" y="-4" text-anchor="middle" font-weight="bold" font-size="17" fill="#1f3d7a" class="link-text">Homological conjectures</text>
+              <text x="0" y="16" text-anchor="middle" font-size="13.5" fill="#222">古典予想群の新しい同値性</text>
+            </g>
+          </a>
+
+          <g transform="translate(267, 194)">
+            <rect x="-215" y="-18" width="430" height="36" rx="14" fill="#f7f9fc" stroke="#6c82ab" stroke-width="1.3" stroke-dasharray="4,3"/>
+            <text x="0" y="4" text-anchor="middle" font-size="12" fill="#1f3d7a">他：OpenAI反例の構造・縮小 ／ 三角圏実現問題 ／ ZFC独立性</text>
+          </g>
+
+          <!-- ==================== BOTTOM-LEFT (AI-autonomous & Conjecture pool) ==================== -->
+          <a href="https://arxiv.org/abs/2609.10217" target="_blank" rel="noopener">
+            <g transform="translate(175, 355)">
+              <rect x="-132" y="-23" width="264" height="46" rx="5" fill="#fff" stroke="#1e6b43" stroke-width="2.5"/>
+              <text x="0" y="-3" text-anchor="middle" font-weight="bold" font-size="16.5" fill="#1e6b43" class="link-text">Brick chain</text>
+              <text x="0" y="15" text-anchor="middle" font-size="13" fill="#222">論文のQuestion群をAstraが解決</text>
+            </g>
+          </a>
+
+          <a href="https://arxiv.org/abs/2609.09732" target="_blank" rel="noopener">
+            <g transform="translate(175, 418)">
+              <rect x="-132" y="-23" width="264" height="46" rx="5" fill="#fff" stroke="#1e6b43" stroke-width="2.5"/>
+              <text x="0" y="-3" text-anchor="middle" font-weight="bold" font-size="16.5" fill="#1e6b43" class="link-text">Periodicity</text>
+              <text x="0" y="15" text-anchor="middle" font-size="13" fill="#222">予想群アタックでAstraが反例構成</text>
+            </g>
+          </a>
+
+          <g transform="translate(267, 468)">
+            <rect x="-220" y="-16" width="440" height="32" rx="14" fill="#f4faf6" stroke="#5b9a76" stroke-width="1.3" stroke-dasharray="4,3"/>
+            <text x="0" y="4" text-anchor="middle" font-size="11.8" fill="#1e6b43">他：Keller予想 ／ 片側弱Gorenstein反例 ／ Brick予想群 ／ ARS問題群</text>
+          </g>
+
+          <!-- ==================== BOTTOM-RIGHT (Human target/direction & Specific problems) ==================== -->
+          <!-- BT3 -->
+          <a href="https://hexagonmath.org/2610.00179v1" target="_blank" rel="noopener">
+            <g transform="translate(555, 365)">
+              <rect x="-195" y="-23" width="390" height="46" rx="5" fill="#fff" stroke="#1f3d7a" stroke-width="2.5"/>
+              <text x="0" y="-3" text-anchor="middle" font-weight="bold" font-size="16.5" fill="#1f3d7a" class="link-text">3rd Brauer–Thrall</text>
+              <text x="0" y="15" text-anchor="middle" font-size="12.5" fill="#222">Astraが解決 → 私が一般埋め込み定理へ再構成を指示</text>
+            </g>
+          </a>
+
+          <!-- CDC -->
+          <a href="https://arxiv.org/abs/2608.23132" target="_blank" rel="noopener">
+            <g transform="translate(940, 342)">
+              <rect x="-155" y="-23" width="310" height="46" rx="5" fill="#fff" stroke="#222" stroke-width="2.5"/>
+              <text x="0" y="-3" text-anchor="middle" font-weight="bold" font-size="16.5" fill="#222" class="link-text">Cartan determinant</text>
+              <text x="0" y="15" text-anchor="middle" font-size="13" fill="#222">「有限型ならどうか」と私が指定 → 解決</text>
+            </g>
+          </a>
+
+          <!-- Personal Questions -->
+          <a href="https://haruhisa-enomoto.github.io/questions/" target="_blank" rel="noopener">
+            <g transform="translate(935, 405)">
+              <rect x="-160" y="-20" width="320" height="40" rx="5" fill="#fff" stroke="#a81c17" stroke-width="1.8" stroke-dasharray="5,3"/>
+              <text x="0" y="-2" text-anchor="middle" font-weight="bold" font-size="15" fill="#a81c17" class="link-text">★ 個人的なQuestions集</text>
+              <text x="0" y="14" text-anchor="middle" font-size="12.3" fill="#444">昔から自問していた問題群を次々解決</text>
+            </g>
+          </a>
+
+          <!-- Bottom-Right Thread Tags -->
+          <g transform="translate(805, 468)">
+            <rect x="-290" y="-16" width="580" height="32" rx="14" fill="#fafafa" stroke="#777" stroke-width="1.3" stroke-dasharray="4,3"/>
+            <text x="0" y="4" text-anchor="middle" font-size="11.8" fill="#333">他：凸g-fan分類 ／ 線形Nakayama数え上げ ／ Grothendieckモノイド など</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">AIとどう数学をやっているか3：代表的な研究パターン</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content">
+<div class="grid-2" style="flex:1; gap:18px;">
+<div class="block">
+  <div class="block-head red">1. AIが現象発見、人間が方針アドバイス（<a href="https://arxiv.org/abs/2608.18024" target="_blank" rel="noopener" class="hl">Equidistribution</a>）</div>
+  <div class="block-body" style="font-size:21.5px;">
+<ul><li>3年ぶりの復帰作（謝辞に<a href="https://www.entergram.co.jp/musicus/" target="_blank" rel="noopener">『MUSICUS!』</a>）</li><li>AIが誰も気づいていなかった数値的一致を予想</li><li>私が<span class="hl">「あの圏論的手法で解けるのでは」と指示</span><br>
+$\leadsto$ それを使ってAIが部分的に解決</li></ul>
+  </div>
+</div>
+
+<div class="block">
+  <div class="block-head navy">2. 対話での理論構築（<a href="https://hexagonmath.org/2610.00024v1" target="_blank" rel="noopener" class="navy"><strong>Reflexive equivalence</strong></a>）</div>
+  <div class="block-body" style="font-size:21.5px;">
+<ul><li>AIに面白い論文を見つけてくれと頼み、そこで<a href="https://arxiv.org/abs/2412.19625" target="_blank" rel="noopener">面白い論文</a>を提案してくれた</li><li>その内容や、そこから私が気になった点をAIと議論</li><li>そうした<strong>私の疑問・リサーチクエスチョン $\leftrightarrow$ AIの回答</strong>の対話をひたすら繰り返して新理論を形作った</li></ul>
+  </div>
+</div>
+
+<div class="block">
+  <div class="block-head">3. AIの初期解決 $\leadsto$ 人間が「概念化・一般化」を指示</div>
+  <div class="block-body" style="font-size:21.5px;">
+<ul><li><a href="https://arxiv.org/abs/2610.00413" target="_blank" rel="noopener"><strong>Magnitude</strong></a>：最初はテクい証明、こちらが<span class="hl">「概念的証明・分かりやすい証明」</span>を何度も指示</li><li><a href="https://hexagonmath.org/2610.00179v1" target="_blank" rel="noopener"><strong>3rd Brauer–Thrall</strong></a>：AIの証明後に、もう少し<strong>一般的な定理からの帰結として示す</strong>よう指示</li></ul>
+  </div>
+</div>
+
+<div class="block">
+  <div class="block-head green">4. AIが問題群を自律的に解く</div>
+  <div class="block-body" style="font-size:21.5px;">
+<ul><li><a href="https://arxiv.org/abs/2609.09732" target="_blank" rel="noopener"><strong>Periodicity</strong></a> / <a href="https://arxiv.org/abs/2609.10217" target="_blank" rel="noopener"><strong>Brick chain</strong></a>：作業フォルダにためていた論文の予想・疑問群をAIが自律解決</li><li><a href="https://arxiv.org/abs/2608.23132" target="_blank" rel="noopener"><strong>Cartan determinant</strong></a>：私が<span class="hl">「有限表現型の場合はどうか」</span>と指定して、部分的な解決</li></ul>
+  </div>
+</div>
+</div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">私の立場から見る「AIと数学」1：アカデミア外の気楽さとジレンマ</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content">
+<div class="block">
+  <div class="block-head navy">趣味でやってるからこその自由さと公開スタンス</div>
+  <div class="block-body" style="font-size:23px;">
+<ul><li><strong>AI使用で経歴に傷がつかない</strong>（どう思われても「趣味だから」で済む）、ジャーナルも出す予定はない</li><li>論文のイントロは完全理解しているが、<strong>証明の細部は把握していない</strong>ものが多い<br>
+<span class="hl">「自分が面白いと思った方向性で、AIが非自明な数学を見つけてきたなら、どんどん世に出すべきだ！」</span></li></ul>
+  </div>
+</div>
+
+<div class="block">
+  <div class="block-head red">どこまで人間が証明を理解すべきか？</div>
+  <div class="block-body" style="font-size:23px;">
+<ul><li><a href="https://haruhisa-enomoto.github.io/multiplicative-bases-deformations/" target="_blank" rel="noopener"><strong>現在AIと進めている研究の1つ</strong></a>：<br>
+<strong>「証明が複雑なことで有名な、今は忘れ去られている<a href="https://doi.org/10.1007/BF01389052" target="_blank" rel="noopener">1980年代の大定理</a>に対して、概念的に分かりやすい別証明を提案する」</strong></li><li>「自分が証明をちゃんと追わないければ」と思うが…</li></ul>
+  </div>
+</div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">私の立場から見る「AIと数学」2：AI研究者・エンジニアとの類似</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content">
+<div class="grid-2" style="flex:1;">
+<div class="block">
+  <div class="block-head">AI分野の研究開発の現在地</div>
+  <div class="block-body">
+<ul><li>以前は人間が実験コードを書き、AIは相談相手程度だった</li><li><strong>現在：ほぼ誰も手でコードを書いていない</strong></li><li><strong>人間の役割 ＝「AIの上司」</strong>
+<ul><li>「この論文で提案されたモデルを学習したいのでコード書いて」「実験をやって」「結果を可視化・分析して」「学習データを集めて・作って」</li><li>「この結果どう思う？」「どういう実験をやると良いと思う？」「良いアーキテクチャやロスはある？」「その方向性は違うんじゃない？」</li></ul></li><li>「エンジニアやAI研究者が消える」と言われていたが、現状は消えていない</li></ul>
+  </div>
+</div>
+
+<div class="block">
+  <div class="block-head red">数学もこうなっていくのでは？</div>
+  <div class="block-body">
+<ul><li>人間が問題意識や方向性を出し、<strong>AIに数学をさせる</strong></li><li>計算機に数値計算を任せるように、<span class="navy">証明の細部や例の構成はAIに任せる</span></li><li>人間の役割 ＝ <span class="hl">「優秀すぎる学生を指導する指導教員」</span></li><li><strong>私自身、普段のAI研究でのコーディングと同じノリでAIと数学をしている</strong></li><li>ただ、それでよいのかは分かっていない</li></ul>
+  </div>
+</div>
+</div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">私の立場から見る「AIと数学」3：最近のAIの成果</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content">
+<div class="block">
+  <div class="block-head red">超人的なAIへの感情</div>
+  <div class="block-body" style="font-size:23px;">
+<ul><li>自分の数学のモチベ ＝ <strong>「未知の現象が分かり、新たな景色が見えることへの知的好奇心」</strong></li><li><a href="https://haruhisa-enomoto.github.io/questions/" target="_blank" rel="noopener"><strong>自分が昔考えて分からなかったけど問題</strong></a>が一瞬で解決される！<span class="hl">自分好みの理論や方向性や個人的な問い</span>も超人的に解決してくれる！すごい！<span class="hl">分からないことが分かるようになって純粋に嬉しい！</span></li><li>（悔しさは皆無、もともと劣等感の塊なので）</li></ul>
+  </div>
+</div>
+
+<div class="block">
+  <div class="block-head">Auslander–Reiten予想の否定的解決 (2026.09)</div>
+  <div class="block-body" style="font-size:23px;">
+<ul><li>1970年代以来の多元環の有名な<strong>Auslander–Reiten予想</strong>を<a href="https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/An-explicit-counterexample-to-the-Auslander-Reiten-conjecture-September-23-2026/paper.pdf" target="_blank" rel="noopener"><strong>OpenAIが否定的に解決</strong></a></li><li><a href="https://arxiv.org/abs/2609.19172" target="_blank" rel="noopener">直前の共著論文</a>で同値性を示した2週間後くらいに、<strong>ホモロジカル予想のほとんどに反例があることが判明！</strong>これは夢か？？</li><li>Astraでも衝撃的だったが、Astraを超えた<span class="hl">「別次元のAI」の存在にワクワクしている</span></li></ul>
+  </div>
+</div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">表現論の大御所 <a href="https://www.math.uni-bielefeld.de/~ringel/" target="_blank" rel="noopener" class="hl">C. M. Ringel 先生</a>の反応 (2026.10.09)</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content">
+<div class="ringel-box">
+<h4><a href="https://www.math.uni-bielefeld.de/~ringel/new.html" target="_blank" rel="noopener" style="color:var(--ink);">新しい時代が始まった！</a> <span style="font-size:19px; font-weight:normal;">(2026.10.09)</span></h4>
+<div style="width:100%;">AIが、古典的なホモロジカル予想がすべて誤りであることを示す例を構成したと言われている。これらの主張が正しいかどうかは（他のあらゆる数学者の主張と同様に）まだ検証されなければならない。<span class="hl">しかし、少なくとも誰かが表現論を真剣にやり始めたのだ！</span> Happel はいつも口癖のように言っていた：「我々は十分な具体例を知らない」と。</div>
+<hr>
+<div style="width:100%;">強調しておきたいのだが、<strong>数学には「反例」と呼べるようなものは存在しない。</strong>「反例」という概念は数学史に属するものであって、数学に属するものではない。それは単に、誰か（大抵は著名だとみなされている人物）が現実について誤った印象を抱いていた、ということを述べているに過ぎない。</div>
+<hr>
+<div style="width:100%;">これでようやく、次回の ICRA のワークショップが具体例の発表に充てられ、数学者たちが<span class="hl">願望ではなく知識に基づいた表現論を発展させ始められる</span>と期待できるだろう。</div>
+</div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-header">
+      <h2 class="slide-title">まとめ</h2>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+    </div>
+    <div class="content">
+<div class="block">
+  <div class="block-head red">まとめ・メッセージ</div>
+  <div class="block-body" style="padding: 26px 32px;">
+<ul style="font-size: 27px; line-height: 1.7;"><li>数学が辛くてやめた人間が、<span class="hl">AIのおかげで毎晩・毎週末に数学を考えてワクワクしている</span></li><li><strong>同じような立場の社会人へ</strong>：AIと一緒なら楽しいところだけを摂取できるので、どんどん数学をやってほしい！これから自分のような立場の人からのこういう数学との関わり方が増えていくのではないか？</li><li><strong>数学を職業とする方へ</strong>：AIが切り開く新しい数学の地平と未来にワクワクして、AIを道具として研究にぜひ取り入れていってほしい！</li></ul>
+  </div>
+</div>
+    </div>
+    <div class="slide-footer"><span class="page-num"></span></div>
+  </section>
+</div>
+
+<div id="controls">
+  <button id="btn-prev" title="前へ (←)">◀</button>
+  <span id="slide-indicator">1 / 19</span>
+  <button id="btn-next" title="次へ (→)">▶</button>
+  <button id="btn-overview" title="一覧表示 (O)">一覧 (O)</button>
+  <button id="btn-fs" title="全画面 (F)">全画面 (F)</button>
+</div>
+
+<script>
+(function() {
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const indicator = document.getElementById('slide-indicator');
+  let current = 0;
+
+  let logicalPage = 0;
+  const logicalNumbers = slides.map((s) => {
+    if (s.dataset.samePage !== 'true') logicalPage += 1;
+    return logicalPage;
+  });
+  const totalLogical = logicalPage;
+
+  slides.forEach((s, idx) => {
+    const pn = s.querySelector('.page-num');
+    if (pn) pn.textContent = `${logicalNumbers[idx]}`;
+    const pf = s.querySelector('.progress-fill');
+    if (pf) pf.style.width = `${(logicalNumbers[idx] / totalLogical) * 100}%`;
+    s.addEventListener('click', (e) => {
+      if (e.target.closest('a')) return;
+      if (document.body.classList.contains('overview')) {
+        document.body.classList.remove('overview');
+        showSlide(idx);
+      }
+    });
+  });
+
+  function fitSlide() {
+    if (document.body.classList.contains('overview')) return;
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+    const scale = Math.min(vw / 1280, vh / 720) * 0.96;
+    slides.forEach(s => {
+      s.style.transform = `scale(${scale})`;
+    });
+  }
+
+  function showSlide(index) {
+    current = Math.max(0, Math.min(slides.length - 1, index));
+    slides.forEach((s, i) => s.classList.toggle('active', i === current));
+    indicator.textContent = `${current + 1} / ${slides.length}`;
+    location.hash = `#${current + 1}`;
+    fitSlide();
+  }
+
+  const hashNum = parseInt(location.hash.replace('#', ''), 10);
+  if (!isNaN(hashNum) && hashNum >= 1 && hashNum <= slides.length) {
+    current = hashNum - 1;
+  }
+  showSlide(current);
+
+  window.addEventListener('resize', fitSlide);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') {
+      e.preventDefault();
+      showSlide(current + 1);
+    } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+      e.preventDefault();
+      showSlide(current - 1);
+    } else if (e.key === 'Home') {
+      e.preventDefault();
+      showSlide(0);
+    } else if (e.key === 'End') {
+      e.preventDefault();
+      showSlide(slides.length - 1);
+    } else if (e.key === 'o' || e.key === 'O') {
+      document.body.classList.toggle('overview');
+      fitSlide();
+    } else if (e.key === 'f' || e.key === 'F') {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      } else {
+        document.exitFullscreen();
+      }
+    }
+  });
+
+  document.getElementById('btn-prev').addEventListener('click', () => showSlide(current - 1));
+  document.getElementById('btn-next').addEventListener('click', () => showSlide(current + 1));
+  document.getElementById('btn-overview').addEventListener('click', () => {
+    document.body.classList.toggle('overview');
+    fitSlide();
+  });
+  document.getElementById('btn-fs').addEventListener('click', () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch(() => {});
+    } else {
+      document.exitFullscreen();
+    }
+  });
+})();
+</script>
+</body>
+</html>
