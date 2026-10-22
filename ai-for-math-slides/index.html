@@ -34,7 +34,7 @@ window.MathJax = {
   --green-soft: #eaf4ee;
   --link: #1a4b8c;
   --border: #d0d0d0;
-  --sans: "BIZ UDPGothic", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --sans: "BIZ UDPゴシック", "BIZ UDPGothic", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
   --mono: "JetBrains Mono", Consolas, monospace;
 }
 
@@ -1145,6 +1145,13 @@ $\leadsto$ それを使ってAIが部分的に解決</li></ul>
     current = hashNum - 1;
   }
   showSlide(current);
+
+  if (document.fonts && document.fonts.load) {
+    const allText = document.body.textContent || '';
+    document.fonts.load('400 24px "BIZ UDPGothic"', allText);
+    document.fonts.load('700 24px "BIZ UDPGothic"', allText);
+    document.fonts.load('400 20px "JetBrains Mono"', allText);
+  }
 
   window.addEventListener('resize', fitSlide);
 
