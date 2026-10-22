@@ -52,6 +52,8 @@ The e-mail address below will not be available after March 2024.
 
 ## Update History
 
+- 2026-10-22: I gave an invited talk, [AIのおかげで数学を再開しました](/talks/2026-10-22/), at the [3rd AI for Math](https://aiformath.jp/meetings/2026-10-22-03/). [Slides (Japanese)](https://haruhisa-enomoto.github.io/ai-for-math-slides/) are available.
+
 - 2026-10-04: New preprint [Reflexive equivalence and reflexive-minimal algebras](/papers/reflexive-equivalence/) ([Hexagon:2610.00024v1](https://hexagonmath.org/2610.00024?version=1))!
 
 - 2026-10-01: New preprint [Magnitude of module categories and special biserial algebras](/papers/magnitude-conjecture/) ([arXiv:2610.00413](https://arxiv.org/abs/2610.00413))!
