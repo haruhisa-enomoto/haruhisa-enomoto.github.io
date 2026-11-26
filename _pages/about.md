@@ -52,6 +52,8 @@ The e-mail address below will not be available after March 2024.
 
 ## Update History
 
+- 2026-11-26: Updated the [Questions page](/questions/#current-status) with numbered questions and a status overview, including references for answers in the literature and for answers that follow from public results.
+
 - 2026-11-26: New preprint [Characterizations of E-finite algebras and conjectures on brick-finiteness](/papers/e-finite-characterizations/) ([Hexagon:2611.01059v1](https://hexagonmath.org/2611.01059v1)).
 
 - 2026-11-25: Our technical report [J-HARD-TTS-EVAL-v2](https://ken.ieice.org/ken/paper/202611259cz5/eng/), a high-difficulty Japanese text-to-speech benchmark and large-scale evaluation, was presented at the joint NLC/SP/NL/SLP meeting.
