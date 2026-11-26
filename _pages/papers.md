@@ -9,6 +9,8 @@ You can also find my papers (preprints) on [my arXiv page](https://arxiv.org/a/e
 
 # Domestic conferences and technical reports (speech synthesis)
 
+- Wen-Chin Huang, 今井柊平, 榎本悠久, 栗原清, 齋藤佑樹, **J-HARD-TTS-EVAL-v2:高難度日本語音声合成コーパスの構築と大規模システム評価**, 電子情報通信学会技術研究報告, vol. 126, no. 252, SP2026-30, pp. 1–6, November 2026. Links: [technical report (Japanese)](https://ken.ieice.org/ken/paper/202611259cz5/), [English record](https://ken.ieice.org/ken/paper/202611259cz5/eng/).
+
 - 齋藤佑樹, Wen-Chin Huang, 榎本悠久, 今井柊平, **Human Fooling Rateテストに基づく最先端の日本語テキスト音声合成モデルの評価および分析**, 情報処理学会研究報告, 2026-SLP-160, 5 pages, June 2026. Links: [paper](https://sython.org/papers/SIG-SLP/saito26slp06.pdf), [program](https://www.ipsj.or.jp/kenkyukai/event/mus146slp160.html).
 
 - 今井柊平, 榎本悠久, 金子剛士, 中村泰貴, **系列整合性評価に特化した高難度日本語テキスト音声合成コーパスの検討**, 日本音響学会2025年秋季研究発表会, 1-Q-48, September 10, 2025. Links: [paper](https://drive.google.com/file/d/1CZ74Nvmca7nneK2zCfRyogFAMVLUx0Ik/view), [dataset](https://huggingface.co/datasets/Parakeet-Inc/J-HARD-TTS-Eval), [GitHub](https://github.com/Parakeet-Inc/J-HARD-TTS-Eval).

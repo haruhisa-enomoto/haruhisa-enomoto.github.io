@@ -67,6 +67,10 @@ redirect_from:
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
+## Speech synthesis
+
+See [domestic conferences and technical reports](/papers/#domestic-conferences-and-technical-reports-speech-synthesis).
+
 ## Preprints
 
   <ul>{% for post in site.preprints %}

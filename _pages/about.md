@@ -52,6 +52,18 @@ The e-mail address below will not be available after March 2024.
 
 ## Update History
 
+- 2026-11-26: New preprint [Characterizations of E-finite algebras and conjectures on brick-finiteness](/papers/e-finite-characterizations/) ([Hexagon:2611.01059v1](https://hexagonmath.org/2611.01059v1)).
+
+- 2026-11-25: Our technical report [J-HARD-TTS-EVAL-v2](https://ken.ieice.org/ken/paper/202611259cz5/eng/), a high-difficulty Japanese text-to-speech benchmark and large-scale evaluation, was presented at the joint NLC/SP/NL/SLP meeting.
+
+- 2026-11-21: New preprint [An extriangulated category with no triangulated embedding](/papers/extriangulated-no-triangulated-embedding/) ([Hexagon:2611.00805v2](https://hexagonmath.org/2611.00805v2)).
+
+- 2026-11-10: New preprint [Pretorsion theories and image-closed subcategories](/papers/pretorsion-image-closed/) ([Hexagon:2611.00207v1](https://hexagonmath.org/2611.00207v1)).
+
+- 2026-11-05: [Representation embeddings and the third Brauer–Thrall conjecture](/papers/third-brauer-thrall/) is now also on [arXiv:2611.06325](https://arxiv.org/abs/2611.06325), alongside [Hexagon:2610.00179v2](https://hexagonmath.org/2610.00179v2).
+
+- 2026-10-23: New preprint [Multiplicative bases and deformations of representation-finite algebras](/papers/multiplicative-bases-deformations/) ([Hexagon:2610.00505v1](https://hexagonmath.org/2610.00505v1)).
+
 - 2026-10-22: I gave an invited talk, [AIのおかげで数学を再開しました](/talks/2026-10-22/), at the [3rd AI for Math](https://aiformath.jp/meetings/2026-10-22-03/). [Slides (Japanese)](https://haruhisa-enomoto.github.io/ai-for-math-slides/) are available.
 
 - 2026-10-04: New preprint [Reflexive equivalence and reflexive-minimal algebras](/papers/reflexive-equivalence/) ([Hexagon:2610.00024v1](https://hexagonmath.org/2610.00024?version=1))!
